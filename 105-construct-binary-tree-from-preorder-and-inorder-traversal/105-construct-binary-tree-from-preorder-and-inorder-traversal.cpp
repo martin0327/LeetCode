@@ -11,26 +11,30 @@
  */
 class Solution {
 public:
-    TreeNode* f(vector<int> &a, vector<int> &b) {
-        TreeNode* ret = new TreeNode(a[0]);
-        unordered_set<int> sl;
-        vector<int> left;
-        vector<int> right;
-        for (auto x : b) {
-            if (x==a[0]) break;
-            sl.insert(x);
-        }
-        for (auto x : a) {
-            if (x==a[0]) continue;
-            if (sl.count(x)) left.push_back(x);
-            else right.push_back(x);
-        }
-        if (left.size()) ret->left = f(left,b);
-        if (right.size()) ret->right = f(right,b);
-        return ret;        
+    
+    map<int,int> mp;
+    vector<int> a,b;   
+    int n;
+    
+    TreeNode* f(int l1, int r1, int l2, int r2) {
+        if (l1>r1) return nullptr;
+        TreeNode* ret = new TreeNode(a[l1]);
+        int pivot = mp[a[l1]];
+        int llen = pivot - l2;
+        int rlen = r2 - pivot;
+        ret->left = f(l1+1,l1+llen,l2,l2+llen-1);
+        ret->right = f(r1-rlen+1,r1,r2-rlen+1,r2);        
+        return ret;
     }
-    TreeNode* buildTree(vector<int>& a, vector<int>& b) {
-        TreeNode* ans = f(a,b);
+    TreeNode* buildTree(vector<int>& _a, vector<int>& _b) {
+        a = _a;
+        b = _b;
+        n = b.size();
+        for (int i=0; i<n; i++) {
+            mp[b[i]] = i;
+        }
+        TreeNode* ans = f(0,n-1,0,n-1);
+        
         return ans;
     }
 };
