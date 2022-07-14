@@ -22,8 +22,8 @@ public:
         int pivot = mp[a[l1]];
         int llen = pivot - l2;
         int rlen = r2 - pivot;
-        ret->left = f(l1+1,l1+llen,l2,l2+llen-1);
-        ret->right = f(r1-rlen+1,r1,r2-rlen+1,r2);        
+        ret->left = f(l1+1,l1+llen,l2,pivot-1);
+        ret->right = f(r1-rlen+1,r1,pivot+1,r2);        
         return ret;
     }
     TreeNode* buildTree(vector<int>& _a, vector<int>& _b) {
