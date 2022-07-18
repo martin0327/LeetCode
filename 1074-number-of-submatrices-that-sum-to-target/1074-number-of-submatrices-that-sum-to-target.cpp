@@ -15,13 +15,13 @@ public:
             }
         }
         
+        vi pre(m+1);
         for (int i=0; i<=n; i++) {
             for (int j=i+1; j<=n; j++) {
-                vi pre(m+1);
                 for (int k=1; k<=m; k++) {
                     pre[k] = pre[k-1] + vpre[j][k] - vpre[i][k];
                 }
-                map<int,int> mp;
+                unordered_map<int,int> mp;
                 for (auto x : pre) {
                     if (mp.count(x-target)) {
                         ans += mp[x-target];
@@ -30,7 +30,6 @@ public:
                 }
             }
         }
-        
         return ans;
     }
 };
