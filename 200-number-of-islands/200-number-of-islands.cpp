@@ -7,7 +7,6 @@ vi dc = {-1,0,1,0};
 class Solution {
 public:
     int numIslands(vector<vector<char>>& a) {
-        
         int n = a.size();
         int m = a[0].size();
                 
