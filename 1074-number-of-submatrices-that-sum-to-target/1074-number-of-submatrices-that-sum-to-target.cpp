@@ -16,18 +16,19 @@ public:
         }
         
         vi pre(m+1);
+        unordered_map<int,int> mp;
         for (int i=0; i<=n; i++) {
             for (int j=i+1; j<=n; j++) {
                 for (int k=1; k<=m; k++) {
                     pre[k] = pre[k-1] + vpre[j][k] - vpre[i][k];
                 }
-                unordered_map<int,int> mp;
                 for (auto x : pre) {
                     if (mp.count(x-target)) {
                         ans += mp[x-target];
                     }
                     mp[x]++;
                 }
+                mp.clear();
             }
         }
         return ans;
