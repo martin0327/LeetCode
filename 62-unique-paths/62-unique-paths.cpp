@@ -7,9 +7,9 @@ public:
         if (m<n) swap(n,m);
         ll ans = 1;
         int i = m+1, j = 1;
-        while (i<=n+m || j<=n) {
-            if (j <= n && ans % j == 0) ans /= j++;
-            else ans *= i++;
+        while (i<=n+m) {
+            ans *= i++;
+            ans /= j++;
         }
         return ans;
     }
