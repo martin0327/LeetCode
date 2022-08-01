@@ -9,7 +9,7 @@ public:
         int j = 1;
         while (i<=n+m || j<=n) {
             if (j <= n && ans % j == 0) ans /= j++;
-            else if (i<=n+m) ans *= i++;
+            else ans *= i++;
         }
         return ans;
     }
