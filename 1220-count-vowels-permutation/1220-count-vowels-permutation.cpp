@@ -19,8 +19,7 @@ public:
             i = ii;
             o = oo;
             u = uu;
-        }
-        
+        }        
         ll ans = (a+e+i+o+u)%mod;
         return ans;
     }
