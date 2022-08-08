@@ -4,7 +4,7 @@ public:
         vector<int> dp = {a[0]};
         for (auto x : a) {
             if (x > dp.back()) dp.push_back(x);
-            else *lower_bound(dp.begin(),dp.end(),x) = x;
+            else *lower_bound(dp.begin(), dp.end(), x) = x;
         }
         int ans = dp.size();
         return ans;        
