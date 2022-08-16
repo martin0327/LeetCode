@@ -1,4 +1,5 @@
 const int inf = 1e9;
+
 class Solution {
 public:
     int firstUniqChar(string s) {
