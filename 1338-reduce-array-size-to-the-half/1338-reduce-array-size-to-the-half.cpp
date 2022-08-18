@@ -16,7 +16,6 @@ public:
       ans++;
       cum += x;
     }
-    
     return ans;
   }
 };
