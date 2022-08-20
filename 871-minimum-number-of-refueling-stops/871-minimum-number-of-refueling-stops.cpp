@@ -1,9 +1,7 @@
 using ll = long long;
-
 class Solution {
 public:
   int minRefuelStops(int target, int startFuel, vector<vector<int>>& a) {
-    int n = a.size();
     ll cur = 0;
     ll fuel = startFuel;
     a.push_back({target,0});
@@ -26,7 +24,7 @@ public:
       cur = p;
       pq.push(f);
     }
-    int ans = n - pq.size() + 1;
+    int ans = a.size() - pq.size();
     return ans;
   }
 };
