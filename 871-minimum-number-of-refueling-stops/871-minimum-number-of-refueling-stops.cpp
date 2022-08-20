@@ -1,5 +1,4 @@
 using ll = long long;
-
 class Solution {
 public:
   int minRefuelStops(int target, int startFuel, vector<vector<int>>& a) {
