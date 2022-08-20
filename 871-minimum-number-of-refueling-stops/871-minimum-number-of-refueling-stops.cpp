@@ -9,21 +9,14 @@ public:
     a.push_back({target,0});
     priority_queue<ll> pq;
     for (auto v : a) {
-      // debug(cur);
       ll p = v[0];
-      // debug(p);
       ll f = v[1];
       ll d = p - cur;
       ll x = min(d,fuel);
-      // debug(fuel,d);
       fuel -= x;
       d -= x;
-      // debug(x,fuel,d);
       while (pq.size() && d > 0) {
-        ll ff = pq.top();
-        // debug(f);
-        pq.pop();
-        // debug(pq.size());
+        ll ff = pq.top(); pq.pop();
         ll y = min(d,ff);
         d -= y;
         ff -= y;
