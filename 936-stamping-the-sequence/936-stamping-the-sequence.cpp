@@ -26,9 +26,8 @@ public:
       else ans.push_back(idx);
     }
     
-    bool ok = true;
-    for (auto c : t) ok &= (c=='?');
-    if (ok) {
+    string done(n,'?');
+    if (t == done) {
       reverse(ans.begin(), ans.end());
       return ans;  
     }
