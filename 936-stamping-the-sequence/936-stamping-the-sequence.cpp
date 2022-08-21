@@ -3,12 +3,9 @@ public:
   vector<int> movesToStamp(string s, string t) {
     int n = t.size();
     int m = s.size();
-
-    string z;
-    for (int i=0; i<m; i++) z += '?';
-
+    string z(m,'?');
+    
     vector<int> ans;
-
     while (true) {
       int idx = -1;
       for (int i=0; i+m-1<n; i++) {
@@ -28,6 +25,7 @@ public:
       if (idx == -1) break;
       else ans.push_back(idx);
     }
+    
     bool ok = true;
     for (auto c : t) ok &= (c=='?');
     if (ok) {
