@@ -28,6 +28,7 @@ public:
     
     bool ok = true;
     for (auto c : t) ok &= (c=='?');
+    
     if (ok) {
       reverse(ans.begin(), ans.end());
       return ans;  
