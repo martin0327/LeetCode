@@ -1,4 +1,5 @@
 const int c = 1162261467;
+
 class Solution {
 public:
     bool isPowerOfThree(int n) {
