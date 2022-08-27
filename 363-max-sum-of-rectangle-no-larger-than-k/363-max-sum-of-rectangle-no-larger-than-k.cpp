@@ -7,17 +7,11 @@ public:
     int maxSumSubmatrix(vector<vector<int>>& a, int K) {
         int n = a.size();
         int m = a[0].size();
-        vvi b(n+1, vi(m+1));
-        for (int i=0; i<n; i++) {
-          for(int j=0; j<m; j++) {
-              b[i+1][j+1] = a[i][j];
-          }
-        }
 
         vvi pre(n+1, vi(m+1));
         for (int i=1; i<=n; i++) {
           for (int j=1; j<=m; j++) {
-              pre[i][j] = pre[i-1][j] + b[i][j];
+              pre[i][j] = pre[i-1][j] + a[i-1][j-1];
           }
         }
 
