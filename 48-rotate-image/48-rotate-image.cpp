@@ -1,6 +1,5 @@
-using vi = vector<int>;
 class Solution {
-public:
+public:    
     void rotate(vector<vector<int>>& a) {
         int n = a.size();
         reverse(a.begin(), a.end());
