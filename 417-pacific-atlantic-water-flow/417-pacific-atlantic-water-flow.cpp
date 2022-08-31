@@ -1,86 +1,75 @@
-template<typename T>
-using min_pq = priority_queue<T, vector<T>, greater<T>>;
 using pii = pair<int,int>;
-using ti3 = tuple<int,int,int>;
 using vi = vector<int>;
 using vvi = vector<vi>;
+
 vi dr = {0,-1,0,1};
 vi dc = {1,0,-1,0};
 
-
 class Solution {
 public:
-  int n,m;  
-  vvi a, dp1, dp2, visited1, visited2;
   
-  int f(int r, int c, vvi &visited, vvi &dp, bool flag) {
-    // debug(r,c);
-    visited[r][c]++;
-    if (dp[r][c] != 0) return dp[r][c];
-    if (flag) {
-      if (r==n-1 || c==m-1) return dp[r][c] = 1;
-    }
-    else {
-      if (r==0 || c==0) return dp[r][c] = 1;
-    }
-
-    int ret = 0;
-    for (int d=0; d<4; d++) {
-      int nr = r + dr[d];
-      int nc = c + dc[d];
-      // if (r==18 && c==3) {
-      //   debug(flag);
-      //   debug(r,c);
-      //   debug(nr,nc);
-      //   debug(f(nr,nc,visited,dp,flag));
-      // }
-      if (nr<0 || nr>=n) continue;
-      if (nc<0 || nc>=m) continue;
-      if (a[nr][nc] > a[r][c]) continue;
-      // if (visited[nr][nc]) {
-      //   if (dp[nr][nc]==1) ret = 1;
-      // }
-      // else {
-      //   if (f(nr,nc,visited,dp,flag)==1) ret = 1; 
-      // } 
-      if (visited[nr][nc]>2) {
-        if (dp[nr][nc]==1) ret = 1;
-      }
-      else {
-        if (f(nr,nc,visited,dp,flag)==1) ret = 1; 
-      }
-
-    }
-    // if (r==18 && c==4) {
-    //   debug(r,c);
-    //   debug(ret);
-    //   debug(flag);
-    // }
-    return dp[r][c] = ret;
-  }
-  
-  vector<vector<int>> pacificAtlantic(vector<vector<int>>& aa) {
-    a = aa;
-    n = a.size();
-    m = a[0].size();
+  vector<vector<int>> pacificAtlantic(vector<vector<int>>& a) {
+    int n = a.size();
+    int m = a[0].size();
     
-    dp1 = vvi(n, vi(m));
-    visited1 = visited2 = dp2 = dp1;
+    queue<pii> q;
+    vvi check1(n, vi(m));
+    vvi check2 = check1;
     
     for (int i=0; i<n; i++) {
-      for (int j=0; j<m; j++) {
-        if (visited1[i][j]==0) f(i,j,visited1,dp1,0);
-        if (visited2[i][j]==0) f(i,j,visited2,dp2,1);
+      q.push({i,0});
+      check1[i][0] = 1;
+    }
+    for (int j=1; j<m; j++) {
+      q.push({0,j});
+      check1[0][j] = 1;
+    }
+    
+    while (q.size()) {
+      auto [r,c] = q.front();
+      q.pop();
+      for (int i=0; i<4; i++) {
+        int nr = r + dr[i];
+        int nc = c + dc[i];
+        if (nr < 0 || nr >= n) continue;
+        if (nc < 0 || nc >= m) continue;
+        if (a[nr][nc] < a[r][c]) continue;
+        if (check1[nr][nc]) continue;
+        check1[nr][nc] = 1;
+        q.push({nr,nc});
       }
     }
     
-    vvi ans;    
+    for (int i=0; i<n; i++) {
+      q.push({i,m-1});
+      check2[i][m-1] = 1;
+    }
+    for (int j=0; j<m-1; j++) {
+      q.push({n-1,j});
+      check2[n-1][j] = 1;
+    }
+    
+    while (q.size()) {
+      auto [r,c] = q.front();
+      q.pop();
+      for (int i=0; i<4; i++) {
+        int nr = r + dr[i];
+        int nc = c + dc[i];
+        if (nr < 0 || nr >= n) continue;
+        if (nc < 0 || nc >= m) continue;
+        if (a[nr][nc] < a[r][c]) continue;
+        if (check2[nr][nc]) continue;
+        check2[nr][nc] = 1;
+        q.push({nr,nc});
+      }
+    }
+    vvi ans;
     for (int i=0; i<n; i++) {
       for (int j=0; j<m; j++) {
-        if (dp1[i][j]==1 && dp2[i][j]==1) ans.push_back({i,j});
+        if (check1[i][j] && check2[i][j]) ans.push_back({i,j});
       }
     }
+    return ans;
     
-    return ans;    
   }
 };
