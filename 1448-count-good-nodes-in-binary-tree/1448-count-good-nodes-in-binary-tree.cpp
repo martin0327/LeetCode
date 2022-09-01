@@ -12,7 +12,6 @@
 class Solution {
 public:
   int ans = 0;
-  
   void f(TreeNode* node, int lmax) {
     if (!node) return;
     if (node->val >= lmax) ans++;
