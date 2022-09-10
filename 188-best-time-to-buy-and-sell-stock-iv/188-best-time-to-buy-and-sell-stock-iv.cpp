@@ -1,11 +1,8 @@
+template<typename T>
+void chmax(T &x, T y) {x = max(x,y);}
 using vi = vector<int>;
 using vvi = vector<vi>;
 const int inf = 1e9;
-
-template<typename T>
-void chmax(T &x, T y) {
-  x = max(x,y);
-}
 
 class Solution {
 public:
