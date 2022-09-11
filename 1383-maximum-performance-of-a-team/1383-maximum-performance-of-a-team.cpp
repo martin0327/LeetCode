@@ -13,7 +13,7 @@ public:
         vp c(n);
         for (int i=0; i<n; i++) c[i] = {b[i],a[i]};
         sort(c.rbegin(), c.rend());
-        min_pq<ll> pq;
+        min_pq<int> pq;
         ll ans = 0;
         ll s = 0;
         ll min_b = 1e9;
