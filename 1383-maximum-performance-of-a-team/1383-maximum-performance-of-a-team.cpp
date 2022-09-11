@@ -3,7 +3,6 @@ using min_pq = priority_queue<T, vector<T>, greater<T>>;
 using ll = long long;
 using pii = pair<ll,ll>;
 using vp = vector<pii>;
-
 const int mod = 1e9+7;
 void chmin(ll &x, ll y) {x = min(x,y);}
 void chmax(ll &x, ll y) {x = max(x,y);}
