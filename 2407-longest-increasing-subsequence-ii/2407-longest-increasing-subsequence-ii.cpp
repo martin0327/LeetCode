@@ -112,7 +112,7 @@ template <class S, S (*op)(S, S), S (*e)()> struct segtree {
 
 // merge operation and identity function for segtree
 int op(int a, int b) {return max(a, b);}
-int e() {return 0;} 
+int e() {return 0;}
 
 class Solution {
 public:
