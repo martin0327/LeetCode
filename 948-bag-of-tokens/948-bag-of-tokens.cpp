@@ -10,8 +10,7 @@ public:
                 p -= a[l++];
                 ans = max(ans, ++cur);
             }
-            else if (cur > 0) {
-                cur--;
+            else if (cur-- > 0) {
                 p += a[r--];
             }
             else break;
