@@ -14,7 +14,7 @@ public:
                 p += a[r--];
             }
             else break;
-        } 
+        }
         return ans;
     }
 };
