@@ -9,7 +9,7 @@ public:
                 p -= a[l++];
                 ans = max(ans, ++cur);
             }
-            else if (cur-- > 0) p += a[r--];
+            else if (cur--) p += a[r--];
             else break;
         }
         return ans;
