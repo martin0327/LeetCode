@@ -13,7 +13,7 @@ public:
             else if (cur-- > 0) {
                 p += a[r--];
             }
-            else break;
+            else break; 
         }
         return ans;
     }
