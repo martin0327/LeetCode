@@ -4,10 +4,9 @@ public:
         int n = a.size();
         int i = 0;
         while (i < n) {
-            int x = a[i];
             int pos = -1;
             for (int j=0; j<8; j++) {
-                if (!((x>>j)&1)) pos = j;
+                if (!((a[i]>>j)&1)) pos = j;
             }
             if (pos==7) i++;
             else {
