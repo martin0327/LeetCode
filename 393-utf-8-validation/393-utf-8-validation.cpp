@@ -18,7 +18,7 @@ public:
                     ret = false;
                     break;
                 }
-                for (int j=i+1; j<i+1+m; j++) {
+                for (int j=i+1; j<=i+m; j++) {
                     if (j >= n) {
                         ret = false;
                         break;
