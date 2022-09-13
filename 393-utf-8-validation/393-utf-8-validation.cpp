@@ -16,8 +16,7 @@ public:
                 if (m>3 || m==0) return false;
                 for (int j=i+1; j<=i+m; j++) {
                     if (j >= n) return false;
-                    int y = a[j];
-                    ret &= ((y>>7)&1) & (!((y>>6)&1));
+                    if (!((a[j]>>7)&1) || ((a[j]>>6)&1)) return false;
                 }
                 i += m + 1;
             }
