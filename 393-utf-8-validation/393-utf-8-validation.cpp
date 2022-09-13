@@ -1,7 +1,6 @@
 class Solution {
 public:
     bool validUtf8(vector<int>& a) {
-        bool ret = true;
         int n = a.size();
         int i = 0;
         while (i < n) {
@@ -21,6 +20,6 @@ public:
                 i += m + 1;
             }
         }
-        return ret;
+        return true;
     }
 };
