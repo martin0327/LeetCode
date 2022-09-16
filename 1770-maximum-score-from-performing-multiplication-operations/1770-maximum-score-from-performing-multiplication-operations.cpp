@@ -1,10 +1,7 @@
 using vi = vector<int>;
 using vvi = vector<vi>;
-
 class Solution {
-public:
-    
-    
+public:    
     int maximumScore(vector<int>& a, vector<int>& b) {
         int n = b.size();
         int m = a.size();
