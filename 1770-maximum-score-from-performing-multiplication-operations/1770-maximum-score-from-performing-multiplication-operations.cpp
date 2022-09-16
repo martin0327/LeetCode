@@ -2,10 +2,11 @@ using vi = vector<int>;
 using vvi = vector<vi>;
 class Solution {
 public:    
+    int dp[1001][1001];
     int maximumScore(vector<int>& a, vector<int>& b) {
         int n = b.size();
         int m = a.size();
-        vvi dp(n+1, vi(n+1, -1e9));
+        for (int i=0; i<=n; i++) for (int j=0; j<=n; j++) dp[i][j] = -1e9;
         dp[0][0] = 0;
         for (int i=0; i<n; i++) {
             for (int j=0; i+j<n; j++) {
