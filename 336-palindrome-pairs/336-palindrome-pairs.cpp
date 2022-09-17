@@ -261,7 +261,6 @@ std::vector<int> z_algorithm(const std::string& s) {
 using namespace atcoder;
 
 
-
 class Solution {
 public:
   vector<vector<int>> palindromePairs(vector<string>& a) {
