@@ -32,4 +32,4 @@ public:
         g(root,0);
         return root;
     }
-};
+}; 
