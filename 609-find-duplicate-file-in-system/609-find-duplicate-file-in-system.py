@@ -8,4 +8,4 @@ class Solution:
                 f,c = fc.split('(')
                 c = c[:-1]
                 d[c].append(pre + '/' + f)
-        return [x for x in list(d.values()) if len(x) > 1]
+        return [x for x in list(d.values()) if len(x) > 1] 
