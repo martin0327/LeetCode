@@ -4,7 +4,6 @@ public:
   int findLength(vector<int>& a, vector<int>& b) {
     int n = a.size();
     int m = b.size();    
-
     int ans = 0;
     for (int i=1; i<=n; i++) {
       for (int j=1; j<=m; j++) {
