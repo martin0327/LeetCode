@@ -1,9 +1,9 @@
 class Solution {
 public:
+  int dp[1001][1001];
   int findLength(vector<int>& a, vector<int>& b) {
     int n = a.size();
-    int m = b.size();
-    int dp[1001][1001];
+    int m = b.size();    
 
     int ans = 0;
     for (int i=1; i<=n; i++) {
