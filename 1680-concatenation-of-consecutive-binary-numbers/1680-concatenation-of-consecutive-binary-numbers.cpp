@@ -1,15 +1,13 @@
+using ll = long long;
 const int mod = 1e9+7;
 class Solution {
 public:
     int concatenatedBinary(int n) {
-        int prod = 1;
-        int ans = 0;
+        ll prod = 1;
+        ll ans = 0;
         for (int x=n; x>0; x--) {
-            int d = 32 - __builtin_clz(x);
-            for (int i=0; i<d; i++) {
-                if ((x>>i)&1) ans = (ans+prod)%mod;
-                prod = (prod<<1)%mod;
-            }
+            ans = (ans+x*prod)%mod;
+            prod = (prod<<(32 - __builtin_clz(x)))%mod;            
         }
         return ans;
     }
