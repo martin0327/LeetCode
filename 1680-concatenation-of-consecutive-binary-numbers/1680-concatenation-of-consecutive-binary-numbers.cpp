@@ -8,7 +8,7 @@ public:
             int d = 32 - __builtin_clz(x);
             for (int i=0; i<d; i++) {
                 if ((x>>i)&1) ans = (ans+prod)%mod;
-                prod = (2*prod)%mod;
+                prod = (prod<<1)%mod;
             }
         }
         return ans;
