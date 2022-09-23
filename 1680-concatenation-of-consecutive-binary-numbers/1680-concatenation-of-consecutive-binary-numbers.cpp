@@ -1,5 +1,5 @@
 using ll = long long;
-const int mod = 1e9+7;
+const ll mod = 1e9+7;
 class Solution {
 public:
     int concatenatedBinary(int n) {
@@ -11,4 +11,4 @@ public:
         }
         return ans;
     }
-}; 
+};
