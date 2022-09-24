@@ -32,7 +32,6 @@ template <class T> struct fenwick_tree {
 };
 
 using ll = long long;
-using vi = vector<ll>;
 
 class Solution {
 public:
