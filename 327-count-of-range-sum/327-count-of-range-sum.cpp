@@ -1,6 +1,4 @@
 template <class T> struct fenwick_tree {
-  using U = T;
-
   public:
     fenwick_tree() : _n(0) {}
     fenwick_tree(int n) : _n(n), data(n) {}
@@ -9,7 +7,7 @@ template <class T> struct fenwick_tree {
         assert(0 <= p && p < _n);
         p++;
         while (p <= _n) {
-            data[p - 1] += U(x);
+            data[p - 1] += T(x);
             p += p & -p;
         }
     }
@@ -21,10 +19,10 @@ template <class T> struct fenwick_tree {
 
   private:
     int _n;
-    std::vector<U> data;
+    std::vector<T> data;
 
-    U sum(int r) {
-        U s = 0;
+    T sum(int r) {
+        T s = 0;
         while (r > 0) {
             s += data[r - 1];
             r -= r & -r;
