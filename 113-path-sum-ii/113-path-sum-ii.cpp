@@ -12,8 +12,7 @@
 class Solution {
 public:
     vector<vector<int>> ret;
-    int tg;
-    
+    int tg;    
     void f(TreeNode *node, vector<int> &a, int cum) {
         if (!node) return;
         a.push_back(node->val);
