@@ -44,7 +44,7 @@ public:
     bool isFull() {
         return sz==k;
     }
-};    
+};
 
 /**
  * Your MyCircularQueue object will be instantiated and called as such:
