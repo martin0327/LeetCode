@@ -1,10 +1,9 @@
 class MyCircularQueue {
 public:
-    vector<int> a;
+    int a[1000];
     int l = 0, r = 0, k = 0, sz = 0;
     
-    MyCircularQueue(int k) {
-        a.resize(k);    
+    MyCircularQueue(int k) { 
         this->k = k;
     }
     
@@ -45,7 +44,7 @@ public:
     bool isFull() {
         return sz==k;
     }
-};   
+};
 
 /**
  * Your MyCircularQueue object will be instantiated and called as such:
