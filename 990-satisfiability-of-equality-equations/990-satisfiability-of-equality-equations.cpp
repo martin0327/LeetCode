@@ -59,20 +59,21 @@ struct dsu {
 class Solution {
 public:
     bool equationsPossible(vector<string>& equations) {
-        vector<pair<int,int>> a,b;
-        for (auto eq : equations) {
-            int u = eq[0] - 'a';
-            int v = eq[3] - 'a';
-            if (eq[1] == '=') a.push_back({u,v});
-            else b.push_back({u,v});
-        }
         dsu d(26);
-        for (auto [u,v] : a) {
-            d.merge(u,v);
+        for (auto eq : equations) {
+            if (eq[1] == '=') {
+                int u = eq[0] - 'a';
+                int v = eq[3] - 'a';
+                d.merge(u,v);
+            }
         }
-        for (auto [u,v] : b) {
-            if (d.same(u,v)) return false;
+        for (auto eq : equations) {
+            if (eq[1] != '=') {
+                int u = eq[0] - 'a';
+                int v = eq[3] - 'a';
+                if (d.same(u,v)) return false;
+            }
         }
         return true;        
     }
-};               
+};                
