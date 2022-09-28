@@ -60,7 +60,7 @@ public:
           d.merge(u,v);
         }
       }
-      map<int,ll> cnt;
+      map<int,int> cnt;
       for (auto u : a) {
         cnt[d.leader(u)]++;
       }
@@ -70,4 +70,4 @@ public:
     }
     return ans;
   }
-};
+}; 
