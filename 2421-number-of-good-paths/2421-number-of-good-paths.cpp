@@ -62,4 +62,4 @@ public:
     }
     return ans;
   }
-};     
+};
