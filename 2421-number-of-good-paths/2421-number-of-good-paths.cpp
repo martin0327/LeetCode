@@ -46,27 +46,20 @@ public:
       adj[v].push_back(u);
     }
     map<int,vi> mp;
-    for (int i=0; i<n; i++) {
-      mp[vals[i]].push_back(i);
-    }
+    for (int i=0; i<n; i++) mp[vals[i]].push_back(i);
 
     int ans = n;
     dsu d(n);
     for (auto &[val, a] : mp) {
-      for (auto u : a) {
-        for (auto v : adj[u]) {
-          if (vals[v] > vals[u]) continue;
-          d.merge(u,v);
+      for (auto &u : a) {
+        for (auto &v : adj[u]) {
+          if (vals[v] <= vals[u]) d.merge(u,v);
         }
       }
       map<int,int> cnt;
-      for (auto u : a) {
-        cnt[d.leader(u)]++;
-      }
-      for (auto [k,v] : cnt) {
-        ans += v * (v-1) / 2;
-      }
+      for (auto &u : a) cnt[d.leader(u)]++;
+      for (auto &[k,v] : cnt) ans += v * (v-1) / 2;
     }
     return ans;
   }
-}; 
+};  
