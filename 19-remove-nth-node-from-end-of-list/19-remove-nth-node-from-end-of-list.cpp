@@ -23,4 +23,4 @@ public:
         if (cur->next) cur->next = cur->next->next;
         return head;
     }
-};
+}; 
