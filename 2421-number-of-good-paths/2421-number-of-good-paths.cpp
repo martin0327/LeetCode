@@ -34,7 +34,6 @@ struct dsu {
 class Solution {
 public:
   int numberOfGoodPaths(vector<int>& vals, vector<vector<int>>& edges) {
-    using ll = long long;
     using vi = vector<int>;
     using vvi =vector<vi>;
     
@@ -51,7 +50,7 @@ public:
       mp[vals[i]].push_back(i);
     }
 
-    ll ans = n;
+    int ans = n;
     dsu d(n);
     for (auto &[val, a] : mp) {
       for (auto u : a) {
