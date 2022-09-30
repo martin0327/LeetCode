@@ -1,9 +1,10 @@
+using vi = vector<int>;
+using vvi = vector<vi>;
+
 class Solution {
 public:
   vector<vector<int>> getSkyline(vector<vector<int>>& a) {
-    using vi = vector<int>;
-    using vvi = vector<vi>;
-
+    
     map<int, vi> mp;
     for (auto lrh : a) {
       int l = lrh[0];
