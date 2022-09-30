@@ -17,12 +17,8 @@ public:
     vvi ans;
     for (auto &[k,v] : mp) {
       for (auto h : v) {
-        if (h > 0) {
-          ms.insert(h);
-        }
-        else {
-          ms.erase(ms.find(-h));
-        }
+        if (h > 0) ms.insert(h);
+        else ms.erase(ms.find(-h));
       }
       if (ms.empty()) {
         if (ans.empty() || ans.back()[1] != 0) {
