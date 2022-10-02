@@ -1,12 +1,10 @@
 using ll = long long;
-using vi = vector<ll>;
-using vvi = vector<vi>;
-const int mod = 1e9+7;
+const ll mod = 1e9+7;
 
 class Solution {
 public:
+  ll dp[31][1001];
   int numRollsToTarget(int n, int k, int target) {
-    vvi dp(n+1, vi(target+1));
     dp[0][0] = 1;
     for (int i=0; i<n; i++) {
       for (int j=0; j<target; j++) {
