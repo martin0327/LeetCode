@@ -1,18 +1,15 @@
-const string inf = "{}";
-
 class TimeMap {
 public:
-  map<string,set<pair<int,string>>> mp;
+  map<string,map<int,string>> mp;
   TimeMap() {
   }
 
   void set(string key, string v, int t) {
-    mp[key].insert({t,v});
+    mp[key][t] = v;
   }
 
   string get(string key, int t) {
-    pair<int, string> x = {t,inf};
-    auto it = mp[key].upper_bound(x);
+    auto it = mp[key].upper_bound(t);
     if (it == mp[key].begin()) return "";
     else return (*prev(it)).second;
   }
