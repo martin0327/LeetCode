@@ -11,7 +11,7 @@ public:
   string get(string key, int t) {
     auto it = mp[key].upper_bound(t);
     if (it == mp[key].begin()) return "";
-    else return (*prev(it)).second;
+    else return prev(it)->second;
   }
   
 };
