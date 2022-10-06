@@ -1,3 +1,5 @@
+const string inf = "{}";
+
 class TimeMap {
 public:
   map<string,set<pair<int,string>>> mp;
@@ -9,7 +11,7 @@ public:
   }
 
   string get(string key, int t) {
-    pair<int, string> x = {t,"{}"};
+    pair<int, string> x = {t,inf};
     auto it = mp[key].upper_bound(x);
     if (it == mp[key].begin()) return "";
     else return (*prev(it)).second;
