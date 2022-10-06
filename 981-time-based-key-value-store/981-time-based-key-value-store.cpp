@@ -14,7 +14,7 @@ public:
     else return prev(it)->second;
   }
   
-};     
+};      
 
 /**
  * Your TimeMap object will be instantiated and called as such:
