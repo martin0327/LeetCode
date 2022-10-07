@@ -4,6 +4,7 @@ public:
     map<int,int> comp;
     vector<int> inv;
     vector<int> cnt;
+    int ret = 1;
     
     MyCalendarThree() {
         
@@ -25,17 +26,19 @@ public:
         }
         ncnt[comp[s]]++;
         ncnt[comp[e]]--;
-        for (int i=1; i<ncnt.size(); i++) ncnt[i] += ncnt[i-1];
+        ret = max(ret, ncnt[0]);
+        for (int i=1; i<ncnt.size(); i++) {
+            ncnt[i] += ncnt[i-1];
+            ret = max(ret, ncnt[i]);
+        }
         cnt = ncnt;
         
         while (inv.size() < sz) inv.push_back(0);
         for (auto &[k,v] : comp) inv[v] = k;
         
-        int ret = 0;
-        for (auto x : cnt) ret = max(ret, x);
         return ret;
     }
-};
+}; 
 
 /**
  * Your MyCalendarThree object will be instantiated and called as such:
