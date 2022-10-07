@@ -15,6 +15,7 @@ public:
         comp[e] = 0;
         int sz = 0;
         for (auto &[k,v] : comp) v = sz++;
+        
         vector<int> ncnt(sz);
         if (cnt.size()) {
             for (int i=0; i<cnt.size()-1; i++) {
@@ -26,16 +27,13 @@ public:
         }
         ncnt[comp[s]]++;
         ncnt[comp[e]]--;
-        ret = max(ret, ncnt[0]);
-        for (int i=1; i<ncnt.size(); i++) {
-            ncnt[i] += ncnt[i-1];
-            ret = max(ret, ncnt[i]);
-        }
+        for (int i=1; i<ncnt.size(); i++) ncnt[i] += ncnt[i-1];
         cnt = ncnt;
         
         while (inv.size() < sz) inv.push_back(0);
         for (auto &[k,v] : comp) inv[v] = k;
         
+        for (int &x : cnt) ret = max(ret, x);
         return ret;
     }
 }; 
