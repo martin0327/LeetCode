@@ -15,4 +15,4 @@ public:
       else node->next = nullptr;
     }
   }
-};  
+};
