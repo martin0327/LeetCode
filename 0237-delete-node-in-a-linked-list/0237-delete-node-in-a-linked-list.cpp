@@ -12,10 +12,7 @@ public:
     while (node->next) {
       node->val = node->next->val;
       if (node->next->next) node = node->next;
-      else {
-        node->next = nullptr;
-        break;
-      }
+      else node->next = nullptr;
     }
   }
 };  
