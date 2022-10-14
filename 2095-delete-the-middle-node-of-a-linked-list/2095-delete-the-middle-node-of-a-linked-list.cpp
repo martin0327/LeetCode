@@ -19,9 +19,7 @@ public:
     }
     if (n==1) return nullptr;
     cur = head;
-    for (int i=0; i<n/2-1; i++) {
-      cur = cur->next;
-    }
+    for (int i=0; i<n/2-1; i++) cur = cur->next;
     cur->next = cur->next->next;
     return head;
   }
