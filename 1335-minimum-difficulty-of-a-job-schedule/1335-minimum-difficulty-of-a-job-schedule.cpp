@@ -60,11 +60,19 @@ const int inf = 1e9;
 
 class Solution {
 public:
+  int dp[301][301][11];
   int minDifficulty(vector<int>& a, int d) {
     int n = a.size();
     max_spt<int> spt(a);
 
-    Vec<3,int> dp(n+1,n+1,d+1,inf);
+    // Vec<3,int> dp(n+1,n+1,d+1,inf);
+    for (int i=0; i<=n; i++) {
+      for (int j=0; j<=n; j++) {
+        for (int k=0; k<=d; k++) {
+          dp[i][j][k] = inf;
+        }
+      }
+    }
     dp[0][0][0] = 0;
 
     for (int i=0; i<n; i++) {
