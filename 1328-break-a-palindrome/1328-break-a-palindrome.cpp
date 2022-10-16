@@ -12,4 +12,4 @@ public:
       s.back() = 'b';
       return s;
     }
-};
+}; 
