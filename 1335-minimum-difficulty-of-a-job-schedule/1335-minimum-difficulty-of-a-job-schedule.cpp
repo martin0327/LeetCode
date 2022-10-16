@@ -1,17 +1,3 @@
-template<int D, typename T>
-struct Vec : public vector<Vec<D - 1, T>> {
-  static_assert(D >= 1, "Vector dimension must be greater than zero!");
-  template<typename... Args>
-  Vec(int n = 0, Args... args) : vector<Vec<D - 1, T>>(n, Vec<D - 1, T>(args...)) {
-  }
-};
-
-template<typename T>
-struct Vec<1, T> : public vector<T> {
-  Vec(int n = 0, const T& val = T()) : vector<T>(n, val) {
-  }
-};
-
 template<typename T>
 T spt_min(T x, T y) {return min(x,y);}
 
@@ -65,7 +51,6 @@ public:
     int n = a.size();
     max_spt<int> spt(a);
 
-    // Vec<3,int> dp(n+1,n+1,d+1,inf);
     for (int i=0; i<=n; i++) {
       for (int j=0; j<=n; j++) {
         for (int k=0; k<=d; k++) {
