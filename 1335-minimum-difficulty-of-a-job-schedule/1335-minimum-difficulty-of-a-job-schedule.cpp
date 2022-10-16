@@ -51,22 +51,13 @@ public:
     int n = a.size();
     max_spt<int> spt(a);
 
-    for (int i=0; i<=n; i++) {
-      for (int j=0; j<=n; j++) {
-        for (int k=0; k<=d; k++) {
-          dp[i][j][k] = inf;
-        }
-      }
-    }
+    for (int i=0; i<=n; i++) for (int j=0; j<=n; j++) for (int k=0; k<=d; k++) dp[i][j][k] = inf;
     dp[0][0][0] = 0;
 
     for (int i=0; i<n; i++) {
       for (int j=0; j<=n; j++) {
         for (int k=0; k<=d; k++) {
-          int lo = max(0, i-j);
-          if (k+1 <= d) {
-            chmin(dp[i+1][0][k+1], dp[i][j][k] + spt.query(lo,i));
-          } 
+          if (k+1 <= d) chmin(dp[i+1][0][k+1], dp[i][j][k] + spt.query(max(0, i-j),i));
           if (j+1 <= n) chmin(dp[i+1][j+1][k], dp[i][j][k]);
         }
       }
