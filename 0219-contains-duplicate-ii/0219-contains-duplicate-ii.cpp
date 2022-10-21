@@ -4,10 +4,10 @@ public:
     int n = a.size();
     map<int,int> mp;
     k = min(n, k+1);
-    for (int i=0; i<k; i++) if (++mp[a[i]] > 1) return true;
+    for (int i=0; i<k; i++) if (mp[a[i]]++) return true;
     for (int i=k; i<n; i++) {
       mp[a[i-k]]--;
-      if (++mp[a[i]] > 1) return true;
+      if (mp[a[i]]++) return true;
     }
     return false;
   }
