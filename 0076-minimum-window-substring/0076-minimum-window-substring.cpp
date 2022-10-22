@@ -7,7 +7,6 @@ public:
       int sz = mp2.size();
       int i=0, j=0, cnt=0, l=-1, r=-1;;
       int min_len = 1e9;
-      string ans;
       while (i<n) {
         if (cnt<sz && j<n) {
           if (mp2.count(s[j]) && ++mp1[s[j]] == mp2[s[j]]) cnt++;
@@ -25,6 +24,7 @@ public:
           }
         }
       }
+      string ans;
       if (l != -1) ans = s.substr(l,r-l);
       return ans;
     }
