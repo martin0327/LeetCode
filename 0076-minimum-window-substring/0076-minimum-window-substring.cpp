@@ -28,4 +28,4 @@ public:
       if (l != -1) ans = s.substr(l,r-l);
       return ans;
     }
-};   
+};
