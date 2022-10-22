@@ -5,7 +5,7 @@ public:
       map<int,int> mp1, mp2;
       for (auto c : t) mp2[c]++;
       int sz = mp2.size();
-      int i=0, j=0, cnt=0, ii=-1, jj=-1;;
+      int i=0, j=0, cnt=0, l=-1, r=-1;;
       int min_len = 1e9;
       string ans;
       while (i<n) {
@@ -20,12 +20,12 @@ public:
         if (cnt==sz) {
           if (j-i < min_len) {
             min_len = j-i;
-            ii = i;
-            jj = j;
+            l = i;
+            r = j;
           }
         }
       }
-      if (ii != -1) ans = s.substr(ii,jj-ii);
+      if (l != -1) ans = s.substr(l,r-l);
       return ans;
     }
-};  
+};   
