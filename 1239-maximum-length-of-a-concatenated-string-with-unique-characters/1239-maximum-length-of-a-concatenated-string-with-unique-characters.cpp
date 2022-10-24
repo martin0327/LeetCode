@@ -4,13 +4,17 @@ public:
     int n = a.size();
     int ret = 0;
     for (int mask=0; mask<(1<<n); mask++) {
-      vector<char> cnt(26);
+      int cnt = 0;
       bool ok = true;
       int s = 0;
       for (int i=0; i<n; i++) {
         if (!ok) break;
         if (mask>>i&1) {
-          for (auto c : a[i]) if (cnt[c - 'a']++) ok = false;
+          for (auto c : a[i]) {
+            int x = c-'a';
+            if (cnt>>x&1) ok = false;
+            else cnt |= 1<<x;
+          }
           s += a[i].size();
         }
       }      
