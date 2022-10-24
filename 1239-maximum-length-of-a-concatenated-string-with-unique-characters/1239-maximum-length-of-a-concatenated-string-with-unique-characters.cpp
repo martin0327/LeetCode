@@ -13,7 +13,10 @@ public:
         if (mask>>i&1) {
           for (auto c : a[i]) {
             int x = c-'a';
-            if (cnt>>x&1) ok = false;
+            if (cnt>>x&1) {
+              ok = false;
+              break;
+            }
             else cnt |= 1<<x;
           }
           s += a[i].size();
@@ -23,4 +26,4 @@ public:
     }
     return ret;
   }
-};      
+};
