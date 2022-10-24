@@ -3,8 +3,9 @@ public:
   int maxLength(vector<string>& a) {
     int n = a.size();
     int ret = 0;
+    int cnt = 0;
     for (int mask=0; mask<(1<<n); mask++) {
-      int cnt = 0;
+      cnt = 0;
       bool ok = true;
       int s = 0;
       for (int i=0; i<n; i++) {
