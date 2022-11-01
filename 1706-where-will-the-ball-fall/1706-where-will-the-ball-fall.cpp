@@ -7,23 +7,15 @@ public:
     for (int k=0; k<m; k++) {
       int p = k;
       for (int i=0; i<n; i++) {
-        if (a[i][p] == 1) {
-          if (p < m-1 && a[i][p+1] == 1) p++;
-          else {
-            p = -1;
-            break;
-          }
-        }
+        int d = a[i][p];
+        if (0 <= p+d && p+d < m && d+a[i][p+d]) p += d;
         else {
-          if (p > 0 && a[i][p-1] == -1) p--;
-          else {
-            p = -1;
-            break;
-          }
+          p = -1; 
+          break;
         }
       }
       ret[k] = p;
     }
     return ret;
   }
-};     
+};
