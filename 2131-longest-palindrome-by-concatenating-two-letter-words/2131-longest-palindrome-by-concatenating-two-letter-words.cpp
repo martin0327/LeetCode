@@ -16,7 +16,7 @@ public:
       string s = "aa";
       s[0] += i;
       s[1] += i;
-      if (mp[s] > 0) {
+      if (mp.count(s) && mp[s] > 0) {
         ans += 2;
         break;
       }
