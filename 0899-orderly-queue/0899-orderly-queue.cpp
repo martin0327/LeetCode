@@ -1,6 +1,3 @@
-using vi = vector<int>;
-using vvi = vector<vi>;
-
 class Solution {
 public:
   string orderlyQueue(string s, int k) {
