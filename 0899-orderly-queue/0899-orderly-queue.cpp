@@ -17,6 +17,5 @@ public:
       ans = min(ans, s);
     }
     return ans;
-    
   }
-};
+}; 
