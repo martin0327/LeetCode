@@ -4,9 +4,9 @@ public:
     int d = abs('a' - 'A');
     string ret;
     for (auto c : s) {
-      if (ret.empty() || abs(ret.back() - c) != d) ret.push_back(c);
-      else ret.pop_back();
+      if (ret.size() && abs(ret.back() - c) == d) ret.pop_back();
+      else ret.push_back(c);
     }
     return ret;
   }
-};
+}; 
