@@ -165,7 +165,7 @@ public:
         seg.set(price,idx);
         return idx++ - seg.prod(price+1,sz+1);
     }
-};                             
+};                               
 
 /**
  * Your StockSpanner object will be instantiated and called as such:
