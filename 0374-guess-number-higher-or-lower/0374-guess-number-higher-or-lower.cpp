@@ -10,8 +10,7 @@
 class Solution {
 public:
     int guessNumber(int n) {
-        int lo = 1;
-        int hi = n;
+        int lo = 1, hi = n;
         while (lo <= hi) {
             int mid = lo + (hi-lo)/2;
             int x = guess(mid);
@@ -21,4 +20,4 @@ public:
         }
         return -1;
     }
-};  
+};
