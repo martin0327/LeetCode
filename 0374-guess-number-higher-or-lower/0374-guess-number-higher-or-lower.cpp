@@ -21,4 +21,4 @@ public:
         }
         return -1;
     }
-}; 
+};  
