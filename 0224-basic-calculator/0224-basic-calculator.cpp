@@ -21,11 +21,8 @@ public:
     for (auto c : s) {
       if (c == ' ') continue;
       if (is_num(c)) {
-        if (a.empty()) a.push_back(string(1,c));
-        else {
-          if (is_num(a.back())) a.back() += c;
-          else a.push_back(string(1,c));
-        }
+        if (a.empty() || !is_num(a.back())) a.push_back(string(1,c));
+        else a.back() += c;
       }
       else a.push_back(string(1,c));
     }
@@ -36,19 +33,13 @@ public:
 
     for (int i=0; i<n; i++) {
       if (a[i] == "(") {
-        if (i > 0 && a[i-1] == "-") {
-          st.push_back({i+1,1});
-        }
-        else {
-          st.push_back({i+1,0});
-        }
+        if (i > 0 && a[i-1] == "-") st.push_back({i+1,1});
+        else st.push_back({i+1,0});
       }
       if (a[i] == ")") {
-        if (st.size()) {
-          auto [l,neg] = st.back();
-          st.pop_back();
-          if (neg) b.push_back({l,i-1});
-        }
+        auto [l,neg] = st.back();
+        st.pop_back();
+        if (neg) b.push_back({l,i-1});
       }
       if (i > 0 && is_num(a[i]) && a[i-1]=="-") b.push_back({i,i});
     }
@@ -63,11 +54,10 @@ public:
     int ans = 0;
     for (int i=0; i<n; i++) {
       if (is_num(a[i])) {
-        if (sign[i]) ans -= stoll(a[i]);
-        else ans += stoll(a[i]);
+        if (sign[i]) ans -= stoi(a[i]);
+        else ans += stoi(a[i]);
       }
     }
-    return ans;
-    
+    return ans;    
   }
 };
