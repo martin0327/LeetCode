@@ -13,11 +13,9 @@ public:
     ll ans = 0;
     for (auto [x,i] : b) {
       auto it = s.lower_bound(i);
-      int l,r;
-      if (it==s.end()) r = n;
-      else r = *it;
-      if (it==s.begin()) l = -1;
-      else l = *prev(it);
+      int l = -1, r = n;
+      if (it!=s.end()) r = *it;
+      if (it!=s.begin()) l = *prev(it);
       ans += x * (r-i) * (i-l);
       ans %= mod;
       s.insert(i);
