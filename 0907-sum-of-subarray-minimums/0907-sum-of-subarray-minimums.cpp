@@ -1,6 +1,6 @@
 using ll = long long;
 using pii = pair<ll,ll>;
-const int mod = 1e9+7;
+const ll mod = 1e9+7;
 
 class Solution {
 public:
@@ -24,4 +24,4 @@ public:
     }
     return ans;
   }
-};
+}; 
