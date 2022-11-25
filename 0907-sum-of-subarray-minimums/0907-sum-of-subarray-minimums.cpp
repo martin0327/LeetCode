@@ -9,17 +9,16 @@ public:
     vector<pii> b(n);
     for (int i=0; i<n; i++) b[i] = {a[i],i};
     sort(b.begin(), b.end());
-    set<int> s;
+    set<int> s = {-1, n};
     ll ans = 0;
     for (auto [x,i] : b) {
       auto it = s.lower_bound(i);
-      int l = -1, r = n;
-      if (it!=s.end()) r = *it;
-      if (it!=s.begin()) l = *prev(it);
+      ll r = *it;
+      ll l = *prev(it);
       ans += x * (r-i) * (i-l);
       ans %= mod;
       s.insert(i);
     }
     return ans;
   }
-}; 
+};
