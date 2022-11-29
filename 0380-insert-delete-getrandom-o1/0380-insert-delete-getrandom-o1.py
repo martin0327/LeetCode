@@ -19,7 +19,7 @@ class RandomizedSet:
         
 
     def getRandom(self) -> int:
-        return random.sample(self.s, 1)[0]          
+        return random.sample(self.s, 1)[0]            
         
 
 
