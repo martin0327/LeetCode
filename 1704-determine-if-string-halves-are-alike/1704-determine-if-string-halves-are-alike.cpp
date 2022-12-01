@@ -9,4 +9,4 @@ public:
     for (int i=n/2; i<n; i++) if (sc.count(s[i])) y++;
     return x==y;
   }
-};
+};  
