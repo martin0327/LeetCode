@@ -1,6 +1,7 @@
 class Solution {
 public:
     bool closeStrings(string s, string t) {
+        if (s.size() != t.size()) return false;
         vector<int> cnt1(26), cnt2(26);
         for (auto c : s) cnt1[c-'a']++;
         for (auto c : t) cnt2[c-'a']++;
