@@ -4,7 +4,7 @@ class Solution {
 public:
     int minimumAverageDifference(vector<int>& a) {
         int n = a.size();
-        vi pre(n+2);
+        vi pre(n+1);
         for (int i=1; i<=n; i++) pre[i] = pre[i-1] + a[i-1];
         ll ans = -1, mn = 1e18;
         for (int i=1; i<=n; i++) {
@@ -17,4 +17,4 @@ public:
         }
         return ans;
     }
-};
+}; 
