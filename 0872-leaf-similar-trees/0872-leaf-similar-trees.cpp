@@ -17,10 +17,10 @@ public:
         f(node->left,a);
         f(node->right,a);
     }
-    bool leafSimilar(TreeNode* root1, TreeNode* root2) {
+    bool leafSimilar(TreeNode* x, TreeNode* y) {
         vector<int> a,b;
-        f(root1,a);
-        f(root2,b);
+        f(x,a);
+        f(y,b);
         return a==b;
     }
 };
