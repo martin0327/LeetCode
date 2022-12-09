@@ -12,22 +12,18 @@
 class Solution {
 public:
   int ans = 0;
-  vector<int> f(TreeNode *node) {
-    if (!node) return {};
-    int x = node->val;
-    vector<int> ret = {x};
-    for (auto y : f(node->left)) {
-      ans = max(ans, abs(x-y));
-      ret.push_back(y);
-    }
-    for (auto y : f(node->right)) {
-      ans = max(ans, abs(x-y));
-      ret.push_back(y);
-    }
-    return ret;
+  
+  void f(TreeNode *node, int cmin, int cmax) {
+    if (!node) return;
+    cmin = min(cmin, node->val);
+    cmax = max(cmax, node->val);
+    ans = max(ans, max(abs(cmin-node->val), abs(cmax-node->val)));
+    f(node->left, cmin, cmax);
+    f(node->right, cmin, cmax);
   }
+
   int maxAncestorDiff(TreeNode* root) {
-    f(root);
+    f(root, 1e9, 0);
     return ans;
-  }
+  }    
 };
