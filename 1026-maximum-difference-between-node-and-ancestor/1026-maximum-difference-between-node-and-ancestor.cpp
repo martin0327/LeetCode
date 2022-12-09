@@ -18,13 +18,13 @@ public:
     int x = node->val;
     cmin = min(cmin, x);
     cmax = max(cmax, x);
-    ans = max({ans, abs(cmin-x), abs(cmax-x)});
+    ans = max(ans, cmax-cmin);
     f(node->left, cmin, cmax);
     f(node->right, cmin, cmax);
   }
 
   int maxAncestorDiff(TreeNode* root) {
-    f(root, 1e9, 0);
+    f(root, 1e5, 0);
     return ans;
   }    
-};  
+};
