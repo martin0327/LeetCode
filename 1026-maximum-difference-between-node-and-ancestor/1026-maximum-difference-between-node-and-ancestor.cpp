@@ -15,9 +15,8 @@ public:
   
   void f(TreeNode *node, int cmin, int cmax) {
     if (!node) return;
-    int x = node->val;
-    cmin = min(cmin, x);
-    cmax = max(cmax, x);
+    cmin = min(cmin, node->val);
+    cmax = max(cmax, node->val);
     ans = max(ans, cmax-cmin);
     f(node->left, cmin, cmax);
     f(node->right, cmin, cmax);
