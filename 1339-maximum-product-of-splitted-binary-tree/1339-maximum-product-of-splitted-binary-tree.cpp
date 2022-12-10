@@ -14,22 +14,20 @@ public:
     using ll = long long;
     const int mod = 1e9+7;
     
-    set<int> s = {0, mod};
+    vector<int> a;
     int f(TreeNode* node) {
         if (!node) return 0;
         int ret = node->val;
         ret += f(node->left);
         ret += f(node->right);
-        s.insert(ret);
+        a.push_back(ret);
         return ret;
     }
     
     int maxProduct(TreeNode* root) {
-        int x = f(root);
-        auto it = s.lower_bound(x/2);
-        ll y = *it, z = *prev(it);
-        if (abs(y-x/2) <= abs(z-x/2)) z = y;
-        ll ret = z * (x-z);
+        ll x = f(root);        
+        ll ret = 0;
+        for (auto &y : a) ret = max(ret, y*(x-y));
         return ret % mod;
     }
 };    
