@@ -13,6 +13,7 @@ class Solution {
 public:
     using ll = long long;
     const int mod = 1e9+7;
+    
     set<int> s = {0, mod};
     int f(TreeNode* node) {
         if (!node) return 0;
@@ -22,6 +23,7 @@ public:
         s.insert(ret);
         return ret;
     }
+    
     int maxProduct(TreeNode* root) {
         int x = f(root);
         auto it = s.lower_bound(x/2);
@@ -30,4 +32,4 @@ public:
         ll ret = z * (x-z);
         return ret % mod;
     }
-}; 
+};
