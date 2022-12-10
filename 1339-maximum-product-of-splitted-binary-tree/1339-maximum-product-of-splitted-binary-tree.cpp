@@ -11,6 +11,7 @@
  */
 class Solution {
 public:
+    using ll = long long;
     const int mod = 1e9+7;
     set<int> s = {0, mod};
     int f(TreeNode* node) {
@@ -24,9 +25,9 @@ public:
     int maxProduct(TreeNode* root) {
         int x = f(root);
         auto it = s.lower_bound(x/2);
-        int y = *it, z = *prev(it);
+        ll y = *it, z = *prev(it);
         if (abs(y-x/2) <= abs(z-x/2)) z = y;
-        long long ret = (long long) z * (x-z);
+        ll ret = z * (x-z);
         return ret % mod;
     }
 };
