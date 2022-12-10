@@ -30,4 +30,4 @@ public:
         for (auto &y : a) ret = max(ret, y*(x-y));
         return ret % mod;
     }
-}; 
+};  
