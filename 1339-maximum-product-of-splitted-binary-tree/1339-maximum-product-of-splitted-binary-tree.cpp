@@ -32,4 +32,4 @@ public:
         ll ret = z * (x-z);
         return ret % mod;
     }
-}; 
+};  
