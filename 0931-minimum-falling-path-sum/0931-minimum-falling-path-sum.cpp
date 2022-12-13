@@ -7,7 +7,7 @@ public:
   int minFallingPathSum(vector<vector<int>>& a) {
     int n = a.size();
     vvi dp(n, vi(n, inf));
-    for (int j=0; j<n; j++) dp[0][j] = a[0][j];
+    dp[0] = a[0];
     for (int i=0; i<n-1; i++) {
       for (int j=0; j<n; j++) {
         for (int k=-1; k<=1; k++) {
