@@ -75,4 +75,4 @@ public:
         }
         return d.size(0) == n;
     }
-};
+}; 
