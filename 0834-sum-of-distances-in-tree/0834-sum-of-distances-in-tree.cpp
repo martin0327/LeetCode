@@ -23,8 +23,8 @@ public:
   }
 
   void g(int u, int p) {
-    ans[u] = a[u].first;
     auto [x,y] = a[u];
+    ans[u] = x;
     for (auto v : adj[u]) {
       if (v==p) continue;
       auto &[z,w] = a[v];
