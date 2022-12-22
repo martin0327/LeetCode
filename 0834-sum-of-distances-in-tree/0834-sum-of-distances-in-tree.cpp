@@ -12,12 +12,12 @@ public:
   
   pii f(int u, int p) {
     int x = 0;
-    int y = 0;
+    int y = 1;
     for (auto v : adj[u]) {
       if (v==p) continue;
       auto [z,w] = f(v,u);
-      x += z + w + 1;
-      y += w + 1;
+      x += z + w;
+      y += w;
     }
     return a[u] = {x,y};
   }
@@ -28,7 +28,7 @@ public:
     for (auto v : adj[u]) {
       if (v==p) continue;
       auto &[z,w] = a[v];
-      z += x - (z+w+1) + (n-w-1);
+      z += x - (z+w) + (n-w);
       g(v,u);
     }
   }
@@ -45,6 +45,7 @@ public:
       adj[u].push_back(v);
       adj[v].push_back(u);
     }
+    
     f(0,-1);
     g(0,-1);
     return ans;
