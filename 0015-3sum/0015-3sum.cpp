@@ -1,6 +1,3 @@
-template <typename T>
-using uset = unordered_set<T>;
-using pii = pair<int,int>;
 using vi = vector<int>;
 using vvi = vector<vi>;
 using ti3 = tuple<int,int,int>;
@@ -24,4 +21,4 @@ public:
         for (auto [x,y,z] : ans) ret.push_back({x,y,z});        
         return ret;
     }
-};
+}; 
