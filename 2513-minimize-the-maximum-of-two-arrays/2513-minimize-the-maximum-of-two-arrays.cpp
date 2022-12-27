@@ -14,9 +14,8 @@ public:
             ll ab = m / lcm(d1,d2);
             
             ll temp1 = max(cnt1 - (b - ab), 0ll);
-            ll temp2 = max(cnt2 - (a - ab), 0ll);
-            temp1 = max(temp1, 0ll);
-            temp2 = max(temp2, 0ll);
+            ll temp2 = max(cnt2 - (a - ab), 0ll); 
+            
             if (temp1 + temp2 <= m - (a+b-ab)) {
                 ans = m;
                 hi = m - 1;
