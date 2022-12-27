@@ -9,15 +9,10 @@ public:
         int i = 0, j = 0;
         for (auto c : s) {
             a[i][j] = c;
-            if (j % (k-1) == 0) {
-                if (i == k-1) {
-                    i--; j++;
-                }
-                else i++;
-            }
-            else {
+            if (j % (k-1) || i == k-1) {
                 i--; j++;
             }
+            else i++;
         }
         string ans;
         for (int i=0; i<k; i++) {
