@@ -21,9 +21,7 @@ public:
     vvi dp(n*m, vi(1<<(n*m)));
     dp[s][1<<s] = 1;
     queue<pii> q;
-    vvi check(n*m, vi(1<<(n*m)));
     q.emplace(s,1<<s);
-    check[s][1<<s] = 1;
 
     vi dr = {0,-1,0,1};
     vi dc = {1,0,-1,0};
