@@ -1,6 +1,8 @@
 using pii = pair<int,int>;
 using vi = vector<int>;
 using vvi = vector<vi>;
+const vi dr = {0,-1,0,1};
+const vi dc = {1,0,-1,0};
 
 class Solution {
 public:
@@ -22,9 +24,6 @@ public:
     dp[s][1<<s] = 1;
     queue<pii> q;
     q.emplace(s,1<<s);
-
-    vi dr = {0,-1,0,1};
-    vi dc = {1,0,-1,0};
 
     while (q.size()) {
       auto [u,mask] = q.front();
