@@ -31,8 +31,7 @@ public:
     while (q.size()) {
       auto [u,mask] = q.front();
       q.pop();
-      int r = u / m;
-      int c = u % m;
+      int r = u/m, c = u%m;
       for (int i=0; i<4; i++) {
         int nr = r + dr[i];
         int nc = c + dc[i];
