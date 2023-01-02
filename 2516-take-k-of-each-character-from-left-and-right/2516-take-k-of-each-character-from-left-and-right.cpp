@@ -7,9 +7,8 @@ public:
     int n = s.size();
     vvi pre(n+1, vi(3));
     for (int i=0; i<n; i++) {
-      int x = s[i] - 'a';
       pre[i+1] = pre[i];
-      pre[i+1][x]++;
+      pre[i+1][s[i]-'a']++;
     }
 
     int ans = -1;
@@ -22,7 +21,10 @@ public:
         for (int j=0; j<3; j++) {
           flag &= (pre[i][j] + pre[n][j] - pre[n-mid+i][j] >= k);
         }
-        ok |= flag;
+        if (flag) {
+          ok = true;
+          break;
+        }
       }
       if (ok) {
         ans = mid;
