@@ -16,10 +16,11 @@ public:
       int sz = adj[i].size();
       if (sz&1) odd.push_back(i);
     }
-    int sz = odd.size();
-    if (sz==0) return true;
-    if (sz&1 || sz > 4) return false;
-    if (sz == 2) {
+    
+    int m = odd.size();
+    if (m==0) return true;
+    if (m&1 || m > 4) return false;
+    if (m == 2) {
       int u = odd[0];
       int v = odd[1];
       if (!adj[u].count(v)) return true;
@@ -29,10 +30,10 @@ public:
       return false;
     }
     
-    if (sz == 4) {
+    if (m == 4) {
       for (int mask=0; mask<16; mask++) {
         vi a, b;
-        for (int i=0; i<sz; i++) {
+        for (int i=0; i<m; i++) {
           if (mask>>i&1) a.push_back(odd[i]);
           else b.push_back(odd[i]);
         }
