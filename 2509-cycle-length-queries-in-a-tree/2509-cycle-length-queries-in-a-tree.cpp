@@ -15,15 +15,14 @@ public:
           t >>= 1;
           x++;
         }
-      }
-      
-      {
-        int t = v;
+        
+        t = v;
         while (t) {
           t >>= 1;
           y++;
         }
       }
+      
       int cnt = y - x;
       while (y > x) {
         y--;
