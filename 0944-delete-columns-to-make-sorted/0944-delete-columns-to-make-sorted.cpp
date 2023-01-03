@@ -5,14 +5,12 @@ public:
     int m = a[0].size();
     int ans = 0;
     for (int j=0; j<m; j++) {
-      int d = 0;
       for (int i=1; i<n; i++) {
         if (a[i][j] < a[i-1][j]) {
-          d = 1;
+          ans++;
           break;
         }
       }
-      ans += d;
     }
     return ans;
   }
