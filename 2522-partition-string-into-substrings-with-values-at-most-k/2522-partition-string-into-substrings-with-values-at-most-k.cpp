@@ -9,7 +9,7 @@ public:
             }
         }
         ll cur = 0;
-        ll cnt = 0;
+        ll cnt = 1;
         for (int i=0; i<n; i++) {
             int x = s[i] - '0';
             if (cur*10 + x > k) {
@@ -18,7 +18,6 @@ public:
             }
             else cur = cur*10 + x; 
         }
-        if (cur) cnt++;
         return cnt;
     }
 };
