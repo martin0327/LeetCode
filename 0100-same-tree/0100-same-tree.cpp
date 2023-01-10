@@ -19,4 +19,4 @@ public:
     ret &= isSameTree(p->right, q->right);
     return ret;    
   }
-};   
+};     
