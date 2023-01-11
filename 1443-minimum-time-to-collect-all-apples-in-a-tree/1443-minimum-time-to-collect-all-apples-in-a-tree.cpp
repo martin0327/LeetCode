@@ -6,16 +6,17 @@ public:
   int n;
   vvi adj;
   vector<bool> a;
-  pii f(int u, int p) {
-    int x = 0, y = 0;
+  int ans = 0;
+  bool f(int u, int p) {
+    bool ret = false;
     for (auto v : adj[u]) {
       if (v==p) continue;
-      auto [dx, dy] = f(v,u);
-      if (dy) x += 2;
-      y |= dy;
-      x += dx;
+      if (f(v,u)) {
+        ans += 2;
+        ret = true;
+      }
     }
-    return {x,y|a[u]};
+    return ret | a[u];
   }
   int minTime(int _n, vector<vector<int>>& edges, vector<bool>& hasApple) {
     n = _n;
@@ -27,6 +28,7 @@ public:
       adj[u].push_back(v);
       adj[v].push_back(u);
     }
-    return f(0,-1).first;
+    f(0,-1);
+    return ans;
   }
 };
