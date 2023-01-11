@@ -1,4 +1,3 @@
-using pii = pair<int,int>;
 using vi = vector<int>;
 using vvi = vector<vi>;
 class Solution {
@@ -8,7 +7,7 @@ public:
   vector<bool> a;
   int ans = 0;
   bool f(int u, int p) {
-    bool ret = false;
+    bool ret = a[u];
     for (auto v : adj[u]) {
       if (v==p) continue;
       if (f(v,u)) {
@@ -16,7 +15,7 @@ public:
         ret = true;
       }
     }
-    return ret | a[u];
+    return ret;
   }
   int minTime(int _n, vector<vector<int>>& edges, vector<bool>& hasApple) {
     n = _n;
