@@ -1,14 +1,10 @@
 class Solution:
     def countKDifference(self, a: List[int], k: int) -> int:
-        d = dict()
-        ans = 0
+        cnt = [0 for i in range(101)] 
+        ans = 0 
         for x in a:
-          if k + x in d:
-            ans += d[k+x]
-          if x - k in d:
-            ans += d[x-k]
-          if x in d:
-            d[x] += 1
-          else:
-            d[x] = 1
+          if x+k <= 100: ans += cnt[k+x]
+          if x-k > 0: ans += cnt[x-k]
+          cnt[x] += 1
         return ans
+      
