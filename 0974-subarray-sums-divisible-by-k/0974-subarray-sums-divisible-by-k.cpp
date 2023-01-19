@@ -6,10 +6,7 @@ public:
         for (int i=1; i<=n; i++) pre[i] = pre[i-1] + a[i-1];
         int ans = 0;
         map<int,int> mp;
-        for (int x : pre) {
-            int y = ((x%k)+k)%k;
-            ans += mp[y]++;
-        }
+        for (int x : pre) ans += mp[((x%k)+k)%k]++;
         return ans;
     }
 };
