@@ -1,9 +1,3 @@
 class Solution:
     def subarraysDivByK(self, a: List[int], k: int) -> int:
-        pr = accumulate([0] + a)
-        dd = defaultdict(int)
-        ans = 0
-        for x in pr:
-            ans += dd[x%k]
-            dd[x%k] += 1
-        return ans
+        return sum(y*(y-1)//2 for y in Counter(x%k for x in accumulate([0] + a)).values())
