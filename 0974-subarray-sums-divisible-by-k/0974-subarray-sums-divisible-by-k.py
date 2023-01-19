@@ -4,7 +4,6 @@ class Solution:
         dd = defaultdict(int)
         ans = 0
         for x in pr:
-            y = ((x%k)+k)%k
-            ans += dd[y]
-            dd[y] += 1
+            ans += dd[x%k]
+            dd[x%k] += 1
         return ans
