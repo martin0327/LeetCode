@@ -16,7 +16,8 @@ public:
             for (auto x : a) {
                 if (x.front()=='0' && x.size()>1) ok = false;
                 if (stoll(x) > 255) ok = false;
-                if (ok) t += x + '.';                
+                if (ok) t += x + '.';   
+                else break;
             }
             if (ok) {
                 t.pop_back();
