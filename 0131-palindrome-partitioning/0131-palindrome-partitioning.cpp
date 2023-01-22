@@ -14,7 +14,7 @@ public:
             for (auto x : a) {
                 string y = x;
                 reverse(y.begin(), y.end());
-                if (x!=y) ok = false;
+                ok &= (x==y);
             }
             if (ok) ret.push_back(a);
         }
