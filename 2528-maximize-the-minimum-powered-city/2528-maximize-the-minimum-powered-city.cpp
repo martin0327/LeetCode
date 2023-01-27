@@ -37,7 +37,7 @@ class Solution {
 public:
   long long maxPower(vector<int>& a, int r, int k) {
     ll n = a.size();    
-    ll lo = 0, hi = 1e12, ans = -1;
+    ll lo = 0, hi = 2e10, ans = -1;
 
     while (lo <= hi) {
       ll mid = (lo + hi) / 2;
@@ -61,4 +61,4 @@ public:
     }
     return ans;
   }
-};
+};  
