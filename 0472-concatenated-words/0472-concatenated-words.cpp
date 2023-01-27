@@ -10,8 +10,7 @@ public:
     for (int i=1; i<n; i++) {
       if (ss.count(s.substr(0,i))) {
         string t = s.substr(i,n-i);
-        ret |= f(s.substr(i,n-i));
-        ret |= ss.count(t);
+        if (ret |= ss.count(t) | f(t)) break;
       }
     }
     return mp[s] = ret;
