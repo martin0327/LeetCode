@@ -23,11 +23,12 @@ public:
 
     for (auto t : d) {
       auto [y,x,i] = t;
-      if (s1.count({x,y,i})) {
-        s1.erase({x,y,i});
+      ti3 u = {x,y,i};
+      if (s1.count(u)) {
+        s1.erase(u);
         s -= x;
       }
-      if (s2.count({x,y,i})) s2.erase({x,y,i});
+      if (s2.count(u)) s2.erase(u);
       while (s1.size() < k-1 && s2.size()) {
         auto [x,y,i] = *prev(s2.end());
         s2.erase({x,y,i});
