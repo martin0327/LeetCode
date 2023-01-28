@@ -1,42 +1,26 @@
+template<typename T> using min_pq = priority_queue<T, vector<T>, greater<T>>;
 using ll = long long;
-using ti3 = tuple<ll,ll,ll>;
+using pii = pair<ll,ll>;
+using vp = vector<pii>;
 
 class Solution {
 public:
   long long maxScore(vector<int>& a, vector<int>& b, int k) {
-
     ll n = a.size();
-    set<ti3> s1, s2;
-    vector<ti3> c(n), d(n);
-    for (int i=0; i<n; i++) {
-      c[i] = {a[i],b[i],i};
-      d[i] = {b[i],a[i],i};
-    }
+    vp c(n);
+    for (int i=0; i<n; i++) c[i] = {b[i], a[i]};
     sort(c.rbegin(), c.rend());
-    for (int i=0; i<k-1; i++) s1.insert(c[i]);
-    for (int i=k-1; i<n; i++) s2.insert(c[i]);
     ll ans = 0;
-    sort(d.begin(), d.end());
-
     ll s = 0;
-    for (auto [x,y,i] : s1) s += x;
-
-    for (auto t : d) {
-      auto [y,x,i] = t;
-      ti3 u = {x,y,i};
-      if (s1.count(u)) {
-        s1.erase(u);
-        s -= x;
+    min_pq<ll> pq;
+    for (auto [y,x] : c) {
+      pq.push(x);
+      s += x;
+      if (pq.size() > k) {
+        s -= pq.top();
+        pq.pop();
       }
-      if (s2.count(u)) s2.erase(u);
-      while (s1.size() < k-1 && s2.size()) {
-        auto [x,y,i] = *prev(s2.end());
-        s2.erase({x,y,i});
-        s1.insert({x,y,i});
-        s += x;
-      }
-      if (s1.size() == k-1) ans = max(ans, y*(s+x));
-      else break;
+      if (pq.size() == k) ans = max(ans, s * y);
     }
     return ans;
   }
