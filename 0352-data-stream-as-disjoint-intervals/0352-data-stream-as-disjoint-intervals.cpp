@@ -3,7 +3,6 @@ using pii = pair<int,int>;
 
 class SummaryRanges {
 public:
-  
 
   set<pii> s = {{-inf,-inf}, {inf,inf}};
   
@@ -32,9 +31,7 @@ public:
       s.erase(it1);
       s.insert({l1,x});
     }
-    else {
-      s.insert({x,x});
-    }
+    else s.insert({x,x});
   }
 
   vector<vector<int>> getIntervals() {
