@@ -30,7 +30,7 @@ public:
             s.insert({f+1,rec++,key});
         }
         else {
-            if (mp.size() == cap && cap) {
+            if (mp.size() == cap) {
                 auto [f,r,k] = *s.begin();
                 s.erase(s.begin());
                 mp.erase(k);
