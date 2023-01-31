@@ -19,8 +19,8 @@ public:
     vvi dp(n+1, vi(sz));
     for (int i=0; i<n; i++) {
       auto [y,z,x] = c[i];
+      dp[i+1] = dp[i];
       for (int j=0; j<sz; j++) {
-        chmax(dp[i+1][j], dp[i][j]);
         if (z >= j) chmax(dp[i+1][z],dp[i][j] + x);
       }
     }
