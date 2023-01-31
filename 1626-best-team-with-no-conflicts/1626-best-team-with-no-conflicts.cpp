@@ -16,7 +16,6 @@ public:
     for (int i=0; i<n; i++) c[i] = {b[i], mp[a[i]], a[i]};
     sort(c.begin(), c.end());
 
-    const int inf = 1e9;
     vvi dp(n+1, vi(sz));
     for (int i=0; i<n; i++) {
       auto [y,z,x] = c[i];
@@ -25,8 +24,7 @@ public:
         if (z >= j) chmax(dp[i+1][z],dp[i][j] + x);
       }
     }
-    int ans = -inf;
-    for (int j=0; j<sz; j++) chmax(ans,dp[n][j]);
+    int ans = *max_element(dp[n].begin(), dp[n].end());
     return ans;
   }     
 };
