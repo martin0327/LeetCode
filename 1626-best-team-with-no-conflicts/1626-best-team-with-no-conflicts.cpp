@@ -17,8 +17,7 @@ public:
     sort(c.begin(), c.end());
 
     const int inf = 1e9;
-    vvi dp(n+1, vi(sz, -inf));
-    dp[0][0] = 0;
+    vvi dp(n+1, vi(sz));
     for (int i=0; i<n; i++) {
       auto [y,z,x] = c[i];
       for (int j=0; j<sz; j++) {
