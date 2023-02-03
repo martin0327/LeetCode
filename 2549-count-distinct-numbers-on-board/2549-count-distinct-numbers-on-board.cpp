@@ -1,6 +1,7 @@
 class Solution {
 public:
     int distinctIntegers(int n) {
+        return n==1 ? 1 : n-1;
         set<int> s;
         queue<int> q;
         q.push(n);
