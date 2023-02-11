@@ -2,16 +2,15 @@ using vi = vector<int>;
 using vvi = vector<vi>;
 using vvvi = vector<vvi>;
 using pii = pair<int,int>;
+const int inf = 1e9;
 
 class Solution {
 public:
   vector<int> shortestAlternatingPaths(int n, vector<vector<int>>& re, vector<vector<int>>& be) {
-    
     vvvi adj(n, vvi(2));
     for (auto e : re) adj[e[0]][0].push_back(e[1]);
     for (auto e : be) adj[e[0]][1].push_back(e[1]);
 
-    const int inf = 1e9;
     queue<pii> q;
     vvi dist(n, vi(2,inf));
     q.emplace(0,0); q.emplace(0,1);
@@ -26,6 +25,7 @@ public:
         q.emplace(v,1-c);
       }
     }
+      
     vi ans(n, inf);
     for (int i=0; i<n; i++) {
       ans[i] = min(dist[i][0], dist[i][1]);
