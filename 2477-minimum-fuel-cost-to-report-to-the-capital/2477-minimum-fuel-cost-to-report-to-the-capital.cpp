@@ -1,9 +1,9 @@
+using ll = long long;
+using vi = vector<ll>;
+using vvi = vector<vi>;
+
 class Solution {
 public:
-  using ll = long long;
-  using vi = vector<ll>;
-  using vvi = vector<vi>;
-
   ll ans = 0;
   vvi adj;
   ll n, k;
@@ -22,9 +22,9 @@ public:
     n = roads.size() + 1;
     k = seats;
     adj = vvi(n);
-    for (auto b : roads) {
-      ll u = b[0];
-      ll v = b[1];
+    for (auto uv : roads) {
+      ll u = uv[0];
+      ll v = uv[1];
       adj[u].push_back(v);
       adj[v].push_back(u);
     }
