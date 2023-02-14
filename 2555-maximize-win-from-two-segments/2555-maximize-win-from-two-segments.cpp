@@ -23,9 +23,9 @@ public:
     
     suf[2e9+1] = 0;
     int ans = 0;
-    for (auto [x,v] : mp) {
+    for (auto [x,cnt] : mp) {
       auto it = suf.upper_bound(x+k);
-      ans = max(ans, v + it->second);
+      ans = max(ans, cnt + it->second);
     }
     return ans;
   }
