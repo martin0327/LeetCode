@@ -12,15 +12,10 @@ public:
       ret += (s&1) + '0';
       x = s / 2;
     }
+    if (a.empty()) swap(a,b);
     while (a.size()) {
       int s = x + a.back() - '0'; 
       a.pop_back();
-      ret += (s&1) + '0';
-      x = s / 2;
-    }
-    while (b.size()) {
-      int s = x + b.back() - '0';
-      b.pop_back();
       ret += (s&1) + '0';
       x = s / 2;
     }
