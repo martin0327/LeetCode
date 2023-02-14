@@ -13,7 +13,8 @@ public:
       x = s / 2;
     }
     while (a.size()) {
-      int s = x + a.back() - '0'; a.pop_back();
+      int s = x + a.back() - '0'; 
+      a.pop_back();
       ret += (s&1) + '0';
       x = s / 2;
     }
