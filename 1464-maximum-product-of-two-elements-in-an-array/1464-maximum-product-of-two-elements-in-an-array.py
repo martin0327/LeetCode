@@ -9,5 +9,5 @@ class Solution:
                 mx = x
             elif x > mx2:
                 mx2 = x
-        return (mx-1) * (mx2-1)
+        return (mx-1) * (mx2-1)  
         
