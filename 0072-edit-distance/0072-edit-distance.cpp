@@ -1,12 +1,12 @@
 template<typename T> void chmin(T &x, T y) {x = min(x,y);}
 using vi = vector<int>;
 using vvi = vector<vi>;
+const int inf = 1e9;
 
 class Solution {
 public:
   int minDistance(string s, string t) {
     int n = s.size(), m = t.size();
-    const int inf = 1e9;
     vvi dp(n+1, vi(m+1,inf));
     dp[0][0] = 0;
     for (int i=0; i<=n; i++) {
