@@ -42,10 +42,8 @@ using vvi = vector<vi>;
 
 class Solution {
 public:
-  vvi a;
-  int n;  
   
-  Node* f(int r1, int r2, int c1, int c2) {
+  Node* f(vvi &a, int r1, int r2, int c1, int c2) {
     if (r2-r1==1) return new Node(a[r1][c1], true);
     
     int rm = (r1+r2)/2, cm = (c1+c2)/2;
@@ -53,7 +51,7 @@ public:
     vector<Node*> vv;
     for (auto r : rr) {
       for (auto c : cc) {
-        vv.push_back(f(r[0],r[1],c[0],c[1]));
+        vv.push_back(f(a, r[0],r[1],c[0],c[1]));
       }
     }
     bool leaf = true;
@@ -67,10 +65,9 @@ public:
     if (leaf) return new Node(cnt==4,true);
     else return new Node(0,0,vv[0],vv[1],vv[2],vv[3]);
   }
-  Node* construct(vector<vector<int>>& grid) {
-    a = grid;
-    n = a.size();
-    Node* ret = f(0,n,0,n);
+  Node* construct(vector<vector<int>>& a) {
+    int n = a.size();
+    Node* ret = f(a,0,n,0,n);
     return ret;        
   }
 };
