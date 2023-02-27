@@ -46,10 +46,8 @@ public:
   int n;  
   
   Node* f(int r1, int r2, int c1, int c2) {
-    if (r2-r1==1) {
-      Node* ret = new Node(a[r1][c1], true);
-      return ret;
-    }
+    if (r2-r1==1) return new Node(a[r1][c1], true);
+    
     int rm = (r1+r2)/2, cm = (c1+c2)/2;
     vvi rr = {{r1,rm},{rm,r2}}, cc = {{c1,cm},{cm,c2}};
     vector<Node*> vv;
@@ -65,10 +63,9 @@ public:
       cnt += v->val;
     }
     leaf &= (cnt==0 || cnt==4);
-    Node* ret;
-    if (leaf) ret = new Node(cnt==4,true);
-    else ret = new Node(0,0,vv[0],vv[1],vv[2],vv[3]);
-    return ret;
+    
+    if (leaf) return new Node(cnt==4,true);
+    else return new Node(0,0,vv[0],vv[1],vv[2],vv[3]);
   }
   Node* construct(vector<vector<int>>& grid) {
     a = grid;
