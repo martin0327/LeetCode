@@ -43,8 +43,7 @@ using vvi = vector<vi>;
 class Solution {
 public:
   vvi a;
-  int n;
-  
+  int n;  
   
   Node* f(int r1, int r2, int c1, int c2) {
     if (r2-r1==1) {
@@ -53,11 +52,11 @@ public:
     }
     int rm = (r1+r2)/2;
     int cm = (c1+c2)/2;
-    vvi dr = {{r1,rm},{rm,r2}};
-    vvi dc = {{c1,cm},{cm,c2}};
+    vvi rr = {{r1,rm},{rm,r2}};
+    vvi cc = {{c1,cm},{cm,c2}};
     vector<Node*> vv;
-    for (auto r : dr) {
-      for (auto c : dc) {
+    for (auto r : rr) {
+      for (auto c : cc) {
         vv.push_back(f(r[0],r[1],c[0],c[1]));
       }
     }
