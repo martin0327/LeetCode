@@ -50,10 +50,8 @@ public:
       Node* ret = new Node(a[r1][c1], true);
       return ret;
     }
-    int rm = (r1+r2)/2;
-    int cm = (c1+c2)/2;
-    vvi rr = {{r1,rm},{rm,r2}};
-    vvi cc = {{c1,cm},{cm,c2}};
+    int rm = (r1+r2)/2, cm = (c1+c2)/2;
+    vvi rr = {{r1,rm},{rm,r2}}, cc = {{c1,cm},{cm,c2}};
     vector<Node*> vv;
     for (auto r : rr) {
       for (auto c : cc) {
@@ -67,17 +65,9 @@ public:
       cnt += v->val;
     }
     leaf &= (cnt==0 || cnt==4);
-    Node* ret = new Node();
-    if (leaf) {
-      ret->isLeaf = true;
-      ret->val = (cnt==4);
-    }
-    else {
-      ret->topLeft = vv[0];
-      ret->topRight = vv[1];
-      ret->bottomLeft = vv[2];
-      ret->bottomRight = vv[3];
-    }
+    Node* ret;
+    if (leaf) ret = new Node(cnt==4,true);
+    else ret = new Node(0,0,vv[0],vv[1],vv[2],vv[3]);
     return ret;
   }
   Node* construct(vector<vector<int>>& grid) {
