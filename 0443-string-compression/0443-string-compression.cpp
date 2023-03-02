@@ -10,7 +10,9 @@ public:
                 if (cnt) {
                     a[idx++] = prv;
                     if (cnt > 1) {
-                        for (auto x : to_string(cnt)) a[idx++] = x;
+                        for (auto x : to_string(cnt)) {
+                            a[idx++] = x;
+                        }
                     }
                 }
                 prv = c;
