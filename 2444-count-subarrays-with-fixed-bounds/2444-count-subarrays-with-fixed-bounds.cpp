@@ -6,10 +6,7 @@ public:
         int mn = -1, mx = -1, blk = -1;
         long long ans = 0;
         for (int i=0; i<n; i++) {
-            if (a[i] < lo || a[i] > hi) {
-                blk = i;
-                continue;
-            }
+            if (a[i] < lo || a[i] > hi) blk = i;
             if (a[i] == lo) mn = i;
             if (a[i] == hi) mx = i;
             int lim = min(mn,mx);
