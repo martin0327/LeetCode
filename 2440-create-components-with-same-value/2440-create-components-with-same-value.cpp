@@ -23,20 +23,20 @@ public:
         if (deg[i]==1) q.push(i);
       }
       int cnt = 0;
-      bool ret = true;
+      
       while (q.size()) {
         int u = q.front(); q.pop();
         deg[u]--;
         if (b[u] == x) cnt++;
-        else if (b[u] > x) ret = false;
+      
         for (auto v : adj[u]) {
           if (deg[v] == 0) continue;
           if (b[u] < x) b[v] += b[u];
           if (--deg[v]==1) q.push(v);
         }
-        if (!ret) break;
+      
       }
-      return ret && (cnt == tot / x);
+      return cnt == tot / x;
     };
 
     for (int i=1; i*i<=tot; i++) {
