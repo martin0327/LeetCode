@@ -12,7 +12,6 @@ public:
       adj[v].push_back(u);
     }
     int tot = accumulate(a.begin(), a.end(), 0);
-    int ans = 0;
 
     function<bool(int)> f = [&](int x) {
       vi deg(n), b = a;
@@ -22,7 +21,6 @@ public:
         if (deg[i]==1) q.push(i);
       }
       int cnt = 0;
-      
       while (q.size()) {
         int u = q.front(); q.pop();
         deg[u]--;
@@ -37,14 +35,9 @@ public:
       return cnt == tot / x;
     };
 
-    for (int i=1; i*i<=tot; i++) {
-      if (tot % i == 0) {
-        int x = i;
-        int y = tot / i;
-        if (f(x)) ans = max(ans, y-1);
-        if (f(y)) ans = max(ans, x-1);
-      }
+    for (int i=1; i<=tot; i++) {
+      if (tot % i == 0 && f(i)) return tot/i-1;
     }
-    return ans;
+    return 0;
   }
 };
