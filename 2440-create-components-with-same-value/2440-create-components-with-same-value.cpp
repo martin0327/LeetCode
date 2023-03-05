@@ -15,9 +15,8 @@ public:
     int ans = 0;
 
     function<bool(int)> f = [&](int x) {
-      vi deg(n);
+      vi deg(n), b = a;
       queue<int> q;
-      vi b = a;
       for (int i=0; i<n; i++) {
         deg[i] = adj[i].size();
         if (deg[i]==1) q.push(i);
@@ -28,13 +27,11 @@ public:
         int u = q.front(); q.pop();
         deg[u]--;
         if (b[u] == x) cnt++;
-      
         for (auto v : adj[u]) {
           if (deg[v] == 0) continue;
           if (b[u] < x) b[v] += b[u];
           if (--deg[v]==1) q.push(v);
         }
-      
       }
       return cnt == tot / x;
     };
