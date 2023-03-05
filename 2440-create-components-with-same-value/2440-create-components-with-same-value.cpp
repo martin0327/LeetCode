@@ -26,6 +26,7 @@ public:
       while (q.size()) {
         int u = q.front(); q.pop();
         deg[u]--;
+        if (b[u] > x) return false;
         if (b[u] == x) cnt++;
         for (auto v : adj[u]) {
           if (deg[v] == 0) continue;
