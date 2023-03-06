@@ -10,6 +10,6 @@ public:
             }
             else hi = mid - 1;
         }
-        return idx==-1 ? k : k+idx+1;
+        return k+idx+1;
     }
 };
