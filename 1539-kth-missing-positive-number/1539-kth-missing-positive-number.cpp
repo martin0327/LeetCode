@@ -12,4 +12,4 @@ public:
         }
         return idx==-1 ? k : k+idx+1;
     }
-};    
+};
