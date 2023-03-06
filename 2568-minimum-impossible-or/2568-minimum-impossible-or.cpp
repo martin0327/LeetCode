@@ -6,7 +6,7 @@ public:
       for (auto x : a) if (x==(1<<i)) found = true;
       if (!found) return (1<<i);
     }
-    return 1<<29 + 1;
+    return 1<<29+1;
   }
 };
 /*
