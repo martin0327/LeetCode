@@ -38,4 +38,4 @@ public:
         sort(a.begin(), a.end());
         return g(0, a.size());
     }
-};
+};  
