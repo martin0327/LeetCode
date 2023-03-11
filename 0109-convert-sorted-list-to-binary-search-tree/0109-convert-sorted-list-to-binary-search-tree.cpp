@@ -31,15 +31,11 @@ public:
     TreeNode* g(int l, int r) {
         if (l >= r) return nullptr;
         int m = (l+r)/2;
-        TreeNode* v = new TreeNode(a[m]);
-        v->left = g(l, m);
-        v->right = g(m+1, r);
-        return v;        
+        return new TreeNode(a[m],g(l,m),g(m+1,r));
     }
     TreeNode* sortedListToBST(ListNode* head) {
         f(head);
-        int n = a.size();
         sort(a.begin(), a.end());
-        return g(0, n);
+        return g(0, a.size());
     }
 };
