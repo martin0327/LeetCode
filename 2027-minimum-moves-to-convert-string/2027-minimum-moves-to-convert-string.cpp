@@ -6,9 +6,7 @@ public:
     for (int i=0; i<n; i++) {
       if (s[i] == 'X') {
         ++ans;
-        for (int j=i+1; j<min(n,i+3); j++) {
-          s[j] = 'O';
-        }
+        i += 2;
       }
     }
     return ans;
