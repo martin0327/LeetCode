@@ -16,10 +16,7 @@ public:
     bool ret = true;
     void f(TreeNode* v, int d) {
         if (!v) {
-            if (mx==-1) {
-                mx = d;
-                pr = d;
-            }
+            if (mx==-1) mx = pr = d;
             else {
                 ret &= (mx - d <= 1) && (pr >= d);
                 pr = d;
@@ -33,4 +30,4 @@ public:
         f(root, 0);        
         return ret;    
     }
-};    
+};
