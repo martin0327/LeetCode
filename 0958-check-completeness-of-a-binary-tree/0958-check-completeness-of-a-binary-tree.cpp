@@ -12,22 +12,19 @@
 
 class Solution {
 public:
-    int mx = -1;
-    int x = -1;
+    int mx = -1, pr = -1;
     bool ret = true;
     vector<int> a;
     void f(TreeNode* v, int d) {
         if (!v) {
             if (mx==-1) {
                 mx = d;
-                x = d;
+                pr = d;
             }
             else {
-                ret &= (mx >= d);
-                ret &= (x >= d);
-                ret &= (mx - d <= 1);
-                ret &= (x - d <= 1);
-                x = d;
+                ret &= ((mx >= d) && (mx - d <= 1));
+                ret &= ((pr >= d) && (pr - d <= 1));
+                pr = d;
             }
             return;
         }
