@@ -22,8 +22,7 @@ public:
                 pr = d;
             }
             else {
-                ret &= (mx >= d) && (mx - d <= 1);
-                ret &= (pr >= d) && (pr - d <= 1);
+                ret &= (mx - d <= 1) && (pr >= d);
                 pr = d;
             }
             return;
