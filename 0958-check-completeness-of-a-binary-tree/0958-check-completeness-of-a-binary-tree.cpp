@@ -14,7 +14,6 @@ class Solution {
 public:
     int mx = -1, pr = -1;
     bool ret = true;
-    vector<int> a;
     void f(TreeNode* v, int d) {
         if (!v) {
             if (mx==-1) {
@@ -34,4 +33,4 @@ public:
         f(root, 0);        
         return ret;    
     }
-};  
+};
