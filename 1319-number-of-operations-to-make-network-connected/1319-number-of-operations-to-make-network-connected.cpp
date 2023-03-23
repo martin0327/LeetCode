@@ -36,17 +36,16 @@ struct dsu {
 };
 class Solution {
 public:
-    int makeConnected(int n, vector<vector<int>>& connections) {
-        if (connections.size() < n-1) return -1;
+    int makeConnected(int n, vector<vector<int>>& e) {
+        if (e.size() < n-1) return -1;
         dsu d(n);
-        int sz = n;
-        for (auto uv : connections) {
+        for (auto uv : e) {
             int u = uv[0], v = uv[1];
             if (!d.same(u,v)) {
                 d.merge(u,v);
-                sz--;
+                n--;
             }
         }
-        return sz - 1;
+        return n - 1;
     }
 };
