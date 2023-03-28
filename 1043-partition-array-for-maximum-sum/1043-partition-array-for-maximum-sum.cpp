@@ -43,18 +43,12 @@ public:
     max_spt<ll> spt(b);
     vvi dp(n+1, vi(k+1,-inf));
     dp[0][0] = 0;
-    auto chmax = [&](ll &x, ll y) {
-      x = max(x,y);
-    };
+    auto chmax = [&](ll &x, ll y) {x = max(x,y);};
     for (int i=0; i<n; i++) {
       for (int j=0; j<=k; j++) {
         if (j < k) {
-          if (spt.query(i-j,i-1) >= a[i]) {
-            chmax(dp[i+1][j+1], dp[i][j] + spt.query(i-j,i-1));
-          }
-          else {
-            chmax(dp[i+1][j+1], dp[i][j] - j*spt.query(i-j,i-1) + (j+1)*a[i]);
-          }
+          if (spt.query(i-j,i-1) >= a[i]) chmax(dp[i+1][j+1], dp[i][j] + spt.query(i-j,i-1));      
+          else chmax(dp[i+1][j+1], dp[i][j] - j*spt.query(i-j,i-1) + (j+1)*a[i]);
         }
         chmax(dp[i+1][1],dp[i][j] + a[i]);
       }
@@ -62,8 +56,3 @@ public:
     return *max_element(dp[n].begin(), dp[n].end());
   }
 };
-// dp[i][j] = largest sum for a[:i] and last partition's length is j
-//   if length is k next j always have to be 0
-//   otherwise you have two options: 
-//     either start new partition or extend the partition
-// 
