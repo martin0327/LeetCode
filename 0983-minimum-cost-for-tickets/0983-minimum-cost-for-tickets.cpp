@@ -5,7 +5,7 @@ void chmin(int &x, int y) {x = min(x,y);}
 class Solution {
 public:
   int mincostTickets(vector<int>& days, vector<int>& c) {
-    int n = 365, m = 30;
+    int n = days.back(), m = 30;
     vi a(n+1);
     vvi dp(n+1, vi(m,inf));
     for (auto d : days) a[d] = 1;
