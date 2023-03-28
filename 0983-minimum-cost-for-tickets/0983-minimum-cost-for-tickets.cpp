@@ -20,4 +20,4 @@ public:
     }
     return *min_element(dp[n].begin(), dp[n].end());
   }
-};
+};   
