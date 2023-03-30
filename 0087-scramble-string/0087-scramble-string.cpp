@@ -2,22 +2,20 @@ class Solution {
 public:
   bool isScramble(string s, string t) {
     int n = s.size();
-    int dp[30][30][30][30];
+    int dp[n][n][n+1];
     memset(dp, -1, sizeof(dp));
 
-    function<int(int,int,int,int)> f = [&](int l1, int r1, int l2, int r2) -> int{
-      if (dp[l1][r1][l2][r2] != -1) return dp[l1][r1][l2][r2];
-      if (l1==r1) {
-        return dp[l1][r1][l2][r2] = (s[l1]==t[l2]);
-      }
+    function<int(int,int,int)> f = [&](int i, int j, int sz) {
+      if (dp[i][j][sz] != -1) return dp[i][j][sz];
+      if (sz==1) return dp[i][j][sz] = (s[i]==t[j]);
       int ret = 0;
-      for (int i=0; i<r1-l1; i++) {
-        ret |= f(l1,l1+i,l2,l2+i) && f(l1+i+1,r1,l2+i+1,r2);
-        ret |= f(l1+i+1,r1,l2,l2+(r1-(l1+i+1))) && f(l1,l1+i,r2-i,r2);
+      for (int k=1; k<sz; k++) {
+        ret |= f(i,j,k) && f(i+k,j+k,sz-k);
+        ret |= f(i+k,j,sz-k) && f(i,j+sz-k,k);
       }
-      return dp[l1][r1][l2][r2] = ret;
+      return dp[i][j][sz] = ret;
     }; 
-    bool ans = f(0,n-1,0,n-1);
-    return ans;
+
+    return f(0,0,n);
   }
 };
