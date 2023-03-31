@@ -12,6 +12,7 @@ public:
         suf[i][j] = (a[i][j]=='A') + suf[i][j+1] + suf[i+1][j] - suf[i+1][j+1];
       }
     }    
+    if (suf[0][0] < k) return 0;
     dp[0][0][0] = 1;
     for (int l=0; l<k-1; l++) {
       for (int i=0; i<n; i++) {
