@@ -4,7 +4,7 @@ const ll mod = 1e9+7;
 class Solution {
 public:
   ll suf[51][51];
-  ll dp[11][50][50];
+  ll dp[10][50][50];
   int ways(vector<string>& a, int k) {
     int n = a.size(), m = a[0].size();    
     for (int i=n-1; i>=0; i--) {
