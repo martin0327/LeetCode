@@ -1,18 +1,15 @@
 class Solution {
 public:
-  vector<int> successfulPairs(vector<int>& spells, vector<int>& potions, long long success) {
-
-    sort(potions.begin(), potions.end());
-    vector<int> res(spells.size(), 0);
-    int n = potions.size();
-    for (int i = 0; i < spells.size(); ++i) {
-    
-      auto it = lower_bound(potions.begin(), potions.end(), spells[i], [&success](const int& lhs, const int& rhs) {
-        return static_cast<long long>(lhs) * rhs < success;
-      });
-
-      res[i] = n - (it - potions.begin());
+    vector<int> successfulPairs(vector<int>& a, vector<int>& b, long long s) {
+        int m = b.size();
+        sort(b.begin(), b.end());
+        vector<int> ans;
+        for (auto x : a) {
+            long long target = s / x;
+            if (s%x) target++;
+            auto it = lower_bound(b.begin(), b.end(), target);
+            ans.push_back(b.end()-it);
+        }
+        return ans;
     }
-    return res;
-  }
 };
