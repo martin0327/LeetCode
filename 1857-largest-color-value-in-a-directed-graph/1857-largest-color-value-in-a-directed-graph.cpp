@@ -32,9 +32,7 @@ public:
         if (accumulate(deg.begin(), deg.end(),0)==0) {
             int ret = 0;
             for (int i=0; i<n; i++) {
-                for (int j=0; j<26; j++) {
-                    chmax(ret,dp[i][j]);
-                }
+                chmax(ret,*max_element(dp[i].begin(), dp[i].end()));
             }
             return ret;
         }
