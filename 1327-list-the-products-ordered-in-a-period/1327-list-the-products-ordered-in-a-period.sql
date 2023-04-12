@@ -7,8 +7,9 @@ JOIN
     orders o
 ON
     p.product_id = o.product_id
-WHERE
-    o.order_date BETWEEN "2020-02-01" AND "2020-02-29"
+WHERE 
+    month(o.order_date) = 2 
+    and year(o.order_date) = 2020
 GROUP BY
     p.product_id
 HAVING
