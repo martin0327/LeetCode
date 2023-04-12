@@ -7,12 +7,10 @@ public:
         while (lo <= hi) {
             int mid = (lo+hi)/2;
             int cnt = 0;
-            vector<int> check(n);
             for (int i=0; i<n-1; i++) {
-                if (check[i]) continue;
                 if (a[i+1]-a[i]<=mid) {
                     cnt++;
-                    check[i+1] = 1;
+                    i++;
                 }
             }
             if (cnt >= p) {
