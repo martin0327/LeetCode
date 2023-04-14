@@ -19,6 +19,6 @@ FROM
 GROUP BY
   a.visited_on
 HAVING
-  (COUNT(b.visited_on)=7)
+  COUNT(b.visited_on)=7
 ORDER BY
   visited_on
