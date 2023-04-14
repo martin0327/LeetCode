@@ -2,7 +2,7 @@ SELECT
   u.name,
   (
     CASE
-      WHEN SUM(r.distance) IS NULL THEN 0
+      WHEN r.distance IS NULL THEN 0
       ELSE SUM(r.distance)
     END
   ) AS travelled_distance
