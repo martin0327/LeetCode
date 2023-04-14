@@ -1,11 +1,6 @@
 SELECT
   u.name,
-  (
-    CASE
-      WHEN r.distance IS NULL THEN 0
-      ELSE SUM(r.distance)
-    END
-  ) AS travelled_distance
+  ifnull (SUM(r.distance), 0) AS travelled_distance
 FROM
   users u
   LEFT JOIN rides r ON u.id=r.user_id
