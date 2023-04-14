@@ -15,4 +15,4 @@ GROUP BY
   contest_id
 ORDER BY
   percentage desc,
-  contest_id asc
+  contest_id asc  
