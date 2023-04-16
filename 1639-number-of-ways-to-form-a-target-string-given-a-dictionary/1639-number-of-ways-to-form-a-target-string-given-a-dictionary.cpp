@@ -16,17 +16,15 @@ public:
             }
         }
         vvi dp(n, vi(m));
-        for (int j=0; j<m; j++) dp[0][j] = b[j][a[0]-'a'];
-        for (int j=1; j<m; j++) dp[0][j] += dp[0][j-1];
-        for (int i=1; i<n; i++) {
+        for (int i=0; i<n; i++) {
             for (int j=i; j<m; j++) {
-                dp[i][j] = dp[i-1][j-1] * b[j][a[i]-'a'];
+                dp[i][j] = ((i==0) ? 1 : dp[i-1][j-1]) * b[j][a[i]-'a'] + ((j>i) ? dp[i][j-1] : 0);
                 dp[i][j] %= mod;
             }
-            for (int j=i; j<m; j++) {
-                dp[i][j] += dp[i][j-1];
-                dp[i][j] %= mod;
-            }
+            // for (int j=i+1; j<m; j++) {
+            //     dp[i][j] += dp[i][j-1];
+            //     dp[i][j] %= mod;
+            // }
         }
         return dp[n-1][m-1];
     }
