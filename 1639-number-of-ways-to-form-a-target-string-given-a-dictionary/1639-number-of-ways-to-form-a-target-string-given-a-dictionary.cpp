@@ -15,17 +15,14 @@ public:
                 b[i][x[i]-'a']++;
             }
         }
-        vvi dp(n, vi(m));
+        vvi dp(n+1, vi(m+1));
+        dp[0] = vi(m+1, 1);
         for (int i=0; i<n; i++) {
             for (int j=i; j<m; j++) {
-                dp[i][j] = ((i==0) ? 1 : dp[i-1][j-1]) * b[j][a[i]-'a'] + ((j>i) ? dp[i][j-1] : 0);
-                dp[i][j] %= mod;
+                dp[i+1][j+1] = dp[i][j] * b[j][a[i]-'a'] + dp[i+1][j];
+                dp[i+1][j+1] %= mod;
             }
-            // for (int j=i+1; j<m; j++) {
-            //     dp[i][j] += dp[i][j-1];
-            //     dp[i][j] %= mod;
-            // }
         }
-        return dp[n-1][m-1];
+        return dp[n][m];
     }
 };
