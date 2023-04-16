@@ -1,23 +1,23 @@
-with
-  t as (
-    select
-      score,
-      rank() over (
-        order by
-          score desc
-      ) as id
-    from
-      scores
-    group by
-      score
-    order by
-      score desc
-  )
-select
-  s.score,
-  t.id as "rank"
-from
-  scores s
-  join t on s.score = t.score
-order by
-  s.score desc
+WITH
+    t AS (
+        SELECT
+            score,
+            RANK() OVER (
+                ORDER BY
+                    score DESC
+            ) AS id
+        FROM
+            scores
+        GROUP BY
+            score
+        ORDER BY
+            score DESC
+    )
+SELECT
+    s.score,
+    t.id AS "rank"
+FROM
+    scores s
+    JOIN t ON s.score = t.score
+ORDER BY
+    s.score DESC
