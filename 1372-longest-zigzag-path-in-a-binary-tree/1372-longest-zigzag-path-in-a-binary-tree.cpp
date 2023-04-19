@@ -14,11 +14,11 @@ public:
     int ans = 0;
     int f(TreeNode *node, bool left) {
         if (!node) return 0;
-        int l = f(node->right, false);
-        int r = f(node->left, true);
+        int l = f(node->left, true);
+        int r = f(node->right, false);
         ans = max(ans,max(l,r));
-        if (left) return l+1;
-        else return r+1;
+        if (left) return r+1;
+        else return l+1;
     }
     int longestZigZag(TreeNode* root) {
         f(root,left);
