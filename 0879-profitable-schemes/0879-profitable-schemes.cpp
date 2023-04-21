@@ -10,9 +10,8 @@ public:
         dp[0][0] = 1;
         int sz = a.size();
         for (int k=0; k<sz; k++) {
-            for (int i=n-1; i>=0; i--) {
+            for (int i=n-a[k]; i>=0; i--) {
                 int ni = i + a[k];
-                if (ni > n) continue;
                 for (int j=m; j>=0; j--) {
                     int nj = min(m,j+b[k]);
                     dp[ni][nj] += dp[i][j];
