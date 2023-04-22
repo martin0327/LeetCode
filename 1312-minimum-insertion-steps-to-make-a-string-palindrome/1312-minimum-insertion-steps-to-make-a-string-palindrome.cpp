@@ -1,8 +1,7 @@
-using ll = long long;
-using vi = vector<ll>;
+using vi = vector<int>;
 using vvi = vector<vi>;
-void chmax(ll &x, ll y) {x = max(x,y);}
-void chmin(ll &x, ll y) {x = min(x,y);}
+void chmax(int &x, int y) {x = max(x,y);}
+void chmin(int &x, int y) {x = min(x,y);}
 
 class Solution {
 public:
@@ -19,11 +18,11 @@ public:
             }
         }
         
-        ll ans = 1e9;
+        int ans = 1e9;
         for (int i=0; i<=n; i++) {
             chmin(ans, n-2*dp[i][n-i]);
             if (i<=n-1) chmin(ans, (n-1-2*dp[i][n-1-i]));
         }        
         return ans;
     }
-};  
+};
