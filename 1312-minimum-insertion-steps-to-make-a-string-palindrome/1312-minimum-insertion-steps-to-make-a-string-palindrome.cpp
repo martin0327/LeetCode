@@ -22,8 +22,8 @@ public:
         ll ans = 1e9;
         for (int i=0; i<=n; i++) {
             chmin(ans, n-2*dp[i][n-i]);
-            if (n-1-i >= 0) chmin(ans, (n-1-2*dp[i][n-1-i]));
+            if (i<=n-1) chmin(ans, (n-1-2*dp[i][n-1-i]));
         }        
         return ans;
     }
-};
+};  
