@@ -7,7 +7,6 @@ class Solution {
 public:
     int numberOfArrays(string s, int k) {
         int n = s.size();
-        s = " " + s;
         vi dp(n+1);
         dp[0] = 1;
         for (int i=1; i<=n; i++) {
@@ -15,7 +14,7 @@ public:
             ll prod = 1;
             for (int j=0; j<10; j++) {
                 if (i-j < 1) break;
-                ll x = s[i-j]-'0';
+                ll x = s[i-j-1]-'0';
                 cur += prod*x;
                 prod *= 10;
                 if (cur <= k && x > 0) {
