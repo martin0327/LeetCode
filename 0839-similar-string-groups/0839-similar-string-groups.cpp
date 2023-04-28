@@ -61,31 +61,18 @@ using vi = vector<int>;
 class Solution {
 public:
     int numSimilarGroups(vector<string>& a) {
-        int n = a.size();
-        int m = a[0].size();
-
+        int n = a.size(), m = a[0].size();
         dsu d(n);
-        vi cnt(26);
-        for (auto c : a[0]) {
-            cnt[c-'a']++;
-        }
 
         for (int i=0; i<n; i++) {
             for (int j=i+1; j<n; j++) {
                 string s = a[i];
                 string t = a[j];
-                vi diff;
+                int cnt = 0;
                 for (int k=0; k<m; k++) {
-                    if (s[k] != t[k]) diff.push_back(k);
+                    if (s[k] != t[k]) cnt++;
                 }
-                if (diff.size()==0) d.merge(i,j);
-                if (diff.size()==2) {
-                    int ii = diff[0];
-                    int jj = diff[1];
-                    vi b = {s[ii],s[jj]};
-                    vi c = {t[jj],t[ii]};
-                    if (b==c) d.merge(i,j);
-                }
+                if (cnt==0 || cnt==2) d.merge(i,j);
             }
         }
         int ans = d.groups().size();
