@@ -56,23 +56,17 @@ struct dsu {
     std::vector<int> parent_or_size;
 };
 
-using ti3 = tuple<int,int,int>;
-using ti4 = tuple<int,int,int,int>;
-using vti3 = vector<ti3>;
-using vti4 = vector<ti4>;
-
-
 class Solution {
 public:
     vector<bool> distanceLimitedPathsExist(int n, vector<vector<int>>& e, vector<vector<int>>& qr) {
         dsu d(n);
         
-        vti3 wuv;
-        for (auto a : e) wuv.emplace_back(a[2],a[0],a[1]);
+        vector<array<int,3>> wuv;
+        for (auto a : e) wuv.push_back({a[2],a[0],a[1]});
         sort(wuv.rbegin(), wuv.rend());
 
         int q = qr.size();
-        vti4 off(q);
+        vector<array<int,4>> off(q);
         for (int i=0; i<q; i++) {
             auto a = qr[i];
             off[i] = {a[2],a[0],a[1],i};
