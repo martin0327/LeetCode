@@ -59,10 +59,10 @@ public:
                 cnt++;
             }
         }
+        ll ans = -1;
         if (d1.size(0)==n && d2.size(0)==n) {
-            int ans = edges.size() - cnt;
-            return ans;
+            ans = edges.size() - cnt;
         }
-        else return -1;
+        return ans;
     }
 };
