@@ -3,11 +3,6 @@ using vi = vector<ll>;
 using vvi = vector<vi>;
 const ll inf = 1e18;
 
-void debug(vi &a) {
-    for (auto & x : a) cout << x << " ";
-    cout << endl;
-}
-
 class Solution {
 public:
     int mostProfitablePath(vector<vector<int>>& edges, int tg, vector<int>& a) {
@@ -35,8 +30,7 @@ public:
         bfs(0,d1);
         bfs(tg,d2);
         
-        ll shd = d1[tg];
-        ll ans = -inf;
+        ll dd = d1[tg], ans = -inf;
         queue<ll> q;
         q.push(0);
         vi cost(n,inf);
@@ -48,11 +42,10 @@ public:
                 if (cost[v] < inf) continue;
                 cnt++;
                 q.push(v);
-                if (d1[v]+d2[v] > shd) {
+                if (d1[v]+d2[v] > dd) {
                     cost[v] = cost[u] + a[v];
                 }
-                else if (d1[v]+d2[v] == shd) {
-                    cout << v << endl;
+                else {
                     if (d1[v]<d2[v]) cost[v] = cost[u] + a[v];
                     else if (d1[v]==d2[v]) cost[v] = cost[u] + a[v]/2;
                     else cost[v] = cost[u];
