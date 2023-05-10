@@ -1,6 +1,4 @@
-using ll = long long;
-using vi = vector<ll>;
-
+using vi = vector<int>;
 class Solution {
 public:
     int numTrees(int n) {
