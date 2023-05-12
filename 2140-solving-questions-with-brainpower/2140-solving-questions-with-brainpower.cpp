@@ -1,6 +1,6 @@
 using ll = long long;
 void chmax(ll &x, ll y) {x = max(x,y);}
-const int sz = 2e5;
+const int sz = 1e5;
 
 class Solution {
 public:
