@@ -5,7 +5,6 @@ public:
     KthLargest(int k, vector<int>& a) {
         this->k = k;
         for (auto x : a) pq.push(x);
-        while (pq.size() > k) pq.pop();
     }
     
     int add(int x) {
