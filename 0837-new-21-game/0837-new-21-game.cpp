@@ -4,7 +4,7 @@ public:
     double new21Game(int n, int k, int lim) {
         vector<ld> dp(n+2);
         dp[0] = 1;
-        for (int i=0; i<=n+1; i++) {
+        for (int i=0; i<=n; i++) {
             if (i>1) dp[i] += dp[i-1];
             if (i < k) {
                 dp[i+1] += dp[i] / lim;
