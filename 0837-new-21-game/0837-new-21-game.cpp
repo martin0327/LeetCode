@@ -15,4 +15,4 @@ public:
         for (int i=k; i<=n; i++) ans += dp[i];
         return ans;
     }
-};
+};  
