@@ -10,7 +10,7 @@ public:
         };
         while (lo <= hi) {
             ll mid = (lo+hi)/2;
-            ll s = mid + f(idx,mid-1) + f(n-1-idx,mid-1);            
+            ll s = f(idx,mid-1) + f(n-idx,mid);            
             if (s <= mx) {
                 ans = mid;
                 lo = mid + 1;
