@@ -43,14 +43,11 @@ struct segtree {
 class Solution {
 public:
     vector<int> maximumSumQueries(vector<int>& a, vector<int>& b, vector<vector<int>>& qr) {
-        ll n = a.size();
+        ll n = a.size(), q = qr.size();
 
         map<ll,ll> comp;
         for (auto x : b) comp[x];
-        ll q = qr.size();
-        for (int i=0; i<q; i++) {
-            comp[qr[i][1]];
-        }
+        for (int i=0; i<q; i++) comp[qr[i][1]];
         ll sz = 0;
         for (auto &[k,v] : comp) v = sz++;
         segtree seg(sz);
@@ -66,7 +63,6 @@ public:
         sort(off.rbegin(), off.rend());        
 
         vector<int> ans(q);
-
         for (auto [x,y,idx] : off) {
             while (c.size()) {
                 auto [xx,yy] = c.back();
