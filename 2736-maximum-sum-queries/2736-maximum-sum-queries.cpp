@@ -65,11 +65,11 @@ public:
         vector<int> ans(q);
         for (auto [x,y,idx] : off) {
             while (c.size()) {
-                auto [xx,yy] = c.back();
-                if (xx >= x) {
+                auto [z,w] = c.back();
+                if (z >= x) {
                     c.pop_back();
-                    ll val = max(seg.get(comp[yy]), xx+yy);
-                    seg.set(comp[yy], val);
+                    ll val = max(seg.get(comp[w]), z+w);
+                    seg.set(comp[w], val);
                 }
                 else break;
             }
