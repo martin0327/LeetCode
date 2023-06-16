@@ -2,7 +2,6 @@ struct node {
     int val;
     node* left = nullptr;
     node* right = nullptr;
-    
     node(int val) {
         this->val = val;
     }
@@ -59,8 +58,7 @@ public:
             auto [comb2, cnt2] = r;
             ll comb = (comb1 * comb2) % mod;
             comb *= dp[cnt1+cnt2][cnt1];
-            comb %= mod;
-            return make_pair(comb,cnt1+cnt2+1);
+            return make_pair(comb%mod,cnt1+cnt2+1);
         };
 
         auto [ans,cnt] = g(root);
