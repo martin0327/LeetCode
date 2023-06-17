@@ -2,6 +2,7 @@ using ll = long long;
 using vi = vector<ll>;
 using vvi = vector<vi>;
 
+const ll inf = 1e9;
 void chmin(ll &x, ll y) {x = min(x,y);}
 
 class Solution {
@@ -17,10 +18,7 @@ public:
         for (auto &x : a) x = mp[x];
         for (auto &x : b) x = mp[x];
         sort(b.begin(), b.end());
-        vi c(sz);
-        for (auto x : b) c[x] = 1;
 
-        const ll inf = 1e9;
         vvi dp(n+1, vi(sz,inf));
         dp[0][0] = 0;
         for (int i=0; i<n; i++) {
