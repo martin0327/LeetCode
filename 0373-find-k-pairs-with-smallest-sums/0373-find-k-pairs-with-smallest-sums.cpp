@@ -1,33 +1,23 @@
-using ll = long long;
-using vi = vector<ll>;
-
 class Solution {
 public:
     vector<vector<int>> kSmallestPairs(vector<int>& a, vector<int>& b, int k) {
-        ll lo = -2e9, hi = 2e9, t = 2e9+1;
-        while (lo <= hi) {
-            ll mid = (lo+hi) / 2;
-            ll cnt = 0;
-            for (auto x : a) {
-                cnt += (upper_bound(b.begin(), b.end(), mid-x) - b.begin());
-            }
-            if (cnt >= k) {
-                hi = mid - 1;
-                t = mid;
-            }
-            else lo = mid + 1;
-        }
-        vector<tuple<int,int,int>> temp;
+        priority_queue<tuple<int,int,int>> pq;
         for (auto x : a) {
             for (auto y : b) {
-                if (x+y <= t) temp.emplace_back(x+y,x,y);
-                else break;
+                if (pq.size() < k) pq.emplace(x+y,x,y);
+                else {
+                    auto [w,xx,yy] = pq.top();
+                    if (w <= x+y) break;
+                    else {
+                        pq.emplace(x+y,x,y);
+                        pq.pop();
+                    }
+                }
             }
         }
-        sort(temp.begin(), temp.end());
-        while (temp.size() > k) temp.pop_back();
         vector<vector<int>> ans;
-        for (auto [w,x,y] : temp) {
+        while (pq.size()) {
+            auto [w,x,y] = pq.top(); pq.pop();
             ans.push_back({x,y});
         }
         return ans;
