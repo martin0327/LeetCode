@@ -9,20 +9,20 @@ class Solution {
 public:
     int shortestPathAllKeys(vector<string>& a) {
         int k = 0, sr, sc, n = a.size(), m = a[0].size();
-        map<char,int> mp;
+        vector<int> mp(26);
         for (int i=0; i<n; i++) {
             for (int j=0; j<m; j++) {
                 char c = a[i][j];
-                if ('a' <= c && c <= 'z') mp[c] = k++;
+                if ('a' <= c && c <= 'z') mp[c-'a'] = k++;
                 if (c == '@') {
                     sr = i;
                     sc = j;
                 }
             }
         }
-        queue<tuple<ll,ll,ll>> q;
         vector dist(n, vvi(m, vi(1<<k,inf)));
         dist[sr][sc][0] = 0;
+        queue<tuple<ll,ll,ll>> q;
         q.push({sr,sc,0});
         while (q.size()) {
             auto [r,c,mask] = q.front();
@@ -35,12 +35,12 @@ public:
                 if (a[nr][nc] == '#') continue;
                 char x = a[nr][nc];
                 if ('A'<=x && x<='Z') {
-                    if (!((mask>>(mp[x-'A'+'a']))&1)) continue;
+                    if (!((mask>>(mp[x-'A']))&1)) continue;
                 }
-                ll nmask = mask;
                 
+                ll nmask = mask;
                 if ('a' <= x && x <= 'z') {
-                    nmask |= (1<<(mp[x]));
+                    nmask |= (1<<(mp[x-'a']));
                 }
                 
                 if (dist[nr][nc][nmask] > dist[r][c][mask] + 1) {
