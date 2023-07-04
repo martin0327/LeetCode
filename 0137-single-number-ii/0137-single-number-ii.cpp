@@ -1,17 +1,16 @@
 class Solution {
 public:
     int singleNumber(vector<int>& a) {
-        int n = 32;
-        vector<long long> b(n);
-        for (auto x : a) {
-            for (int i=0; i<n; i++) {
-                if (x>>i&1) b[i] = (b[i]+1)%3;
-            }
+        int x = 0, y = 0;
+        for (auto z : a) {
+            int t = y & z;
+            y &= ~t;
+            z &= ~t;
+            t = x & z;
+            x |= z;
+            x &= ~t;
+            y |= t;
         }
-        long long ans = 0;
-        for (int i=0; i<n; i++) {
-            if (b[i]) ans |= (1ll<<i);
-        }
-        return ans;
+        return x;
     }
 };
