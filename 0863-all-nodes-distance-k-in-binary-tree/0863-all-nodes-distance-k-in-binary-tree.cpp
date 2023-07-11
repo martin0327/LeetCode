@@ -43,6 +43,7 @@ public:
             int u = q.front();
             q.pop();
             if (dist[u] == k) ans.push_back(u);
+            if (dist[u] > k) break;
             for (auto v : adj[u]) {
                 if (dist[v] < inf) continue;
                 dist[v] = dist[u] + 1;
