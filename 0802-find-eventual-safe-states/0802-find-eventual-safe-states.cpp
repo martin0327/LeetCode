@@ -1,33 +1,77 @@
-using ll = long long;
-using vi = vector<ll>;
+using vi = vector<int>;
 using vvi = vector<vi>;
 
 class Solution {
 public:
-    vector<int> eventualSafeNodes(vector<vector<int>>& G) {
-        int N = G.size();
-        vector<vector<int>> R(N);
-        vector<int> outdegree(N), safe(N), ans;
-        queue<int> q;
-        for (int i = 0; i < N; ++i) {
-            for (int v : G[i]) {
-                R[v].push_back(i);
+    
+    void debug(vi & a) {
+        for (auto x : a) {
+            cout << x << " ";
+        }   cout << endl;
+    }
+    
+    vector<int> eventualSafeNodes(vector<vector<int>>& adj) {
+        int n = adj.size();
+        vvi radj(n);
+        vi deg(n);
+        vi loop(n);
+        for (int u=0; u<n; u++) {
+            for (auto v : adj[u]) {
+                if (u==v) {
+                    loop[u] = 1;
+                    continue;
+                }
+                radj[v].push_back(u);
+                deg[u]++;
             }
-            outdegree[i] = G[i].size();
-            if (outdegree[i] == 0) q.push(i);
         }
+        vi vis(n), comp(n), st;
+        function<void(int,int,int)> f = [&](int u, int flag, int idx) {
+            vis[u] = 1;
+            for (auto v : flag?adj[u]:radj[u]) {
+                if (!vis[v]) f(v,flag,idx);
+            }
+            if (flag) st.push_back(u);
+            else comp[u] = idx;
+        };
+        for (int i=0; i<n; i++) {
+            if (!vis[i]) f(i,1,0);
+        }
+        vis.assign(n,0);
+        int m = 0;
+        while (st.size()) {
+            auto u = st.back();
+            st.pop_back();
+            if (!vis[u]) f(u,0,m++);
+        }
+        vector<int> csz(m);
+        for (int i=0; i<n; i++) {
+            int u = comp[i];
+            csz[u]++;
+        }
+        queue<int> q;
+        vis.assign(n,0);
+        for (int i=0; i<n; i++) {
+            if (csz[comp[i]] > 1 || loop[i]) {
+                q.push(i);
+                vis[i] = 1;
+            }
+        }
+        
         while (q.size()) {
             int u = q.front();
             q.pop();
-            safe[u] = 1;
-            for (int v : R[u]) {
-                if (--outdegree[v] == 0) q.push(v);
+            for (auto v : radj[u]) {
+                if (vis[v]) continue;
+                vis[v] = 1;
+                q.push(v);
             }
         }
-        for (int i = 0; i < N; ++i) {
-            if (safe[i]) ans.push_back(i);
+        vector<int> ans;
+        for (int i=0; i<n; i++) {
+            if (!vis[i]) ans.push_back(i);
         }
         return ans;
-    }                
-
+        
+    }
 };
