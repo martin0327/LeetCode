@@ -1,4 +1,4 @@
-using ll = long long;
+using ll = int;
 using ti3 = tuple<ll,ll,ll>;
 using vi = vector<ll>;
 const ll inf = 1e9;
@@ -40,9 +40,7 @@ public:
             ans.push_back(i);
             mask = nmask;
         }
-        sort(ans.begin(), ans.end());
+        reverse(ans.begin(), ans.end());
         return ans;
-        
-   
     }
 };
