@@ -8,15 +8,14 @@ public:
         r2k = vi(2e5+1,-1);
         k2r = k2v = vi(1e4+1,-1);
     }
-    
+    void update(int key) {
+        r2k[j] = key;
+        k2r[key] = j++;
+    }
     int get(int key) {
-        if (k2v[key] != -1) {
-            r2k[j] = key;
-            k2r[key] = j++;
-        }
+        if (k2v[key] != -1) update(key);
         return k2v[key];
     }
-    
     void put(int key, int value) {
         if (k2v[key] == -1) {
             if (cap) cap--;
@@ -25,8 +24,7 @@ public:
                 k2v[r2k[i++]] = -1; 
             }
         }
-        r2k[j] = key;
-        k2r[key] = j++;
+        update(key);
         k2v[key] = value;
     }
 };
