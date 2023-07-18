@@ -25,8 +25,8 @@ public:
                 k2v[r2k[i++]] = -1; 
             }
         }
-        k2v[key] = value;
         r2k[j] = key;
         k2r[key] = j++;
+        k2v[key] = value;
     }
 };
