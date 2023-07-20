@@ -7,13 +7,8 @@ public:
             while (st.size()) {
                 int y = st.back();
                 if (y > 0 && x < 0) {
-                    if (abs(y) < abs(x)) st.pop_back();
-                    else if (abs(y)==abs(x)) {
-                        push = false;
-                        st.pop_back();
-                        break;
-                    }
-                    else {
+                    if (abs(y) <= abs(x)) st.pop_back();
+                    if (abs(y) >= abs(x)) {
                         push = false;
                         break;
                     }
