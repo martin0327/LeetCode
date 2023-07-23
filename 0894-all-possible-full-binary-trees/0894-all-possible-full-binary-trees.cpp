@@ -47,6 +47,9 @@ public:
             }
             ss = ns;
         }        
+        // for (auto s : ss) {
+        //     debug(s);
+        // }
         vector<TreeNode*> ret;
         for (auto s : ss) {
             ret.push_back(f(s));
