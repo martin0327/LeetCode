@@ -15,8 +15,7 @@ public:
             }
         }
         ll mul = 1e9, n = a.size();
-        i128 temp = (i128) stoll(s) * mul;
-        ll h = temp / 100;
+        i128 h = (i128) stoll(s) * mul / 100;
         ll lo = 1, hi = 1e7, ans = -1;
         while (lo <= hi) {
             ll mid = (lo+hi)/2;
