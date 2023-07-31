@@ -30,7 +30,7 @@ public:
             while (lo <= hi) {
                 ll mid = (lo+hi)/2;
                 auto it = lower_bound(a.begin(), a.begin()+i, mid);
-                int r = it - a.begin();
+                ll r = it - a.begin();
                 if (nf >= mid*r - pre[r]) {
                     sup = mid;
                     lo = mid + 1;
@@ -41,4 +41,4 @@ public:
         }
         return ans;        
     }
-};
+}; 
