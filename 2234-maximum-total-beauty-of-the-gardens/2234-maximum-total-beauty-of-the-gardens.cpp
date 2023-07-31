@@ -15,14 +15,14 @@ public:
             else break;
         }
         ll n = a.size();
-        vi pre(n+1);
         ll ans = comp * full;
-        if (a.empty()) return ans;
-        for (int i=0; i<n; i++) pre[i+1] = pre[i] + a[i];
+        if (!n) return ans;
         
+        vi pre(n+1);
+        for (int i=0; i<n; i++) pre[i+1] = pre[i] + a[i];
         for (int i=n; i>=0; i--) {
             if (i < n) {
-                if (a[i] + nf < t) break;
+                if (nf < t-a[i]) break;
                 nf -= (t-a[i]);
                 comp++;
             }
