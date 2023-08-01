@@ -19,8 +19,7 @@ public:
             if (dp[l][r] != -1) return dp[l][r];
             int ret = inf;
             for (int i=l; i<r; i++) {
-                int temp = f(l,i) +f(i+1,r);
-                if (t[l]==t[r]) temp--;
+                int temp = f(l,i)+f(i+1,r)-(t[l]==t[r]);
                 ret = min(ret,temp);
             }
             return dp[l][r] = ret;
