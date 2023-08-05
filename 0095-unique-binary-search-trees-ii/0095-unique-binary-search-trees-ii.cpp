@@ -16,7 +16,6 @@ public:
         vi a(n);
         iota(a.begin(), a.end(), 1);
         function<void(TreeNode*, int, vi&)> f = [&] (TreeNode* u, int x, vi &p) {
-            if (!u) return;
             if (x < u->val) {
                 if (!u->left) {
                     u->left = new TreeNode(x);
@@ -47,4 +46,4 @@ public:
         }
         return ret;
     }
-}; 
+};  
