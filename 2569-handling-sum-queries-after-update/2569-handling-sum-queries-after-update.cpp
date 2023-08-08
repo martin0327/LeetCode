@@ -251,22 +251,24 @@ F id () {
 class Solution {
 public:
     vector<long long> handleQuery(vector<int>& nums1, vector<int>& nums2, vector<vector<int>>& queries) {
-        ll ans = 0, n = nums1.size();
+        ll n = nums1.size(), ans = 0;
         for (auto x : nums2) ans += x;
+        
         vector<ll> ret;
         
         lazy_segtree<S, op, e, F, mapping, composition, id> seg(n);
         for (int i=0; i<n; i++) {
-            seg.set(i,{nums1[i],1});
+            seg.set(i, {nums1[i],1});
         }
+        
         for (auto qr : queries) {
-            ll t = qr[0];
+            int t = qr[0];
             if (t==1) {
-                ll l = qr[1], r = qr[2];
+                int l = qr[1], r = qr[2];
                 seg.apply(l,r+1,{-1,1});
             }
             else if (t==2) {
-                ll p = qr[1];
+                int p = qr[1];
                 ans += p * seg.all_prod().first;
             }
             else ret.push_back(ans);
@@ -274,3 +276,16 @@ public:
         return ret;
     }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
