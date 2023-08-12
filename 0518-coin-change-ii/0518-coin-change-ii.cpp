@@ -8,10 +8,8 @@ public:
         dp[0][0] = 1;
         for (int i=0; i<n; i++) {
             dp[i+1] = dp[i];
-            for (int j=0; j<k; j++) {
-                for (int l=c[i]; j+l<=k; l+=c[i]) {
-                    dp[i+1][j+l] += dp[i][j];
-                }
+            for (int j=0; j+c[i]<=k; j++) {
+                dp[i+1][j+c[i]] += dp[i+1][j];
             }
         }
         return dp[n][k];        
