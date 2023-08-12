@@ -9,6 +9,6 @@ public:
                 dp[j+c[i]] += dp[j];
             }
         }
-        return dp[k];        
+        return dp[k];
     }
 };
