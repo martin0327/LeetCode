@@ -30,34 +30,25 @@ public:
             int n = adj.size();
             vi deg(n);
             for (int i=0; i<n; i++) {
-                for (auto j : adj[i]) {
-                    deg[j]++;
-                }
+                for (auto j : adj[i]) deg[j]++;
             }
             queue<int> q;
             vi ret;
             for (int i=0; i<n; i++) {
-                if (deg[i]==0) {
-                    q.push(i);
-                }
+                if (deg[i]==0) q.push(i);
             }
             while (q.size()) {
-                int u = q.front();
-                q.pop();
+                int u = q.front(); q.pop();
                 ret.push_back(u);
                 for (auto v : adj[u]) {
-                    if (!--deg[v]) {
-                        q.push(v);
-                    }
+                    if (!--deg[v]) q.push(v);
                 }
             }
             return ret;
         };
         vi ret;
         auto outer = f(adj);
-        if (outer.size() < sz) {
-            return {};
-        }
+        if (outer.size() < sz) return {};
         
         for (auto g : outer) {
             int sz = a[g].size();
@@ -84,9 +75,7 @@ public:
             auto inner = f(adj);
             if (inner.size() < sz) return {};
             
-            for (auto i : inner) {
-                ret.push_back(a[g][i]);
-            }
+            for (auto i : inner) ret.push_back(a[g][i]);
         }
         return ret;        
     }
