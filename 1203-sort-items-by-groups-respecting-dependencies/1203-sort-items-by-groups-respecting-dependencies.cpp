@@ -5,18 +5,15 @@ public:
     vector<int> sortItems(int n, int m, vector<int>& group, vector<vector<int>>& bi) {
         int sz = m;
         for (int i=0; i<n; i++) {
-            if (group[i] == -1) {
-                group[i] = sz++;
-            }
+            if (group[i] == -1) group[i] = sz++;
         }
-        vvi a(sz);
-        vvi adj(sz);
+        vvi a(sz), adj(sz);
         for (int i=0; i<n; i++) {
             int u = group[i];
             a[u].push_back(i);
             for (auto j : bi[i]) {
                 int v = group[j];
-                if (u!=v) adj[v].push_back(u);
+                if (u^v) adj[v].push_back(u);
             }
         }
         for (int i=0; i<sz; i++) {
@@ -35,7 +32,7 @@ public:
             queue<int> q;
             vi ret;
             for (int i=0; i<n; i++) {
-                if (deg[i]==0) q.push(i);
+                if (!deg[i]) q.push(i);
             }
             while (q.size()) {
                 int u = q.front(); q.pop();
