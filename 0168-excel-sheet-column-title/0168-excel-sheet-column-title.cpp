@@ -2,9 +2,7 @@ class Solution {
 public:
     string convertToTitle(int x) {
         string s;
-        
-        while (x) {
-            x--;
+        while (x--) {
             s += 'A' + (x%26);
             x /= 26;
         }
