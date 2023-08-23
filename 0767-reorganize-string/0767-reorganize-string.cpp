@@ -14,10 +14,10 @@ public:
         for (auto [x,c] : a) {
             while (x--) s += c;
         }
-        string ans(n, 'a');
+        string t(n,' ');
         int j=0;
-        for (int i=0; i<n; i+=2) ans[i] = s[j++];
-        for (int i=1; i<n; i+=2) ans[i] = s[j++];
-        return ans;        
+        for (int i=0; i<n; i+=2) t[i] = s[j++];
+        for (int i=1; i<n; i+=2) t[i] = s[j++];
+        return t;        
     }
-}; 
+};
