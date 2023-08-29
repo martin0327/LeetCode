@@ -1,16 +1,24 @@
 class Solution {
 public:
-    bool canCross(vector<int>& stones) {
-        unordered_map<int , unordered_set<int>> hashMap;    
-        hashMap[stones[0] + 1] = {1};       
-        for(int i = 1 ; i < stones.size() ; ++i){      
-            int position = stones[i];               
-            for(auto it : hashMap[position]){           
-                hashMap[position + it].insert(it);      
-                hashMap[position + it + 1].insert(it + 1);
-                hashMap[position + it - 1].insert(it - 1);
+    bool canCross(vector<int>& a) {
+        int n = a.size();
+        using ll = long long;
+        using vi = vector<ll>;
+        set<ll> s;
+        for (auto x : a) s.insert(x);
+        map<ll,set<ll>> mp;
+        mp[0].insert(0);
+        for (ll i=0; i<n; i++) {
+            for (auto j : mp[a[i]]) {
+                for (int d=-1; d<=1; d++) {
+                    ll nj = j + d;
+                    ll x = a[i] + nj;
+                    if (nj > 0 && s.count(a[i]+nj)) {
+                        mp[x].insert(nj);
+                    }
+                }
             }
         }
-        return hashMap[stones.back()].size() != 0;    
+        return !mp[a.back()].empty(); 
     }
 };
