@@ -7,9 +7,8 @@ public:
     int minTaps(int n, vector<int>& rg) {
         vvi a(n+1);
         for (int i=0; i<=n; i++) {
-            int l = i - rg[i], r = i + rg[i];
-            l = max(l,0);
-            r = min(r,n);
+            int l = max(0,i - rg[i]);
+            int r = min(n,i + rg[i]);
             a[r].push_back(l);
         }
         vi dp(n+1, inf);
@@ -21,8 +20,6 @@ public:
                 }
             }
         }
-        int ans = dp[n];
-        if (ans==inf) ans = -1;
-        return ans;
+        return (dp[n]==inf) ? -1 : dp[n];
     }
 };
