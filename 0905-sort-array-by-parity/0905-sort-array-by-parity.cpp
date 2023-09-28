@@ -1,9 +1,9 @@
 class Solution {
 public:
     vector<int> sortArrayByParity(vector<int>& a) {
-        vector<int> ret;
-        for (auto x : a) if (!(x&1)) ret.push_back(x);
-        for (auto x : a) if (x&1) ret.push_back(x);
-        return ret;        
+        for (int i=0, j=0; j<a.size(); j++) {
+            if (~a[j]&1) swap(a[i++],a[j]);
+        }
+        return a;
     }
 };
