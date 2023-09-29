@@ -1,11 +1,11 @@
 class Solution {
 public:
     bool isMonotonic(vector<int>& a) {
-        short b = 0;
+        bool b1 = 0, b2 = 0;
         for (int i=1; i<a.size(); i++) {
-            if (a[i]>a[i-1]) b |= 1;
-            if (a[i]<a[i-1]) b |= 2;
+            if (a[i]>a[i-1]) b1 = true;
+            if (a[i]<a[i-1]) b2 = true;
         }
-        return (b==3) ? false : true;
+        return (b1&&b2) ? false : true;
     }
 };
