@@ -5,7 +5,8 @@ public:
         for (int i=1; i<a.size(); i++) {
             if (a[i]>a[i-1]) b1 = true;
             if (a[i]<a[i-1]) b2 = true;
+            if (b1&&b2) return false;
         }
-        return (b1&&b2) ? false : true;
+        return true;
     }
 }; 
