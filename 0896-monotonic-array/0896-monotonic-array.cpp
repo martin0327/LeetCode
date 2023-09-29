@@ -1,11 +1,11 @@
 class Solution {
 public:
     bool isMonotonic(vector<int>& a) {
-        auto b = a;
-        sort(b.begin(), b.end());
-        auto c = b;
-        reverse(c.begin(), c.end());
-        if (a==b || a==c) return true;
-        else return false;
+        short b = 0;
+        for (int i=1; i<a.size(); i++) {
+            if (a[i]>a[i-1]) b |= 1;
+            if (a[i]<a[i-1]) b |= 2;
+        }
+        return (b==3) ? false : true;
     }
 };
