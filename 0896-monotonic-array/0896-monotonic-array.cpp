@@ -8,4 +8,4 @@ public:
         }
         return (b1&&b2) ? false : true;
     }
-};
+}; 
