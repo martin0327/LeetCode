@@ -542,24 +542,5 @@ public:
         mint ans = 0;
         for (int i=l; i<=r; i++) ans += dp[i];
         return ans.val();
-
-
     }
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}; 
