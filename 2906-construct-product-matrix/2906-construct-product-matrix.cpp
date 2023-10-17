@@ -27,13 +27,11 @@ public:
         for (int i=n; i>=1; i--) {
             suf2[i] = suf2[i+1] * pre[i][m];
             suf2[i] %= mod;
-        }
-        
+        }        
 
         for (int i=1; i<=n; i++) {
             for (int j=1; j<=m; j++) {
                 ll x = pre2[i-1] * suf2[i+1];
-                x %= mod;
                 x *= pre[i][j-1] * suf[i][j+1];
                 x %= mod;
                 a[i-1][j-1] = x;
