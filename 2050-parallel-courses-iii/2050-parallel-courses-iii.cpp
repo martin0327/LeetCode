@@ -1,5 +1,4 @@
-using ll = long long;
-using vi = vector<ll>;
+using vi = vector<int>;
 using vvi = vector<vi>;
 
 class Solution {
@@ -13,7 +12,7 @@ public:
             deg[v]++;
         }
         vi res(n);
-        ll ans = 0;
+        int ans = 0;
         queue<int> q;
         for (int i=0; i<n; i++) {
             if (deg[i]==0) {
