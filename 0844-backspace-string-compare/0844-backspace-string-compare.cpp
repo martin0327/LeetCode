@@ -3,28 +3,24 @@ public:
     bool backspaceCompare(string s, string t) {
         int n = s.size(), m = t.size();
         int i = n-1, j = m-1;
+        int ci = 0, cj = 0;
         
         while (i >=0 || j >= 0) {
-            int ci = 0, cj = 0;
             while (i >= 0) {
                 if (s[i]=='#') {
-                    i--;
-                    ci++;
+                    ci++; i--;
                 }
                 else if (ci > 0) {
-                    ci--;
-                    i--;
+                    ci--; i--;
                 }
                 else break;
             }
             while (j >= 0) {
                 if (t[j]=='#') {
-                    j--;
-                    cj++;
+                    cj++; j--;
                 }
                 else if (cj > 0) {
-                    cj--;
-                    j--;
+                    cj--; j--;
                 }
                 else break;
             }
