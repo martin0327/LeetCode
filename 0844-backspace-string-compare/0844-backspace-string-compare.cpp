@@ -2,8 +2,7 @@ class Solution {
 public:
     bool backspaceCompare(string s, string t) {
         int n = s.size(), m = t.size();
-        int i = n-1, j = m-1;
-        int ci = 0, cj = 0;
+        int i = n-1, j = m-1, ci = 0, cj = 0;
         
         while (i >=0 || j >= 0) {
             while (i >= 0) {
@@ -35,4 +34,4 @@ public:
         }
         return true;
     }
-};
+}; 
