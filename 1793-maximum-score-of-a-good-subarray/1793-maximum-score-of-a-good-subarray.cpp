@@ -2,30 +2,35 @@ class Solution {
 public:
     int maximumScore(vector<int>& a, int k) {
         int n = a.size();
-        map<int, int> mpl, mpr;
-        set<int> s;
-        {
-            int x = a[k];
-            for (int i=k; i>=0; i--) {
-                x = min(x, a[i]);
-                mpl[x] = i;
-                s.insert(x);
+        int l,r,ans,x,y;
+        l = r = k, ans = x = y = a[k];
+        
+        auto f = [&] () {
+            ans = max(ans, (r-l+1) * min(x,y));
+        };
+        
+        while (l > 0 && r < n-1) {
+            int nx = min(x, a[l-1]);
+            int ny = min(y, a[r+1]);
+            if (nx >= ny) {
+                l--;
+                x = nx;
             }
-            x = a[k];
-            for (int i=k; i<n; i++) {
-                x = min(x, a[i]);
-                mpr[x] = i;
-                s.insert(x);
+            else {
+                r++;
+                y = ny;
             }
+            f();
         }
-        int ans = 0;
-        for (auto x : s) {
-            auto itl = mpl.lower_bound(x);
-            auto itr = mpr.lower_bound(x);
-            int l = itl->second;
-            int r = itr->second;
-            ans = max(ans, (r-l+1) * x);
+        while (l > 0) {
+            x = min(x, a[--l]);
+            f();
         }
+        while (r < n-1) {
+            y = min(y, a[++r]);
+            f();
+        }
+        
         return ans; 
     }
 };
