@@ -17,8 +17,7 @@ public:
             if (!u) return;
             if (ret.size()==d) ret.push_back(u->val);
             else ret[d] = max(ret[d], u->val);
-            f(u->left, d+1);
-            f(u->right, d+1);
+            f(u->left, d+1); f(u->right, d+1);
         };
         f(root,0);
         return ret;
