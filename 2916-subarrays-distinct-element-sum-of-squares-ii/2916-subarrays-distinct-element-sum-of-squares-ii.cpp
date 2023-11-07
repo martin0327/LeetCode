@@ -757,17 +757,14 @@ F id () {
 class Solution {
 public:
     int sumCounts(vector<int>& a) {
-        
         int n = a.size(), sz = 1e5;
         lazy_segtree<S, op, e, F, mapping, composition, id> seg(n);
         for (int i=0; i<n; i++) seg.set(i, make_pair(mint(0),mint(1)));
-
         mint cum = 0, ans = 0;
-        
         vector<int> last(sz+1,-1);
         for (int i=0; i<n; i++) {
             int x = a[i];
-            int l = (last[x] != -1) ? last[x]+1 : 0;
+            int l = last[x]+1;
             int r = i;
             seg.apply(l,r+1,make_pair(mint(1),mint(1)));
             cum += 2*seg.prod(l,r+1).first - (r-l+1);
