@@ -1,7 +1,7 @@
 class Solution {
 public:
     string sortVowels(string s) {
-        string t = "aeiouAEIOU";
+        string t = "AEIOUaeiou";
         set<char> sc(t.begin(), t.end());
         t.clear();
         for (auto c : s) {
