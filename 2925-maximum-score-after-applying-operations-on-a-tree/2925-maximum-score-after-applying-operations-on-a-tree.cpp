@@ -20,7 +20,8 @@ public:
                 auto [z,w] = f(v,u);
                 x += z, y += w;
             }
-            return make_pair(x + a[u], max(x,(x==0)?0:a[u]+y));
+            ll z = (x==0)?0:a[u]+y;
+            return make_pair(x+a[u], max(x,z));
         };
         auto [z,w] = f(0,-1);
         return max(z-a[0],w);
