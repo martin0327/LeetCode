@@ -6,12 +6,12 @@ public:
     int countPalindromicSubsequence(string s) {
         vi a(26);
         vvi b(26,vi(26));
-        vector c(26, vvi(26, vi(26)));
+        auto c = b;
         int ans = 0;
         for (auto ch : s) {
             int x = ch - 'a';
             for (int i=0; i<26; i++) {
-                if (b[x][i]) c[x][i][x] = 1;
+                if (b[x][i]) c[x][i] = 1;
             }
             for (int i=0; i<26; i++) {
                 if (a[i]) b[i][x] = 1;
@@ -20,9 +20,7 @@ public:
         }
         for (int i=0; i<26; i++) {
             for (int j=0; j<26; j++) {
-                for (int k=0; k<26; k++) {
-                    ans += c[i][j][k];
-                }
+                ans += c[i][j];
             }
         }
         return ans;
