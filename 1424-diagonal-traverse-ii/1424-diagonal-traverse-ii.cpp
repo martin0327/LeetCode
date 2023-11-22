@@ -10,7 +10,7 @@ public:
                 mp[{i+j,j}] = a[i][j];
             }
         }
-        for (auto [k,v] : mp) ans.push_back(v);
+        for (auto &[k,v] : mp) ans.push_back(v);
         return ans;
     }
 };
