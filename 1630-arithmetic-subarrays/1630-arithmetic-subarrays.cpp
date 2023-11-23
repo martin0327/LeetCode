@@ -11,25 +11,25 @@ public:
             mo[l/sz].push_back({r,l,i});
         }
         int i=0, j=0;
-        map<int,int> mp, d;
+        map<int,int> mp1, d;
         int mul = 0;
-        mp[a[0]]++;
+        mp1[a[0]]++;
 
-        auto inc1 = [&] (int x) { if (++mp[x] == 2) mul++; };
+        auto inc1 = [&] (int x) { if (++mp1[x] == 2) mul++; };
         auto dec1 = [&] (int x) {
-            if (mp[x] == 2) mul--;
-            if (--mp[x] == 0) mp.erase(x);
+            if (mp1[x] == 2) mul--;
+            if (--mp1[x] == 0) mp1.erase(x);
         }; 
 
         auto inc2 = [&] (int x) {d[x]++;};
         auto dec2 = [&] (int x) { if (--d[x] == 0) d.erase(x); };
 
         auto push = [&] (int x) {
-            auto it1 = mp.lower_bound(x);
-            auto it2 = mp.upper_bound(x);
-            int l = (it1 == mp.begin()) ? inf : prev(it1)->first;
-            int r = (it2 == mp.end()) ? inf : it2->first;
-            if (mp.count(x)) inc1(x);
+            auto it1 = mp1.lower_bound(x);
+            auto it2 = mp1.upper_bound(x);
+            int l = (it1 == mp1.begin()) ? inf : prev(it1)->first;
+            int r = (it2 == mp1.end()) ? inf : it2->first;
+            if (mp1.count(x)) inc1(x);
             else {
                 if (l != inf && r != inf) {
                     dec2(r-l);
@@ -50,11 +50,11 @@ public:
         };
 
         auto pop = [&] (int x) {
-            auto it1 = mp.lower_bound(x);
-            auto it2 = mp.upper_bound(x);
-            int l = (it1 == mp.begin()) ? inf : prev(it1)->first;
-            int r = (it2 == mp.end()) ? inf : it2->first;
-            if (mp[x] > 1) dec1(x);
+            auto it1 = mp1.lower_bound(x);
+            auto it2 = mp1.upper_bound(x);
+            int l = (it1 == mp1.begin()) ? inf : prev(it1)->first;
+            int r = (it2 == mp1.end()) ? inf : it2->first;
+            if (mp1[x] > 1) dec1(x);
             else {
                 if (l != inf && r != inf) {
                     dec2(x-l);
@@ -84,7 +84,7 @@ public:
                     else if (r<j) pop(a[j--]);
                     else if (l>i) pop(a[i++]);
                 }
-                if ((mul == 0 && d.size()==1) || (mul == 1 && mp.size()==1)) {
+                if ((mul == 0 && d.size()==1) || (mul == 1 && mp1.size()==1)) {
                     ans[idx] = 1;
                 }
             }
