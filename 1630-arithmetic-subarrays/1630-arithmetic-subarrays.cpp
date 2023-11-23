@@ -12,12 +12,12 @@ public:
         }
         int i=0, j=0;
         map<int,int> mp, d;
-        int mul_cnt = 0;
+        int mul = 0;
         mp[a[0]]++;
 
-        auto inc1 = [&] (int x) { if (++mp[x] == 2) mul_cnt++; };
+        auto inc1 = [&] (int x) { if (++mp[x] == 2) mul++; };
         auto dec1 = [&] (int x) {
-            if (mp[x] == 2) mul_cnt--;
+            if (mp[x] == 2) mul--;
             if (--mp[x] == 0) mp.erase(x);
         }; 
 
@@ -84,14 +84,11 @@ public:
                     else if (r<j) pop(a[j--]);
                     else if (l>i) pop(a[i++]);
                 }
-                if (mul_cnt == 0) {
-                    if (d.size()==1) ans[idx] = 1;
-                }
-                else if (mul_cnt == 1) {
-                    if (mp.size()==1) ans[idx] = 1;
+                if ((mul == 0 && d.size()==1) || (mul == 1 && mp.size()==1)) {
+                    ans[idx] = 1;
                 }
             }
         }
         return ans;
     }
-};  
+};
