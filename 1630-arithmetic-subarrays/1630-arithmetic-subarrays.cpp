@@ -1,7 +1,6 @@
 using ti3 = tuple<int,int,int>;
 const int inf = 1e9;
 
-
 class Solution {
 public:
     vector<bool> checkArithmeticSubarrays(vector<int>& a, vector<int>& ql, vector<int>& qr) {
@@ -95,4 +94,4 @@ public:
         }
         return ans;
     }
-};
+}; 
