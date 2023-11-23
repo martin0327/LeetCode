@@ -18,38 +18,37 @@ public:
         ll mul_cnt = 0;
         mp[a[0]]++;
 
-        auto inc = [&] (int x) { if (++mp[x] == 2) mul_cnt++; };
-
-        auto dec = [&] (int x) {
+        auto inc1 = [&] (int x) { if (++mp[x] == 2) mul_cnt++; };
+        auto dec1 = [&] (int x) {
             if (mp[x] == 2) mul_cnt--;
             if (--mp[x] == 0) mp.erase(x);
         }; 
 
-        auto incd = [&] (int x) {d[x]++;};
-        auto decd = [&] (int x) { if (--d[x] == 0) d.erase(x); };
+        auto inc2 = [&] (int x) {d[x]++;};
+        auto dec2 = [&] (int x) { if (--d[x] == 0) d.erase(x); };
 
         auto push = [&] (int x) {
             auto it1 = mp.lower_bound(x);
             auto it2 = mp.upper_bound(x);
             ll l = (it1 == mp.begin()) ? inf : prev(it1)->first;
             ll r = (it2 == mp.end()) ? inf : it2->first;
-            if (mp.count(x)) inc(x);
+            if (mp.count(x)) inc1(x);
             else {
                 if (l != inf && r != inf) {
-                    decd(r-l);
-                    incd(r-x);
-                    incd(x-l);
-                    inc(x);
+                    dec2(r-l);
+                    inc2(r-x);
+                    inc2(x-l);
+                    inc1(x);
                 }
                 else if (l != inf) {
-                    incd(x-l);
-                    inc(x);
+                    inc2(x-l);
+                    inc1(x);
                 }
                 else if (r != inf) {
-                    incd(r-x);
-                    inc(x);
+                    inc2(r-x);
+                    inc1(x);
                 }
-                else inc(x);
+                else inc1(x);
             }
         };
 
@@ -58,23 +57,23 @@ public:
             auto it2 = mp.upper_bound(x);
             ll l = (it1 == mp.begin()) ? inf : prev(it1)->first;
             ll r = (it2 == mp.end()) ? inf : it2->first;
-            if (mp[x] > 1) dec(x);
+            if (mp[x] > 1) dec1(x);
             else {
                 if (l != inf && r != inf) {
-                    decd(x-l);
-                    decd(r-x);
-                    incd(r-l);
-                    dec(x);
+                    dec2(x-l);
+                    dec2(r-x);
+                    inc2(r-l);
+                    dec1(x);
                 }
                 else if (l != inf) {
-                    decd(x-l);
-                    dec(x);
+                    dec2(x-l);
+                    dec1(x);
                 }
                 else if (r != inf) {
-                    decd(r-x);
-                    dec(x);
+                    dec2(r-x);
+                    dec1(x);
                 }
-                else dec(x);
+                else dec1(x);
             }
         };
         
