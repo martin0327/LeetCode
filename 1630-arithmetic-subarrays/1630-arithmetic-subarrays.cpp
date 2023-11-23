@@ -10,6 +10,7 @@ public:
             int l = ql[i], r = qr[i];
             mo[l/sz].push_back({r,l,i});
         }
+        
         int i=0, j=0;
         map<int,int> mp1, mp2;
         int mul = 0;
@@ -21,7 +22,7 @@ public:
             if (--mp1[x] == 0) mp1.erase(x);
         }; 
 
-        auto inc2 = [&] (int x) {mp2[x]++;};
+        auto inc2 = [&] (int x) { mp2[x]++; };
         auto dec2 = [&] (int x) { if (--mp2[x] == 0) mp2.erase(x); };
 
         auto push = [&] (int x) {
