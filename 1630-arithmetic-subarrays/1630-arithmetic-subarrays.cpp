@@ -11,9 +11,8 @@ public:
             mo[l/sz].push_back({r,l,i});
         }
         
-        int i=0, j=0;
+        int i=0, j=0, mul = 0;
         map<int,int> mp1, mp2;
-        int mul = 0;
         mp1[a[0]]++;
 
         auto inc1 = [&] (int x) { if (++mp1[x] == 2) mul++; };
