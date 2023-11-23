@@ -29,24 +29,16 @@ public:
             auto it2 = mp1.upper_bound(x);
             int l = (it1 == mp1.begin()) ? inf : prev(it1)->first;
             int r = (it2 == mp1.end()) ? inf : it2->first;
-            if (mp1.count(x)) inc1(x);
-            else {
+            if (!mp1.count(x)) {
                 if (l != inf && r != inf) {
                     dec2(r-l);
                     inc2(r-x);
                     inc2(x-l);
-                    inc1(x);
                 }
-                else if (l != inf) {
-                    inc2(x-l);
-                    inc1(x);
-                }
-                else if (r != inf) {
-                    inc2(r-x);
-                    inc1(x);
-                }
-                else inc1(x);
+                else if (l != inf) inc2(x-l);
+                else if (r != inf) inc2(r-x);
             }
+            inc1(x);
         };
 
         auto pop = [&] (int x) {
@@ -54,24 +46,16 @@ public:
             auto it2 = mp1.upper_bound(x);
             int l = (it1 == mp1.begin()) ? inf : prev(it1)->first;
             int r = (it2 == mp1.end()) ? inf : it2->first;
-            if (mp1[x] > 1) dec1(x);
-            else {
+            if (mp1[x] == 1) {
                 if (l != inf && r != inf) {
                     dec2(x-l);
                     dec2(r-x);
                     inc2(r-l);
-                    dec1(x);
                 }
-                else if (l != inf) {
-                    dec2(x-l);
-                    dec1(x);
-                }
-                else if (r != inf) {
-                    dec2(r-x);
-                    dec1(x);
-                }
-                else dec1(x);
+                else if (l != inf) dec2(x-l);
+                else if (r != inf) dec2(r-x);                
             }
+            dec1(x);
         };
         
         vector<bool> ans(q);
