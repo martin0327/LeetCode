@@ -11,7 +11,7 @@ public:
             mo[l/sz].push_back({r,l,i});
         }
         int i=0, j=0;
-        map<int,int> mp1, d;
+        map<int,int> mp1, mp2;
         int mul = 0;
         mp1[a[0]]++;
 
@@ -21,8 +21,8 @@ public:
             if (--mp1[x] == 0) mp1.erase(x);
         }; 
 
-        auto inc2 = [&] (int x) {d[x]++;};
-        auto dec2 = [&] (int x) { if (--d[x] == 0) d.erase(x); };
+        auto inc2 = [&] (int x) {mp2[x]++;};
+        auto dec2 = [&] (int x) { if (--mp2[x] == 0) mp2.erase(x); };
 
         auto push = [&] (int x) {
             auto it1 = mp1.lower_bound(x);
@@ -84,7 +84,7 @@ public:
                     else if (r<j) pop(a[j--]);
                     else if (l>i) pop(a[i++]);
                 }
-                if ((mul == 0 && d.size()==1) || (mul == 1 && mp1.size()==1)) {
+                if ((mul == 0 && mp2.size()==1) || (mul == 1 && mp1.size()==1)) {
                     ans[idx] = 1;
                 }
             }
