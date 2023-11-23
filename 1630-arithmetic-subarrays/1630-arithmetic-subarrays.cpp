@@ -1,21 +1,19 @@
-using ll = long long;
-using ti3 = tuple<ll,ll,ll>;
-using vi = vector<ll>;
-const ll inf = 2e18;
+using ti3 = tuple<int,int,int>;
+const int inf = 1e9;
 
 
 class Solution {
 public:
     vector<bool> checkArithmeticSubarrays(vector<int>& a, vector<int>& ql, vector<int>& qr) {
-        ll n = a.size(), q = ql.size(), sz = sqrt(n);
-        map<ll,vector<ti3>> mo;
+        int n = a.size(), q = ql.size(), sz = sqrt(n);
+        map<int,vector<ti3>> mo;
         for (int i=0; i<q; i++) {
-            ll l = ql[i], r = qr[i];
+            int l = ql[i], r = qr[i];
             mo[l/sz].push_back({r,l,i});
         }
-        ll i=0, j=0;
-        map<ll,ll> mp, d;
-        ll mul_cnt = 0;
+        int i=0, j=0;
+        map<int,int> mp, d;
+        int mul_cnt = 0;
         mp[a[0]]++;
 
         auto inc1 = [&] (int x) { if (++mp[x] == 2) mul_cnt++; };
@@ -30,8 +28,8 @@ public:
         auto push = [&] (int x) {
             auto it1 = mp.lower_bound(x);
             auto it2 = mp.upper_bound(x);
-            ll l = (it1 == mp.begin()) ? inf : prev(it1)->first;
-            ll r = (it2 == mp.end()) ? inf : it2->first;
+            int l = (it1 == mp.begin()) ? inf : prev(it1)->first;
+            int r = (it2 == mp.end()) ? inf : it2->first;
             if (mp.count(x)) inc1(x);
             else {
                 if (l != inf && r != inf) {
@@ -55,8 +53,8 @@ public:
         auto pop = [&] (int x) {
             auto it1 = mp.lower_bound(x);
             auto it2 = mp.upper_bound(x);
-            ll l = (it1 == mp.begin()) ? inf : prev(it1)->first;
-            ll r = (it2 == mp.end()) ? inf : it2->first;
+            int l = (it1 == mp.begin()) ? inf : prev(it1)->first;
+            int r = (it2 == mp.end()) ? inf : it2->first;
             if (mp[x] > 1) dec1(x);
             else {
                 if (l != inf && r != inf) {
@@ -78,7 +76,7 @@ public:
         };
         
         vector<bool> ans(q);
-        for (auto &[qt,rli] : mo) {
+        for (auto &[_,rli] : mo) {
             sort(rli.begin(), rli.end());
             for (auto [r,l,idx] : rli) {
                 while (i!=l || j!=r) {
