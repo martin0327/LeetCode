@@ -62,9 +62,7 @@ public:
                     else if (r<j) pop(a[j--]);
                     else if (l>i) pop(a[i++]);
                 }
-                if ((mul == 0 && mp2.size()==1) || (mul == 1 && mp2.size()==0)) {
-                    ans[idx] = 1;
-                }
+                if (mul+mp2.size()==1) ans[idx] = 1;
             }
         }
         return ans;
