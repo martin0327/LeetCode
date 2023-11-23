@@ -21,15 +21,19 @@ public:
             if (mp1[x] == 2) mul--;
             if (--mp1[x] == 0) mp1.erase(x);
         }; 
-
         auto inc2 = [&] (int x) { mp2[x]++; };
         auto dec2 = [&] (int x) { if (--mp2[x] == 0) mp2.erase(x); };
-
-        auto push = [&] (int x) {
+        
+        auto lr = [&] (int x) {
             auto it1 = mp1.lower_bound(x);
             auto it2 = mp1.upper_bound(x);
             int l = (it1 == mp1.begin()) ? inf : prev(it1)->first;
             int r = (it2 == mp1.end()) ? inf : it2->first;
+            return make_pair(l,r);
+        };
+
+        auto push = [&] (int x) {
+            auto [l,r] = lr(x);
             if (!mp1.count(x)) {
                 if (l != inf && r != inf) {
                     dec2(r-l);
@@ -43,10 +47,7 @@ public:
         };
 
         auto pop = [&] (int x) {
-            auto it1 = mp1.lower_bound(x);
-            auto it2 = mp1.upper_bound(x);
-            int l = (it1 == mp1.begin()) ? inf : prev(it1)->first;
-            int r = (it2 == mp1.end()) ? inf : it2->first;
+            auto [l,r] = lr(x);
             if (mp1[x] == 1) {
                 if (l != inf && r != inf) {
                     dec2(x-l);
