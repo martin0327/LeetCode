@@ -35,13 +35,9 @@ public:
         auto push = [&] (int x) {
             auto [l,r] = lr(x);
             if (!mp1.count(x)) {
-                if (l != inf && r != inf) {
-                    dec2(r-l);
-                    inc2(r-x);
-                    inc2(x-l);
-                }
-                else if (l != inf) inc2(x-l);
-                else if (r != inf) inc2(r-x);
+                if (l != inf) inc2(x-l);
+                if (r != inf) inc2(r-x);
+                if (l != inf && r != inf) dec2(r-l);
             }
             inc1(x);
         };
@@ -49,13 +45,9 @@ public:
         auto pop = [&] (int x) {
             auto [l,r] = lr(x);
             if (mp1[x] == 1) {
-                if (l != inf && r != inf) {
-                    dec2(x-l);
-                    dec2(r-x);
-                    inc2(r-l);
-                }
-                else if (l != inf) dec2(x-l);
-                else if (r != inf) dec2(r-x);                
+                if (l != inf) dec2(x-l);
+                if (r != inf) dec2(r-x);
+                if (l != inf && r != inf) inc2(r-l);
             }
             dec1(x);
         };
