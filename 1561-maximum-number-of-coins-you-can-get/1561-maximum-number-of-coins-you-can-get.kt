@@ -5,4 +5,4 @@ class Solution {
         .take(a.size/3)
         .sum()
     }
-} 
+}
