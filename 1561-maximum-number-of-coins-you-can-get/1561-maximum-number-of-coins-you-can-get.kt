@@ -5,4 +5,4 @@ class Solution {
         .filterIndexed { idx, value -> (idx % 2) == 1 }
         .sum()
     }
-}
+} 
