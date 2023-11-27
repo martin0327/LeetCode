@@ -7,7 +7,7 @@ class Solution {
     private val dr = listOf(1, 1, 2, 2)
     private val dc = listOf(2, -2, 1, -1)
     
-    private fun matMul(a: List<List<Long>>, b: List<List<Long>>): List<List<Long>> {
+    private fun matMul(a: vvi, b: vvi): vvi {
         val n = a.size
         return (0 until n).map { i ->
             (0 until n).map { j ->
@@ -18,7 +18,7 @@ class Solution {
         }
     }
 
-    private fun matExp(a: List<List<Long>>, e: Int): List<List<Long>> {
+    private fun matExp(a: vvi, e: Int): vvi {
         val n = a.size
         val ret = (0 until n).map { i ->
             (0 until n).map { j ->
@@ -26,7 +26,7 @@ class Solution {
             }
         }.toMutableList()
 
-        tailrec fun matExpHelper(exp: Int, base: List<List<Long>>, result: List<List<Long>>): List<List<Long>> {
+        tailrec fun matExpHelper(exp: Int, base: vvi, result: vvi): vvi {
             return when {
                 exp == 0 -> result
                 exp and 1 == 1 -> {
@@ -62,8 +62,8 @@ class Solution {
                 }
             }
         }.forEach { (u, v) ->
-            a[u][v]= 1L
-            a[v][u]= 1L
+            a[u][v] = 1L
+            a[v][u] = 1L
         }
         
         return matExp(a, n - 1)
