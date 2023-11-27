@@ -6,7 +6,6 @@ const vi dr = {1,1,2,2}, dc = {2,-2,1,-1};
 
 class Solution {
 public:
-
     vvi mat_mul(vvi &a, vvi &b) {
         int n = a.size();
         vvi ret(n, vi(n));
