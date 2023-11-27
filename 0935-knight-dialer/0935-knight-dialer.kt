@@ -1,8 +1,12 @@
 typealias vi = List<Long>
 typealias vvi = List<vi>
+    
+const val mod = 1e9.toLong() + 7
+const val R = 4
+const val C = 3
+const val m = R * C - 2
 
 class Solution {
-    private val mod = 1e9.toLong() + 7
     private val dr = listOf(1, 1, 2, 2)
     private val dc = listOf(2, -2, 1, -1)
     
@@ -39,11 +43,7 @@ class Solution {
         return matExpHelper(e, a, ret)
     }
 
-
     fun knightDialer(n: Int): Int {
-        val R = 4
-        val C = 3
-        val m = R * C - 2
         val a = MutableList(m) { MutableList(m) { 0L } }
         
         (0 until R - 1).flatMap { r ->
