@@ -57,7 +57,7 @@ class Solution {
                 }.map { d ->
                     val nr = r + dr[d]
                     val nc = c + dc[d]
-                    val v = if (nr*C+nc >= m) m-1 else nr * C + nc
+                    val v = if (nr * C + nc >= m) m-1 else nr * C + nc
                     Pair(u, v)
                 }
             }
@@ -72,4 +72,4 @@ class Solution {
             .rem(mod)
             .toInt()
     }
-}
+}  
