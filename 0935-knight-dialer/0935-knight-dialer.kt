@@ -6,20 +6,34 @@ class Solution {
     private val mod = 1e9.toLong() + 7
     private val dr = listOf(1, 1, 2, 2)
     private val dc = listOf(2, -2, 1, -1)
-
-    private fun matMul(a: vvi, b: vvi): vvi {
+    
+    // private fun matMul(a: vvi, b: vvi): vvi {
+    //     val n = a.size
+    //     val ret = MutableList(n) { MutableList(n) { 0L } }
+    //     for (i in 0 until n) {
+    //         for (j in 0 until n) {
+    //             for (k in 0 until n) {
+    //                 ret[i][j]+= a[i][k]* b[k][j]
+    //                 ret[i][j]%= mod.toLong()
+    //             }
+    //         }
+    //     }
+    //     return ret
+    // }
+    
+    private fun matMul(a: List<List<Long>>, b: List<List<Long>>): List<List<Long>> {
         val n = a.size
-        val ret = MutableList(n) { MutableList(n) { 0L } }
-        for (i in 0 until n) {
-            for (j in 0 until n) {
-                for (k in 0 until n) {
-                    ret[i][j]+= a[i][k]* b[k][j]
-                    ret[i][j]%= mod.toLong()
-                }
+        return (0 until n).map { i ->
+            (0 until n).map { j ->
+                (0 until n).sumOf { k ->
+                    a[i][k]*b[k][j]
+                }.rem(mod)
             }
         }
-        return ret
     }
+
+
+
 
     private fun matExp(a: vvi, e: Int): vvi {
         val n = a.size
@@ -69,7 +83,7 @@ class Solution {
         return matExp(a, n - 1)
             .flatten()
             .sum()
-            .rem(mod.toLong())
+            .rem(mod)
             .toInt()
     }
 }
