@@ -1,5 +1,4 @@
-typealias ll = Long
-typealias vi = List<ll>
+typealias vi = List<Long>
 typealias vvi = List<vi>
 
 class Solution {
@@ -46,6 +45,7 @@ class Solution {
         val C = 3
         val m = R * C - 2
         val a = MutableList(m) { MutableList(m) { 0L } }
+        
         (0 until R - 1).flatMap { r ->
             (0 until C).flatMap { c ->
                 val u = r * C + c
@@ -69,4 +69,4 @@ class Solution {
             .rem(mod)
             .toInt()
     }
-}  
+}
