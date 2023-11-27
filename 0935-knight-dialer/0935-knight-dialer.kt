@@ -47,23 +47,23 @@ class Solution {
         val m = R * C - 2
         val a = MutableList(m) { MutableList(m) { 0L } }
 
-        for (r in 0 until R - 1) {
-            for (c in 0 until C) {
+        (0 until R - 1).flatMap { r ->
+            (0 until C).flatMap { c ->
                 val u = r * C + c
-                for (d in 0 until 4) {
+                (0 until 4).filter { d ->
                     val nr = r + dr[d]
                     val nc = c + dc[d]
-                    if (nr < 0 || nr >= R || nc < 0 || nc >= C || (nr == 3 && nc != 1)) {
-                        continue
-                    }
-                    var v = nr * C + nc
-                    if (v >= m) {
-                        v = m - 1
-                    }
-                    a[u][v]= 1L
-                    a[v][u]= 1L
+                    nr in 0 until R && nc in 0 until C && !(nr == 3 && nc != 1)
+                }.map { d ->
+                    val nr = r + dr[d]
+                    val nc = c + dc[d]
+                    val v = if (nr*C+nc >= m) m-1 else nr * C + nc
+                    Pair(u, v)
                 }
             }
+        }.forEach { (u, v) ->
+            a[u][v]= 1L
+            a[v][u]= 1L
         }
         
         return matExp(a, n - 1)
