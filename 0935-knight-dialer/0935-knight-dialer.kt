@@ -46,19 +46,16 @@ class Solution {
         val C = 3
         val m = R * C - 2
         val a = MutableList(m) { MutableList(m) { 0L } }
-
         (0 until R - 1).flatMap { r ->
             (0 until C).flatMap { c ->
                 val u = r * C + c
-                (0 until 4).filter { d ->
+                (0 until 4).mapNotNull { d ->
                     val nr = r + dr[d]
                     val nc = c + dc[d]
-                    nr in 0 until R && nc in 0 until C && !(nr == 3 && nc != 1)
-                }.map { d ->
-                    val nr = r + dr[d]
-                    val nc = c + dc[d]
-                    val v = if (nr * C + nc >= m) m-1 else nr * C + nc
-                    Pair(u, v)
+                    if (nr in 0 until R && nc in 0 until C && !(nr == 3 && nc != 1)) {
+                        val v = if (nr * C + nc >= m) m - 1 else nr * C + nc
+                        Pair(u, v)
+                    } else null
                 }
             }
         }.forEach { (u, v) ->
