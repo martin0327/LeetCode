@@ -65,16 +65,11 @@ class Solution {
                 }
             }
         }
-
-        var ans = 0L
-        var matrix = matExp(a, n - 1)
-        for (i in 0 until m) {
-            for (j in 0 until m) {
-                ans += matrix[i][j]
-                ans %= mod.toLong()
-            }
-        }
-
-        return ans.toInt()
+        
+        return matExp(a, n - 1)
+            .flatten()
+            .sum()
+            .rem(mod.toLong())
+            .toInt()
     }
 }
