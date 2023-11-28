@@ -38,17 +38,17 @@ class Solution {
 
 
     fun stringCount(n: Int): Int {
-        val mp = mutableMapOf<ti3, Int>()
-        var m : Int = 0
-        (0 until 2).forEach { i ->
-            (0 until 2).forEach { j ->
-                (0 until 3).forEach { k ->
-                    mp[Triple(i,j,k)] = m
-                    m++
+        val mp = (0 until 2).flatMap { i ->
+            (0 until 2).flatMap { j ->
+                (0 until 3).map { k ->
+                    Triple(i, j, k)
                 }
             }
-        }
+        }.withIndex().associate { (index, triple) ->
+            triple to index
+        }.toMap()
         
+        val m = mp.size
         val a = MutableList(m) { MutableList(m) { 0L } }
         
         (0 until 2).forEach { i ->
@@ -71,4 +71,4 @@ class Solution {
         
         return matExp(a, n)[0][m-1].toInt()
     }
-}
+}  
