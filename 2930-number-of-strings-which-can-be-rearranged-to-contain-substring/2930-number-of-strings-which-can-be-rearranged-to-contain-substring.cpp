@@ -1,38 +1,65 @@
 using ll = long long;
+using ti3 = tuple<ll,ll,ll>;
 using vi = vector<ll>;
 using vvi = vector<vi>;
 const ll mod = 1e9+7;
 
 class Solution {
 public:
-    int stringCount(int n) {
-        vector dp1(2, vvi(2, vi(3)));
-        vector dp2 = dp1;
-        dp1[0][0][0] = 1;
+    vvi mat_mul(vvi &a, vvi &b) {
+        int n = a.size();
+        vvi ret(n, vi(n));
         for (int i=0; i<n; i++) {
-            dp2 = dp1;
-            for (auto &x : dp2) for (auto &y : x) for (auto &z : y) z = 0;
-            
-            for (int j=0; j<2; j++) {
-                for (int k=0; k<2; k++) {
-                    for (int l=0; l<3; l++) {
-                        int nj = min(1,j+1);
-                        int nk = min(1,k+1);
-                        int nl = min(2,l+1);
-                        dp2[j][k][l] += 23 * dp1[j][k][l];
-                        dp2[j][k][l] %= mod;
-                        dp2[nj][k][l] += dp1[j][k][l];
-                        dp2[nj][k][l] %= mod;
-                        dp2[j][nk][l] += dp1[j][k][l];
-                        dp2[j][nk][l] %= mod;
-                        dp2[j][k][nl] += dp1[j][k][l];
-                        dp2[j][k][nl] %= mod;
-                    }
+            for (int j=0; j<n; j++) {
+                for (int k=0; k<n; k++) {
+                    ret[i][j] += a[i][k] * b[k][j];
+                    ret[i][j] %= mod;
                 }
             }
-            swap(dp1,dp2);
         }
-        ll ans = dp1[1][1][2];
-        return ans;
+        return ret;
+    }
+    
+    vvi mat_exp(vvi a, int e) {
+        int n = a.size();
+        vvi ret(n, vi(n));
+        for (int i=0; i<n; i++) ret[i][i] = 1;
+        while (e) {
+            if (e&1) ret = mat_mul(ret, a);
+            e >>= 1;
+            a = mat_mul(a,a);
+        }
+        return ret;
+    }
+
+    int stringCount(int n) {
+        map<ti3,int> mp;
+        ll m = 0;
+        for (int i=0; i<2; i++) {
+            for (int j=0; j<2; j++) {
+                for (int k=0; k<3; k++) {
+                    mp[{i,j,k}] = m++;
+                }
+            }
+        }
+        
+        vvi a(m, vi(m));
+        for (int i=0; i<2; i++) {
+            for (int j=0; j<2; j++) {
+                for (int k=0; k<3; k++) {
+                    int ni = min(1,i+1);
+                    int nj = min(1,j+1);
+                    int nk = min(2,k+1);
+                    ll u = mp[{i,j,k}];
+                    a[u][u] += 23;
+                    a[u][mp[{ni,j,k}]] += 1;
+                    a[u][mp[{i,nj,k}]] += 1;
+                    a[u][mp[{i,j,nk}]] += 1;
+                }
+            }
+        }
+        
+        a = mat_exp(a, n);
+        return a[0][m-1];        
     }
 };
