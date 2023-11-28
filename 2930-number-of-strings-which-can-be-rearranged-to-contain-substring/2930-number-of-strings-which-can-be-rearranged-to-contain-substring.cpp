@@ -62,4 +62,4 @@ public:
         a = mat_exp(a, n);
         return a[0][m-1];        
     }
-};
+};  
