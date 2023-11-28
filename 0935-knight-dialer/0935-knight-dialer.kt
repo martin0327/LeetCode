@@ -27,16 +27,13 @@ class Solution {
             (0 until n).map { j ->
                 if (i == j) 1L else 0L
             }
-        }.toMutableList()
+        }.toList()
 
-        tailrec fun matExpHelper(exp: Int, base: vvi, result: vvi): vvi {
+        tailrec fun matExpHelper(exp: Int, base: vvi, res: vvi): vvi {
             return when {
-                exp == 0 -> result
-                exp and 1 == 1 -> {
-                    val temp = matMul(result, base)
-                    matExpHelper(exp shr 1, matMul(base, base), temp)
-                }
-                else -> matExpHelper(exp shr 1, matMul(base, base), result)
+                exp == 0 -> res
+                exp and 1 == 1 -> matExpHelper(exp shr 1, matMul(base, base), matMul(res, base))
+                else -> matExpHelper(exp shr 1, matMul(base, base), res)
             }
         }
 
@@ -52,8 +49,8 @@ class Solution {
                 (0 until 4).mapNotNull { d ->
                     val nr = r + dr[d]
                     val nc = c + dc[d]
-                    if (nr in 0 until R && nc in 0 until C && !(nr == 3 && nc != 1)) {
-                        val v = if (nr * C + nc >= m) m - 1 else nr * C + nc
+                    if (nr in 0 until R && nc in 0 until C && !(nr == R-1 && nc != 1)) {
+                        val v = if (nr == R-1) m - 1 else nr * C + nc
                         Pair(u, v)
                     } else null
                 }
@@ -69,4 +66,4 @@ class Solution {
             .rem(mod)
             .toInt()
     }
-}
+}  
