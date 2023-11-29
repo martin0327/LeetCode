@@ -9,4 +9,4 @@ class Solution {
             }
         }.all {it}
     }
-}  
+}
