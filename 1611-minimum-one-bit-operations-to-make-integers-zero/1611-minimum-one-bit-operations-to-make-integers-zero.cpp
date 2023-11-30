@@ -30,4 +30,4 @@ public:
     int minimumOneBitOperations(int n) {
         return f(n);
     }
-}; 
+};   
