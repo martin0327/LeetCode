@@ -14,9 +14,7 @@ public:
         int m = msb(x);
         int y = x - m;
 
-        if (y >= m/2) {
-            return dp1[x] = 1 + f(m/2) + f(y-(m/2));
-        }
+        if (y >= m/2) return dp1[x] = 1 + f(m/2) + f(y-(m/2));
         else {
             int mm = msb(y);
             return dp1[x] = 1 + f(y-mm) + g(m/2) - g(mm) + f(m/2);
@@ -32,4 +30,4 @@ public:
     int minimumOneBitOperations(int n) {
         return f(n);
     }
-};
+}; 
