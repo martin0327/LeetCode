@@ -1,8 +1,8 @@
 using vi = vector<int>;
 
 class Trie {
-    public:
-
+  public:
+    
     Trie* ch[2];
 
     Trie() {
@@ -21,10 +21,7 @@ class Trie {
         Trie* node = this;
         vi a;
         for (int i=19; i>=0; i--) {
-            a.push_back(x>>i&1);
-        }
-        for (int i=0; i<a.size(); i++) {
-            int idx = a[i];
+            int idx = x>>i&1;
             if (!node->ch[idx]) node->ch[idx] = new Trie();
             node = node->ch[idx];
         }
@@ -33,14 +30,10 @@ class Trie {
     int search(int x) {
         Trie* node = this;
         int ret = 0;
-        vi a;
         for (int i=19; i>=0; i--) {
-            a.push_back(x>>i&1);
-        }
-        for (int i=0; i<a.size(); i++) {
-            int idx = a[i]^1;
+            int idx = (x>>i&1)^1;
             if (node->ch[idx]) {
-                ret += (1<<(19-i));
+                ret += (1<<i);
                 node = node->ch[idx];
             } 
             else if (node->ch[idx^1]) {
@@ -50,24 +43,34 @@ class Trie {
         }
         return ret;
     }
-};
-
-bool remove(Trie* node, int x, int dep) {
-    if (dep == 20) {
-        return true;
+    
+    void remove(int x) {
+        Trie* node = this;
+        remove(node, x, 0);
     }
-    int idx = (x>>(19-dep)&1);
-    if (node->ch[idx]) {
-        if (remove(node->ch[idx],x,dep+1)) {
-            node->ch[idx] = nullptr;
-        }
-        if (!node->ch[0] && !node->ch[1]) {
+    
+  private:
+    
+    bool remove(Trie* node, int x, int dep) {
+        if (dep == 20) {
             return true;
+        }
+        int idx = (x>>(19-dep)&1);
+        if (node->ch[idx]) {
+            if (remove(node->ch[idx],x,dep+1)) {
+                node->ch[idx] = nullptr;
+            }
+            if (!node->ch[0] && !node->ch[1]) {
+                return true;
+            }
+            else return false;
         }
         else return false;
     }
-    else return false;
-}
+    
+};
+
+
 
 class Solution {
 public:
@@ -79,7 +82,7 @@ public:
         set<int> ss;
         for (int i=0, j=0; j<n; j++) {
             while (a[i]-a[j] > a[j]) {
-                remove(t,a[i++],0);
+                t->remove(a[i++]);
             }
             t->insert(a[j]);
             ans = max(ans, t->search(a[j]));
