@@ -59,7 +59,7 @@ public:
     int maximumStrongPairXor(vector<int>& a) {
         int n = a.size();
         sort(a.rbegin(), a.rend());
-        Trie *t = new Trie();
+        auto t = new Trie();
         int ans = 0;
         for (int i=0, j=0; j<n; j++) {
             while (a[i]-a[j] > a[j]) t->remove(a[i++]);
