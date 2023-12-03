@@ -1,4 +1,3 @@
-using vi = vector<int>;
 const int lim = 20;
 
 class Trie {
@@ -12,15 +11,8 @@ class Trie {
         }
     }
     
-    ~Trie() {
-        for (int i = 0; i < 2; i++) {
-            if (ch[i]) delete ch[i];
-        }
-    }
-
     void insert(int x) {
         Trie* node = this;
-        vi a;
         for (int i=lim-1; i>=0; i--) {
             int idx = x>>i&1;
             if (!node->ch[idx]) node->ch[idx] = new Trie();
@@ -28,7 +20,7 @@ class Trie {
         }
     }
 
-    int search(int x) {
+    int max_xor(int x) {
         Trie* node = this;
         int ret = 0;
         for (int i=lim-1; i>=0; i--) {
@@ -43,10 +35,7 @@ class Trie {
         return ret;
     }
     
-    void remove(int x) {
-        Trie* node = this;
-        remove(node, x);
-    }
+    void remove(int x) { remove(this, x); }
     
   private:
     
@@ -75,7 +64,7 @@ public:
         for (int i=0, j=0; j<n; j++) {
             while (a[i]-a[j] > a[j]) t->remove(a[i++]);
             t->insert(a[j]);
-            ans = max(ans, t->search(a[j]));
+            ans = max(ans, t->max_xor(a[j]));
         }
         return ans;
     }
