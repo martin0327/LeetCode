@@ -1,9 +1,7 @@
 class Solution {
     fun largestGoodInteger(s: String): String {
-        return (0..9)
+        return (9 downTo 0)
             .map { it.toString().repeat(3) }
-            .filter { s.contains(it) }
-            .ifEmpty { listOf("") }
-            .max()
+            .find { s.contains(it) } ?: ""
     }
 }
