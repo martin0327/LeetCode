@@ -58,27 +58,16 @@ public:
         }
         for (auto &x : a) x = cc[x];
         
-        ll lo = 1, hi = n, ans = -1;
-        
-        while (lo <= hi) {
-            ll mid = (lo+hi)/2;
-            ll l = mid;
-            segtree seg(sz);
-            for (int i=0; i<l; i++) {
-                seg.set(a[i],seg.get(a[i])+1);
+        segtree seg(sz);
+        ll i = 0, j = 0, ans = 0;
+        while (i<n) {
+            if (seg.all_prod() <= k && j < n) {
+                seg.set(a[j],seg.get(a[j++])+1);
             }
-            bool ok = (seg.all_prod() <= k);
-            for (int i=l; i<n; i++) {
-                seg.set(a[i-l],seg.get(a[i-l])-1);
-                seg.set(a[i],seg.get(a[i])+1);
-                ok |= (seg.all_prod() <= k);
-                if (ok) break;
+            else {
+                seg.set(a[i],seg.get(a[i++])-1);
             }
-            if (ok) {
-                ans = mid;
-                lo = mid + 1;
-            }
-            else hi = mid - 1;
+            if (seg.all_prod() <= k) ans = max(ans, j-i);
         }
         return ans;
     }
