@@ -1,76 +1,88 @@
-const int N = 300;
-const long long INF = 0x3F3F3F3F3F3F3FLL;
+using ll = long long;
+using pii = pair<ll,ll>;
+using vi = vector<ll>;
+using vvi = vector<vi>;
+using vs = vector<string>;
 
-long long dis[N][N];
+template<typename T>
+vector<T> get_unique(vector<T> a) {
+    sort(a.begin(), a.end());
+    a.erase(unique(a.begin(), a.end()), a.end());
+    return a;
+}
+
+const int N = 300;
+const ll inf = 2e18;
+
+ll dist[N][N];
+
 
 class Solution {
 public:
-    long long minimumCost(string source, string target, vector<string>& original, vector<string>& changed, vector<int>& cost) {
-        map<string, int> label;
-        for (auto& v : original) {
-            label[v];
-        }
-        for (auto& v : changed) {
-            label[v];
-        }
-        int total = 0;
-        for (auto& it : label) {
-            it.second = total++;
-        }
+    long long minimumCost(string src, string tg, vector<string>& org, vector<string>& chg, vector<int>& cost) {
         
-        for (int i = 0; i < total; ++i) {
-            for (int j = 0; j < total; ++j) {
-                dis[i][j] = INF;
+        map<string,int> mp;
+        for (auto x : org) mp[x];
+        for (auto x : chg) mp[x];
+        
+        ll sz = 0;
+        for (auto &[k,v] : mp) v = sz++;
+
+        
+        for (int i = 0; i < sz; ++i) {
+            for (int j = 0; j < sz; ++j) {
+                dist[i][j] = inf;
             }
-            dis[i][i] = 0;
+            dist[i][i] = 0;
         }
         
-        for (int i = 0; i < original.size(); ++i) {
-            int u = label[original[i]];
-            int v = label[changed[i]];
-            
-            dis[u][v] = min(dis[u][v], (long long) cost[i]);
+        for (int i=0; i<org.size(); i++) {
+            int u = mp[org[i]];
+            int v = mp[chg[i]];
+            dist[u][v] = min(dist[u][v], (ll) cost[i]);
         }
-        for (int k = 0; k < total; ++k) {
-            for (int i = 0;i < total; ++i) {
-                for (int j = 0; j < total; ++j) {
-                    if (i != j && j != k && k != i) {
-                        dis[i][j] = min(dis[i][j], dis[i][k] + dis[k][j]);
-                    }
+
+        for (int k=0; k<sz; k++) {
+            for (int i=0; i<sz; i++) {
+                for (int j=0; j<sz; j++) {
+                    dist[i][j] = min(dist[i][j], dist[i][k]+dist[k][j]);
                 }
             }
         }
-        
-        vector<int> lens;
-        for (auto& v : original) {
-            lens.push_back(v.size());
-        }
-        sort(lens.begin(), lens.end());
-        lens.erase(unique(lens.begin(), lens.end()), lens.end());
-        
-        int n = source.size();
-        vector<long long> dp(n + 1, INF);
+
+        ll n = src.size();
+        vi dp(n+1, inf);
         dp[0] = 0;
-        
-        for (int i = 0; i < n; ++i) {
-            if (source[i] == target[i]) {
-                dp[i + 1] = min(dp[i + 1], dp[i]);
+        src.insert(src.begin(), ' ');
+        tg.insert(tg.begin(), ' ');
+
+        vi len;
+        for (auto x : org) {
+            len.push_back(x.size());
+        }
+        len = get_unique(len);
+
+        for (int r=1; r<=n; r++) {
+            if (src[r] == tg[r]) {
+                dp[r] = min(dp[r], dp[r-1]);
             }
-            for (int l : lens) {
-                if (i - l + 1 >= 0) {
-                    string s = source.substr(i - l + 1, l);
-                    string t = target.substr(i - l + 1, l);
-                    auto u = label.find(s);
-                    auto v = label.find(t);
-                    if (u != label.end() && v != label.end()) {
-                        dp[i + 1] = min(dp[i + 1], dp[i - l + 1] + dis[u->second][v->second]);
+            for (auto d : len) {
+                if (r-d+1 < 1) break;
+                ll l = r-d+1;
+                string s = src.substr(l,d);
+                auto it1 = mp.find(s);
+                if (it1 != mp.end()) {
+                    string t = tg.substr(l,d);
+                    auto it2 = mp.find(t);
+                    if (it2 != mp.end()) {
+                        dp[r] = min(dp[r], dp[l-1] + dist[it1->second][it2->second]);
                     }
                 }
-            }
+            }        
         }
-        if (dp[n] >= INF) {
-            return -1;
-        }
-        return dp[n];
+        ll ans = dp[n];
+        if (ans == inf) ans = -1;
+        
+        return ans;
     }
-};
+}; 
