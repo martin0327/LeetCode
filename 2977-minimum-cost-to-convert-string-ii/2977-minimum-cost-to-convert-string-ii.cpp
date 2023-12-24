@@ -11,10 +11,12 @@ vector<T> get_unique(vector<T> a) {
     return a;
 }
 
-const int N = 300;
+const ll N = 1005;
+const ll M = 205;
 const ll inf = 2e18;
 
-ll dist[N][N];
+ll dist[M][M];
+ll dp[N];
 
 
 class Solution {
@@ -51,7 +53,7 @@ public:
         }
 
         ll n = src.size();
-        vi dp(n+1, inf);
+        for (int i=1; i<=n; i++) dp[i] = inf;
         dp[0] = 0;
         src.insert(src.begin(), ' ');
         tg.insert(tg.begin(), ' ');
