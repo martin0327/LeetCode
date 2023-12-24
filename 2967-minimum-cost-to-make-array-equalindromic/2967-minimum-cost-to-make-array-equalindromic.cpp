@@ -27,20 +27,18 @@ public:
         ll n = a.size(), m = b.size(), ans = 2e18; 
         ll cur = accumulate(a.begin(), a.end(), 0ll);
 
-        ll left = 0, right = n;
-        ll i=0, j=0;
-        while (j<m) {
+        ll l = 0, r = n;
+        for (ll i=0, j=0; j<m; j++) {
             ll d = 0, acc = 0;
             while (i < n && a[i] < b[j]) {
                 acc += a[i++];
                 d++;
             }
             cur -= 2*acc;
-            left += d;
-            right -= d;
-            ll t = cur + left*b[j] - right*b[j];
+            l += d;
+            r -= d;
+            ll t = cur + l*b[j] - r*b[j];
             ans = min(ans, t);
-            j++;
         }
         return ans;
     }
