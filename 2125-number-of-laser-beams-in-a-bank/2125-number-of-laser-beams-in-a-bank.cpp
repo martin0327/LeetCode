@@ -2,11 +2,9 @@ class Solution {
 public:
     int numberOfBeams(vector<string>& b) {
         vector<int> a;
-        for (auto row : b) {
-            int cnt = 0;
-            for (auto c : row) {
-                if (c=='1') cnt++;
-            }
+        auto f = [&](char c){return c=='1';};
+        for (auto t : b) {
+            int cnt = count_if(t.begin(), t.end(), f);
             if (cnt>0) a.push_back(cnt);
         }
         int ans = 0;
