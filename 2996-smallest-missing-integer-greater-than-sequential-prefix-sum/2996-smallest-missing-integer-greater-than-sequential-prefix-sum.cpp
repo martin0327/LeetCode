@@ -4,10 +4,7 @@ public:
         int n = a.size();
         set<int> s(a.begin(), a.end());
         int x = a[0];
-        for (int j=1; j<n; j++) {
-            if (a[j] == a[j-1]+1) x += a[j];
-            else break;
-        }
+        for (int i=1; i<n && a[i] == a[i-1]+1; i++) x += a[i];
         while (s.count(x)) x++;
         return x;
     }
