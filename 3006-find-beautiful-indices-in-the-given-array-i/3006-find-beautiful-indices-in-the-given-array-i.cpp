@@ -15,17 +15,17 @@ public:
         if (!idx_b.empty()) {
             auto it = idx_b.begin();
             for (auto i : idx_a) {
-                while (it != idx_b.end() && *it < i) it++;
+                while (it != idx_b.end() && *it < i-k) it++;
                 if (it != idx_b.end() && abs(*it-i) <= k) check[i] = 1;
             }
         }
-        if (!idx_b.empty()) {
-            auto it = idx_b.begin();
-            for (auto i : idx_a) {
-                while (next(it) != idx_b.end() && *next(it) <= i) it++;
-                if (it != idx_b.end() && abs(*it-i) <= k) check[i] = 1;
-            }
-        }
+        // if (!idx_b.empty()) {
+        //     auto it = idx_b.begin();
+        //     for (auto i : idx_a) {
+        //         while (next(it) != idx_b.end() && *next(it) <= i) it++;
+        //         if (it != idx_b.end() && abs(*it-i) <= k) check[i] = 1;
+        //     }
+        // }
         
         vector<int> ans;
         for (int i=0; i<n; i++) if (check[i]) ans.push_back(i);
