@@ -4,6 +4,8 @@
 using ld = long double;
 using vi = vector<int>;
 using vvi = vector<vi>;
+// using vm = vector<mint>;
+// using vvm = vector<vm>;
 using pii = pair<int,int>;
 using vp = vector<pii>;
 using vvp = vector<vp>;
@@ -91,3 +93,4 @@ public:
 };
 
 #define ll int
+
