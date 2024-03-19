@@ -15,19 +15,15 @@ public:
         int cur = 0;
         vi last(26,-100);
         while (a.size()) {
-            bool flag = false;
             for (auto [x,i] : a) {
                 if (cur > last[i] + n) {
-                    flag = true;
                     last[i] = cur;
-                    cur++;
                     a.erase({x,i});
                     if (x+1 != 0) a.insert({x+1,i});
-                    flag = true;
                     break;
                 }
             }
-            if (!flag) cur++;
+            cur++;
         }
         return cur;
     }
