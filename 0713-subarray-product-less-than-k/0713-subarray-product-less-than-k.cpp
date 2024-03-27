@@ -1,4 +1,3 @@
-using vi = vector<int>;
 class Solution {
 public:
     int numSubarrayProductLessThanK(vector<int>& a, int k) {
