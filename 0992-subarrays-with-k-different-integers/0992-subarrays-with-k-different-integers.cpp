@@ -36,8 +36,6 @@ public:
                 if (++c[a[j++]]==1) cnt++;
             }
         }
-        // debug(mx);
-        // debug(mn);
         for (int i=0; i<=n; i++) {
             if (min_left[i] == -1) continue;
             if (max_left[i] == -1) continue;
@@ -45,7 +43,6 @@ public:
             int r = max_left[i];
             ans += r-l+1;
         }
-
         return ans;
     }
 };
