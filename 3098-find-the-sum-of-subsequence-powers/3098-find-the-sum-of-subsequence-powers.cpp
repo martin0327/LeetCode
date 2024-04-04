@@ -68,6 +68,7 @@ public:
                 }
             }
             dp[0][0][0] = 1;
+            
             for (int i=0; i<=n; i++) {
                 for (int j=0; j<=k; j++) {
                     for (int l=0; l<2; l++) {
@@ -80,9 +81,7 @@ public:
                             int ni = lower_idx[di][i];
                             if (ni > n) continue;
                             ll w = a[ni] - a[i];
-                            if (l==1 || w > d) {
-                                mod_sum(pre[ni][j+1][l],dp[i][j][l],mod);
-                            }
+                            if (l==1 || w > d) mod_sum(pre[ni][j+1][l],dp[i][j][l],mod);
                             else {
                                 mod_sum(pre[ni][j+1][1],dp[i][j][l],mod);
                                 int ni2 = upper_idx[di][i];
@@ -95,13 +94,9 @@ public:
                     }
                 }
             }
-            ll cnt = 0;
             for (int i=0; i<=n; i++) {
-                cnt += dp[i][k][1];
-                cnt %= mod;
+                mod_sum(ans,d*dp[i][k][1],mod);
             }
-            ans += d * cnt;
-            ans %= mod;
         }
         return ans;
     }
