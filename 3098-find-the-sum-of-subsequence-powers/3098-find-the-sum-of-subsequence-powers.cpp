@@ -16,9 +16,13 @@ vector<T> get_unique(vector<T> a) {
 }
 
 ll safe_mod(ll x, ll m) {
-    if (x >= m) x %= m;
+    x %= m;
     if (x < 0) x += m;
     return x;
+}
+
+void mod_sum(ll &x, ll y, ll m) {
+    x = safe_mod(x+y,m);
 }
 
 class Solution {
@@ -69,10 +73,10 @@ public:
                     for (int l=0; l<2; l++) {
                         if (i > 0) {
                             if (pre[i-1][j][l] > 0) {
-                                pre[i][j][l] = safe_mod(pre[i][j][l]+pre[i-1][j][l], mod);
+                                mod_sum(pre[i][j][l],pre[i-1][j][l],mod);
                             }
                             if (pre[i][j][l] > 0) {
-                                dp[i][j][l] = safe_mod(dp[i][j][l]+pre[i][j][l], mod);
+                                mod_sum(dp[i][j][l],pre[i][j][l],mod);
                             }
                         }
                         if (dp[i][j][l] == 0) continue;
@@ -81,14 +85,14 @@ public:
                             if (ni > n) continue;
                             ll w = a[ni] - a[i];
                             if (l==1 || w > d) {
-                                pre[ni][j+1][l] = safe_mod(pre[ni][j+1][l]+dp[i][j][l], mod);
+                                mod_sum(pre[ni][j+1][l],dp[i][j][l],mod);
                             }
                             else {
-                                pre[ni][j+1][1] = safe_mod(pre[ni][j+1][1]+dp[i][j][l],mod);
+                                mod_sum(pre[ni][j+1][1],dp[i][j][l],mod);
                                 int ni2 = upper_idx[di][i];
                                 if (ni2 <= n) {
-                                    pre[ni2][j+1][1] = safe_mod(pre[ni2][j+1][1]-dp[i][j][l],mod);
-                                    pre[ni2][j+1][0] = safe_mod(pre[ni2][j+1][0]+dp[i][j][l],mod);
+                                    mod_sum(pre[ni2][j+1][1],-dp[i][j][l],mod);
+                                    mod_sum(pre[ni2][j+1][0],dp[i][j][l],mod);
                                 }
                             }
                         }
