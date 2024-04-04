@@ -21,8 +21,8 @@ ll safe_mod(ll x, ll m) {
     return x;
 }
 
-void mod_sum(ll &x, ll y, ll m) {
-    x = safe_mod(x+y,m);
+void mod_sum(ll &x, ll y) {
+    x = safe_mod(x+y,mod);
 }
 
 class Solution {
@@ -73,29 +73,29 @@ public:
                 for (int j=0; j<=k; j++) {
                     for (int l=0; l<2; l++) {
                         if (i > 0) {
-                            mod_sum(pre[i][j][l],pre[i-1][j][l],mod);
-                            mod_sum(dp[i][j][l],pre[i][j][l],mod);
+                            mod_sum(pre[i][j][l],pre[i-1][j][l]);
+                            mod_sum(dp[i][j][l],pre[i][j][l]);
                         }
                         if (dp[i][j][l] == 0) continue;
                         if (i < n && j < k) {
                             int ni = lower_idx[di][i];
                             if (ni > n) continue;
                             ll w = a[ni] - a[i];
-                            if (l==1 || w > d) mod_sum(pre[ni][j+1][l],dp[i][j][l],mod);
+                            if (l==1 || w > d) mod_sum(pre[ni][j+1][l],dp[i][j][l]);
                             else {
-                                mod_sum(pre[ni][j+1][1],dp[i][j][l],mod);
+                                mod_sum(pre[ni][j+1][1],dp[i][j][l]);
                                 int ni2 = upper_idx[di][i];
                                 if (ni2 <= n) {
-                                    mod_sum(pre[ni2][j+1][1],-dp[i][j][l],mod);
-                                    mod_sum(pre[ni2][j+1][0],dp[i][j][l],mod);
+                                    mod_sum(pre[ni2][j+1][1],-dp[i][j][l]);
+                                    mod_sum(pre[ni2][j+1][0],dp[i][j][l]);
                                 }
                             }
                         }
                     }
                 }
             }
-            for (int i=0; i<=n; i++) {
-                mod_sum(ans,d*dp[i][k][1],mod);
+            for (int i=k; i<=n; i++) {
+                mod_sum(ans,d*dp[i][k][1]);
             }
         }
         return ans;
