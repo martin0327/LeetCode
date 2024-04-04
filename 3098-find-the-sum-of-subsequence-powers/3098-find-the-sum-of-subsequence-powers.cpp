@@ -72,12 +72,8 @@ public:
                 for (int j=0; j<=k; j++) {
                     for (int l=0; l<2; l++) {
                         if (i > 0) {
-                            if (pre[i-1][j][l] > 0) {
-                                mod_sum(pre[i][j][l],pre[i-1][j][l],mod);
-                            }
-                            if (pre[i][j][l] > 0) {
-                                mod_sum(dp[i][j][l],pre[i][j][l],mod);
-                            }
+                            mod_sum(pre[i][j][l],pre[i-1][j][l],mod);
+                            mod_sum(dp[i][j][l],pre[i][j][l],mod);
                         }
                         if (dp[i][j][l] == 0) continue;
                         if (i < n && j < k) {
