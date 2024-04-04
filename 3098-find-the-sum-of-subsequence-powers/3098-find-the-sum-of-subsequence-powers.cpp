@@ -5,16 +5,6 @@ using vvi = vector<vi>;
 using vvvi = vector<vvi>;
 const ll mod = 1e9+7;
 
-template<typename T>
-void asort(vector<T> &a) {sort(a.begin(), a.end());}
-
-template<typename T>
-vector<T> get_unique(vector<T> a) {
-    asort(a);
-    a.erase(unique(a.begin(), a.end()), a.end());
-    return a;
-}
-
 ll safe_mod(ll x, ll m) {
     x %= m;
     if (x < 0) x += m;
@@ -39,7 +29,9 @@ public:
                 if (d > 0) diffs.push_back(d);
             }
         }
-        diffs = get_unique(diffs);
+        sort(diffs.begin(), diffs.end());
+        diffs.erase(unique(diffs.begin(), diffs.end()), diffs.end());
+
         int dsz = diffs.size();
         vvi lower_idx(dsz,vi(n, n+1));
         auto upper_idx = lower_idx;
@@ -55,7 +47,7 @@ public:
             }
         }
         vvvi dp(n+1, vvi(k+1, vi(2)));
-        vvvi pre(n+1, vvi(k+1, vi(2)));
+        auto pre = dp;
         
         ll ans = 0;
         for (int di=0; di<dsz; di++) {
