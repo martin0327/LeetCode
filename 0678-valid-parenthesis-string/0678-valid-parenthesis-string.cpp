@@ -23,16 +23,10 @@ public:
 
         int d = r - l, sz = idx.size();
         if (d > sz) return false;
-        for (int i=0; i<d; i++) {
-            s[idx[i]] = '(';
-        }
         int h = (sz - d) / 2;
-        for (int i=d; i<d+h; i++) {
-            s[idx[i]] = '(';
-        }
-        for (int i=sz-1; i>=sz-h; i--) {
-            s[idx[i]] = ')';
-        }
+        for (int i=0; i<d+h; i++) s[idx[i]] = '(';
+        for (int i=sz-1; i>=sz-h; i--) s[idx[i]] = ')';
+        
         int x = 0;
         for (auto c : s) {
             if (c == '(') x++;
