@@ -9,9 +9,9 @@ public:
         }
 
         if (r < l) {
+            int t = '(' ^ ')';
             for (auto &c : s) {
-                if (c == ')') c = '(';
-                else if (c == '(') c = ')';
+                if (c != '*') c ^= t;
             }
             reverse(s.begin(), s.end());
             swap(l,r);
