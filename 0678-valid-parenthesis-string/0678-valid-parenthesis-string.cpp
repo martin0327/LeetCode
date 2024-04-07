@@ -1,11 +1,11 @@
 class Solution {
 public:
     bool checkValidString(string s) {
-        int l=0,r=0,w=0;
-        for (auto c : s) {
-            if (c == '*') w++;
+        int n = s.size(), l=0,r=0;
+        for (int i=0; i<n; i++) {
+            char c = s[i];
+            if (c == '(') l++;
             else if (c == ')') r++;
-            else l++;
         }
 
         if (r < l) {
@@ -16,33 +16,23 @@ public:
             reverse(s.begin(), s.end());
             swap(l,r);
         }
+        vector<int> idx;
+        for (int i=0; i<n; i++) {
+            if (s[i] == '*') idx.push_back(i);
+        }
 
-        int d = r - l;
-        if (d > w) return false;
-        for (auto &c : s) {
-            if (c == '*' && d > 0) {
-                c = '(';
-                d--;
-                w--;
-                l++;
-            }
+        int d = r - l, sz = idx.size();
+        if (d > sz) return false;
+        for (int i=0; i<d; i++) {
+            s[idx[i]] = '(';
         }
-        int h = w / 2;
-        for (auto &c : s) {
-            if (c == '*' && h > 0) {
-                c = '(';
-                h--;
-            }
+        int h = (sz - d) / 2;
+        for (int i=d; i<d+h; i++) {
+            s[idx[i]] = '(';
         }
-        reverse(s.begin(), s.end());
-        h = w / 2;
-        for (auto &c : s) {
-            if (c == '*' && h > 0) {
-                c = ')';
-                h--;
-            }
+        for (int i=sz-1; i>=sz-h; i--) {
+            s[idx[i]] = ')';
         }
-        reverse(s.begin(), s.end());
         int x = 0;
         for (auto c : s) {
             if (c == '(') x++;
@@ -50,6 +40,5 @@ public:
             if (x < 0) return false;
         }
         return true;
-
     }
 };
