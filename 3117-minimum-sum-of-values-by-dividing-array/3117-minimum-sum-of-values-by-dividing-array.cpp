@@ -130,8 +130,8 @@ public:
                 if (right == -1) continue;
                 
                 if (spt.query(left,i) == b[j]) {
-                    ll t = min(dp[j].get(i), dp[j-1].prod(left-1,right) + a[i]);
-                    dp[j].set(i,t);
+                    ll v = min(dp[j].get(i), dp[j-1].prod(left-1,right) + a[i]);
+                    dp[j].set(i,v);
                 }
             }
         }
