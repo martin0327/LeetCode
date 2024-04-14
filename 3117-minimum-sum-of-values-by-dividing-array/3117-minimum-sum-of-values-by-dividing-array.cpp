@@ -100,21 +100,7 @@ public:
         for (ll j=1; j<=m; j++) {
             for (ll i=1; i<=n; i++) {
                 if ((b[j] & a[i]) != b[j]) continue;
-                ll right = -1;
-                {
-                    ll lo = 1, hi = i;
-                    while (lo <= hi) {
-                        ll mid = (lo+hi) / 2;
-                        ll x = spt.query(mid,i);
-                        if (x <= b[j]) {
-                            right = mid;
-                            lo = mid + 1;
-                        }
-                        else hi = mid - 1;
-                    }
-
-                }
-                ll left = -1;
+                ll left = -1, right = -1;
                 {
                     ll lo = 1, hi = i;
                     while (lo <= hi) {
@@ -127,13 +113,26 @@ public:
                         else lo = mid + 1;
                     }
                 }
-                if (left == -1 || right == -1) continue;
+                if (left == -1) continue;
+                
+                {
+                    ll lo = 1, hi = i;
+                    while (lo <= hi) {
+                        ll mid = (lo+hi) / 2;
+                        ll x = spt.query(mid,i);
+                        if (x <= b[j]) {
+                            right = mid;
+                            lo = mid + 1;
+                        }
+                        else hi = mid - 1;
+                    }
+                }
+                if (right == -1) continue;
                 
                 if (spt.query(left,i) == b[j]) {
                     ll t = min(dp[j].get(i), dp[j-1].prod(left-1,right) + a[i]);
                     dp[j].set(i,t);
                 }
-
             }
         }
         ll ans = dp[m].get(n);
