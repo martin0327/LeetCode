@@ -46,8 +46,6 @@ public:
         vector<bool> ans(m);
         queue<int> q;
         q.push(n-1);
-        vi vis(n);
-        vis[n-1] = 1;
         while (q.size()) {
             auto u = q.front();
             q.pop();
@@ -55,9 +53,7 @@ public:
                 ll w = wt[i];
                 if (dist[u] == dist[v] + w) {
                     ans[i] = true;
-                    if (!vis[v]) {
-                        q.push(v);
-                    }
+                    q.push(v);
                 }
             }
         }
