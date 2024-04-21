@@ -21,10 +21,9 @@ public:
             auto e = edges[i];
             int u = e[0];
             int v = e[1];
-            int w = e[2];
             adj[u].push_back({v,i});
             adj[v].push_back({u,i});
-            wt[i] = w;
+            wt[i] = e[2];
         }
         min_pq<pii> pq;
         pq.push({0,0});
