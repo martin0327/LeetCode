@@ -11,7 +11,7 @@ public:
         }
         int ans = 0;
         for (int i=0; i<26; i++) {
-            char x = 'a' + i, y = 'A' + i;
+            char x = 'a' + i, y = x ^ 32;
             if (mp.count(x) && mp.count(y)) {
                 if (mp[x].back() < mp[y].front()) ans++;
             }
