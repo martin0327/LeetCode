@@ -8,11 +8,9 @@ public:
         cnt[0] = 1;
         for (auto c : s) {
             p ^= (1ll<<(c-'a'));
-            for (auto x : b) {
-                ans += cnt[x^p];
-            }
+            for (auto x : b) ans += cnt[x^p];
             cnt[p]++;
         }
         return ans;
     }
-}; 
+};
