@@ -7,13 +7,13 @@ public:
         for (int i=0; i<10; i++) {
             b.push_back(1ll<<i);
         }
-        map<ll,ll> mp;
-        mp[0]++;
+        map<ll,ll> mp; mp[0]++;
         for (auto c : s) {
             p ^= (1ll<<(c-'a'));
             for (auto x : b) {
                 ll t = x ^ p;
-                if (mp.count(t)) ans += mp[t];
+                auto it = mp.find(t);
+                if (it != mp.end()) ans += it->second;
             }
             mp[p]++;
         }
