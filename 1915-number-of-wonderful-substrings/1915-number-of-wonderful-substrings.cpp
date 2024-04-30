@@ -12,8 +12,7 @@ public:
         for (auto c : s) {
             p ^= (1ll<<(c-'a'));
             for (auto x : b) {
-                ll t = x ^ p;
-                ans += cnt[t];
+                ans += cnt[x^p];
             }
             cnt[p]++;
         }
