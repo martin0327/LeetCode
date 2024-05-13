@@ -12,18 +12,15 @@ public:
         for (int i=0; i<n; i++) {
             if (b[i]&(1<<(m-1))) b[i] ^= full;
         }
-
-        auto f = [&] (vector<int> &a) {
-            int ret = n * (1<<(m-1));
-            for (int j=0; j<m-1; j++) {
-                int cnt = 0;
-                for (auto &x : a) cnt += (x>>j&1);
-                cnt = max(cnt, n-cnt);
-                ret += cnt * (1<<j);
-            }
-            return ret;
-        };
         
-        return f(b);
+        int ret = n * (1<<(m-1));
+        for (int j=0; j<m-1; j++) {
+            int cnt = 0;
+            for (auto &x : b) cnt += (x>>j&1);
+            cnt = max(cnt, n-cnt);
+            ret += cnt * (1<<j);
+        }
+
+        return ret;
     }
 };
