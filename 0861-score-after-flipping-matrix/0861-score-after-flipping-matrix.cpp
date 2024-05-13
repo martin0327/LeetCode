@@ -10,28 +10,23 @@ public:
             }
         }
         auto c = b;
-
-        for (auto &x : b) {
-            if ((x&(1<<(m-1))) == 0) x ^= full;
+        
+        for (int i=0; i<n; i++) {
+            if (b[i]&(1<<(m-1))) b[i] ^= full;
+            else c[i] ^= full;
         }
-        for (auto &x : c) {
-            if (x&(1<<(m-1))) x ^= full;
-        }
-        // debug(b);
-        // debug(c);
-        int ans1 = n * (1<<(m-1)), ans2 = ans1;
 
-        auto f = [&] (int &ans, vector<int> &a) {
+        auto f = [&] (vector<int> &a) {
+            int ret = n * (1<<(m-1));
             for (int j=0; j<m-1; j++) {
                 int cnt = 0;
-                for (auto x : a) cnt += (x>>j&1);
+                for (auto &x : a) cnt += (x>>j&1);
                 cnt = max(cnt, n-cnt);
-                // debug(j,cnt);
-                ans += cnt * (1<<j);
+                ret += cnt * (1<<j);
             }
+            return ret;
         };
-        f(ans1,b);
-        f(ans2,c);
-        return max(ans1,ans2);
+        
+        return max(f(b), f(c));
     }
 };
