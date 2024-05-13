@@ -1,8 +1,8 @@
 class Solution {
 public:
     int matrixScore(vector<vector<int>>& a) {
-        int n = a.size(), m = a[0].size();
-        int full = (1<<m) - 1;
+        int n = a.size(), m = a[0].size(), full = (1<<m) - 1;
+        
         vector<int> b(n);
         for (int i=0; i<n; i++) {
             for (int j=0; j<m; j++) {
@@ -10,7 +10,6 @@ public:
             }
         }
         auto c = b;
-        
         for (int i=0; i<n; i++) {
             if (b[i]&(1<<(m-1))) b[i] ^= full;
             else c[i] ^= full;
