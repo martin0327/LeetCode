@@ -29,10 +29,10 @@ public:
             if (x <= 1) return 0ll;
             if (x&1) {
                 ll ret = 0, y = x-1;
-                for (ll i=0; i<60; i++) {
+                for (ll i=0; i<63; i++) {
                     if (y>>i&1) ret += i;
                 }
-                return ret + g(x-1);
+                return ret + g(y);
             }
             else return 2*(g(x/2) + f(x/2)); 
         };
@@ -48,7 +48,7 @@ public:
                 else hi = mid - 1;
             }
             ll ret = g(y), rem = x - f(y);
-            for (ll i=0; i<60; i++) {
+            for (ll i=0; i<63; i++) {
                 if (rem == 0) break;
                 if (y>>i&1) {
                     ret += i;
