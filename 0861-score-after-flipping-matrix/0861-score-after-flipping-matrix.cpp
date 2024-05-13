@@ -9,10 +9,8 @@ public:
                 if (a[i][j]) b[i] |= (1<<(m-1-j));
             }
         }
-        auto c = b;
         for (int i=0; i<n; i++) {
             if (b[i]&(1<<(m-1))) b[i] ^= full;
-            else c[i] ^= full;
         }
 
         auto f = [&] (vector<int> &a) {
@@ -26,6 +24,6 @@ public:
             return ret;
         };
         
-        return max(f(b), f(c));
+        return f(b);
     }
 };
