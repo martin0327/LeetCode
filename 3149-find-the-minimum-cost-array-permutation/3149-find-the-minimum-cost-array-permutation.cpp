@@ -13,39 +13,27 @@ public:
     vector<int> findPermutation(vector<int>& nums) {
         vi a(nums.begin(), nums.end());
         ll n = a.size(), ans = inf, full = (1ll<<n)-1;
-        vvi _dp;
-        ll _i;
-        for (int i=0; i<n; i++) {
-            vvi dp(1<<n, vi(n, inf));
-            dp[1<<i][i] = 0;
-            for (ll mask=0; mask<(1<<n); mask++) {
-                for (ll j=0; j<n; j++) {
-                    if (dp[mask][j] == inf) continue;
-                    for (ll nj=0; nj<n; nj++) {
-                        if (mask>>nj&1) continue;
-                        ll nmask = mask + (1ll<<nj);
-                        ll delta = abs(j - a[nj]);
-                        chmin(dp[nmask][nj],dp[mask][j] + delta);
-                    }
+        ll src = 0; // there always exists an optimal permutation that starts with 0.
+        
+        vvi dp(1<<n, vi(n, inf));
+        dp[1<<src][src] = 0; // 1<<src is the bitmask expressing {0} <- only index 0 is selected
+        for (ll mask=0; mask<(1<<n); mask++) {
+            for (ll j=0; j<n; j++) {
+                if (dp[mask][j] == inf) continue;
+                for (ll nj=0; nj<n; nj++) {
+                    if (mask>>nj&1) continue;
+                    ll nmask = mask + (1ll<<nj);
+                    ll delta = abs(j - a[nj]);
+                    chmin(dp[nmask][nj],dp[mask][j] + delta);
                 }
-            }
-            bool updated = false;
-            for (int j=0; j<n; j++) {
-                ll t = dp[(1<<n)-1][j] + abs(j-a[i]);
-                if (ans > t) {
-                    updated = true;
-                    ans = t;
-                }
-            }
-            if (updated) {
-                _dp = dp;
-                _i = i;
             }
         }
-        queue<pii> q;
-        vvi &dp = _dp;
-        ll src = _i;
+
+        for (int j=0; j<n; j++) {
+            chmin(ans, dp[full][j] + abs(j-a[src]));
+        }
         
+        queue<pii> q;        
         vvi check(1<<n, vi(n));
         for (int j=0; j<n; j++) {
             if (dp[full][j]+abs(j-a[src]) == ans) {
@@ -59,11 +47,11 @@ public:
             for (int nj=0; nj<n; nj++) {
                 assert(mask>>j&1);
                 if ((mask>>nj&1)) {
-                    ll nmask = mask - (1ll<<j);
-                    if (check[nmask][nj]) continue;
-                    if (dp[nmask][nj] + abs(nj-a[j]) == dp[mask][j]) {
-                        q.push({nmask,nj});
-                        check[nmask][nj] = 1;
+                    ll pmask = mask - (1<<j);
+                    if (check[pmask][nj]) continue;
+                    if (dp[pmask][nj] + abs(nj-a[j]) == dp[mask][j]) {
+                        q.push({pmask,nj});
+                        check[pmask][nj] = 1;
                     }
                 }
             }
@@ -92,4 +80,4 @@ public:
         }
         return ret;
     }
-};
+}; 
