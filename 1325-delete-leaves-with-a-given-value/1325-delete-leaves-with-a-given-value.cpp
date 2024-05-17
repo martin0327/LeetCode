@@ -16,8 +16,7 @@ public:
             if (!u) return false;
             if (f(u->left)) u->left = nullptr;
             if (f(u->right)) u->right = nullptr;
-            if (!u->left && !u->right && u->val == tg) return true;
-            return false;
+            return (!u->left && !u->right && u->val == tg);
         };
         if (f(root)) return nullptr;
         else return root;
