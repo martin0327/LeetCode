@@ -20,4 +20,4 @@ public:
         };
         return f(root) ? nullptr : root;
     }
-};
+};   
