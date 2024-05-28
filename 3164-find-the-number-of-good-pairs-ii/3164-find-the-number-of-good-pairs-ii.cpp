@@ -1,5 +1,5 @@
 using ll = long long;
-const ll sz = 1e6;
+const int sz = 1e6;
 class Solution {
 public:
     long long numberOfPairs(vector<int>& a, vector<int>& b, int k) {
