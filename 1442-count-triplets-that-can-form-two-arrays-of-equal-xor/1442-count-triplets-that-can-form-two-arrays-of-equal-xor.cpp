@@ -5,13 +5,12 @@ public:
         vector<int> pre(n+1);
         for (int i=1; i<=n; i++) pre[i] = pre[i-1] ^ a[i-1];
         int ans = 0;
-        for (int k=1; k<=n; k++) {
-            for (int i=1; i<k; i++) {
-                if (pre[i-1] == pre[k]) ans += k-i;
-            }      
+        map<int,int> sum, cnt;
+        for (int i=2; i<=n; i++) {
+            sum[pre[i-2]] += i-1;
+            cnt[pre[i-2]] += 1;
+            ans += i*cnt[pre[i]] - sum[pre[i]];
         }
         return ans;
     }
 };
-
-// pre[k] ^ pre[j-1] == pre[j-1] ^ pre[i-1]
