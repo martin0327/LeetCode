@@ -10,8 +10,7 @@ public:
         }
         sort(a.rbegin(), a.rend());
         sort(w.begin(), w.end());
-        int ans = 0;
-        int mx = 0;
+        int ans = 0, mx = 0;
         for (auto x : w) {
             while (a.size()) {
                 auto [d,p] = a.back();
