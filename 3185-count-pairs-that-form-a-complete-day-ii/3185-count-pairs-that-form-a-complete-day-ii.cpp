@@ -1,9 +1,19 @@
-class Solution:
-    def countCompleteDayPairs(self, a: List[int]) -> int:
-        ans = 0
-        mod = 24
-        d = defaultdict(int)
-        for x in a:
-            ans += d[(mod-x)%mod] 
-            d[x%mod] += 1
-        return ans
+using ll = long long;
+class Solution {
+public:
+    long long countCompleteDayPairs(vector<int>& a) {
+        ll ans = 0, mod = 24;
+        map<ll,ll> mp;
+        for (ll x : a) {
+            x %= mod;
+            x += mod;
+            x %= mod;
+            ll y = (mod-x) % mod;
+            assert(0 <= x && x < mod);
+            assert(0 <= y && y < mod);
+            ans += mp[y];
+            mp[x]++;
+        }
+        return ans;
+    }
+};
