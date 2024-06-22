@@ -8,9 +8,8 @@ public:
         }
         b.push_back(n);
         if (b.size() < k+2) return ans;
-        for (auto i = b.begin()+1, j = b.begin()+k; *j < n;) {
+        for (auto i = b.begin()+1, j = b.begin()+k; *j < n; i++, j++) {
             ans += (*i - *prev(i)) * (*next(j) - *j);
-            i++; j++;
         }
         return ans;
     }
