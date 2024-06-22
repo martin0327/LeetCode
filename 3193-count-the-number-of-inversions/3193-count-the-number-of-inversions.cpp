@@ -6,9 +6,9 @@ const ll mod = 1e9+7;
 class Solution {
 public:
     int numberOfPermutations(int n, vector<vector<int>>& req) {
-        ll m = 0;
         vi a(n,-1);
-        for (auto v : req) m = max(m, a[v[0]] = v[1]);
+        for (auto v : req) a[v[0]] = v[1];
+        ll m = a[n-1];
 
         vvi dp(n+1, vi(m+1));
         dp[0][0] = 1;
