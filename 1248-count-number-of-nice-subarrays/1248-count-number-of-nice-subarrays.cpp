@@ -9,14 +9,7 @@ public:
         b.push_back(n);
         int ans = 0;
         if (b.size() < k+2) return ans;
-        for (auto i = b.begin(), j = b.begin(); *j < n; ) {
-            if (i == b.begin()) {
-                i++; 
-                int t = k;
-                while (t--) {
-                    j++;
-                }
-            }
+        for (auto i = b.begin()+1, j = b.begin()+k; *j < n; ) {
             int l = *i - *prev(i);
             int r = *next(j) - *j;
             ans += l * r;
