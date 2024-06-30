@@ -1,16 +1,6 @@
 using vi = vector<int>;
 using vvi = vector<vi>;
 
-template<typename T> 
-pair<T,int> max_idx(vector<T> &a) {
-    int n = a.size();
-    vector<pair<T,int>> b(n);
-    for (int i=0; i<n; i++) {
-        b[i] = {a[i], i};
-    }
-    return *max_element(b.begin(), b.end());
-}
-
 class Solution {
 public:
     int minimumDiameterAfterMerge(vector<vector<int>>& e1, vector<vector<int>>& e2) {
@@ -33,8 +23,8 @@ public:
                 }
             };
             g(0,-1,0);
-            auto [mx, root] = max_idx(dep);
             
+            int root = max_element(dep.begin(), dep.end()) - dep.begin();
             dep = vi(n);
             g(root,-1,0);
 
