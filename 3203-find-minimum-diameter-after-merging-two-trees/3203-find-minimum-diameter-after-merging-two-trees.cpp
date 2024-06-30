@@ -42,9 +42,7 @@ public:
             return ret;
         };
         int d1 = f(e1), d2 = f(e2);
-        int ans = (d1+1)/2 + (d2+1)/2 + 1;
-        ans = max({ans,d1,d2});
-        return ans;
-
+        int d3 = (d1+1)/2 + (d2+1)/2 + 1;
+        return max({d1,d2,d3});
     }
 };
