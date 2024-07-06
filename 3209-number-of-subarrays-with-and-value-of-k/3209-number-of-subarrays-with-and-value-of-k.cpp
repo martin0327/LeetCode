@@ -103,15 +103,13 @@ template <class S, S (*op)(S, S), S (*e)()> struct segtree {
     void update(int k) { d[k] = op(d[2 * k], d[2 * k + 1]); }
 };
 
-
-
 using ll = long long;
 using vi = vector<ll>;
 using vvi = vector<vi>;
 
 using S = ll;
 S op(S x, S y) { return x & y; }
-S e() { return 1073741823; }
+S e() { return -1; }
 
 class Solution {
 public:
@@ -132,10 +130,11 @@ public:
             ll n = v.size();
             segtree<S,op,e> seg(v);
             for (ll i=0; i<n; i++) {
-                ll idx = seg.max_right(i, [&] (int x) {return x > k;});
-                ans += n - idx;
+                ll idx = seg.max_right(i, [&] (int x) {return x != k;});
+                if (idx < n) ans += n - idx;
             }
         }
+        
         return ans;
     }
 };
