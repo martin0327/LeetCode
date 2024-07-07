@@ -116,14 +116,6 @@ public:
         }
         lens = get_unique(lens);
 
-
-        vvi b(mx_sz+1);
-        for (int i=0; i<m; i++) {
-            auto s = a[i];
-            ll sz = s.size();
-            b[sz].push_back(i);
-        }
-
         ll p1 = 677, p2 = 757;
         ll m1 = 1e9+7, m2 = 998244353;
 
@@ -137,10 +129,8 @@ public:
             if (!mp.count(hash[i])) mp[hash[i]] = c[i];
             else chmin(mp[hash[i]], (ll) c[i]);
         }
-        // debug(mp);
 
         rabin_karp rk1(tg,p1,m1);
-        rabin_karp rk2(tg,p2,m2);
 
         for (int i=1; i<=n; i++) {
             for (auto len : lens) {
