@@ -12,17 +12,13 @@ public:
             auto l = f(v->left);
             auto r = f(v->right);
             for (int i=1; i<=k; i++) {
-                for (int j=1; j<=k; j++) {
-                    if (i+j<=k) {
-                        ans += l[i] * r[j];
-                    }
+                for (int j=k-i; j>=0; j--) {
+                    ans += l[i] * r[j];
                 }
             }
-            for (int i=1; i<=k; i++) {
-                if (i+1 <= k) {
-                    ret[i+1] += l[i];
-                    ret[i+1] += r[i];
-                }
+            for (int i=1; i<k; i++) {
+                ret[i+1] += l[i];
+                ret[i+1] += r[i];
             }
             return ret;
         };
