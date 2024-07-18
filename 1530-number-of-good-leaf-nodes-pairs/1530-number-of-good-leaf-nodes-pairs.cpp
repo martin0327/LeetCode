@@ -11,8 +11,8 @@ public:
 
             auto l = f(v->left);
             auto r = f(v->right);
-            for (int i=1; i<=k; i++) {
-                for (int j=k-i; j>=0; j--) {
+            for (int i=1; i<k; i++) {
+                for (int j=k-i; j>0; j--) {
                     ans += l[i] * r[j];
                 }
             }
