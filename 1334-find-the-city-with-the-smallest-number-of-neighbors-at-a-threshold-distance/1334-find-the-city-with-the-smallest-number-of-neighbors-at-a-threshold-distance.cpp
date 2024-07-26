@@ -14,9 +14,10 @@ public:
         for (int k=0; k<n; k++) {
             for (int u=0; u<n; u++) {
                 for (int v=0; v<n; v++) {
-                    if (dist[u][v] > dist[u][k] + dist[k][v]) {
-                        dist[u][v] = dist[u][k] + dist[k][v];
-                    }
+                    auto chmin = [&] (int &x, int y) {
+                        x = min(x,y);
+                    };
+                    chmin(dist[u][v], dist[u][k] + dist[k][v]);
                 }
             }
         }
