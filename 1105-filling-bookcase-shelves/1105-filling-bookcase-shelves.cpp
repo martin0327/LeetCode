@@ -22,10 +22,11 @@ public:
         vi dp(n+1, inf);
         dp[0] = 0;
         for (int j=1; j<=n; j++) {
-            for (int i=1; i<=j; i++) {
+            for (int i=j; i>=1; i--) {
                 if (w[i][j] <= k) {
                     dp[j] = min(dp[j], dp[i-1] + h[i][j]);
                 }
+                else break;
             }
         }
         return dp[n];
