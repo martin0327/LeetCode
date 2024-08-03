@@ -14,18 +14,16 @@ using max_pq = priority_queue<T>;
 
 class Solution {
 public:
-    vector<int> timeTaken(vector<vector<int>>& edg) {
-        ll n = edg.size() + 1;
+    vector<int> timeTaken(vector<vector<int>>& edges) {
+        ll n = edges.size() + 1;
         vvi adj(n);
-        for (auto e : edg) {
+        for (auto e : edges) {
             int u = e[0], v = e[1];
             adj[u].push_back(v);
             adj[v].push_back(u);
         }
-        vi base(n);
-        vi sub(n);
-        // map<pii,int> inv;
-        vector<unordered_map<int,int>> inv(n);
+        vi base(n), sub(n), inv(n,-1);
+        
         function<void(int,int)> f = [&] (int u, int p) {
             if (p != -1) {
                 if (u&1) base[u] = base[p] + 1;
@@ -35,27 +33,25 @@ public:
             int sz = adj[u].size();
             for (int j=0; j<sz; j++) {
                 int v = adj[u][j];
-                inv[u][v] = j;
-
                 if (v == p) continue;
+
+                inv[v] = j;
                 f(v,u);
                 sub[u] = max(sub[u], sub[v]);
             }
         };
         f(0,-1);
+        
         vector<int> ret(n);
-        vvi b(n);
-        vvi pre(n);
-        vvi suf(n);
+        vvi b(n), pre(n), suf(n);
         function<void(int,int,int)> g = [&] (int u, int p, int cum) {
             int sz = adj[u].size();
-            b[u] = vi(sz);
-            pre[u] = suf[u] = vi(sz);
+            b[u] = pre[u] = suf[u] = vi(sz);
             for (int j=0; j<sz; j++) {
                 int v = adj[u][j];
                 if (v == p && p != -1) {
                     ll t = 0;
-                    int idx = inv[v][u];
+                    int idx = inv[u];
                     int sz2 = adj[p].size();
                     if (idx > 0) t = max(t, pre[p][idx-1]);
                     if (idx+1 < sz2) t = max(t, suf[p][idx+1]); 
@@ -86,4 +82,3 @@ public:
         return ret;
     }
 };
-  
