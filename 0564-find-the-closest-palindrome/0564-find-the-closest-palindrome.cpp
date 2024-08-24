@@ -15,8 +15,7 @@ public:
 
         {
             string t(n+1,'0');
-            t.front() = '1';
-            t.back() = '1';
+            t.front() = t.back() = '1';
             f(t);
         }
         if (n > 1) {
@@ -29,22 +28,22 @@ public:
                 t[n-1-i] = t[i];
             }
             for (int i=0; i<10; i++) {
-                t[n/2] = '0' + i;
-                t[n-1-n/2] = '0' + i;
-                f(t);
+                ll u = n/2;
+                t[u] = t[n-1-u] = '0' + i;
+                
                 if (n>2) {
                     for (int j=0; j<10; j++) {
-                        t[n/2-1] = '0' + j;
-                        t[n-1-(n/2-1)] = '0' + j;
+                        ll v = n/2-1;
+                        t[v] = t[n-1-v] = '0' + j;
                         f(t);
                     }
                 }
+                else f(t);
             }
         }
         if (s.front() > '1') {
             string t(n,'9');
-            t.front() = s.front()-1;
-            t.back() = t.front();
+            t.front() = t.back() = s.front()-1;
             f(t);
         }
         return to_string(ans);        
