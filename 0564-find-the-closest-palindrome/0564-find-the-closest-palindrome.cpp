@@ -30,15 +30,15 @@ public:
             for (int i=0; i<10; i++) {
                 ll u = n/2;
                 t[u] = t[n-1-u] = '0' + i;
-                
-                if (n>2) {
-                    for (int j=0; j<10; j++) {
-                        ll v = n/2-1;
-                        t[v] = t[n-1-v] = '0' + j;
-                        f(t);
-                    }
-                }
-                else f(t);
+                f(t);
+                // if (n>2) {
+                //     for (int j=0; j<10; j++) {
+                //         ll v = n/2-1;
+                //         t[v] = t[n-1-v] = '0' + j;
+                //         f(t);
+                //     }
+                // }
+                // else f(t);
             }
         }
         if (s.front() > '1') {
