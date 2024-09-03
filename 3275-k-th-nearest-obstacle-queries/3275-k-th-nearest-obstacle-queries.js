@@ -1,6 +1,7 @@
-class MaxPQ {
-    constructor() {
+class PQ {
+    constructor(comparator = (a, b) => a - b) {
         this.heap = [];
+        this.comparator = comparator;
     }
 
     push(val) {
@@ -30,7 +31,7 @@ class MaxPQ {
         let index = this.heap.length - 1;
         while (index > 0) {
             let parentIndex = Math.floor((index - 1) / 2);
-            if (this.heap[index] <= this.heap[parentIndex]) break;
+            if (this.comparator(this.heap[index], this.heap[parentIndex]) >= 0) break;
             [this.heap[index], this.heap[parentIndex]] = [this.heap[parentIndex], this.heap[index]];
             index = parentIndex;
         }
@@ -49,7 +50,7 @@ class MaxPQ {
 
             if (leftChildIndex < length) {
                 leftChild = this.heap[leftChildIndex];
-                if (leftChild > element) {
+                if (this.comparator(leftChild, element) < 0) {
                     swap = leftChildIndex;
                 }
             }
@@ -57,8 +58,8 @@ class MaxPQ {
             if (rightChildIndex < length) {
                 rightChild = this.heap[rightChildIndex];
                 if (
-                    (swap === null && rightChild > element) ||
-                    (swap !== null && rightChild > leftChild)
+                    (swap === null && this.comparator(rightChild, element) < 0) ||
+                    (swap !== null && this.comparator(rightChild, leftChild) < 0)
                 ) {
                     swap = rightChildIndex;
                 }
@@ -77,7 +78,9 @@ class MaxPQ {
  * @return {number[]}
  */
 var resultsArray = function(qr, k) {
-    const pq = new MaxPQ();
+    // const pq = new PQ((a, b) => a - b); // Min-heap
+    const pq = new PQ((a, b) => b - a); // Max-heap
+
     const ans = [];
 
     for (const v of qr) {
