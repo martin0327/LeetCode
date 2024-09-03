@@ -1,12 +1,7 @@
-template<typename T>
-using min_pq = priority_queue<T, vector<T>, greater<T>>;
-template<typename T>
-using max_pq = priority_queue<T>;
-
 class Solution {
 public:
     vector<int> resultsArray(vector<vector<int>>& qr, int k) {
-        max_pq<int> pq;
+        priority_queue<int> pq;
         vector<int> ans;
         for (auto v : qr) {
             int d = abs(v[0])+abs(v[1]);
