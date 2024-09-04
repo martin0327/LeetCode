@@ -14,12 +14,7 @@ public:
             s.insert({v[0],v[1]});
         }
         for (auto k : comm) {
-            if (k == -1) {
-                d = (d+1) % 4;
-            }
-            else if (k == -2) {
-                d = (d+3) % 4;
-            }
+            if (k < 0) d = (d-2*k-1) % 4;
             else {
                 while (k--) {
                     int nx = x + dx[d];
