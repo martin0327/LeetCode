@@ -8,16 +8,21 @@ public:
             b.push_back(s);
         }
         int n = b.size();
-        sort(b.rbegin(), b.rend());
-        for (int i=0; i<n; i++) {
-            for (int j=i+1; j<n; j++) {
-                auto s = b[i];
-                auto t = b[j];
-                string st = s + t;
-                string ts = t + s;
-                if (st < ts) swap(b[i],b[j]);
-            }
-        }
+        // sort(b.rbegin(), b.rend());
+        sort(b.begin(), b.end(), [&] (string s, string t) {
+            auto st = s + t;
+            auto ts = t + s;
+            return st > ts;
+        });
+        // for (int i=0; i<n; i++) {
+        //     for (int j=i+1; j<n; j++) {
+        //         auto s = b[i];
+        //         auto t = b[j];
+        //         string st = s + t;
+        //         string ts = t + s;
+        //         if (st < ts) swap(b[i],b[j]);
+        //     }
+        // }
         string ans;
         for (auto s : b) ans += s;
         set<char> sc(ans.begin(), ans.end());
