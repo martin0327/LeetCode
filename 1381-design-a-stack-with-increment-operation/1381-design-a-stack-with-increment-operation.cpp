@@ -10,28 +10,20 @@ public:
     }
     
     void push(int x) {
-        // cout << "push" << endl;
-        // cout << i << endl;
         if (i < sz) a[i++] = x;
     }
     
     int pop() {
-        // cout << "pop" << endl;
-        // cout << i << endl;
         if (i==0) return -1;
-        int ret = a[i-1];
-        ret += b[i-1];
-        if (i >= 2) b[i-2] += b[i-1];
-        b[i-1] = 0;
         i--;
+        int ret = a[i] + b[i];
+        if (i >= 1) b[i-1] += b[i];
+        b[i] = 0;
         return ret;
     }
     
     void increment(int k, int val) {
-        // cout << "increment" << endl;
-        // cout << i << endl;
-        int j = i-1;
-        if (j > k-1) j = k-1;
+        int j = min(i-1, k-1);
         if (j >= 0) b[j] += val;
     }
 };
