@@ -26,10 +26,7 @@ public:
     string getMaxKey() {
         while (pq2.size()) {
             auto [cnt,s] = pq2.top();
-            // cout << cnt << " " << s << endl;
-            if (mp.count(s) && mp[s] == cnt) {
-                return s;
-            }
+            if (mp.count(s) && mp[s] == cnt) return s;
             else pq2.pop();
         }
         return "";
@@ -38,9 +35,7 @@ public:
     string getMinKey() {
         while (pq1.size()) {
             auto [cnt,s] = pq1.top();
-            if (mp.count(s) && mp[s] == cnt) {
-                return s;
-            }
+            if (mp.count(s) && mp[s] == cnt) return s;
             else pq1.pop();
         }
         return "";        
