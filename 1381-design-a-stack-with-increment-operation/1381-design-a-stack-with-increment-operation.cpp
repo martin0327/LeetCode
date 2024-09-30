@@ -1,26 +1,38 @@
 class CustomStack {
 public:
-    int sz;
-    vector<int> a;
+    int sz, i;
+    vector<int> a, b;
     CustomStack(int sz) {
         this->sz = sz;
+        this->a = vector<int>(sz);
+        this->b = vector<int>(sz);
+        this->i = 0;
     }
     
     void push(int x) {
-        if (a.size() < sz) a.push_back(x);
+        // cout << "push" << endl;
+        // cout << i << endl;
+        if (i < sz) a[i++] = x;
     }
     
     int pop() {
-        if (a.empty()) return -1;
-        int ret = a.back();
-        a.pop_back();
+        // cout << "pop" << endl;
+        // cout << i << endl;
+        if (i==0) return -1;
+        int ret = a[i-1];
+        ret += b[i-1];
+        if (i >= 2) b[i-2] += b[i-1];
+        b[i-1] = 0;
+        i--;
         return ret;
     }
     
     void increment(int k, int val) {
-        int lim = a.size();
-        if (lim > k) lim = k;
-        for (int i=0; i<lim; i++) a[i] += val;
+        // cout << "increment" << endl;
+        // cout << i << endl;
+        int j = i-1;
+        if (j > k-1) j = k-1;
+        if (j >= 0) b[j] += val;
     }
 };
 
