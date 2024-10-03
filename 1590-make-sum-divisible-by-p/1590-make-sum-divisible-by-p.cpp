@@ -8,8 +8,7 @@ public:
         ll n = a.size();
         ll s = accumulate(a.begin(), a.end(), 0ll);
         s %= p;
-        ll ret = 0;
-        if (s == 0) return ret;
+        if (s == 0) return 0;
 
         vi pre(n+1);
         for (ll i=1; i<=n; i++) {
@@ -17,7 +16,7 @@ public:
             pre[i] %= p;
         }
         map<ll,ll> mp;
-        ret = inf;
+        ll ret = n;
         for (ll i=0; i<=n; i++) {
             ll t = pre[i] - s + p;
             t %= p;
@@ -27,7 +26,7 @@ public:
             }
             mp[pre[i]] = i;
         }
-        if (ret >= n) ret = -1;
+        if (ret == n) ret = -1;
         return ret;
     }
 };
