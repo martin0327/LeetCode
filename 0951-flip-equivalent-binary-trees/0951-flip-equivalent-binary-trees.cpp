@@ -12,13 +12,12 @@
 class Solution {
 public:
     bool flipEquiv(TreeNode* u, TreeNode* v) {
-        if (!u && !v) return true;
-        if (!u || !v) return false;
+        if (!u || !v) return !u && !v;
+        if (u->val != v->val) return false;
         
         bool ret = false;
         ret |= flipEquiv(u->left,v->left) && flipEquiv(u->right,v->right);
         ret |= flipEquiv(u->left,v->right) && flipEquiv(u->right,v->left);
-        ret &= u->val == v->val;
         return ret;
     }
 };
