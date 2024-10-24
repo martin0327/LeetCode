@@ -13,20 +13,7 @@ class Solution {
 public:
     bool flipEquiv(TreeNode* u, TreeNode* v) {
         if (!u && !v) return true;
-        if (!u) return false;
-        if (!v) return false;
-        
-        // auto is_leaf = [&] (TreeNode* v) {
-        //     return !(v->left) && !(v->right);
-        // };
-        
-        // if (is_leaf(u) || is_leaf(v)) {
-        //     return is_leaf(u) && is_leaf(v) && u->val == v->val;
-        //     if (is_leaf(u) && is_leaf(v) && u->val == u->val) {
-        //         return true;
-        //     }
-        //     else return false;
-        // }
+        if (!u || !v) return false;
         
         bool ret = false;
         ret |= flipEquiv(u->left,v->left) && flipEquiv(u->right,v->right);
