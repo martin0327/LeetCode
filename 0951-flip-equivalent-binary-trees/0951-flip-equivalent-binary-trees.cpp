@@ -16,16 +16,17 @@ public:
         if (!u) return false;
         if (!v) return false;
         
-        auto is_leaf = [&] (TreeNode* v) {
-            return !(v->left) && !(v->right);
-        };
+        // auto is_leaf = [&] (TreeNode* v) {
+        //     return !(v->left) && !(v->right);
+        // };
         
-        if (is_leaf(u) || is_leaf(v)) {
-            if (is_leaf(u) && is_leaf(v) && u->val == u->val) {
-                return true;
-            }
-            else return false;
-        }
+        // if (is_leaf(u) || is_leaf(v)) {
+        //     return is_leaf(u) && is_leaf(v) && u->val == v->val;
+        //     if (is_leaf(u) && is_leaf(v) && u->val == u->val) {
+        //         return true;
+        //     }
+        //     else return false;
+        // }
         
         bool ret = false;
         ret |= flipEquiv(u->left,v->left) && flipEquiv(u->right,v->right);
