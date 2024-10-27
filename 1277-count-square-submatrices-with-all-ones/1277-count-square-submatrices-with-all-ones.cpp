@@ -2,7 +2,6 @@ using vi = vector<int>;
 using vvi = vector<vi>;
 class Solution {
 public:
-    
     int countSquares(vector<vector<int>>& a) {
         int n = a.size(), m = a[0].size(), ans = 0;;
         vvi dp(n+1, vi(m+1));
