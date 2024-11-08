@@ -1,12 +1,12 @@
 class Solution {
 public:
     vector<int> getMaximumXor(vector<int>& a, int m) {
-        vector<int> ans;
         int n = a.size(), x = (1<<m)-1;
+        vector<int> ans(n);
         for (auto y : a) x ^= y;
-        for (int i=n-1; i>=0; i--) {
-            ans.push_back(x);
-            x ^= a[i];
+        for (int i=0; i<n; i++) {
+            ans[i] = x;
+            x ^= a[n-1-i];
         }
         return ans;        
     }
