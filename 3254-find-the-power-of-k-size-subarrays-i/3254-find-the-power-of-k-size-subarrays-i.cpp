@@ -1,22 +1,17 @@
 class Solution {
 public:
-    vector<int> resultsArray(vector<int>& nums, int k) {
-        if (k == 1) return nums;
-        int left = -1, n = nums.size();
-        vector<int> result;
-        for (int i = 1; i < n; i++) {
-            bool consecutive = nums[i] - 1 == nums[i-1];
-            if (consecutive) {
-                if (i - left > k - 1) // actually this is not needed
-                    left++; //
-            } else {
-                left = i;
-            }
-            if (i < k - 1) 
-                continue;
-            result.push_back(i - left + 1 >= k ? nums[i] : -1);
+    vector<int> resultsArray(vector<int>& a, int k) {
+        int n = a.size(), cnt = 0;
+        for (int i=1; i<k; i++) {
+            if (a[i] == a[i-1]+1) cnt++;
         }
-        
-        return result;
+        vector<int> ans;
+        ans.push_back((cnt==k-1)?a[k-1]:-1);
+        for (int i=k; i<n; i++) {
+            if (a[i] == a[i-1]+1) cnt++;
+            if (a[i-k+1] == a[i-k]+1) cnt--;
+            ans.push_back((cnt==k-1)?a[i]:-1);
+        }
+        return ans;
     }
 };
