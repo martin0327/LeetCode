@@ -29,6 +29,5 @@ public:
         }
         ans /= a.size();
         return ans;
-        
     }
 };
