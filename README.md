@@ -30,6 +30,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/martin0327/LeetCode/tree/main/0048-rotate-image/) | undefined |
+| [0326-power-of-three](https://github.com/martin0327/LeetCode/tree/main/0326-power-of-three/) | undefined |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -50,4 +51,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0324-wiggle-sort-ii](https://github.com/martin0327/LeetCode/tree/main/0324-wiggle-sort-ii/) | undefined |
+## Recursion
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0326-power-of-three](https://github.com/martin0327/LeetCode/tree/main/0326-power-of-three/) | undefined |
 <!---LeetCode Topics End-->
