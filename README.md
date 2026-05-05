@@ -55,4 +55,12 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0326-power-of-three](https://github.com/martin0327/LeetCode/tree/main/0326-power-of-three/) | undefined |
+## Linked List
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0061-rotate-list](https://github.com/martin0327/LeetCode/tree/main/0061-rotate-list/) | Medium |
+## Two Pointers
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0061-rotate-list](https://github.com/martin0327/LeetCode/tree/main/0061-rotate-list/) | Medium |
 <!---LeetCode Topics End-->
