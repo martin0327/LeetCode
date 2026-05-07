@@ -108,22 +108,10 @@ template <class S, S (*op)(S, S), S (*e)()> struct segtree {
     void update(int k) { d[k] = op(d[2 * k], d[2 * k + 1]); }
 };
 
-
-template<typename T>
-using min_pq = priority_queue<T, vector<T>, greater<T>>;
-template<typename T>
-using max_pq = priority_queue<T>;
-
-template<typename T1, typename T2>
-void chmax(T1 &x, T2 y) { if (x < y) x = y; }
-template<typename T1, typename T2>
-void chmin(T1 &x, T2 y) { if (x > y) x = y; }
 template<typename T>
 void asort(vector<T> &a) {sort(a.begin(), a.end());}
 template<typename T>
 void dsort(vector<T> &a) {sort(a.rbegin(), a.rend());}
-template<typename T>
-void reverse(vector<T> &a) {reverse(a.begin(), a.end());}
 
 template<typename T>
 vector<T> get_unique(vector<T> a) {
@@ -135,8 +123,6 @@ vector<T> get_unique(vector<T> a) {
 using vi = vector<int>;
 using pii = pair<int,int>;
 using vp = vector<pii>;
-
-
 const int inf = 2e9;
 using S = int;
 S op(S x, S y) { return min(x,y); }
@@ -160,16 +146,15 @@ public:
         }
         dsort(b);
         vi ans(n);
-        int hi = inf, lo = inf;
-        int l = n;
+        int hi = inf, lo = inf, lim = n;
         for (auto [x,i] : b) {
-            if (i > l || x > lo) {
+            if (i > lim || x > lo) {
                 ans[i] = hi;
-                if (i < l) {
+                if (i < lim) {
                     int t = seg.prod(i,n);
                     if (t < x) {
                         lo = t;
-                        l = i;
+                        lim = i;
                     }
                 }
             }
@@ -181,7 +166,7 @@ public:
                 else {
                     hi = x;
                     lo = t;
-                    l = i;
+                    lim = i;
                     ans[i] = hi;
                 }
             }
