@@ -132,24 +132,19 @@ vector<T> get_unique(vector<T> a) {
     return a;
 }
 
-using ll = long long;
-using vi = vector<ll>;
-using vvi = vector<vi>;
-using pii = pair<ll,ll>;
+using vi = vector<int>;
+using pii = pair<int,int>;
 using vp = vector<pii>;
-using ti3 = tuple<ll,ll,ll>;
-using vti3 = vector<ti3>;
-using vs = vector<string>;
 
-const ll inf = 2e9;
-using S = ll;
+
+const int inf = 2e9;
+using S = int;
 S op(S x, S y) { return min(x,y); }
 S e() { return inf; }
 
 class Solution {
 public:
-    vector<int> maxValue(vector<int>& aa) {
-        vi a(aa.begin(), aa.end());
+    vector<int> maxValue(vector<int>& a) {
         int n = a.size();
         auto c = get_unique(a);
         auto g = [&] (int x) {
@@ -167,7 +162,6 @@ public:
         vi ans(n);
         int hi = inf, lo = inf;
         int l = n;
-        // debug(a);
         for (auto [x,i] : b) {
             if (i > l || x > lo) {
                 ans[i] = hi;
@@ -191,9 +185,7 @@ public:
                     ans[i] = hi;
                 }
             }
-            // debug(x,hi,lo,l);
         }
-        // debug(ans);
 
         vector<int> res(n);
         for (int i=0; i<n; i++) {
