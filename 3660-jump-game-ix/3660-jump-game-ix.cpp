@@ -187,11 +187,7 @@ public:
             }
         }
 
-        vector<int> res(n);
-        for (int i=0; i<n; i++) {
-            res[i] = c[ans[i]];
-        }
-        return res;
-        
+        for (auto &x : ans) x = c[x];
+        return ans;
     }
 };
