@@ -15,14 +15,13 @@ public:
                     b.push_back({r,c});
                 }
             }
-            swap(b[1],b[2]);
             swap(b[2],b[3]);
-            vp v;
+            vp rc;
             for (int j=0; j<4; j++) {
                 auto [r,c] = b[j];
                 auto [tr,tc] = b[(j+1)%4];
                 while (r != tr || c != tc) {
-                    v.push_back({r,c});
+                    rc.push_back({r,c});
                     int dr = tr - r;
                     int dc = tc - c;
                     if (dr != 0) r += dr / abs(dr);
@@ -30,17 +29,15 @@ public:
                 }
             }
 
-            int sz = v.size();
+            int sz = rc.size();
             vi t(sz);
             for (int j=0; j<sz; j++) {
-                auto [r,c] = v[j];
+                auto [r,c] = rc[j];
                 t[j] = a[r][c];
             }
             for (int j=0; j<sz; j++) {
-                auto [r,c] = v[j];
-                int nj = (j-k)%sz+sz;
-                nj %= sz;
-                a[r][c] = t[nj];
+                auto [r,c] = rc[j];
+                a[r][c] = t[(j+k)%sz];
             }
         }
         return a;
