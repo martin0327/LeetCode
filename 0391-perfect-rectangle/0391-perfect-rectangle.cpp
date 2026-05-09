@@ -250,7 +250,7 @@ public:
         }
         lzseg seg(vp(ysz, {0,0}));
         bool ans = true;
-        for (int i=0; i<xsz; i++) {
+        for (int i=0; i+1<xsz; i++) {
             for (auto [lo,hi] : xpush[i]) {
                 seg.apply(lo,hi,1);
             }
