@@ -1,17 +1,17 @@
 using vi = vector<int>;
 using pii = pair<int,int>;
 using vp = vector<pii>;
+vp rc, b;
+vi t;
 
 class Solution {
 public:
     vector<vector<int>> rotateGrid(vector<vector<int>>& a, int k) {
         int n = a.size(), m = a[0].size();
-        vp rc;
-        vi t;
         for (int i=0; i<min(n,m)/2; i++) {
             vi rs = {i,n-1-i};
             vi cs = {i,m-1-i};
-            vp b;
+            b.clear();
             for (auto r : rs) {
                 for (auto c : cs) {
                     b.push_back({r,c});
