@@ -258,8 +258,7 @@ public:
                 seg.apply(lo,hi,-1);
             }
             auto [mx,mn] = seg.prod(0,ysz-1);
-            if (i+1 == xsz) ans &= (mx == 0 && mn == 0);
-            else ans &= (mx == 1 && mn == 1);
+            ans &= (mx == 1 && mn == 1);
         }
         return ans;
     }
