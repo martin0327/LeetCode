@@ -10,6 +10,7 @@
 | [0332-reconstruct-itinerary](https://github.com/martin0327/LeetCode/tree/main/0332-reconstruct-itinerary/) | undefined |
 | [0334-increasing-triplet-subsequence](https://github.com/martin0327/LeetCode/tree/main/0334-increasing-triplet-subsequence/) | undefined |
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/martin0327/LeetCode/tree/main/0381-insert-delete-getrandom-o1-duplicates-allowed/) | Hard |
+| [0391-perfect-rectangle](https://github.com/martin0327/LeetCode/tree/main/0391-perfect-rectangle/) | Hard |
 | [1861-rotating-the-box](https://github.com/martin0327/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
 | [1914-cyclically-rotating-a-grid](https://github.com/martin0327/LeetCode/tree/main/1914-cyclically-rotating-a-grid/) | Medium |
 | [3660-jump-game-ix](https://github.com/martin0327/LeetCode/tree/main/3660-jump-game-ix/) | Medium |
@@ -46,6 +47,7 @@
 | [0048-rotate-image](https://github.com/martin0327/LeetCode/tree/main/0048-rotate-image/) | undefined |
 | [0326-power-of-three](https://github.com/martin0327/LeetCode/tree/main/0326-power-of-three/) | undefined |
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/martin0327/LeetCode/tree/main/0381-insert-delete-getrandom-o1-duplicates-allowed/) | Hard |
+| [0391-perfect-rectangle](https://github.com/martin0327/LeetCode/tree/main/0391-perfect-rectangle/) | Hard |
 | [0398-random-pick-index](https://github.com/martin0327/LeetCode/tree/main/0398-random-pick-index/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -88,6 +90,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/martin0327/LeetCode/tree/main/0381-insert-delete-getrandom-o1-duplicates-allowed/) | Hard |
+| [0391-perfect-rectangle](https://github.com/martin0327/LeetCode/tree/main/0391-perfect-rectangle/) | Hard |
 | [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/martin0327/LeetCode/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
 | [0398-random-pick-index](https://github.com/martin0327/LeetCode/tree/main/0398-random-pick-index/) | Medium |
 ## Design
@@ -135,4 +138,12 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/martin0327/LeetCode/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
+## Geometry
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0391-perfect-rectangle](https://github.com/martin0327/LeetCode/tree/main/0391-perfect-rectangle/) | Hard |
+## Sweep Line
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0391-perfect-rectangle](https://github.com/martin0327/LeetCode/tree/main/0391-perfect-rectangle/) | Hard |
 <!---LeetCode Topics End-->
