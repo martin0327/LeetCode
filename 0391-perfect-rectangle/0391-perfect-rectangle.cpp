@@ -239,24 +239,21 @@ vector<T> get_unique(vector<T> a) {
     return a;
 }
 
-using ll = long long;
+using ll = int;
 using vi = vector<ll>;
 using vvi = vector<vi>;
 using pii = pair<ll,ll>;
 using vp = vector<pii>;
 using vvp = vector<vp>;
-using ti3 = tuple<ll,ll,ll>;
-using vti3 = vector<ti3>;
-using vs = vector<string>;
 
 const ll inf = 2e9;
 using S = pii;
 using F = ll;
 
 S op(S a, S b) {
-    auto [x,u] = a;
-    auto [y,v] = b;
-    return {max(x,y),min(u,v)};
+    auto [mx1, mn1] = a;
+    auto [mx2, mn2] = b;
+    return {max(mx1,mx2),min(mn1,mn2)};
 }
  
 S e() {
@@ -276,7 +273,7 @@ F id () {
     return 0;
 }
 
-
+using lzseg = lazy_segtree<S, op, e, F, mapping, composition, id>;
 
 class Solution {
 public:
@@ -313,17 +310,7 @@ public:
                 else xpop[x].push_back({lo,hi});
             }
         }
-        // debug(xpush);
-        // debug(xpop);
-        lazy_segtree<S, op, e, F, mapping, composition, id> seg(vp(ysz, {0,0}));
-        
-        // auto dbg = [&] () {
-        //     vp a;
-        //     for (int i=0; i<ysz; i++) {
-        //         a.push_back(seg.get(i));
-        //     }
-        //     debug(a);
-        // };
+        lzseg seg(vp(ysz, {0,0}));
         bool ans = true;
         for (int i=0; i<xsz; i++) {
             for (auto [lo,hi] : xpush[i]) {
@@ -333,14 +320,8 @@ public:
                 seg.apply(lo,hi,-1);
             }
             auto [mx,mn] = seg.prod(0,ysz-1);
-            // debug(i,mx,mn);
-            // dbg();
-            if (i+1 == xsz) {
-                ans &= (mx == 0 && mn == 0);
-            }
-            else {
-                ans &= (mx == 1 && mn == 1);
-            }
+            if (i+1 == xsz) ans &= (mx == 0 && mn == 0);
+            else ans &= (mx == 1 && mn == 1);
         }
         return ans;
     }
