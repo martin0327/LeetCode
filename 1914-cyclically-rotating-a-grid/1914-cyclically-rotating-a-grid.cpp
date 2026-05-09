@@ -6,6 +6,8 @@ class Solution {
 public:
     vector<vector<int>> rotateGrid(vector<vector<int>>& a, int k) {
         int n = a.size(), m = a[0].size();
+        vp rc;
+        vi t;
         for (int i=0; i<min(n,m)/2; i++) {
             vi rs = {i,n-1-i};
             vi cs = {i,m-1-i};
@@ -16,7 +18,7 @@ public:
                 }
             }
             swap(b[2],b[3]);
-            vp rc;
+            rc.clear();
             for (int j=0; j<4; j++) {
                 auto [r,c] = b[j];
                 auto [tr,tc] = b[(j+1)%4];
@@ -30,7 +32,7 @@ public:
             }
 
             int sz = rc.size();
-            vi t(sz);
+            t.resize(sz);
             for (int j=0; j<sz; j++) {
                 auto [r,c] = rc[j];
                 t[j] = a[r][c];
