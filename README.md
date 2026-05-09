@@ -44,6 +44,7 @@
 | [0048-rotate-image](https://github.com/martin0327/LeetCode/tree/main/0048-rotate-image/) | undefined |
 | [0326-power-of-three](https://github.com/martin0327/LeetCode/tree/main/0326-power-of-three/) | undefined |
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/martin0327/LeetCode/tree/main/0381-insert-delete-getrandom-o1-duplicates-allowed/) | Hard |
+| [0398-random-pick-index](https://github.com/martin0327/LeetCode/tree/main/0398-random-pick-index/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -83,6 +84,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/martin0327/LeetCode/tree/main/0381-insert-delete-getrandom-o1-duplicates-allowed/) | Hard |
+| [0398-random-pick-index](https://github.com/martin0327/LeetCode/tree/main/0398-random-pick-index/) | Medium |
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -91,6 +93,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/martin0327/LeetCode/tree/main/0381-insert-delete-getrandom-o1-duplicates-allowed/) | Hard |
+| [0398-random-pick-index](https://github.com/martin0327/LeetCode/tree/main/0398-random-pick-index/) | Medium |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -111,4 +114,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1914-cyclically-rotating-a-grid](https://github.com/martin0327/LeetCode/tree/main/1914-cyclically-rotating-a-grid/) | Medium |
+## Reservoir Sampling
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0398-random-pick-index](https://github.com/martin0327/LeetCode/tree/main/0398-random-pick-index/) | Medium |
 <!---LeetCode Topics End-->
