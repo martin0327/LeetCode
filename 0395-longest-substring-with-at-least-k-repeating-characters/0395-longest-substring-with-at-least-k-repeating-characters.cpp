@@ -1,19 +1,9 @@
-
-template<typename T>
-using min_pq = priority_queue<T, vector<T>, greater<T>>;
-template<typename T>
-using max_pq = priority_queue<T>;
-
 template<typename T1, typename T2>
 void chmax(T1 &x, T2 y) { if (x < y) x = y; }
 template<typename T1, typename T2>
 void chmin(T1 &x, T2 y) { if (x > y) x = y; }
 template<typename T>
 void asort(vector<T> &a) {sort(a.begin(), a.end());}
-template<typename T>
-void dsort(vector<T> &a) {sort(a.rbegin(), a.rend());}
-template<typename T>
-void reverse(vector<T> &a) {reverse(a.begin(), a.end());}
 
 template<typename T>
 vector<T> get_unique(vector<T> a) {
@@ -22,15 +12,10 @@ vector<T> get_unique(vector<T> a) {
     return a;
 }
 
-using ll = long long;
-using vi = vector<ll>;
+using vi = vector<int>;
 using vvi = vector<vi>;
-using pii = pair<ll,ll>;
+using pii = pair<int,int>;
 using vp = vector<pii>;
-using ti3 = tuple<ll,ll,ll>;
-using vti3 = vector<ti3>;
-using vs = vector<string>;
-
 class Solution {
 public:
     int longestSubstring(string s, int k) {
@@ -42,7 +27,6 @@ public:
                 pre[j][i+1] = pre[j][i] + (x == j);
             }
         }
-        // debug(pre);
         int ans = 0;
         for (int i=0; i<n; i++) {
             vp b;
@@ -60,21 +44,11 @@ public:
                 p.push_back(r);
             }
             p = get_unique(p);
-            // debug(b);
-            // debug(p);
             for (auto j : p) {
                 bool ok = true;
                 for (auto [l,r] : b) {
-                    if (r == n+1) {
-                        ok &= j <= l;
-                    }
-                    else {
-                        if (l < j && j < r) ok = false;
-                    }
-                    // if (i == 0) {
-                    //     debug(j,l,r);
-                    // }
-                    // if (l < j && j < r) ok = false;
+                    if (r == n+1) ok &= j <= l;
+                    else ok &= (j <= l || j >= r);
                 }
                 if (ok) chmax(ans, j-i);
             }
