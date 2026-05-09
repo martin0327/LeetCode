@@ -1,40 +1,8 @@
-
-#include <algorithm>
-#include <cassert>
-#include <iostream>
-#include <vector>
-
-
-#ifdef _MSC_VER
-#include <intrin.h>
-#endif
-
-namespace atcoder {
-
-namespace internal {
-
 int ceil_pow2(int n) {
     int x = 0;
     while ((1U << x) < (unsigned int)(n)) x++;
     return x;
 }
-
-int bsf(unsigned int n) {
-#ifdef _MSC_VER
-    unsigned long index;
-    _BitScanForward(&index, n);
-    return index;
-#else
-    return __builtin_ctz(n);
-#endif
-}
-
-}  // namespace internal
-
-}  // namespace atcoder
-
-
-namespace atcoder {
 
 template <class S,
           S (*op)(S, S),
@@ -48,7 +16,7 @@ struct lazy_segtree {
     lazy_segtree() : lazy_segtree(0) {}
     lazy_segtree(int n) : lazy_segtree(std::vector<S>(n, e())) {}
     lazy_segtree(const std::vector<S>& v) : _n(int(v.size())) {
-        log = internal::ceil_pow2(_n);
+        log = ceil_pow2(_n);
         size = 1 << log;
         d = std::vector<S>(2 * size, e());
         lz = std::vector<F>(size, id());
@@ -210,28 +178,6 @@ struct lazy_segtree {
     }
 };
 
-}  // namespace atcoder
-
-using namespace atcoder;
-
-
-
-template<typename T>
-using min_pq = priority_queue<T, vector<T>, greater<T>>;
-template<typename T>
-using max_pq = priority_queue<T>;
-
-template<typename T1, typename T2>
-void chmax(T1 &x, T2 y) { if (x < y) x = y; }
-template<typename T1, typename T2>
-void chmin(T1 &x, T2 y) { if (x > y) x = y; }
-template<typename T>
-void asort(vector<T> &a) {sort(a.begin(), a.end());}
-template<typename T>
-void dsort(vector<T> &a) {sort(a.rbegin(), a.rend());}
-template<typename T>
-void reverse(vector<T> &a) {reverse(a.begin(), a.end());}
-
 template<typename T>
 vector<T> get_unique(vector<T> a) {
     sort(a.begin(), a.end());
@@ -239,16 +185,14 @@ vector<T> get_unique(vector<T> a) {
     return a;
 }
 
-using ll = int;
-using vi = vector<ll>;
+using vi = vector<int>;
 using vvi = vector<vi>;
-using pii = pair<ll,ll>;
+using pii = pair<int,int>;
 using vp = vector<pii>;
 using vvp = vector<vp>;
-
-const ll inf = 2e9;
+const int inf = 2e9;
 using S = pii;
-using F = ll;
+using F = int;
 
 S op(S a, S b) {
     auto [mx1, mn1] = a;
@@ -256,22 +200,16 @@ S op(S a, S b) {
     return {max(mx1,mx2),min(mn1,mn2)};
 }
  
-S e() {
-    return {-inf,inf};
-}
+S e() { return {-inf,inf}; }
  
 S mapping(F f, S s) {
     auto [a,b] = s;
     return {a+f, b+f};
 }
  
-F composition(F f, F g) {
-    return f + g;
-}
+F composition(F f, F g) { return f + g; }
 
-F id () {
-    return 0;
-}
+F id () { return 0; }
 
 using lzseg = lazy_segtree<S, op, e, F, mapping, composition, id>;
 
@@ -301,12 +239,12 @@ public:
         
         vvp xpush(xsz), xpop(xsz);
         for (auto &[k,v] : mp) {
-            auto [x,pp] = k;
+            auto [x,p] = k;
             x = g(xs,x);
             for (auto [lo,hi] : v) {
                 lo = g(ys,lo);
                 hi = g(ys,hi);
-                if (pp) xpush[x].push_back({lo,hi});
+                if (p) xpush[x].push_back({lo,hi});
                 else xpop[x].push_back({lo,hi});
             }
         }
