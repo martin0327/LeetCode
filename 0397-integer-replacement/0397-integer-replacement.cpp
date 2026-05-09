@@ -1,12 +1,16 @@
 using ll = long long;
+map<ll,ll> vis;
+vector<ll> nb; 
+
 class Solution {
 public:
     int integerReplacement(int n) {
-        map<ll,ll> vis;
+        vis.clear();
+        nb.reserve(2);
         queue<ll> q;
-        q.push(n);
+        
         vis[n] = 0;
-        vector<ll> nb; nb.reserve(2);
+        q.push(n);
         while (q.size()) {
             ll u = q.front(); q.pop();
             if (u == 1) return vis[u];
