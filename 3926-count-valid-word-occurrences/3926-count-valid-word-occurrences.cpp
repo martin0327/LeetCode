@@ -69,11 +69,11 @@ vector<string> split_str(string s, const char delim = ' ') {
 using vs = vector<string>;
 class Solution {
 public:
-    vector<int> countWordOccurrences(vector<string>& chunks, vector<string>& qr) {
+    vector<int> countWordOccurrences(vector<string>& cs, vector<string>& qr) {
         string t;
-        for (auto &s : chunks) t += s;
+        for (auto &s : cs) t += s;
         auto a = split_str(t, ' ');
-        vs b;
+        map<string,int> mp;
         for (auto &s : a) {
             int n = s.size();
             dsu uf(n);
@@ -87,27 +87,16 @@ public:
                         }
                     }
                 }
-                else {
-                    if (s[i-1] != '-') uf.merge(i,i-1);
-                    else {
-                        // if (i-2 >= 0 && s[i-2] != '-') {
-                        //     uf.merge(i,i-1);
-                        // }
-                    }
-                }
+                else if (s[i-1] != '-') uf.merge(i,i-1);
             }
-            vs t;
             for (auto &g : uf.groups()) {
-                string ss;
-                for (auto i : g) ss += s[i];
-                if (ss[0] == '-' || ss.back() == '-') continue;
-                b.push_back(ss);
+                string t;
+                for (auto i : g) t += s[i];
+                if (t[0] == '-' || t.back() == '-') continue;
+                mp[t]++;
             }
         }
-        map<string,int> mp;
-        for (auto &s : b) {
-            mp[s]++;
-        }
+        
         int n = qr.size();
         vector<int> ans(n);
         for (int i=0; i<n; i++) {
