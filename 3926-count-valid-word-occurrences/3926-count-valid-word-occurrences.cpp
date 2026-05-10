@@ -56,7 +56,6 @@ struct dsu {
     std::vector<int> parent_or_size;
 };
 
-
 vector<string> split_str(string s, const char delim = ' ') {
     vector<string> ret;
     stringstream ss(s);
@@ -67,40 +66,7 @@ vector<string> split_str(string s, const char delim = ' ') {
     return ret;
 }
 
-
-template<typename T>
-using min_pq = priority_queue<T, vector<T>, greater<T>>;
-template<typename T>
-using max_pq = priority_queue<T>;
-
-template<typename T1, typename T2>
-void chmax(T1 &x, T2 y) { if (x < y) x = y; }
-template<typename T1, typename T2>
-void chmin(T1 &x, T2 y) { if (x > y) x = y; }
-template<typename T>
-void asort(vector<T> &a) {sort(a.begin(), a.end());}
-template<typename T>
-void dsort(vector<T> &a) {sort(a.rbegin(), a.rend());}
-template<typename T>
-void reverse(vector<T> &a) {reverse(a.begin(), a.end());}
-
-template<typename T>
-vector<T> get_unique(vector<T> a) {
-    sort(a.begin(), a.end());
-    a.erase(unique(a.begin(), a.end()), a.end());
-    return a;
-}
-
-using ll = long long;
-using vi = vector<ll>;
-using vvi = vector<vi>;
-using pii = pair<ll,ll>;
-using vp = vector<pii>;
-using vvp = vector<vp>;
-using ti3 = tuple<ll,ll,ll>;
-using vti3 = vector<ti3>;
 using vs = vector<string>;
-
 class Solution {
 public:
     vector<int> countWordOccurrences(vector<string>& chunks, vector<string>& qr) {
@@ -114,12 +80,6 @@ public:
             for (int i=1; i<n; i++) {
                 if (s[i] == '-') {
                     if (s[i-1] == '-') uf.merge(i,i-1);
-                    else {
-                        if (i+1 < n && s[i+1] != '-') {
-                            uf.merge(i,i-1);
-                            uf.merge(i,i+1);
-                        }
-                    }
                 }
                 else {
                     if (s[i-1] != '-') uf.merge(i,i-1);
