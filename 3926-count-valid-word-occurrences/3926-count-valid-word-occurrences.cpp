@@ -80,13 +80,19 @@ public:
             for (int i=1; i<n; i++) {
                 if (s[i] == '-') {
                     if (s[i-1] == '-') uf.merge(i,i-1);
+                    else {
+                        if (i+1 < n && s[i+1] != '-') {
+                            uf.merge(i,i-1);
+                            uf.merge(i,i+1);
+                        }
+                    }
                 }
                 else {
                     if (s[i-1] != '-') uf.merge(i,i-1);
                     else {
-                        if (i-2 >= 0 && s[i-2] != '-') {
-                            uf.merge(i,i-1);
-                        }
+                        // if (i-2 >= 0 && s[i-2] != '-') {
+                        //     uf.merge(i,i-1);
+                        // }
                     }
                 }
             }
