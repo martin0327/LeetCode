@@ -16,8 +16,7 @@ public:
         chmin(ans, cnt);
         if (cnt >= 1) chmin(ans, cnt-1);
         string t(n, '0');
-        t.front() = '1';
-        t.back() = '1';
+        t.front() = t.back() = '1';
         cnt = 0;
         for (int i=0; i<n; i++) {
             if (s[i] != t[i]) cnt++;
