@@ -9,9 +9,8 @@ public:
         if (n < 3) return 0;
         
         int cnt = 0;
-        for (auto ch : s) {
-            if (ch == '1') cnt++;
-        }
+        for (auto ch : s) if (ch == '1') cnt++;
+
         int ans = n - cnt;
         chmin(ans, cnt);
         if (cnt >= 1) chmin(ans, cnt-1);
