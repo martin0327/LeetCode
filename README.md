@@ -40,6 +40,7 @@
 | [0332-reconstruct-itinerary](https://github.com/martin0327/LeetCode/tree/main/0332-reconstruct-itinerary/) | undefined |
 | [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/martin0327/LeetCode/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
 | [0405-convert-a-number-to-hexadecimal](https://github.com/martin0327/LeetCode/tree/main/0405-convert-a-number-to-hexadecimal/) | Easy |
+| [0415-add-strings](https://github.com/martin0327/LeetCode/tree/main/0415-add-strings/) | Easy |
 | [0796-rotate-string](https://github.com/martin0327/LeetCode/tree/main/0796-rotate-string/) | Easy |
 ## String Matching
 | Problem Name | Difficulty |
@@ -55,6 +56,7 @@
 | [0398-random-pick-index](https://github.com/martin0327/LeetCode/tree/main/0398-random-pick-index/) | Medium |
 | [0400-nth-digit](https://github.com/martin0327/LeetCode/tree/main/0400-nth-digit/) | Medium |
 | [0405-convert-a-number-to-hexadecimal](https://github.com/martin0327/LeetCode/tree/main/0405-convert-a-number-to-hexadecimal/) | Easy |
+| [0415-add-strings](https://github.com/martin0327/LeetCode/tree/main/0415-add-strings/) | Easy |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -128,6 +130,7 @@
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0415-add-strings](https://github.com/martin0327/LeetCode/tree/main/0415-add-strings/) | Easy |
 | [1914-cyclically-rotating-a-grid](https://github.com/martin0327/LeetCode/tree/main/1914-cyclically-rotating-a-grid/) | Medium |
 ## Reservoir Sampling
 | Problem Name | Difficulty |
