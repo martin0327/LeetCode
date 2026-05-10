@@ -1,14 +1,18 @@
 using ll = long long;
 using vi = vector<ll>;
+vi a;
 class Solution {
 public:
     int findNthDigit(int n) {
+        if (a.empty()) {
+            a = {1};
+            while (a.back() < 2e9) {
+                a.push_back(a.back() * 10);
+            }
+        }
+        
         if (n <= 9) return n;
         n--;
-        vi a = {1};
-        while (a.back() < 2e9) {
-            a.push_back(a.back() * 10);
-        }
         for (auto x : a) {
             ll sz = to_string(x).size();
             ll y = 9 * x * sz;
