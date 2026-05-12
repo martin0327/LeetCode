@@ -12,6 +12,7 @@
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/martin0327/LeetCode/tree/main/0381-insert-delete-getrandom-o1-duplicates-allowed/) | Hard |
 | [0391-perfect-rectangle](https://github.com/martin0327/LeetCode/tree/main/0391-perfect-rectangle/) | Hard |
 | [0414-third-maximum-number](https://github.com/martin0327/LeetCode/tree/main/0414-third-maximum-number/) | Easy |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/martin0327/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1861-rotating-the-box](https://github.com/martin0327/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
 | [1914-cyclically-rotating-a-grid](https://github.com/martin0327/LeetCode/tree/main/1914-cyclically-rotating-a-grid/) | Medium |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/martin0327/LeetCode/tree/main/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
@@ -67,6 +68,7 @@
 | [0324-wiggle-sort-ii](https://github.com/martin0327/LeetCode/tree/main/0324-wiggle-sort-ii/) | undefined |
 | [0334-increasing-triplet-subsequence](https://github.com/martin0327/LeetCode/tree/main/0334-increasing-triplet-subsequence/) | undefined |
 | [0397-integer-replacement](https://github.com/martin0327/LeetCode/tree/main/0397-integer-replacement/) | Medium |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/martin0327/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -82,6 +84,7 @@
 | [0324-wiggle-sort-ii](https://github.com/martin0327/LeetCode/tree/main/0324-wiggle-sort-ii/) | undefined |
 | [0332-reconstruct-itinerary](https://github.com/martin0327/LeetCode/tree/main/0332-reconstruct-itinerary/) | undefined |
 | [0414-third-maximum-number](https://github.com/martin0327/LeetCode/tree/main/0414-third-maximum-number/) | Easy |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/martin0327/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
