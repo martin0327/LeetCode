@@ -17,12 +17,9 @@ public:
             b[x+y+1]++;
         }
 
-        for (int i=2; i<m; i++) {
-            b[i] += b[i-1];
-        }
-
         int ans = 2e9;
         for (int i=2; i<=2*lim; i++) {
+            b[i] += b[i-1];
             ans = min(ans, b[i]);
         }
 
