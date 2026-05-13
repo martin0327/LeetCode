@@ -1,10 +1,10 @@
-const int sz = 2e5+5;
+const int sz = 2e5+5; 
 int b[sz];
 class Solution {
 public:
     int minMoves(vector<int>& a, int lim) {
         int n = a.size(), m = 2*lim+2;
-        memset(b,0,sizeof(b)/sz*(m+1));
+        memset(b,0,sizeof(b));
 
         b[1] = n;
         for (int i=0; i<n-1-i; i++) {
