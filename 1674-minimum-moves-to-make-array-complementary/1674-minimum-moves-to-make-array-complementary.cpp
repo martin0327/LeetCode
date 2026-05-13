@@ -16,10 +16,8 @@ public:
         for (int i=2; i<m; i++) {
             b[i] += b[i-1];
         }
-        for (int i=0; i<n; i++) {
-            int j = n-1-i;
-            if (i >= j) break;
-            auto x = a[i], y = a[j];
+        for (int i=0; i<n-1-i; i++) {
+            auto x = a[i], y = a[n-1-i];
             b[x+y]--;
         }
 
