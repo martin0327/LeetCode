@@ -13,6 +13,7 @@
 | [0391-perfect-rectangle](https://github.com/martin0327/LeetCode/tree/main/0391-perfect-rectangle/) | Hard |
 | [0414-third-maximum-number](https://github.com/martin0327/LeetCode/tree/main/0414-third-maximum-number/) | Easy |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/martin0327/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
+| [1674-minimum-moves-to-make-array-complementary](https://github.com/martin0327/LeetCode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [1861-rotating-the-box](https://github.com/martin0327/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
 | [1914-cyclically-rotating-a-grid](https://github.com/martin0327/LeetCode/tree/main/1914-cyclically-rotating-a-grid/) | Medium |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/martin0327/LeetCode/tree/main/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
@@ -105,6 +106,7 @@
 | [0391-perfect-rectangle](https://github.com/martin0327/LeetCode/tree/main/0391-perfect-rectangle/) | Hard |
 | [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/martin0327/LeetCode/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
 | [0398-random-pick-index](https://github.com/martin0327/LeetCode/tree/main/0398-random-pick-index/) | Medium |
+| [1674-minimum-moves-to-make-array-complementary](https://github.com/martin0327/LeetCode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -164,4 +166,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0400-nth-digit](https://github.com/martin0327/LeetCode/tree/main/0400-nth-digit/) | Medium |
+## Prefix Sum
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1674-minimum-moves-to-make-array-complementary](https://github.com/martin0327/LeetCode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 <!---LeetCode Topics End-->
