@@ -5,6 +5,7 @@ public:
     int minMoves(vector<int>& a, int lim) {
         int n = a.size(), m = 2*lim+2;
         memset(b,0,sizeof(b));
+        
         for (int i=0; i<n-1-i; i++) {
             auto x = a[i], y = a[n-1-i];
             int l = min(x,y)+1;
@@ -13,12 +14,13 @@ public:
             b[r+1]++;
             b[1] += 2;
         }
+
         for (int i=2; i<m; i++) {
             b[i] += b[i-1];
         }
+        
         for (int i=0; i<n-1-i; i++) {
-            auto x = a[i], y = a[n-1-i];
-            b[x+y]--;
+            b[a[i] + a[n-1-i]]--;
         }
 
         int ans = 2e9;
