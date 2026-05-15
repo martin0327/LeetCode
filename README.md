@@ -13,6 +13,7 @@
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/martin0327/LeetCode/tree/main/0381-insert-delete-getrandom-o1-duplicates-allowed/) | Hard |
 | [0391-perfect-rectangle](https://github.com/martin0327/LeetCode/tree/main/0391-perfect-rectangle/) | Hard |
 | [0414-third-maximum-number](https://github.com/martin0327/LeetCode/tree/main/0414-third-maximum-number/) | Easy |
+| [0419-battleships-in-a-board](https://github.com/martin0327/LeetCode/tree/main/0419-battleships-in-a-board/) | Medium |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/martin0327/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/martin0327/LeetCode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [1861-rotating-the-box](https://github.com/martin0327/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
@@ -34,6 +35,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/martin0327/LeetCode/tree/main/0048-rotate-image/) | undefined |
+| [0419-battleships-in-a-board](https://github.com/martin0327/LeetCode/tree/main/0419-battleships-in-a-board/) | Medium |
 | [1861-rotating-the-box](https://github.com/martin0327/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
 | [1914-cyclically-rotating-a-grid](https://github.com/martin0327/LeetCode/tree/main/1914-cyclically-rotating-a-grid/) | Medium |
 | [3742-maximum-path-score-in-a-grid](https://github.com/martin0327/LeetCode/tree/main/3742-maximum-path-score-in-a-grid/) | Medium |
@@ -121,6 +123,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0332-reconstruct-itinerary](https://github.com/martin0327/LeetCode/tree/main/0332-reconstruct-itinerary/) | undefined |
+| [0419-battleships-in-a-board](https://github.com/martin0327/LeetCode/tree/main/0419-battleships-in-a-board/) | Medium |
 ## Graph
 | Problem Name | Difficulty |
 | ------- | ------- |
