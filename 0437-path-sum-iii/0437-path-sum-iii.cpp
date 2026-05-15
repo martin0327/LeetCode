@@ -7,11 +7,11 @@ public:
         function<void(TreeNode*)> f = [&] (TreeNode* u) {
             if (!u) return;
             cur += u->val;
-            if (mp.count(cur-tg)) ans += mp[cur-tg];
+            ans += mp[cur-tg];
             mp[cur]++;
             f(u->left);
             f(u->right);
-            if (--mp[cur] == 0) mp.erase(cur);
+            mp[cur]--;
             cur -= u->val;
         };
         f(root);
