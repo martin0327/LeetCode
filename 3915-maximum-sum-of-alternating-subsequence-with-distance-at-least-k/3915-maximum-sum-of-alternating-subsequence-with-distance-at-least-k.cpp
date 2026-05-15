@@ -114,7 +114,6 @@ template<typename T1, typename T2>
 void chmin(T1 &x, T2 y) { if (x > y) x = y; }
 using ll = long long;
 using vi = vector<ll>;
-
 using S = ll;
 const ll inf = 2e18;
 S op(S x, S y) { return max(x,y); }
@@ -140,7 +139,7 @@ public:
             chmax(dp_hi[i], seg_lo.prod(0,x) + x);
         }
         auto ans = *max_element(dp_lo.begin(), dp_lo.end());
-        chmax(ans,*max_element(dp_hi.begin(), dp_hi.end()));
+        chmax(ans, *max_element(dp_hi.begin(), dp_hi.end()));
         return ans;
     }
 };
