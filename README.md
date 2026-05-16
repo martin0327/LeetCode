@@ -6,6 +6,7 @@
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/martin0327/LeetCode/tree/main/0048-rotate-image/) | undefined |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/martin0327/LeetCode/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
+| [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/martin0327/LeetCode/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [0322-coin-change](https://github.com/martin0327/LeetCode/tree/main/0322-coin-change/) | undefined |
 | [0324-wiggle-sort-ii](https://github.com/martin0327/LeetCode/tree/main/0324-wiggle-sort-ii/) | undefined |
 | [0332-reconstruct-itinerary](https://github.com/martin0327/LeetCode/tree/main/0332-reconstruct-itinerary/) | undefined |
@@ -183,6 +184,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/martin0327/LeetCode/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
+| [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/martin0327/LeetCode/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [0400-nth-digit](https://github.com/martin0327/LeetCode/tree/main/0400-nth-digit/) | Medium |
 | [0436-find-right-interval](https://github.com/martin0327/LeetCode/tree/main/0436-find-right-interval/) | Medium |
 | [0441-arranging-coins](https://github.com/martin0327/LeetCode/tree/main/0441-arranging-coins/) | Easy |
