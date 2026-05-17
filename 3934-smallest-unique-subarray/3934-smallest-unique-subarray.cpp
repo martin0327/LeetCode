@@ -12,7 +12,7 @@ struct rabin_karp {
 
     // --- helper: get a random base in [1000, sqrt(P)] ---
     static i128 random_base(i128 P) {
-        return 123456;
+        return 2587934;
     }
 
     // --- helper for string → vector<int> ---
