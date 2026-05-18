@@ -206,4 +206,12 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0437-path-sum-iii](https://github.com/martin0327/LeetCode/tree/main/0437-path-sum-iii/) | Medium |
+## Union-Find
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3887-incremental-even-weighted-cycle-queries](https://github.com/martin0327/LeetCode/tree/main/3887-incremental-even-weighted-cycle-queries/) | Hard |
+## Graph Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3887-incremental-even-weighted-cycle-queries](https://github.com/martin0327/LeetCode/tree/main/3887-incremental-even-weighted-cycle-queries/) | Hard |
 <!---LeetCode Topics End-->
