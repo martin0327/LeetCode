@@ -21,17 +21,18 @@ public:
                 b[f(i)].push_back(i);
             }
         }
+        
         int n = a.size(), m = maxm;        
-        memset(dp[0], 0, sizeof(dp[0]));
-        for (int j=0; j<b[a[0]].size(); j++) {
-            dp[0][j] = 1;
-        }
-        for (int i=1; i<n; i++) {
+        for (int i=0; i<n; i++) {
             memset(dp[i], 0, sizeof(dp[i]));
-            auto &v1 = b[a[i-1]];
-            auto &v2 = b[a[i]];
-            int sz1 = v1.size();
-            int sz2 = v2.size();
+            if (i == 0) {
+                for (int j=0; j<b[a[i]].size(); j++) {
+                    dp[0][j] = 1;
+                }
+                continue;
+            }
+            auto &v1 = b[a[i-1]], &v2 = b[a[i]];
+            int sz1 = v1.size(), sz2 = v2.size();
             for (int j=0; j<sz1; j++) {
                 auto x = v1[j];
                 auto it = lower_bound(v2.begin(), v2.end(), x);
