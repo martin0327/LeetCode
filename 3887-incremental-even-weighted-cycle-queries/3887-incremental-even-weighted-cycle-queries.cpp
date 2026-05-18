@@ -56,15 +56,17 @@ struct dsu {
     std::vector<int> parent_or_size;
 };
 
+const int sz = 5e4+5;
 using ll = int;
 using vi = vector<int>;
 using vvi = vector<vi>;
+bool vis[sz];
 class Solution {
 public:
     int numberOfEdgesAdded(int n, vector<vector<int>>& edg) {
         vvi adj(n);
         dsu uf(n);
-        vi a(n, -1), vis(n);
+        vi a(n, -1);
         int ans = 0;
         for (auto &uvw : edg) {
             int u = uvw[0], v = uvw[1], w = uvw[2];
@@ -98,7 +100,7 @@ public:
                         int sz1 = uf.size(u);
                         int sz2 = uf.size(v);
                         auto f = [&] (int src) {
-                            vis.assign(n, 0);
+                            memset(vis, 0, sizeof(vis));
                             vis[src] = 1;
                             queue<int> q;
                             q.push(src);
