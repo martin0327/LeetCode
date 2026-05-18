@@ -1,7 +1,7 @@
 using ll = long long;
 using vi = vector<ll>;
 const int sz = 51, mod = 1e9+7;
-const int maxn = 1001, maxm = 400;
+const int maxn = 1001, maxm = 370;
 vi b[sz];
 int dp[maxn][maxm];
 
@@ -21,18 +21,20 @@ public:
                 b[f(i)].push_back(i);
             }
         }
-        
-        int n = a.size(), m = maxm;        
+
+        int n = a.size(), m = maxm;    
+        for (int i=0; i<n; i++) memset(dp[i], 0, sizeof(dp[i]));
         for (int i=0; i<n; i++) {
-            memset(dp[i], 0, sizeof(dp[i]));
             if (i == 0) {
-                for (int j=0; j<b[a[i]].size(); j++) {
+                int sz = b[a[i]].size();
+                for (int j=0; j<sz; j++) {
                     dp[0][j] = 1;
                 }
                 continue;
             }
             auto &v1 = b[a[i-1]], &v2 = b[a[i]];
             int sz1 = v1.size(), sz2 = v2.size();
+            if (sz1 == 0 || sz2 == 0) break;
             for (int j=0; j<sz1; j++) {
                 auto x = v1[j];
                 auto it = lower_bound(v2.begin(), v2.end(), x);
