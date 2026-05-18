@@ -1,10 +1,8 @@
-using ll = long long;
-using vi = vector<ll>;
+using vi = vector<int>;
 const int sz = 51, mod = 1e9+7;
 const int maxn = 1001, maxm = 370;
 vi b[sz];
 int dp[maxn][maxm];
-
 class Solution {
 public:
     int countArrays(vector<int>& a) {
@@ -52,7 +50,7 @@ public:
                 dp[i][j] %= mod;
             }
         }
-        ll ans = 0;
+        int ans = 0;
         for (int j=0; j<b[a.back()].size(); j++) {
             ans += dp[n-1][j];
             ans %= mod;
