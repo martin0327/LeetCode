@@ -23,18 +23,18 @@ public:
                 }
                 if (mn != mx) {
                     int idx = -1;
-                    if (b[i+d-1] == mx) {
-                        idx = d-1;
-                        for (int j=0; j<d; j++) {
-                            if (b[i+j] == mx) {
+                    if (b[i] == mn) {
+                        idx = 0;
+                        for (int j=d-1; j>=0; j--) {
+                            if (b[i+j] == mn) {
                                 idx = j;
                             }
                             else break;
                         }
                     }
                     else {
-                        for (int j=d-1; j>=0; j--) {
-                            if (b[i+j] == mx) {
+                        for (int j=0; j<d; j++) {
+                            if (b[i+j] == mn) {
                                 idx = j;
                                 break;
                             }
@@ -42,9 +42,9 @@ public:
                     }
                     assert(idx != -1);
                     for (int j=0; j+1<d; j++) {
-                        int j2 = (idx-j+d) % d;
-                        int j1 = (idx-j-1+d) % d;
-                        if (b[i+j1] > b[i+j2]) {
+                        int l = (idx+j) % d;
+                        int r = (idx+j+1) % d;
+                        if (b[i+l] > b[i+r]) {
                             ok = false;
                             break;
                         }
