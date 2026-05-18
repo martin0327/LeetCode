@@ -23,8 +23,8 @@ public:
         }
 
         int n = a.size(), m = maxm;    
-        for (int i=0; i<n; i++) memset(dp[i], 0, sizeof(dp[i]));
         for (int i=0; i<n; i++) {
+            memset(dp[i], 0, sizeof(dp[i]));
             if (i == 0) {
                 int sz = b[a[i]].size();
                 for (int j=0; j<sz; j++) {
@@ -34,7 +34,10 @@ public:
             }
             auto &v1 = b[a[i-1]], &v2 = b[a[i]];
             int sz1 = v1.size(), sz2 = v2.size();
-            if (sz1 == 0 || sz2 == 0) break;
+            if (sz1 == 0 || sz2 == 0) {
+                memset(dp[n-1], 0, sizeof(dp[n-1]));
+                break;
+            }
             for (int j=0; j<sz1; j++) {
                 auto x = v1[j];
                 auto it = lower_bound(v2.begin(), v2.end(), x);
