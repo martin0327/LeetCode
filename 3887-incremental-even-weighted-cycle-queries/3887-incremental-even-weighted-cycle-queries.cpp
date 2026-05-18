@@ -57,16 +57,16 @@ struct dsu {
 };
 
 const int sz = 5e4+5;
-using ll = int;
 using vi = vector<int>;
-using vvi = vector<vi>;
 bool vis[sz];
+short a[sz];
+vi adj[sz];
 class Solution {
 public:
     int numberOfEdgesAdded(int n, vector<vector<int>>& edg) {
-        vvi adj(n);
         dsu uf(n);
-        vi a(n, -1);
+        memset(a, -1, sizeof(a));
+        for (int i=0; i<n; i++) adj[i].clear();
         int ans = 0;
         for (auto &uvw : edg) {
             int u = uvw[0], v = uvw[1], w = uvw[2];
