@@ -57,16 +57,8 @@ struct dsu {
 };
 
 using ll = int;
-using vi = vector<ll>;
+using vi = vector<int>;
 using vvi = vector<vi>;
-using pii = pair<ll,ll>;
-using vp = vector<pii>;
-using vvp = vector<vp>;
-using ti3 = tuple<ll,ll,ll>;
-using vti3 = vector<ti3>;
-using vs = vector<string>;
-
-
 class Solution {
 public:
     int numberOfEdgesAdded(int n, vector<vector<int>>& edg) {
