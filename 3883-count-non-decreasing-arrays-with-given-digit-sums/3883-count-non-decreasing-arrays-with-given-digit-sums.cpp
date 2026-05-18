@@ -1,13 +1,5 @@
-
 using ll = long long;
 using vi = vector<ll>;
-using vvi = vector<vi>;
-using pii = pair<ll,ll>;
-using vp = vector<pii>;
-using vvp = vector<vp>;
-using ti3 = tuple<ll,ll,ll>;
-using vti3 = vector<ti3>;
-using vs = vector<string>;
 const int sz = 51, mod = 1e9+7;
 const int maxn = 1001, maxm = 400;
 vi b[sz];
@@ -16,26 +8,26 @@ int dp[maxn][maxm];
 class Solution {
 public:
     int countArrays(vector<int>& a) {
-        int n = a.size(), m = maxm;
-        for (int i=0; i<sz; i++) b[i].clear();
-        for (int i=0; i<5001; i++) {
-            auto f = [&] (int x) {
-                int ret = 0;
-                while (x > 0) {
-                    ret += x % 10;
-                    x /= 10;
-                }
-                return ret;
-            };
-            b[f(i)].push_back(i);
+        if (b[0].empty()) {
+            for (int i=0; i<5001; i++) {
+                auto f = [&] (int x) {
+                    int ret = 0;
+                    while (x > 0) {
+                        ret += x % 10;
+                        x /= 10;
+                    }
+                    return ret;
+                };
+                b[f(i)].push_back(i);
+            }
         }
-        // memset(dp[0], 0, sizeof(dp[0]));
-        vvi dp(n, vi(m));
+        int n = a.size(), m = maxm;        
+        memset(dp[0], 0, sizeof(dp[0]));
         for (int j=0; j<b[a[0]].size(); j++) {
             dp[0][j] = 1;
         }
         for (int i=1; i<n; i++) {
-            // memset(dp[i], 0, sizeof(dp[i]));
+            memset(dp[i], 0, sizeof(dp[i]));
             auto &v1 = b[a[i-1]];
             auto &v2 = b[a[i]];
             int sz1 = v1.size();
