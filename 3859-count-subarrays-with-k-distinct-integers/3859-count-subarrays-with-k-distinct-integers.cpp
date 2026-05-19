@@ -1,10 +1,5 @@
-template<typename T>
-using min_pq = priority_queue<T, vector<T>, greater<T>>;
-template<typename T>
-using max_pq = priority_queue<T>;
 using ll = long long;
 using pii = pair<int,int>;
-
 const int sz = 1e5+1;
 int c1[sz], c2[sz];
 class Solution {
