@@ -26,6 +26,7 @@
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/martin0327/LeetCode/tree/main/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
 | [3660-jump-game-ix](https://github.com/martin0327/LeetCode/tree/main/3660-jump-game-ix/) | Medium |
 | [3742-maximum-path-score-in-a-grid](https://github.com/martin0327/LeetCode/tree/main/3742-maximum-path-score-in-a-grid/) | Medium |
+| [3859-count-subarrays-with-k-distinct-integers](https://github.com/martin0327/LeetCode/tree/main/3859-count-subarrays-with-k-distinct-integers/) | Hard |
 | [3883-count-non-decreasing-arrays-with-given-digit-sums](https://github.com/martin0327/LeetCode/tree/main/3883-count-non-decreasing-arrays-with-given-digit-sums/) | Hard |
 | [3886-sum-of-sortable-integers](https://github.com/martin0327/LeetCode/tree/main/3886-sum-of-sortable-integers/) | Hard |
 | [3981-jump-game-ix](https://github.com/martin0327/LeetCode/tree/main/3981-jump-game-ix/) | undefined |
@@ -132,6 +133,7 @@
 | [0447-number-of-boomerangs](https://github.com/martin0327/LeetCode/tree/main/0447-number-of-boomerangs/) | Medium |
 | [1345-jump-game-iv](https://github.com/martin0327/LeetCode/tree/main/1345-jump-game-iv/) | Hard |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/martin0327/LeetCode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
+| [3859-count-subarrays-with-k-distinct-integers](https://github.com/martin0327/LeetCode/tree/main/3859-count-subarrays-with-k-distinct-integers/) | Hard |
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -183,6 +185,7 @@
 | ------- | ------- |
 | [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/martin0327/LeetCode/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
 | [0424-longest-repeating-character-replacement](https://github.com/martin0327/LeetCode/tree/main/0424-longest-repeating-character-replacement/) | Medium |
+| [3859-count-subarrays-with-k-distinct-integers](https://github.com/martin0327/LeetCode/tree/main/3859-count-subarrays-with-k-distinct-integers/) | Hard |
 ## Geometry
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -224,4 +227,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3886-sum-of-sortable-integers](https://github.com/martin0327/LeetCode/tree/main/3886-sum-of-sortable-integers/) | Hard |
+## Counting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3859-count-subarrays-with-k-distinct-integers](https://github.com/martin0327/LeetCode/tree/main/3859-count-subarrays-with-k-distinct-integers/) | Hard |
 <!---LeetCode Topics End-->
