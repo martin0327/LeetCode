@@ -1,44 +1,18 @@
-
 template<typename T>
 using min_pq = priority_queue<T, vector<T>, greater<T>>;
 template<typename T>
 using max_pq = priority_queue<T>;
-
-template<typename T1, typename T2>
-void chmax(T1 &x, T2 y) { if (x < y) x = y; }
-template<typename T1, typename T2>
-void chmin(T1 &x, T2 y) { if (x > y) x = y; }
-template<typename T>
-void asort(vector<T> &a) {sort(a.begin(), a.end());}
-template<typename T>
-void dsort(vector<T> &a) {sort(a.rbegin(), a.rend());}
-template<typename T>
-void reverse(vector<T> &a) {reverse(a.begin(), a.end());}
-
-template<typename T>
-vector<T> get_unique(vector<T> a) {
-    sort(a.begin(), a.end());
-    a.erase(unique(a.begin(), a.end()), a.end());
-    return a;
-}
-
 using ll = long long;
-using vi = vector<ll>;
-using vvi = vector<vi>;
-using pii = pair<ll,ll>;
-using vp = vector<pii>;
-using vvp = vector<vp>;
-using ti3 = tuple<ll,ll,ll>;
-using vti3 = vector<ti3>;
-using vs = vector<string>;
+using pii = pair<int,int>;
 
 const int sz = 1e5+1;
+int c1[sz], c2[sz];
 class Solution {
 public:
-    long long countSubarrays(vector<int>& aa, int k, int m) {
-        vi a(aa.begin(), aa.end());
+    long long countSubarrays(vector<int>& a, int k, int m) {
         ll n = a.size(), ans = 0;
-        vi c1(sz), c2(sz);
+        memset(c1,0,sizeof(c1));
+        memset(c2,0,sizeof(c2));
         set<pii> s1, s2;
         auto f = [&] (int x) {
             pii tg1 = {c1[x],x};
@@ -67,16 +41,13 @@ public:
 
         for (int i=0,l=0,r=0; i<n; i++) {
             f(a[i]);
-            while (s2.size() > k) {
-                g2(a[r++]);
-            }
+            while (s2.size() > k) g2(a[r++]);
             while (s2.size() == k && (s2.begin()->first) >= m) {
                 if (c2[a[r]] > m) g2(a[r++]);
                 else break;
             }
-            while (s1.size() > k) {
-                g1(a[l++]);
-            }
+
+            while (s1.size() > k) g1(a[l++]);
             if (s2.size() == k && (s2.begin()->first) >= m) {
                 ans += r-l+1;
             }
