@@ -56,11 +56,18 @@ class Trie {
     }
 };
 
-const int sz = 1<<16;
-int cnt[sz];
+const int sz = 4e4 + 5;
+int cnt[sz], pre[sz];
 
-template<typename T, typename comp>
-void validate(priority_queue<T, std::vector<T>, comp> &pq) {
+void validate(min_pq<int> &pq) {
+    while (!pq.empty()) {
+        auto x = pq.top();
+        if (cnt[x] > 0) break;
+        else pq.pop();
+    }
+}
+
+void validate(max_pq<int> &pq) {
     while (!pq.empty()) {
         auto x = pq.top();
         if (cnt[x] > 0) break;
@@ -72,21 +79,23 @@ class Solution {
 public:
     int maxXor(vector<int>& a, int k) {
         memset(cnt, 0 , sizeof(cnt));
-        int n = a.size();
-        vi pre(n+1);
+        memset(pre, 0 , sizeof(pre));
+        
+        int n = a.size(), ans = 0;
         for (int i=1; i<=n; i++) {
             pre[i] = pre[i-1] ^ a[i-1];
         }
+        
         min_pq<int> pq1;
         max_pq<int> pq2;
         auto tr = Trie();
         tr.insert(0);
-        int ans = 0;
-
+        
         for (int j=0,i=1; i<=n; i++) {
-            cnt[a[i-1]]++;
-            pq2.push(a[i-1]);
-            pq1.push(a[i-1]);
+            auto x = a[i-1];
+            cnt[x]++;
+            pq2.push(x);
+            pq1.push(x);
             tr.insert(pre[i]);
             while (pq2.size()) {
                 validate(pq2);
