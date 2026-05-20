@@ -75,7 +75,7 @@ public:
                 }
                 else break;
             }
-            if (i > j) ans = max(ans, tr.get_mx(pre[i]));
+            ans = max(ans, tr.get_mx(pre[i]));
         }
         return ans;
     }
