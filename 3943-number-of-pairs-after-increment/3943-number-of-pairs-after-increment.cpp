@@ -37,22 +37,18 @@ unordered_map<ll,ll> frq[mx_sz];
 ll offset[mx_sz];
 
 ll ceil_div(ll a, ll b) {
-    return (a + b - 1) / b;
+    return (a + b - 1) / b; // a / b + (a % b > 0)
 }
-
 class Solution {
 public:
-    vector<int> numberOfPairs(vector<int>& aa, vector<int>& bb, vector<vector<int>>& qr) {
-        vi a(aa.begin(), aa.end());
-        vi b(bb.begin(), bb.end());
+    vector<int> numberOfPairs(vector<int>& a, vector<int>& b, vector<vector<int>>& qr) {
         int n = a.size(), m = b.size();
-        int q = qr.size(), sz = sqrt(m);
-        int num_b = ceil_div(m, sz);
+        int q = qr.size(), sz = sqrt(m); // bucket size
+        int num_b = ceil_div(m, sz); // number of buckets
         for (int i=0; i<num_b; i++) {
             frq[i].clear();
         }
         memset(offset, 0, sizeof(offset));
-        // vector<map<int,int>> frq(num_b);
 
         for (int i=0; i<m; i++) {
             ll bid = i / sz, x = b[i];
@@ -67,7 +63,7 @@ public:
                 auto l_id = l / sz;
                 auto r_id = r / sz;
                 if (l_id == r_id) {
-                    for (int i=l; i<=r; i++) {
+                    for (int i=l; i<=r; i++) { 
                         ll bid = l_id, x = b[i];
                         frq[bid][x]--;
                         frq[bid][x+val]++;
@@ -97,7 +93,7 @@ public:
             else {
                 ll tot = t[1], cnt = 0;
                 for (int bid=0; bid<num_b; bid++) {
-                    for (auto x : a) {
+                    for (auto x : a) { // at most 5 elements
                         // x + y + offset = tot
                         // y = tot - x - offset
                         auto tg = tot - x - offset[bid];
