@@ -20,8 +20,8 @@ public:
         memset(offset, 0, sizeof(offset));
 
         for (int i=0; i<n; i++) {
-            int bid = i / sz, x = b[i];
-            frq[bid][x]++;
+            int idx = i / sz, x = b[i];
+            frq[idx][x]++;
         }
 
         vi ans;
@@ -32,38 +32,38 @@ public:
                 int left = l / sz, right = r / sz;
                 if (left == right) {
                     for (int i=l; i<=r; i++) { 
-                        int bid = left, &x = b[i];
-                        frq[bid][x]--;
-                        frq[bid][x+=v]++;
+                        int idx = left, &x = b[i];
+                        frq[idx][x]--;
+                        frq[idx][x+=v]++;
                     }
                 }
                 else {
-                    for (int bid=left+1; bid<right; bid++) {
-                        offset[bid] += v;
+                    for (int idx=left+1; idx<right; idx++) {
+                        offset[idx] += v;
                     }
                     for (int j=0; j<sz; j++) {
                         int i = left*sz+j;
                         if (i < l || i >= n) continue;
-                        int bid = left, &x = b[i];
-                        frq[bid][x]--;
-                        frq[bid][x+=v]++;
+                        int idx = left, &x = b[i];
+                        frq[idx][x]--;
+                        frq[idx][x+=v]++;
                     }
                     for (int j=0; j<sz; j++) {
                         int i = right*sz+j;
                         if (i > r) break;
-                        int bid = right, &x = b[i];
-                        frq[bid][x]--;
-                        frq[bid][x+=v]++;
+                        int idx = right, &x = b[i];
+                        frq[idx][x]--;
+                        frq[idx][x+=v]++;
                     }
                 }
             }
             else {
                 ll tot = t[1], cnt = 0;
-                for (int bid=0; bid<m; bid++) {
+                for (int idx=0; idx<m; idx++) {
                     for (auto x : a) {
-                        auto tg = tot - x - offset[bid];
-                        if (frq[bid].count(tg)) {
-                            cnt += frq[bid][tg];
+                        auto tg = tot - x - offset[idx];
+                        if (frq[idx].count(tg)) {
+                            cnt += frq[idx][tg];
                         }
                     }
                 }
