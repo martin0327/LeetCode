@@ -34,9 +34,9 @@ using vs = vector<string>;
 
 const int mx_sz = 250;
 unordered_map<int,int> frq[mx_sz];
-ll offset[mx_sz];
+int offset[mx_sz];
 
-ll ceil_div(ll a, ll b) {
+int ceil_div(int a, int b) {
     return (a + b - 1) / b; // a / b + (a % b > 0)
 }
 class Solution {
