@@ -32,8 +32,8 @@ using ti3 = tuple<ll,ll,ll>;
 using vti3 = vector<ti3>;
 using vs = vector<string>;
 
-const ll mx_sz = 250;
-unordered_map<ll,ll> frq[mx_sz];
+const int mx_sz = 250;
+unordered_map<int,int> frq[mx_sz];
 ll offset[mx_sz];
 
 ll ceil_div(ll a, ll b) {
