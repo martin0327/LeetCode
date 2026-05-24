@@ -152,7 +152,7 @@ vi adj[maxn];
 class Solution {
 public:
     int maxJumps(vector<int>& a, int k) {
-        int n = a.size(), ans = 0;
+        int n = a.size();
         segtree<S,op,e> seg(a);
         for (int i=0; i<n; i++) adj[i].clear();
         for (int i=0; i<n; i++) {
@@ -169,27 +169,19 @@ public:
                 }
             }
         }
-        max_pq<pii> pq;
+        vp b(n);
         for (int i=0; i<n; i++) {
-            while (pq.size()) pq.pop();
-            vi dp(n,-inf);
-            pq.push({a[i],i});
-            dp[i] = 1;
-            while (pq.size()) {
-                auto [x,i] = pq.top();
-                pq.pop();
-                chmax(ans, dp[i]);
-                for (auto j : adj[i]) {
-                    if (dp[j] == -inf) {
-                        dp[j] = dp[i] + 1;
-                        pq.push({a[j],j});
-                    }
-                    else if (dp[j] < dp[i] + 1) {
-                        dp[j] = dp[i] + 1;
-                    }
-                }
+            b[i] = {a[i],i};
+        }
+        dsort(b);
+        vi dp(n, -inf);
+        for (auto [x,i] : b) {
+            if (dp[i] == -inf) dp[i] = 1;
+            for (auto j : adj[i]) {
+                chmax(dp[j], dp[i]+1);
             }
         }
+        auto ans = *max_element(dp.begin(), dp.end());
         return ans;
     }
 };
