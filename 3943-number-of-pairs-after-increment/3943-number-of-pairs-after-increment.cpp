@@ -47,10 +47,10 @@ public:
                     for (int i=0; i<sz; i++) {
                         int j = left*sz+i;
                         if (j < l || j >= n) continue;
-                        int bid = left, x = b[j];
+                        int bid = left, &x = b[j];
                         frq[bid][x]--;
-                        frq[bid][x+v]++;
-                        b[j] += v;
+                        x += v;
+                        frq[bid][x]++;
                     }
                     for (int i=right*sz; i<(right+1)*sz; i++) {
                         if (i > r) continue;
