@@ -13,15 +13,14 @@ ll offset[mx_sz];
 class Solution {
 public:
     vector<int> numberOfPairs(vector<int>& a, vector<int>& b, vector<vector<int>>& qr) {
-        int n = a.size(), m = b.size();
-        int q = qr.size(), sz = sqrt(m); // bucket size
-        int num_b = ceil_div(m, sz); // number of buckets
+        int n = b.size(), sz = sqrt(n); // bucket size
+        int num_b = ceil_div(n, sz); // number of buckets
         for (int i=0; i<num_b; i++) {
             frq[i].clear();
         }
         memset(offset, 0, sizeof(offset));
 
-        for (int i=0; i<m; i++) {
+        for (int i=0; i<n; i++) {
             int bid = i / sz, x = b[i];
             frq[bid][x]++;
         }
@@ -30,43 +29,41 @@ public:
         for (auto &t : qr) {
             int tp = t[0];
             if (tp == 1) {
-                ll l = t[1], r = t[2], val = t[3];
+                ll l = t[1], r = t[2], v = t[3];
                 auto l_id = l / sz;
                 auto r_id = r / sz;
                 if (l_id == r_id) {
                     for (int i=l; i<=r; i++) { 
                         int bid = l_id, x = b[i];
                         frq[bid][x]--;
-                        frq[bid][x+val]++;
-                        b[i] += val;
+                        frq[bid][x+v]++;
+                        b[i] += v;
                     }
                 }
                 else {
                     for (int bid=l_id+1; bid<r_id; bid++) {
-                        offset[bid] += val;
+                        offset[bid] += v;
                     }
                     for (int i=l_id*sz; i<(l_id+1)*sz; i++) {
-                        if (i < l || i >= m) continue;
+                        if (i < l || i >= n) continue;
                         int bid = l_id, x = b[i];
                         frq[bid][x]--;
-                        frq[bid][x+val]++;
-                        b[i] += val;
+                        frq[bid][x+v]++;
+                        b[i] += v;
                     }
                     for (int i=r_id*sz; i<(r_id+1)*sz; i++) {
-                        if (i > r || i < 0) continue;
+                        if (i > r) continue;
                         int bid = r_id, x = b[i];
                         frq[bid][x]--;
-                        frq[bid][x+val]++;
-                        b[i] += val;
+                        frq[bid][x+v]++;
+                        b[i] += v;
                     }
                 }
             }
             else {
                 ll tot = t[1], cnt = 0;
                 for (int bid=0; bid<num_b; bid++) {
-                    for (auto x : a) { // at most 5 elements
-                        // x + y + offset = tot
-                        // y = tot - x - offset
+                    for (auto x : a) {
                         auto tg = tot - x - offset[bid];
                         if (frq[bid].count(tg)) {
                             cnt += frq[bid][tg];
