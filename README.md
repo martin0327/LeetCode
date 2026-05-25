@@ -40,6 +40,7 @@
 | [0322-coin-change](https://github.com/martin0327/LeetCode/tree/main/0322-coin-change/) | undefined |
 | [0397-integer-replacement](https://github.com/martin0327/LeetCode/tree/main/0397-integer-replacement/) | Medium |
 | [1340-jump-game-v](https://github.com/martin0327/LeetCode/tree/main/1340-jump-game-v/) | Hard |
+| [1871-jump-game-vii](https://github.com/martin0327/LeetCode/tree/main/1871-jump-game-vii/) | Medium |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/martin0327/LeetCode/tree/main/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
 | [3660-jump-game-ix](https://github.com/martin0327/LeetCode/tree/main/3660-jump-game-ix/) | Medium |
 | [3742-maximum-path-score-in-a-grid](https://github.com/martin0327/LeetCode/tree/main/3742-maximum-path-score-in-a-grid/) | Medium |
@@ -63,6 +64,7 @@
 | [0423-reconstruct-original-digits-from-english](https://github.com/martin0327/LeetCode/tree/main/0423-reconstruct-original-digits-from-english/) | Medium |
 | [0424-longest-repeating-character-replacement](https://github.com/martin0327/LeetCode/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [0796-rotate-string](https://github.com/martin0327/LeetCode/tree/main/0796-rotate-string/) | Easy |
+| [1871-jump-game-vii](https://github.com/martin0327/LeetCode/tree/main/1871-jump-game-vii/) | Medium |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/martin0327/LeetCode/tree/main/3043-find-the-length-of-the-longest-common-prefix/) | Medium |
 ## String Matching
 | Problem Name | Difficulty |
@@ -194,6 +196,7 @@
 | ------- | ------- |
 | [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/martin0327/LeetCode/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
 | [0424-longest-repeating-character-replacement](https://github.com/martin0327/LeetCode/tree/main/0424-longest-repeating-character-replacement/) | Medium |
+| [1871-jump-game-vii](https://github.com/martin0327/LeetCode/tree/main/1871-jump-game-vii/) | Medium |
 | [3845-maximum-subarray-xor-with-bounded-range](https://github.com/martin0327/LeetCode/tree/main/3845-maximum-subarray-xor-with-bounded-range/) | Hard |
 | [3859-count-subarrays-with-k-distinct-integers](https://github.com/martin0327/LeetCode/tree/main/3859-count-subarrays-with-k-distinct-integers/) | Hard |
 ## Geometry
@@ -216,6 +219,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/martin0327/LeetCode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
+| [1871-jump-game-vii](https://github.com/martin0327/LeetCode/tree/main/1871-jump-game-vii/) | Medium |
 | [3845-maximum-subarray-xor-with-bounded-range](https://github.com/martin0327/LeetCode/tree/main/3845-maximum-subarray-xor-with-bounded-range/) | Hard |
 | [3883-count-non-decreasing-arrays-with-given-digit-sums](https://github.com/martin0327/LeetCode/tree/main/3883-count-non-decreasing-arrays-with-given-digit-sums/) | Hard |
 ## Tree
