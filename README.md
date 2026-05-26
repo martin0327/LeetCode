@@ -191,6 +191,7 @@
 | ------- | ------- |
 | [0397-integer-replacement](https://github.com/martin0327/LeetCode/tree/main/0397-integer-replacement/) | Medium |
 | [0405-convert-a-number-to-hexadecimal](https://github.com/martin0327/LeetCode/tree/main/0405-convert-a-number-to-hexadecimal/) | Easy |
+| [0461-hamming-distance](https://github.com/martin0327/LeetCode/tree/main/0461-hamming-distance/) | Easy |
 | [3845-maximum-subarray-xor-with-bounded-range](https://github.com/martin0327/LeetCode/tree/main/3845-maximum-subarray-xor-with-bounded-range/) | Hard |
 ## Memoization
 | Problem Name | Difficulty |
