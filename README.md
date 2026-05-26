@@ -17,6 +17,7 @@
 | [0419-battleships-in-a-board](https://github.com/martin0327/LeetCode/tree/main/0419-battleships-in-a-board/) | Medium |
 | [0436-find-right-interval](https://github.com/martin0327/LeetCode/tree/main/0436-find-right-interval/) | Medium |
 | [0447-number-of-boomerangs](https://github.com/martin0327/LeetCode/tree/main/0447-number-of-boomerangs/) | Medium |
+| [0453-minimum-moves-to-equal-array-elements](https://github.com/martin0327/LeetCode/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [1306-jump-game-iii](https://github.com/martin0327/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
 | [1340-jump-game-v](https://github.com/martin0327/LeetCode/tree/main/1340-jump-game-v/) | Hard |
 | [1345-jump-game-iv](https://github.com/martin0327/LeetCode/tree/main/1345-jump-game-iv/) | Hard |
@@ -84,6 +85,7 @@
 | [0423-reconstruct-original-digits-from-english](https://github.com/martin0327/LeetCode/tree/main/0423-reconstruct-original-digits-from-english/) | Medium |
 | [0441-arranging-coins](https://github.com/martin0327/LeetCode/tree/main/0441-arranging-coins/) | Easy |
 | [0447-number-of-boomerangs](https://github.com/martin0327/LeetCode/tree/main/0447-number-of-boomerangs/) | Medium |
+| [0453-minimum-moves-to-equal-array-elements](https://github.com/martin0327/LeetCode/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [3886-sum-of-sortable-integers](https://github.com/martin0327/LeetCode/tree/main/3886-sum-of-sortable-integers/) | Hard |
 ## Breadth-First Search
 | Problem Name | Difficulty |
