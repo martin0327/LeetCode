@@ -1,6 +1,5 @@
-using ll = long long;
-using pii = pair<ll,ll>;
-const ll inf = 1e9;
+using pii = pair<int,int>;
+const int inf = 1e9;
 pii z;
 
 class Trie {
@@ -56,7 +55,7 @@ class Trie {
 class Solution {
 public:
     vector<int> stringIndices(vector<string>& wc, vector<string>& wq) {
-        auto tr = new Trie();
+        auto tr = make_unique<Trie>(); // Creates a smart pointer        
         {
             vector<pii> t;
             for (int i=0; i<wc.size(); i++) {
