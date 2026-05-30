@@ -13,11 +13,6 @@ public:
                 if (i > 0) chmax(ret,cum-mn);
                 if (i+1 < n-1) chmin(mn, cum);
             }
-            // for (int i=n-1,cum=0,mn=0; i>=0; i--) {
-            //     cum += a[i];
-            //     if (i < n-1) chmax(ret, cum-mn);
-            //     if (i-1 > 0) chmin(mn,cum);
-            // }
             return ret;
         };
 
@@ -43,7 +38,8 @@ public:
             return ret;
         };
 
-        int n = a.size(), m = a[0].size(), ans = -inf;
+        int n = a.size(), m = a[0].size();
+        int ans = -inf;
         for (int i=1; i+1<n; i++) {
             chmax(ans, f(a[i]));
         }
