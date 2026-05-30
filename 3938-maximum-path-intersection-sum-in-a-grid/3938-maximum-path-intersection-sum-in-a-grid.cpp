@@ -3,6 +3,7 @@ void chmax(T1 &x, T2 y) { if (x < y) x = y; }
 template<typename T1, typename T2>
 void chmin(T1 &x, T2 y) { if (x > y) x = y; }
 const int inf = 2e9;
+vector<int> b;
 class Solution {
 public:
     int maxScore(vector<vector<int>>& a) {
@@ -45,16 +46,13 @@ public:
             chmax(ans, f(a[i]));
         }
         for (int j=1; j+1<m; j++) {
-            auto b = vslice(j);
-            chmax(ans, f(b));
+            chmax(ans, f(b = vslice(j)));
         }
 
         chmax(ans, g(a[0]));
         chmax(ans, g(a[n-1]));
-        auto b = vslice(0);
-        chmax(ans, g(b));
-        b = vslice(m-1);
-        chmax(ans, g(b));
+        chmax(ans, g(b = vslice(0)));
+        chmax(ans, g(b = vslice(m-1)));
 
         return ans;
     }
