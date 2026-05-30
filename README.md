@@ -73,6 +73,7 @@
 | [1871-jump-game-vii](https://github.com/martin0327/LeetCode/tree/main/1871-jump-game-vii/) | Medium |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/martin0327/LeetCode/tree/main/3043-find-the-length-of-the-longest-common-prefix/) | Medium |
 | [3093-longest-common-suffix-queries](https://github.com/martin0327/LeetCode/tree/main/3093-longest-common-suffix-queries/) | Hard |
+| [3913-sort-vowels-by-frequency](https://github.com/martin0327/LeetCode/tree/main/3913-sort-vowels-by-frequency/) | Medium |
 ## String Matching
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -126,6 +127,7 @@
 | [1340-jump-game-v](https://github.com/martin0327/LeetCode/tree/main/1340-jump-game-v/) | Hard |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/martin0327/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [3886-sum-of-sortable-integers](https://github.com/martin0327/LeetCode/tree/main/3886-sum-of-sortable-integers/) | Hard |
+| [3913-sort-vowels-by-frequency](https://github.com/martin0327/LeetCode/tree/main/3913-sort-vowels-by-frequency/) | Medium |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -259,6 +261,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3859-count-subarrays-with-k-distinct-integers](https://github.com/martin0327/LeetCode/tree/main/3859-count-subarrays-with-k-distinct-integers/) | Hard |
+| [3913-sort-vowels-by-frequency](https://github.com/martin0327/LeetCode/tree/main/3913-sort-vowels-by-frequency/) | Medium |
 ## Trie
 | Problem Name | Difficulty |
 | ------- | ------- |
