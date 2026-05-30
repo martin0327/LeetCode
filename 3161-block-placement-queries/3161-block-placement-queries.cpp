@@ -1,46 +1,15 @@
-
-#include <algorithm>
-#include <cassert>
-#include <vector>
-
-
-#ifdef _MSC_VER
-#include <intrin.h>
-#endif
-
-namespace atcoder {
-
-namespace internal {
-
 int ceil_pow2(int n) {
     int x = 0;
     while ((1U << x) < (unsigned int)(n)) x++;
     return x;
 }
 
-int bsf(unsigned int n) {
-#ifdef _MSC_VER
-    unsigned long index;
-    _BitScanForward(&index, n);
-    return index;
-#else
-    return __builtin_ctz(n);
-#endif
-}
-
-}  // namespace internal
-
-}  // namespace atcoder
-
-
-namespace atcoder {
-
 template <class S, S (*op)(S, S), S (*e)()> struct segtree {
   public:
     segtree() : segtree(0) {}
     segtree(int n) : segtree(std::vector<S>(n, e())) {}
     segtree(const std::vector<S>& v) : _n(int(v.size())) {
-        log = internal::ceil_pow2(_n);
+        log = ceil_pow2(_n);
         size = 1 << log;
         d = std::vector<S>(2 * size, e());
         for (int i = 0; i < _n; i++) d[size + i] = v[i];
@@ -139,21 +108,11 @@ template <class S, S (*op)(S, S), S (*e)()> struct segtree {
     void update(int k) { d[k] = op(d[2 * k], d[2 * k + 1]); }
 };
 
-}  // namespace atcoder
-
-using namespace atcoder;
-
-template<typename T>
-using min_pq = priority_queue<T, vector<T>, greater<T>>;
-template<typename T>
-using max_pq = priority_queue<T>;
-
-template<typename T1, typename T2>
-void chmax(T1 &x, T2 y) { if (x < y) x = y; }
 const int inf = 2e9;
 using S = int;
 S op(S x, S y) { return max(x,y); }
 S e() { return -inf; }
+
 class Solution {
 public:
     vector<bool> getResults(vector<vector<int>>& qr) {
