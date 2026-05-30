@@ -8,7 +8,8 @@ public:
     int maxScore(vector<vector<int>>& a) {
         auto f = [&] (vector<int> &a) {
             int n = a.size(), ret = -inf;
-            for (int i=0,cum=0,mn=0; i<n; i++) {
+            int cum = 0, mn = 0;
+            for (int i=0; i<n; i++) {
                 cum += a[i];
                 if (i > 0) chmax(ret,cum-mn);
                 if (i+1 < n-1) chmin(mn, cum);
