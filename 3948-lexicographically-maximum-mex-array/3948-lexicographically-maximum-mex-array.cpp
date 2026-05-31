@@ -197,8 +197,6 @@ public:
             return ret;
         };
 
-        auto t = f();
-
         vi ans;
         reverse(a.begin(), a.end());
         int cnt = 0;
@@ -207,7 +205,6 @@ public:
             ans.push_back(mex);
             if (mex == 0) {
                 auto x = a.back();
-                seg.set(x,seg.get(x)-1);
                 a.pop_back();
             }
             else {
@@ -227,8 +224,6 @@ public:
                     a.pop_back();
                 }
             }
-            // cnt++;
-            // if (cnt == 3) break;
         }
         return ans;
     }
