@@ -109,7 +109,7 @@ template <class S, S (*op)(S, S), S (*e)()> struct segtree {
 };
 
 using vi = vector<int>;
-const int inf = 2e9;
+const int inf = 2e9, sz = 1e5+1;
 using S = int;
 S op(S x, S y) { return min(x,y); }
 S e() { return inf; }
@@ -117,13 +117,12 @@ S e() { return inf; }
 class Solution {
 public:
     vector<int> maximumMEX(vector<int>& a) {
-        int n = a.size(), sz = 1e5+1;
         segtree<S,op,e> seg(vi(sz,0));
         for (auto x : a) {
             seg.set(x, seg.get(x)+1);
         }
 
-        auto f = [&] () {
+        auto get_mex = [&] () {
             int ret = seg.max_right(0, [&] (int x) {
                 return x > 0;
             });
@@ -134,7 +133,7 @@ public:
         reverse(a.begin(), a.end());
         int cnt = 0;
         while (a.size()) {
-            auto mex = f();
+            auto mex = get_mex();
             ans.push_back(mex);
             if (mex == 0) {
                 auto x = a.back();
