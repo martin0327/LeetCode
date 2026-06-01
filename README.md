@@ -33,6 +33,7 @@
 | [3093-longest-common-suffix-queries](https://github.com/martin0327/LeetCode/tree/main/3093-longest-common-suffix-queries/) | Hard |
 | [3161-block-placement-queries](https://github.com/martin0327/LeetCode/tree/main/3161-block-placement-queries/) | Hard |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/martin0327/LeetCode/tree/main/3300-minimum-element-after-replacement-with-digit-sum/) | Easy |
+| [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/martin0327/LeetCode/tree/main/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
 | [3660-jump-game-ix](https://github.com/martin0327/LeetCode/tree/main/3660-jump-game-ix/) | Medium |
 | [3742-maximum-path-score-in-a-grid](https://github.com/martin0327/LeetCode/tree/main/3742-maximum-path-score-in-a-grid/) | Medium |
 | [3845-maximum-subarray-xor-with-bounded-range](https://github.com/martin0327/LeetCode/tree/main/3845-maximum-subarray-xor-with-bounded-range/) | Hard |
@@ -110,6 +111,7 @@
 | [0397-integer-replacement](https://github.com/martin0327/LeetCode/tree/main/0397-integer-replacement/) | Medium |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/martin0327/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [2126-destroying-asteroids](https://github.com/martin0327/LeetCode/tree/main/2126-destroying-asteroids/) | Medium |
+| [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/martin0327/LeetCode/tree/main/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -129,6 +131,7 @@
 | [1340-jump-game-v](https://github.com/martin0327/LeetCode/tree/main/1340-jump-game-v/) | Hard |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/martin0327/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [2126-destroying-asteroids](https://github.com/martin0327/LeetCode/tree/main/2126-destroying-asteroids/) | Medium |
+| [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/martin0327/LeetCode/tree/main/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
 | [3886-sum-of-sortable-integers](https://github.com/martin0327/LeetCode/tree/main/3886-sum-of-sortable-integers/) | Hard |
 | [3913-sort-vowels-by-frequency](https://github.com/martin0327/LeetCode/tree/main/3913-sort-vowels-by-frequency/) | Medium |
 ## Recursion
@@ -145,6 +148,7 @@
 | [0061-rotate-list](https://github.com/martin0327/LeetCode/tree/main/0061-rotate-list/) | Medium |
 | [0457-circular-array-loop](https://github.com/martin0327/LeetCode/tree/main/0457-circular-array-loop/) | Medium |
 | [1861-rotating-the-box](https://github.com/martin0327/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
+| [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/martin0327/LeetCode/tree/main/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -233,6 +237,7 @@
 | [0436-find-right-interval](https://github.com/martin0327/LeetCode/tree/main/0436-find-right-interval/) | Medium |
 | [0441-arranging-coins](https://github.com/martin0327/LeetCode/tree/main/0441-arranging-coins/) | Easy |
 | [3161-block-placement-queries](https://github.com/martin0327/LeetCode/tree/main/3161-block-placement-queries/) | Hard |
+| [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/martin0327/LeetCode/tree/main/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
