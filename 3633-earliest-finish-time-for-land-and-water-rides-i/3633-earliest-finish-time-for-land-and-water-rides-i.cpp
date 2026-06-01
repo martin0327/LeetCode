@@ -1,3 +1,4 @@
+void chmin(int &x, int y) { x = min(x,y); }
 class Solution {
 public:
     int earliestFinishTime(vector<int>& at, vector<int>& ad, vector<int>& bt, vector<int>& bd) {
@@ -6,11 +7,8 @@ public:
             int x = at[i] + ad[i];
             for (int j=0; j<m; j++) {
                 int y = bt[j] + bd[j];
-
-                if (x <= bt[j]) ans = min(ans, y);
-                else ans = min(ans, x + bd[j]);
-                if (y <= at[i]) ans = min(ans, x);
-                else ans = min(ans, y + ad[i]);
+                chmin(ans, (x<=bt[j])?y:x+bd[j]);
+                chmin(ans, (y<=at[i])?x:y+ad[i]);
             }
         }
         return ans;
