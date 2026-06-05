@@ -55,6 +55,7 @@
 | [3742-maximum-path-score-in-a-grid](https://github.com/martin0327/LeetCode/tree/main/3742-maximum-path-score-in-a-grid/) | Medium |
 | [3883-count-non-decreasing-arrays-with-given-digit-sums](https://github.com/martin0327/LeetCode/tree/main/3883-count-non-decreasing-arrays-with-given-digit-sums/) | Hard |
 | [3981-jump-game-ix](https://github.com/martin0327/LeetCode/tree/main/3981-jump-game-ix/) | undefined |
+| [4128-total-waviness-of-numbers-in-range-ii](https://github.com/martin0327/LeetCode/tree/main/4128-total-waviness-of-numbers-in-range-ii/) | undefined |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -98,6 +99,7 @@
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/martin0327/LeetCode/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/martin0327/LeetCode/tree/main/3300-minimum-element-after-replacement-with-digit-sum/) | Easy |
 | [3886-sum-of-sortable-integers](https://github.com/martin0327/LeetCode/tree/main/3886-sum-of-sortable-integers/) | Hard |
+| [4128-total-waviness-of-numbers-in-range-ii](https://github.com/martin0327/LeetCode/tree/main/4128-total-waviness-of-numbers-in-range-ii/) | undefined |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
