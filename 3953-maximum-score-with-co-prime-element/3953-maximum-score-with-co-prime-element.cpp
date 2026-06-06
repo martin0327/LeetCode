@@ -38,7 +38,7 @@ vi is_prime;
 const int sz = 1e5+1;
 class Solution {
 public:
-    int maxScore(vector<int>& nums, int maxVal) {
+    int maxScore(vector<int>& a, int maxVal) {
         if (mu.empty()) {
             mu = vi(sz);
             is_prime = vi(sz, true);
@@ -64,7 +64,6 @@ public:
             }
         }
 
-        vi a(nums.begin(), nums.end());
         int n = a.size();
         auto mx = *max_element(a.begin(), a.end());
         chmax(mx, maxVal);
@@ -90,7 +89,9 @@ public:
         ll ans = -2e9;
         for (int i=1; i<mx; i++) {
             ll cost = b[i];
-            if (frq[i] > 0 && cost > 0) cost--;
+            if (frq[i] > 0) {
+                if(cost > 0) cost--;
+            } 
             else {
                 if (cost == 0) cost++;
             }
