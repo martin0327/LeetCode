@@ -23,19 +23,15 @@ vector<T> get_unique(vector<T> a) {
 }
 
 using ll = long long;
-using vi = vector<ll>;
+using vi = vector<int>;
 using vvi = vector<vi>;
-using pii = pair<ll,ll>;
+using pii = pair<int,int>;
 using vp = vector<pii>;
 using vvp = vector<vp>;
-using ti3 = tuple<ll,ll,ll>;
-using vti3 = vector<ti3>;
-using vs = vector<string>;
-
 vi mu;
 vi primes;
 vi is_prime;
-const int sz = 1e5+1;
+const int sz = 1e5+1, inf = 2e9;
 class Solution {
 public:
     int maxScore(vector<int>& a, int maxVal) {
@@ -86,9 +82,9 @@ public:
         }
         b[1] = n;
 
-        ll ans = -2e9;
+        int ans = -inf;
         for (int i=1; i<mx; i++) {
-            ll cost = b[i];
+            int cost = b[i];
             if (frq[i] > 0) {
                 if(cost > 0) cost--;
             } 
