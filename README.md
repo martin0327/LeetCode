@@ -155,6 +155,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0061-rotate-list](https://github.com/martin0327/LeetCode/tree/main/0061-rotate-list/) | Medium |
+| [0430-flatten-a-multilevel-doubly-linked-list](https://github.com/martin0327/LeetCode/tree/main/0430-flatten-a-multilevel-doubly-linked-list/) | Medium |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -193,6 +194,7 @@
 | ------- | ------- |
 | [0332-reconstruct-itinerary](https://github.com/martin0327/LeetCode/tree/main/0332-reconstruct-itinerary/) | undefined |
 | [0419-battleships-in-a-board](https://github.com/martin0327/LeetCode/tree/main/0419-battleships-in-a-board/) | Medium |
+| [0430-flatten-a-multilevel-doubly-linked-list](https://github.com/martin0327/LeetCode/tree/main/0430-flatten-a-multilevel-doubly-linked-list/) | Medium |
 | [0437-path-sum-iii](https://github.com/martin0327/LeetCode/tree/main/0437-path-sum-iii/) | Medium |
 | [1306-jump-game-iii](https://github.com/martin0327/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
 ## Graph
@@ -311,4 +313,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3161-block-placement-queries](https://github.com/martin0327/LeetCode/tree/main/3161-block-placement-queries/) | Hard |
+## Doubly-Linked List
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0430-flatten-a-multilevel-doubly-linked-list](https://github.com/martin0327/LeetCode/tree/main/0430-flatten-a-multilevel-doubly-linked-list/) | Medium |
 <!---LeetCode Topics End-->
