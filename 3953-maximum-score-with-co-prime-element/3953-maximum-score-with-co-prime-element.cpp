@@ -4,9 +4,6 @@ template<typename T1, typename T2>
 void chmin(T1 &x, T2 y) { if (x > y) x = y; }
 using vi = vector<int>;
 using vvi = vector<vi>;
-using pii = pair<int,int>;
-using vp = vector<pii>;
-using vvp = vector<vp>;
 vi mu, primes, is_prime;
 const int sz = 1e5+1, inf = 2e9;
 class Solution {
@@ -41,7 +38,6 @@ public:
         auto mx = *max_element(a.begin(), a.end());
         chmax(mx, maxVal);
         mx++;
-        // int sz = 10;
         vi frq(mx);
         for (auto x : a) frq[x]++;
         vi mul(mx);
@@ -54,7 +50,7 @@ public:
         vi b(mx);
         for (int i=2; i<mx; i++) {
             for (int j=i; j<mx; j+=i) {
-                b[j] += -mu[i] * mul[i];
+                b[j] -= mu[i] * mul[i];
             }
         }
         b[1] = n;
