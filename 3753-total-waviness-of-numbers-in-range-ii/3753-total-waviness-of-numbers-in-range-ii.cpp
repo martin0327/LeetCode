@@ -4,7 +4,7 @@ const int sz = 20;
 ll dp[sz][2][2][3][10][sz];
 class Solution {
 public:
-    long long totalWaviness(long long A, long long B) {
+    long long totalWaviness(long long lo, long long hi) {
         function<ll(ll)> f = [&] (ll y) {
             auto s = to_string(y);
             ll ret = 0, n = s.size();
@@ -51,7 +51,7 @@ public:
             }
             return ret;
         };
-        auto ans = f(B) - f(A-1);
+        auto ans = f(hi) - f(lo-1);
         return ans;
     }
 };
