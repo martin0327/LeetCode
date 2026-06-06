@@ -11,36 +11,24 @@ public:
         function<pnn(Node*)> f = [&] (Node* u) {
             pnn ret;
             if (!u) return ret;
-            
             auto nb = u->next;
             if (u->child) {
-                
                 auto v = u->child;
                 u->child = nullptr;
-                while (v->prev) v = v->prev;
+                // while (v->prev) v = v->prev;
                 auto [l,r] = f(v);
-                // vector<int> a = {u->val, l->val, r->val};
-                // debug(a);
                 u->next = l;
                 l->prev = u;
-                
-                
+
                 if (r && nb) {
-                    vi t = {1};
-                    debug(t);
                     r->next = nb;
                     nb->prev = r;
                 }
-                else if (r) {
-                    vi t = {2};
-                    debug(t);
-                    nb = r;
-                }
+                else if (r) nb = r;
             }
             ret.first = u;
             if (nb) ret.second = f(nb).second;
             else ret.second = u;
-            
             return ret;
         };
         auto [l,r] = f(head);
