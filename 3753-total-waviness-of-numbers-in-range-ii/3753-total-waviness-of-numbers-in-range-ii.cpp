@@ -1,6 +1,6 @@
 using ll = long long;
 using vi = vector<ll>;
-const int sz = 17;
+const int sz = 20;
 ll dp[sz][2][2][3][10][sz];
 class Solution {
 public:
@@ -42,7 +42,7 @@ public:
                 for (int lz=0; lz<2; lz++) {
                     for (int j=0; j<3; j++) {
                         for (int l=0; l<10; l++) {
-                            for (int x=0; x<sz; x++) {
+                            for (int x=1; x<sz; x++) {
                                 ret += dp[n][tb][lz][j][l][x] * x;
                             }
                         }
