@@ -5,6 +5,7 @@ public:
         function<pnn(Node*)> f = [&] (Node* u) {
             pnn ret;
             if (!u) return ret;
+
             auto nb = u->next;
             if (u->child) {
                 auto v = u->child;
@@ -19,10 +20,8 @@ public:
                 }
                 else if (r) nb = r;
             }
-            ret.first = u;
-            if (nb) ret.second = f(nb).second;
-            else ret.second = u;
-            
+
+            ret = {u, nb?f(nb).second:u};
             return ret;
         };
         auto [l,r] = f(head);
