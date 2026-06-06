@@ -1,36 +1,13 @@
-
-template<typename T>
-using min_pq = priority_queue<T, vector<T>, greater<T>>;
-template<typename T>
-using max_pq = priority_queue<T>;
-
 template<typename T1, typename T2>
 void chmax(T1 &x, T2 y) { if (x < y) x = y; }
 template<typename T1, typename T2>
 void chmin(T1 &x, T2 y) { if (x > y) x = y; }
-template<typename T>
-void asort(vector<T> &a) {sort(a.begin(), a.end());}
-template<typename T>
-void dsort(vector<T> &a) {sort(a.rbegin(), a.rend());}
-template<typename T>
-void reverse(vector<T> &a) {reverse(a.begin(), a.end());}
-
-template<typename T>
-vector<T> get_unique(vector<T> a) {
-    sort(a.begin(), a.end());
-    a.erase(unique(a.begin(), a.end()), a.end());
-    return a;
-}
-
-using ll = long long;
 using vi = vector<int>;
 using vvi = vector<vi>;
 using pii = pair<int,int>;
 using vp = vector<pii>;
 using vvp = vector<vp>;
-vi mu;
-vi primes;
-vi is_prime;
+vi mu, primes, is_prime;
 const int sz = 1e5+1, inf = 2e9;
 class Solution {
 public:
