@@ -49,6 +49,7 @@
 | [3886-sum-of-sortable-integers](https://github.com/martin0327/LeetCode/tree/main/3886-sum-of-sortable-integers/) | Hard |
 | [3912-valid-elements-in-an-array](https://github.com/martin0327/LeetCode/tree/main/3912-valid-elements-in-an-array/) | Easy |
 | [3981-jump-game-ix](https://github.com/martin0327/LeetCode/tree/main/3981-jump-game-ix/) | undefined |
+| [4216-weighted-word-mapping](https://github.com/martin0327/LeetCode/tree/main/4216-weighted-word-mapping/) | undefined |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -89,6 +90,7 @@
 | [3093-longest-common-suffix-queries](https://github.com/martin0327/LeetCode/tree/main/3093-longest-common-suffix-queries/) | Hard |
 | [3838-weighted-word-mapping](https://github.com/martin0327/LeetCode/tree/main/3838-weighted-word-mapping/) | Easy |
 | [3913-sort-vowels-by-frequency](https://github.com/martin0327/LeetCode/tree/main/3913-sort-vowels-by-frequency/) | Medium |
+| [4216-weighted-word-mapping](https://github.com/martin0327/LeetCode/tree/main/4216-weighted-word-mapping/) | undefined |
 ## String Matching
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -226,6 +228,7 @@
 | [1914-cyclically-rotating-a-grid](https://github.com/martin0327/LeetCode/tree/main/1914-cyclically-rotating-a-grid/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/martin0327/LeetCode/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
 | [3838-weighted-word-mapping](https://github.com/martin0327/LeetCode/tree/main/3838-weighted-word-mapping/) | Easy |
+| [4216-weighted-word-mapping](https://github.com/martin0327/LeetCode/tree/main/4216-weighted-word-mapping/) | undefined |
 ## Reservoir Sampling
 | Problem Name | Difficulty |
 | ------- | ------- |
