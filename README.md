@@ -166,6 +166,7 @@
 | ------- | ------- |
 | [0061-rotate-list](https://github.com/martin0327/LeetCode/tree/main/0061-rotate-list/) | Medium |
 | [0430-flatten-a-multilevel-doubly-linked-list](https://github.com/martin0327/LeetCode/tree/main/0430-flatten-a-multilevel-doubly-linked-list/) | Medium |
+| [0432-all-oone-data-structure](https://github.com/martin0327/LeetCode/tree/main/0432-all-oone-data-structure/) | undefined |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -185,6 +186,7 @@
 | [0409-longest-palindrome](https://github.com/martin0327/LeetCode/tree/main/0409-longest-palindrome/) | undefined |
 | [0423-reconstruct-original-digits-from-english](https://github.com/martin0327/LeetCode/tree/main/0423-reconstruct-original-digits-from-english/) | Medium |
 | [0424-longest-repeating-character-replacement](https://github.com/martin0327/LeetCode/tree/main/0424-longest-repeating-character-replacement/) | Medium |
+| [0432-all-oone-data-structure](https://github.com/martin0327/LeetCode/tree/main/0432-all-oone-data-structure/) | undefined |
 | [0447-number-of-boomerangs](https://github.com/martin0327/LeetCode/tree/main/0447-number-of-boomerangs/) | Medium |
 | [0457-circular-array-loop](https://github.com/martin0327/LeetCode/tree/main/0457-circular-array-loop/) | Medium |
 | [1345-jump-game-iv](https://github.com/martin0327/LeetCode/tree/main/1345-jump-game-iv/) | Hard |
@@ -195,6 +197,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/martin0327/LeetCode/tree/main/0381-insert-delete-getrandom-o1-duplicates-allowed/) | Hard |
+| [0432-all-oone-data-structure](https://github.com/martin0327/LeetCode/tree/main/0432-all-oone-data-structure/) | undefined |
 ## Randomized
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -334,4 +337,5 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0430-flatten-a-multilevel-doubly-linked-list](https://github.com/martin0327/LeetCode/tree/main/0430-flatten-a-multilevel-doubly-linked-list/) | Medium |
+| [0432-all-oone-data-structure](https://github.com/martin0327/LeetCode/tree/main/0432-all-oone-data-structure/) | undefined |
 <!---LeetCode Topics End-->
