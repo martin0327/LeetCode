@@ -42,6 +42,7 @@
 | [3660-jump-game-ix](https://github.com/martin0327/LeetCode/tree/main/3660-jump-game-ix/) | Medium |
 | [3689-maximum-total-subarray-value-i](https://github.com/martin0327/LeetCode/tree/main/3689-maximum-total-subarray-value-i/) | Medium |
 | [3742-maximum-path-score-in-a-grid](https://github.com/martin0327/LeetCode/tree/main/3742-maximum-path-score-in-a-grid/) | Medium |
+| [3838-weighted-word-mapping](https://github.com/martin0327/LeetCode/tree/main/3838-weighted-word-mapping/) | Easy |
 | [3845-maximum-subarray-xor-with-bounded-range](https://github.com/martin0327/LeetCode/tree/main/3845-maximum-subarray-xor-with-bounded-range/) | Hard |
 | [3859-count-subarrays-with-k-distinct-integers](https://github.com/martin0327/LeetCode/tree/main/3859-count-subarrays-with-k-distinct-integers/) | Hard |
 | [3883-count-non-decreasing-arrays-with-given-digit-sums](https://github.com/martin0327/LeetCode/tree/main/3883-count-non-decreasing-arrays-with-given-digit-sums/) | Hard |
@@ -86,6 +87,7 @@
 | [1871-jump-game-vii](https://github.com/martin0327/LeetCode/tree/main/1871-jump-game-vii/) | Medium |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/martin0327/LeetCode/tree/main/3043-find-the-length-of-the-longest-common-prefix/) | Medium |
 | [3093-longest-common-suffix-queries](https://github.com/martin0327/LeetCode/tree/main/3093-longest-common-suffix-queries/) | Hard |
+| [3838-weighted-word-mapping](https://github.com/martin0327/LeetCode/tree/main/3838-weighted-word-mapping/) | Easy |
 | [3913-sort-vowels-by-frequency](https://github.com/martin0327/LeetCode/tree/main/3913-sort-vowels-by-frequency/) | Medium |
 ## String Matching
 | Problem Name | Difficulty |
@@ -223,6 +225,7 @@
 | [0415-add-strings](https://github.com/martin0327/LeetCode/tree/main/0415-add-strings/) | Easy |
 | [1914-cyclically-rotating-a-grid](https://github.com/martin0327/LeetCode/tree/main/1914-cyclically-rotating-a-grid/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/martin0327/LeetCode/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
+| [3838-weighted-word-mapping](https://github.com/martin0327/LeetCode/tree/main/3838-weighted-word-mapping/) | Easy |
 ## Reservoir Sampling
 | Problem Name | Difficulty |
 | ------- | ------- |
