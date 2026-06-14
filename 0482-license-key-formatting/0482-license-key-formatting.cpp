@@ -1,7 +1,8 @@
+string t;
 class Solution {
 public:
     string licenseKeyFormatting(string s, int k) {
-        string t;
+        t.clear();
         for (auto &c : s) {
             if ('a' <= c && c <= 'z') c += 'A' - 'a';
             if (c == '-') continue;
