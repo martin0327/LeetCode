@@ -159,8 +159,6 @@ using S = int;
 S op(S x, S y) { return x + y; }
 S e() { return 0; }
 using segt = segtree<S, op, e>;
-segt b1, b2, in1, in2, out1, out2;
-vi cp;
 
 class Solution {
 public:
@@ -168,7 +166,7 @@ public:
         int n = a.size();
         if (n == 0) return 0;
 
-        cp = get_unique(a);
+        auto cp = get_unique(a);
         auto sz = cp.size();
         
         auto g = [&](int x) {
@@ -178,8 +176,8 @@ public:
         
         for (auto &x : a) x = g(x);
         
-        b1 = segt(sz); 
-        b2 = segt(sz);
+        segt b1(sz); 
+        segt b2(sz);
         for (int i = 0; i < n; i++) {
             auto x = a[i];
             b1.set(x, b1.get(x) + 1);
@@ -189,10 +187,10 @@ public:
         int ans = -inf;
         
         for (int i = 0; i < n; i++) {
-            in1 = segt(sz); 
-            in2 = segt(sz);
-            out1 = b1;      
-            out2 = b2;
+            segt in1(sz); 
+            segt in2(sz);
+            auto out1 = b1;      
+            auto out2 = b2;
             
             auto f1 = [&](segt &seg1, segt &seg2, int cnt) {
                 auto r = seg1.max_right(0, [&](int x) {
@@ -215,7 +213,7 @@ public:
                 return make_pair(l, s);
             };
 
-            int best_c = 0; 
+            int cnt = 0; 
 
             for (int j = i; j < n; j++) {
                 auto x = a[j];
@@ -224,26 +222,23 @@ public:
                 out1.set(x, out1.get(x) - 1);
                 out2.set(x, out2.get(x) - cp[x]);
                 
-                int c = min({k, in1.all_prod(), out1.all_prod(), best_c + 1});
+                int cur = min({k, in1.all_prod(), out1.all_prod(), cnt + 1});
                 int diff = 0;
                 
-                while (c > 0) {
-                    auto [i1, s1] = f1(in1, in2, c);
-                    auto [i2, s2] = f2(out1, out2, c);
+                while (cur > 0) {
+                    auto [i1, s1] = f1(in1, in2, cur);
+                    auto [i2, s2] = f2(out1, out2, cur);
                     
                     if (i1 <= i2) { 
                         diff = s2 - s1;
                         break; 
                     }
-                    c--;
+                    cur--;
                 }
                 
-                best_c = c; 
                 chmax(ans, in2.all_prod() + diff);
+                cnt = cur;
             }
-            
-            // b1.set(a[i], b1.get(a[i]) - 1);
-            // b2.set(a[i], b2.get(a[i]) - cp[a[i]]);
         }
         return ans;
     }
