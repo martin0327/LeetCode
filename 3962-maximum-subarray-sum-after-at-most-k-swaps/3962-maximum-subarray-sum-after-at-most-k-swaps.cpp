@@ -164,8 +164,6 @@ class Solution {
 public:
     long long maxSum(vector<int>& a, int k) {
         int n = a.size();
-        if (n == 0) return 0;
-
         auto cp = get_unique(a);
         auto sz = cp.size();
         
