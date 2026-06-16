@@ -4,11 +4,8 @@ vs g(string s) {
     string t = "!@#";
     set<char> sc(t.begin(), t.end());
     for (auto c : s) {
-        if (ret.empty()) ret.push_back(string(1,c));
-        else {
-            if (sc.count(ret.back().back()) || sc.count(c)) ret.push_back(string(1,c));
-            else ret.back() += c;
-        }
+        if (ret.empty() || sc.count(ret.back().back()) || sc.count(c)) ret.push_back(string(1,c));
+        else ret.back() += c;
     }
     return ret;
 }
