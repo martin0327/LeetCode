@@ -1,8 +1,7 @@
 using vs = vector<string>;
-string t = "!@#";
-
 vs g(string s) {
     vector<string> ret;
+    string t = "!@#";
     set<char> sc(t.begin(), t.end());
     for (auto c : s) {
         if (ret.empty()) ret.push_back(string(1,c));
@@ -13,6 +12,7 @@ vs g(string s) {
     }
     return ret;
 }
+
 class Codec {
 public:
 
@@ -45,11 +45,8 @@ public:
         int n = a.size(), i = 0;
         function<void(TreeNode*)> f = [&] (TreeNode* v) {
             if (i >= n) return;
-            if (a[i] == "#") {
-                i++;
-                return;
-            }
-            else if (a[i] == "!") {
+            
+            if (a[i] == "!") {
                 v->left = new TreeNode();
                 i++;
                 f(v->left);
@@ -60,6 +57,10 @@ public:
                 i++;
                 f(v->right);
                 f(v);
+            }
+            else if (a[i] == "#") {
+                i++;
+                return;
             }
             else {
                 v->val = stoi(a[i]);
