@@ -13,19 +13,19 @@ public:
             int cum = 0;
             for (int j=0; j<=9; j++) {
                 if (i+j==0) continue;
-                int t = 0, p = 1;
+                long long t = 0, p = 1;
                 for (int l=0; i+l+1 <= m; l++) {
                     if (i+l+1 == m) {
                         string z = ans;
                         z += '0' + j;
                         int len = l;
                         while (len--) z += '0';
-                        if (stoi(z) > n) continue;
+                        if (stoll(z) > n) continue;
                     }
                     if (tight && (j == s[i]-'0') && (i+l+1==m)) {
                         auto sub = s.substr(i+1,l);
                         if (sub.empty()) t += 1;
-                        else t += stoi(sub)+1;
+                        else t += stoll(sub)+1;
                     }
                     else t += p;
                     p *= 10;
