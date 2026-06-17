@@ -327,6 +327,7 @@
 ## Trie
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0440-k-th-smallest-in-lexicographical-order](https://github.com/martin0327/LeetCode/tree/main/0440-k-th-smallest-in-lexicographical-order/) | Hard |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/martin0327/LeetCode/tree/main/3043-find-the-length-of-the-longest-common-prefix/) | Medium |
 | [3093-longest-common-suffix-queries](https://github.com/martin0327/LeetCode/tree/main/3093-longest-common-suffix-queries/) | Hard |
 | [3845-maximum-subarray-xor-with-bounded-range](https://github.com/martin0327/LeetCode/tree/main/3845-maximum-subarray-xor-with-bounded-range/) | Hard |
