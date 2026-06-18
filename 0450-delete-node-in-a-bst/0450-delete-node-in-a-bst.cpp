@@ -1,8 +1,4 @@
 using vi = vector<int>;
-void debug(vi &a) {
-    for (auto &x : a) cout << x << " ";
-    cout << endl;
-}
 class Solution {
 public:
     TreeNode* deleteNode(TreeNode* root, int key) {
