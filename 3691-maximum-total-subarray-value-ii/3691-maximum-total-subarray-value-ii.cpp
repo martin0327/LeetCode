@@ -1,46 +1,15 @@
-
-#include <algorithm>
-#include <cassert>
-#include <vector>
-
-
-#ifdef _MSC_VER
-#include <intrin.h>
-#endif
-
-namespace atcoder {
-
-namespace internal {
-
 int ceil_pow2(int n) {
     int x = 0;
     while ((1U << x) < (unsigned int)(n)) x++;
     return x;
 }
 
-int bsf(unsigned int n) {
-#ifdef _MSC_VER
-    unsigned long index;
-    _BitScanForward(&index, n);
-    return index;
-#else
-    return __builtin_ctz(n);
-#endif
-}
-
-}  // namespace internal
-
-}  // namespace atcoder
-
-
-namespace atcoder {
-
 template <class S, S (*op)(S, S), S (*e)()> struct segtree {
   public:
     segtree() : segtree(0) {}
     segtree(int n) : segtree(std::vector<S>(n, e())) {}
     segtree(const std::vector<S>& v) : _n(int(v.size())) {
-        log = internal::ceil_pow2(_n);
+        log = ceil_pow2(_n);
         size = 1 << log;
         d = std::vector<S>(2 * size, e());
         for (int i = 0; i < _n; i++) d[size + i] = v[i];
@@ -139,14 +108,7 @@ template <class S, S (*op)(S, S), S (*e)()> struct segtree {
     void update(int k) { d[k] = op(d[2 * k], d[2 * k + 1]); }
 };
 
-}  // namespace atcoder
-
-using namespace atcoder;
-
 using ll = long long;
-using pii = pair<ll,ll>;
-using vi = vector<ll>;
-using vp = vector<pii>;
 using ti3 = tuple<ll,ll,ll>;
 const ll inf = 2e18;
 struct S { ll mx, mn; };
