@@ -44,6 +44,7 @@
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/martin0327/LeetCode/tree/main/3635-earliest-finish-time-for-land-and-water-rides-ii/) | Medium |
 | [3660-jump-game-ix](https://github.com/martin0327/LeetCode/tree/main/3660-jump-game-ix/) | Medium |
 | [3689-maximum-total-subarray-value-i](https://github.com/martin0327/LeetCode/tree/main/3689-maximum-total-subarray-value-i/) | Medium |
+| [3691-maximum-total-subarray-value-ii](https://github.com/martin0327/LeetCode/tree/main/3691-maximum-total-subarray-value-ii/) | Hard |
 | [3742-maximum-path-score-in-a-grid](https://github.com/martin0327/LeetCode/tree/main/3742-maximum-path-score-in-a-grid/) | Medium |
 | [3838-weighted-word-mapping](https://github.com/martin0327/LeetCode/tree/main/3838-weighted-word-mapping/) | Easy |
 | [3845-maximum-subarray-xor-with-bounded-range](https://github.com/martin0327/LeetCode/tree/main/3845-maximum-subarray-xor-with-bounded-range/) | Hard |
@@ -143,6 +144,7 @@
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/martin0327/LeetCode/tree/main/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/martin0327/LeetCode/tree/main/3635-earliest-finish-time-for-land-and-water-rides-ii/) | Medium |
 | [3689-maximum-total-subarray-value-i](https://github.com/martin0327/LeetCode/tree/main/3689-maximum-total-subarray-value-i/) | Medium |
+| [3691-maximum-total-subarray-value-ii](https://github.com/martin0327/LeetCode/tree/main/3691-maximum-total-subarray-value-ii/) | Hard |
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -237,6 +239,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0332-reconstruct-itinerary](https://github.com/martin0327/LeetCode/tree/main/0332-reconstruct-itinerary/) | undefined |
+| [3691-maximum-total-subarray-value-ii](https://github.com/martin0327/LeetCode/tree/main/3691-maximum-total-subarray-value-ii/) | Hard |
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -352,6 +355,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3161-block-placement-queries](https://github.com/martin0327/LeetCode/tree/main/3161-block-placement-queries/) | Hard |
+| [3691-maximum-total-subarray-value-ii](https://github.com/martin0327/LeetCode/tree/main/3691-maximum-total-subarray-value-ii/) | Hard |
 ## Doubly-Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
