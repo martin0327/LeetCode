@@ -1,4 +1,3 @@
-using pii = pair<int,int>;
 using vi = vector<int>;
 const int sz = 26;
 class Solution {
