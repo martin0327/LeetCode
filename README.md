@@ -60,6 +60,7 @@
 | [0322-coin-change](https://github.com/martin0327/LeetCode/tree/main/0322-coin-change/) | undefined |
 | [0397-integer-replacement](https://github.com/martin0327/LeetCode/tree/main/0397-integer-replacement/) | Medium |
 | [0410-split-array-largest-sum](https://github.com/martin0327/LeetCode/tree/main/0410-split-array-largest-sum/) | undefined |
+| [0467-unique-substrings-in-wraparound-string](https://github.com/martin0327/LeetCode/tree/main/0467-unique-substrings-in-wraparound-string/) | Medium |
 | [1340-jump-game-v](https://github.com/martin0327/LeetCode/tree/main/1340-jump-game-v/) | Hard |
 | [1871-jump-game-vii](https://github.com/martin0327/LeetCode/tree/main/1871-jump-game-vii/) | Medium |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/martin0327/LeetCode/tree/main/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
@@ -91,6 +92,7 @@
 | [0423-reconstruct-original-digits-from-english](https://github.com/martin0327/LeetCode/tree/main/0423-reconstruct-original-digits-from-english/) | Medium |
 | [0424-longest-repeating-character-replacement](https://github.com/martin0327/LeetCode/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [0449-serialize-and-deserialize-bst](https://github.com/martin0327/LeetCode/tree/main/0449-serialize-and-deserialize-bst/) | Medium |
+| [0467-unique-substrings-in-wraparound-string](https://github.com/martin0327/LeetCode/tree/main/0467-unique-substrings-in-wraparound-string/) | Medium |
 | [0482-license-key-formatting](https://github.com/martin0327/LeetCode/tree/main/0482-license-key-formatting/) | Easy |
 | [0796-rotate-string](https://github.com/martin0327/LeetCode/tree/main/0796-rotate-string/) | Easy |
 | [1189-maximum-number-of-balloons](https://github.com/martin0327/LeetCode/tree/main/1189-maximum-number-of-balloons/) | Easy |
