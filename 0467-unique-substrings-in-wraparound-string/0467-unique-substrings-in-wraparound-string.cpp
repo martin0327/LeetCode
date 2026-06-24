@@ -1,11 +1,10 @@
-using ll = long long;
-using pii = pair<ll,ll>;
-using vi = vector<ll>;
+using pii = pair<int,int>;
+using vi = vector<int>;
 const int sz = 26;
 class Solution {
 public:
     int findSubstringInWraproundString(string s) {
-        ll n = s.size(), cur = 0;
+        int n = s.size(), cur = 0;
         vi a(n,1);
         for (int i=1; i<n; i++) {
             int x = s[i] - 'a';
