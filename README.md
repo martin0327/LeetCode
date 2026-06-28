@@ -29,6 +29,7 @@
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/martin0327/LeetCode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/martin0327/LeetCode/tree/main/1752-check-if-array-is-sorted-and-rotated/) | Easy |
 | [1840-maximum-building-height](https://github.com/martin0327/LeetCode/tree/main/1840-maximum-building-height/) | Hard |
+| [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/martin0327/LeetCode/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
 | [1861-rotating-the-box](https://github.com/martin0327/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
 | [1914-cyclically-rotating-a-grid](https://github.com/martin0327/LeetCode/tree/main/1914-cyclically-rotating-a-grid/) | Medium |
 | [2126-destroying-asteroids](https://github.com/martin0327/LeetCode/tree/main/2126-destroying-asteroids/) | Medium |
@@ -147,6 +148,7 @@
 | [0409-longest-palindrome](https://github.com/martin0327/LeetCode/tree/main/0409-longest-palindrome/) | undefined |
 | [0410-split-array-largest-sum](https://github.com/martin0327/LeetCode/tree/main/0410-split-array-largest-sum/) | undefined |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/martin0327/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
+| [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/martin0327/LeetCode/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
 | [2126-destroying-asteroids](https://github.com/martin0327/LeetCode/tree/main/2126-destroying-asteroids/) | Medium |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/martin0327/LeetCode/tree/main/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/martin0327/LeetCode/tree/main/3635-earliest-finish-time-for-land-and-water-rides-ii/) | Medium |
@@ -171,6 +173,7 @@
 | [1340-jump-game-v](https://github.com/martin0327/LeetCode/tree/main/1340-jump-game-v/) | Hard |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/martin0327/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1840-maximum-building-height](https://github.com/martin0327/LeetCode/tree/main/1840-maximum-building-height/) | Hard |
+| [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/martin0327/LeetCode/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
 | [2126-destroying-asteroids](https://github.com/martin0327/LeetCode/tree/main/2126-destroying-asteroids/) | Medium |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/martin0327/LeetCode/tree/main/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/martin0327/LeetCode/tree/main/3635-earliest-finish-time-for-land-and-water-rides-ii/) | Medium |
