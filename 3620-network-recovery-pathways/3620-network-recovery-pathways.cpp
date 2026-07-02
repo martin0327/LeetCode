@@ -61,15 +61,7 @@ public:
             auto w = ws[mid];
             vi dist1, dist2;
             f(0,adj1,dist1,w);
-            f(n-1,adj2,dist2,w);
             bool ok = dist1[n-1] <= k;
-            // cout << w << endl;
-            // for (auto [u,v] : a[mid]) {
-            //     auto t = dist1[u] + dist2[v] + w;
-            //     // cout << u << " " << v << " " << t << endl;
-            //     // cout << dist1[u] << " " << dist2[v] << " " << w << endl;
-            //     if (t <= k) ok = true;
-            // }
             if (ok) {
                 ans = w;
                 lo = mid + 1;
