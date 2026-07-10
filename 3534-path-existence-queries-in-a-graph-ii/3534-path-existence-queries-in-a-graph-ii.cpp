@@ -16,12 +16,14 @@ public:
         for (int i=0; i<n; i++) {
             mp[b[i].second] = i;
         }
+        sort(a.begin(), a.end());
         vvi sp(sz, vi(n));
-        for (int i=0; i<n; i++) {
-            auto [x,j] = b[i];
-            pii tg = {x+mxd,inf};
-            auto it = upper_bound(b.begin(), b.end(), tg);
-            sp[0][i] = it - b.begin() - 1;
+        for (int i=0,j=0; i<n; i++) {
+            while (j < n) {
+                if (a[i]+mxd >= a[j]) j++;
+                else break;
+            }
+            sp[0][i] = j-1;
         }
         for (int j=1; j<sz; j++) {
             for (int i=0; i<n; i++) {
