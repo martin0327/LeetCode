@@ -13,6 +13,10 @@ public:
         }
         sort(b.begin(), b.end());
         vi mp(n);
+        // iota(mp.begin(), mp.end(),0);
+        // sort(mp.begin(), mp.end(), [&] (int i, int j) {
+        //     return a[i] < a[j];
+        // });
         for (int i=0; i<n; i++) {
             mp[b[i].second] = i;
         }
