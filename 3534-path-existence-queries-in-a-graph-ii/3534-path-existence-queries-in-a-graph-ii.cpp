@@ -7,19 +7,23 @@ const int sz = 18, inf = 2e9;
 class Solution {
 public:
     vector<int> pathExistenceQueries(int n, vector<int>& a, int mxd, vector<vector<int>>& qr) {
-        vp b(n);
-        for (int i=0; i<n; i++) {
-            b[i] = {a[i],i};
-        }
-        sort(b.begin(), b.end());
+        // vp b(n);
+        // for (int i=0; i<n; i++) {
+        //     b[i] = {a[i],i};
+        // }
+        // sort(b.begin(), b.end());
+        vi t(n);
+        iota(t.begin(), t.end(),0);
+        sort(t.begin(), t.end(), [&] (int i, int j) {
+            return make_pair(a[i],i) < make_pair(a[j],j);
+        });
         vi mp(n);
-        // iota(mp.begin(), mp.end(),0);
-        // sort(mp.begin(), mp.end(), [&] (int i, int j) {
-        //     return a[i] < a[j];
-        // });
         for (int i=0; i<n; i++) {
-            mp[b[i].second] = i;
+            mp[t[i]] = i;
         }
+        // for (int i=0; i<n; i++) {
+        //     mp[b[i].second] = i;
+        // }
         sort(a.begin(), a.end());
         vvi sp(sz, vi(n));
         for (int i=0,j=0; i<n; i++) {
