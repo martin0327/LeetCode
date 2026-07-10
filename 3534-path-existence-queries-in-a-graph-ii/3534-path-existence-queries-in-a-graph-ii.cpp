@@ -2,33 +2,24 @@ using vi = vector<int>;
 using vvi = vector<vi>;
 using pii = pair<int,int>;
 using vp = vector<pii>;
-const int sz = 18, inf = 2e9;
+const int sz = 18;
 
 class Solution {
 public:
     vector<int> pathExistenceQueries(int n, vector<int>& a, int mxd, vector<vector<int>>& qr) {
-        // vp b(n);
-        // for (int i=0; i<n; i++) {
-        //     b[i] = {a[i],i};
-        // }
-        // sort(b.begin(), b.end());
-        vi t(n);
-        iota(t.begin(), t.end(),0);
-        sort(t.begin(), t.end(), [&] (int i, int j) {
-            return make_pair(a[i],i) < make_pair(a[j],j);
-        });
+        vp b(n);
+        for (int i=0; i<n; i++) {
+            b[i] = {a[i],i};
+        }
+        sort(b.begin(), b.end());
         vi mp(n);
         for (int i=0; i<n; i++) {
-            mp[t[i]] = i;
+            mp[b[i].second] = i;
         }
-        // for (int i=0; i<n; i++) {
-        //     mp[b[i].second] = i;
-        // }
-        sort(a.begin(), a.end());
         vvi sp(sz, vi(n));
         for (int i=0,j=0; i<n; i++) {
             while (j < n) {
-                if (a[i]+mxd >= a[j]) j++;
+                if (b[i].first+mxd >= b[j].first) j++;
                 else break;
             }
             sp[0][i] = j-1;
