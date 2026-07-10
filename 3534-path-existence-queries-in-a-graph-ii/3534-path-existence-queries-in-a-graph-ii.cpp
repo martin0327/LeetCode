@@ -38,20 +38,15 @@ public:
             }
             u = mp[u], v = mp[v];
             if (u > v) swap(u,v);
-            int lo = 1, hi = n, res = -1;
-            while (lo <= hi) {
-                int mid = (lo+hi)/2;
-                auto x = u;
-                for (int i=0; i<sz; i++) {
-                    if (mid>>i&1) {
-                        x = sp[i][x];
-                    }
+            int res = -1, cur = 0;
+            for (int j=sz-1; j>=0; j--) {
+                if (sp[j][u] >= v) {
+                    res = cur + (1<<j);
                 }
-                if (x >= v) {
-                    res = mid;
-                    hi = mid - 1;
+                else {
+                    cur += (1<<j);
+                    u = sp[j][u];
                 }
-                else lo = mid + 1;
             }
             ans.push_back(res);
         }
