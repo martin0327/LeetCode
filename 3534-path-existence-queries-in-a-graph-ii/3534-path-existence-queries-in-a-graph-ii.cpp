@@ -1,8 +1,7 @@
-using vi = vector<int>;
-using vvi = vector<vi>;
 using pii = pair<int,int>;
 using vp = vector<pii>;
-const int sz = 18;
+const int sz = 18, maxn = 1e5+1;
+int sp[sz][maxn], mp[maxn];
 
 class Solution {
 public:
@@ -12,11 +11,9 @@ public:
             b[i] = {a[i],i};
         }
         sort(b.begin(), b.end());
-        vi mp(n);
         for (int i=0; i<n; i++) {
             mp[b[i].second] = i;
         }
-        vvi sp(sz, vi(n));
         for (int i=0,j=0; i<n; i++) {
             while (j < n) {
                 if (b[i].first+mxd >= b[j].first) j++;
