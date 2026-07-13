@@ -364,6 +364,7 @@
 ## Enumeration
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1291-sequential-digits](https://github.com/martin0327/LeetCode/tree/main/1291-sequential-digits/) | Medium |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/martin0327/LeetCode/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
 | [3886-sum-of-sortable-integers](https://github.com/martin0327/LeetCode/tree/main/3886-sum-of-sortable-integers/) | Hard |
 ## Counting
