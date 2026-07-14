@@ -21,6 +21,7 @@
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/martin0327/LeetCode/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0457-circular-array-loop](https://github.com/martin0327/LeetCode/tree/main/0457-circular-array-loop/) | Medium |
 | [0485-max-consecutive-ones](https://github.com/martin0327/LeetCode/tree/main/0485-max-consecutive-ones/) | Easy |
+| [0493-reverse-pairs](https://github.com/martin0327/LeetCode/tree/main/0493-reverse-pairs/) | Hard |
 | [0496-next-greater-element-i](https://github.com/martin0327/LeetCode/tree/main/0496-next-greater-element-i/) | Easy |
 | [1306-jump-game-iii](https://github.com/martin0327/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/martin0327/LeetCode/tree/main/1331-rank-transform-of-an-array/) | Easy |
@@ -168,6 +169,7 @@
 | ------- | ------- |
 | [0324-wiggle-sort-ii](https://github.com/martin0327/LeetCode/tree/main/0324-wiggle-sort-ii/) | undefined |
 | [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/martin0327/LeetCode/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
+| [0493-reverse-pairs](https://github.com/martin0327/LeetCode/tree/main/0493-reverse-pairs/) | Hard |
 ## Quickselect
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -321,6 +323,7 @@
 | [0410-split-array-largest-sum](https://github.com/martin0327/LeetCode/tree/main/0410-split-array-largest-sum/) | undefined |
 | [0436-find-right-interval](https://github.com/martin0327/LeetCode/tree/main/0436-find-right-interval/) | Medium |
 | [0441-arranging-coins](https://github.com/martin0327/LeetCode/tree/main/0441-arranging-coins/) | Easy |
+| [0493-reverse-pairs](https://github.com/martin0327/LeetCode/tree/main/0493-reverse-pairs/) | Hard |
 | [3161-block-placement-queries](https://github.com/martin0327/LeetCode/tree/main/3161-block-placement-queries/) | Hard |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/martin0327/LeetCode/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 | [3620-network-recovery-pathways](https://github.com/martin0327/LeetCode/tree/main/3620-network-recovery-pathways/) | Hard |
@@ -393,10 +396,12 @@
 ## Binary Indexed Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0493-reverse-pairs](https://github.com/martin0327/LeetCode/tree/main/0493-reverse-pairs/) | Hard |
 | [3161-block-placement-queries](https://github.com/martin0327/LeetCode/tree/main/3161-block-placement-queries/) | Hard |
 ## Segment Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0493-reverse-pairs](https://github.com/martin0327/LeetCode/tree/main/0493-reverse-pairs/) | Hard |
 | [3161-block-placement-queries](https://github.com/martin0327/LeetCode/tree/main/3161-block-placement-queries/) | Hard |
 | [3691-maximum-total-subarray-value-ii](https://github.com/martin0327/LeetCode/tree/main/3691-maximum-total-subarray-value-ii/) | Hard |
 ## Doubly-Linked List
@@ -426,4 +431,12 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3620-network-recovery-pathways](https://github.com/martin0327/LeetCode/tree/main/3620-network-recovery-pathways/) | Hard |
+## Merge Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0493-reverse-pairs](https://github.com/martin0327/LeetCode/tree/main/0493-reverse-pairs/) | Hard |
+## Ordered Set
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0493-reverse-pairs](https://github.com/martin0327/LeetCode/tree/main/0493-reverse-pairs/) | Hard |
 <!---LeetCode Topics End-->
