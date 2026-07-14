@@ -16,7 +16,7 @@ vector<string> split_str(const string& s, const string& delim) {
 pair<int,string> f(string &s) {
     int cnt = 0, n = s.size();
     for (int i=0; i<n; i++) {
-        if (s.substr(i,1) == "\t") {
+        if (s[i] == '\t') {
             cnt++;
         }
         else break;
@@ -30,13 +30,6 @@ bool is_file(string &s) {
         if (ch == '.') return true;
     }
     return false;
-}
-
-template<typename T> 
-void debug(vector<T> a) {
-    for (auto x : a) {
-        cout << x << " ";
-    }   cout << endl;
 }
 
 class Solution {
