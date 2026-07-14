@@ -45,17 +45,16 @@ public:
         auto a = split_str(s, "\n");
         vector<int> b;
         int ans = 0, cur = 0;
-        for (auto t : a) {
-            auto [x,s] = f(t);
-            while (b.size() > x) {
+        for (auto &s : a) {
+            auto [cnt,t] = f(s);
+            while (b.size() > cnt) {
                 cur -= b.back();
                 b.pop_back();
             }
-            b.push_back(s.size());
+            b.push_back(t.size()+1);
             cur += b.back();
-            int sz = b.size();
-            if (is_file(s)) {
-                ans = max(ans, cur+sz-1);
+            if (is_file(t)) {
+                ans = max(ans, cur-1);
             }
         }
         return ans;
