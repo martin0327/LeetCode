@@ -103,6 +103,7 @@
 | [0424-longest-repeating-character-replacement](https://github.com/martin0327/LeetCode/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [0449-serialize-and-deserialize-bst](https://github.com/martin0327/LeetCode/tree/main/0449-serialize-and-deserialize-bst/) | Medium |
 | [0467-unique-substrings-in-wraparound-string](https://github.com/martin0327/LeetCode/tree/main/0467-unique-substrings-in-wraparound-string/) | Medium |
+| [0481-magical-string](https://github.com/martin0327/LeetCode/tree/main/0481-magical-string/) | Medium |
 | [0482-license-key-formatting](https://github.com/martin0327/LeetCode/tree/main/0482-license-key-formatting/) | Easy |
 | [0796-rotate-string](https://github.com/martin0327/LeetCode/tree/main/0796-rotate-string/) | Easy |
 | [1189-maximum-number-of-balloons](https://github.com/martin0327/LeetCode/tree/main/1189-maximum-number-of-balloons/) | Easy |
@@ -209,6 +210,7 @@
 | ------- | ------- |
 | [0061-rotate-list](https://github.com/martin0327/LeetCode/tree/main/0061-rotate-list/) | Medium |
 | [0457-circular-array-loop](https://github.com/martin0327/LeetCode/tree/main/0457-circular-array-loop/) | Medium |
+| [0481-magical-string](https://github.com/martin0327/LeetCode/tree/main/0481-magical-string/) | Medium |
 | [1861-rotating-the-box](https://github.com/martin0327/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/martin0327/LeetCode/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/martin0327/LeetCode/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
