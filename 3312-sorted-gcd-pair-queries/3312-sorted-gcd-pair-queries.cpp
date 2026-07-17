@@ -1,5 +1,4 @@
 using ll = long long;
-using vi = vector<ll>;
 const int sz = 5e4+1;
 ll b[sz];
 class Solution {
