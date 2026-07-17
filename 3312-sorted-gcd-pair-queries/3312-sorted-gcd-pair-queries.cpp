@@ -1,11 +1,15 @@
 using ll = long long;
-using vi = vector<ll>;
+const int sz = 5e4+1;
+ll b[sz];
 class Solution {
 public:
     vector<int> gcdValues(vector<int>& a, vector<long long>& qr) { 
-        int sz = *max_element(a.begin(), a.end()) + 1;
-        vi b(sz);
-        for (auto x : a) b[x]++;
+        memset(b,0,sizeof(b));
+        int sz = 0;
+        for (auto x : a) {
+            b[x]++;
+            sz = max(sz, x+1);
+        }
         for (int i=1; i<sz; i++) {
             for (int j=2*i; j<sz; j+=i) {
                 b[i] += b[j];
@@ -18,11 +22,11 @@ public:
             }
         }
         for (int i=1; i<sz; i++) b[i] += b[i-1];
-        vector<int> ans;
-        for (auto x : qr) {
-            auto it = lower_bound(b.begin(), b.end(), x+1);
-            ans.push_back(it-b.begin());
+        for (auto &x : qr) {
+            auto it = lower_bound(b,b+sz,x+1);
+            x = it - b;
         }
+        vector<int> ans(qr.begin(), qr.end());
         return ans;
     }
 };
