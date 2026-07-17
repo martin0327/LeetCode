@@ -1,6 +1,7 @@
 using ll = long long;
 const int sz = 5e4+1;
 ll b[sz];
+vector<int> ans;
 class Solution {
 public:
     vector<int> gcdValues(vector<int>& a, vector<long long>& qr) { 
@@ -23,7 +24,7 @@ public:
         }
         for (int i=1; i<sz; i++) b[i] += b[i-1];
         
-        vector<int> ans(q);
+        ans.resize(q);
         for (int i=0; i<q; i++) {
             auto it = lower_bound(b,b+sz,qr[i]+1);
             ans[i] = it - b;
