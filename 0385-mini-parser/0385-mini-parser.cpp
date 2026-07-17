@@ -1,43 +1,9 @@
-
-template<typename T>
-using min_pq = priority_queue<T, vector<T>, greater<T>>;
-template<typename T>
-using max_pq = priority_queue<T>;
-
-template<typename T1, typename T2>
-void chmax(T1 &x, T2 y) { if (x < y) x = y; }
-template<typename T1, typename T2>
-void chmin(T1 &x, T2 y) { if (x > y) x = y; }
-template<typename T>
-void asort(vector<T> &a) {sort(a.begin(), a.end());}
-template<typename T>
-void dsort(vector<T> &a) {sort(a.rbegin(), a.rend());}
-template<typename T>
-void reverse(vector<T> &a) {reverse(a.begin(), a.end());}
-
-template<typename T>
-vector<T> get_unique(vector<T> a) {
-    sort(a.begin(), a.end());
-    a.erase(unique(a.begin(), a.end()), a.end());
-    return a;
-}
-
-using ll = long long;
-using vi = vector<ll>;
-using vvi = vector<vi>;
-using pii = pair<ll,ll>;
-using vp = vector<pii>;
-using vvp = vector<vp>;
-using ti3 = tuple<ll,ll,ll>;
-using vti3 = vector<ti3>;
-using vs = vector<string>;
-
-
+using vi = vector<int>;
 class Solution {
 public:
     NestedInteger deserialize(string s) {
         int n = s.size();
-        map<int,pii> br;
+        map<int,int> br;
         map<int,vi> dl;
         vi st;
         for (int i=0; i<n; i++) {
@@ -46,7 +12,7 @@ public:
                 st.push_back(i);
             }
             else if (ch == ']') {
-                br[st.back()] = {st.size(),i};
+                br[st.back()] = st.size();
                 st.pop_back();
             }
             else if (ch == ',') {
@@ -58,14 +24,12 @@ public:
                 assert(s[r] == ']');
                 auto ret = NestedInteger();
                 if (l+1 == r) return ret;
-                auto [lv,_r] = br[l];
+                auto lv = br[l];
                 vi b;
                 auto &idx = dl[lv];
                 auto it = lower_bound(idx.begin(), idx.end(), l);
                 while (it != idx.end()) {
-                    if (*it < r) {
-                        b.push_back(*it);
-                    }
+                    if (*it < r) b.push_back(*it);
                     it++;
                 }
                 int pr = l;
@@ -78,19 +42,11 @@ public:
             }
             else {
                 string t;
-                for (int i=l; i<=r; i++) {
-                    // int x = s[i] - '0';
-                    t += s[i];
-                }
-                auto x = stoi(t);
-                auto ret = NestedInteger(x);
+                for (int i=l; i<=r; i++) t += s[i];
+                auto ret = NestedInteger(stoi(t));
                 return ret;
             }
-            auto ret = NestedInteger();
-            return ret;
         };
-        // debug(br);
-        // debug(dl);
         auto ret = f(0,n-1);
         return ret;
     }
