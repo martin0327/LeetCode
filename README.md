@@ -136,6 +136,7 @@
 | [0441-arranging-coins](https://github.com/martin0327/LeetCode/tree/main/0441-arranging-coins/) | Easy |
 | [0447-number-of-boomerangs](https://github.com/martin0327/LeetCode/tree/main/0447-number-of-boomerangs/) | Medium |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/martin0327/LeetCode/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
+| [0479-largest-palindrome-product](https://github.com/martin0327/LeetCode/tree/main/0479-largest-palindrome-product/) | Hard |
 | [0492-construct-the-rectangle](https://github.com/martin0327/LeetCode/tree/main/0492-construct-the-rectangle/) | Easy |
 | [0507-perfect-number](https://github.com/martin0327/LeetCode/tree/main/0507-perfect-number/) | Easy |
 | [1840-maximum-building-height](https://github.com/martin0327/LeetCode/tree/main/1840-maximum-building-height/) | Hard |
@@ -388,6 +389,7 @@
 ## Enumeration
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0479-largest-palindrome-product](https://github.com/martin0327/LeetCode/tree/main/0479-largest-palindrome-product/) | Hard |
 | [1291-sequential-digits](https://github.com/martin0327/LeetCode/tree/main/1291-sequential-digits/) | Medium |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/martin0327/LeetCode/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
 | [3886-sum-of-sortable-integers](https://github.com/martin0327/LeetCode/tree/main/3886-sum-of-sortable-integers/) | Hard |
