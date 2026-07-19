@@ -109,6 +109,7 @@
 | [0467-unique-substrings-in-wraparound-string](https://github.com/martin0327/LeetCode/tree/main/0467-unique-substrings-in-wraparound-string/) | Medium |
 | [0481-magical-string](https://github.com/martin0327/LeetCode/tree/main/0481-magical-string/) | Medium |
 | [0482-license-key-formatting](https://github.com/martin0327/LeetCode/tree/main/0482-license-key-formatting/) | Easy |
+| [0521-longest-uncommon-subsequence-i](https://github.com/martin0327/LeetCode/tree/main/0521-longest-uncommon-subsequence-i/) | Easy |
 | [0796-rotate-string](https://github.com/martin0327/LeetCode/tree/main/0796-rotate-string/) | Easy |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/martin0327/LeetCode/tree/main/1189-maximum-number-of-balloons/) | Easy |
