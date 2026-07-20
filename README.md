@@ -24,6 +24,7 @@
 | [0485-max-consecutive-ones](https://github.com/martin0327/LeetCode/tree/main/0485-max-consecutive-ones/) | Easy |
 | [0493-reverse-pairs](https://github.com/martin0327/LeetCode/tree/main/0493-reverse-pairs/) | Hard |
 | [0496-next-greater-element-i](https://github.com/martin0327/LeetCode/tree/main/0496-next-greater-element-i/) | Easy |
+| [1260-shift-2d-grid](https://github.com/martin0327/LeetCode/tree/main/1260-shift-2d-grid/) | Easy |
 | [1306-jump-game-iii](https://github.com/martin0327/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/martin0327/LeetCode/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1340-jump-game-v](https://github.com/martin0327/LeetCode/tree/main/1340-jump-game-v/) | Hard |
@@ -90,6 +91,7 @@
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/martin0327/LeetCode/tree/main/0048-rotate-image/) | undefined |
 | [0419-battleships-in-a-board](https://github.com/martin0327/LeetCode/tree/main/0419-battleships-in-a-board/) | Medium |
+| [1260-shift-2d-grid](https://github.com/martin0327/LeetCode/tree/main/1260-shift-2d-grid/) | Easy |
 | [1861-rotating-the-box](https://github.com/martin0327/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
 | [1914-cyclically-rotating-a-grid](https://github.com/martin0327/LeetCode/tree/main/1914-cyclically-rotating-a-grid/) | Medium |
 | [3742-maximum-path-score-in-a-grid](https://github.com/martin0327/LeetCode/tree/main/3742-maximum-path-score-in-a-grid/) | Medium |
@@ -297,6 +299,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0415-add-strings](https://github.com/martin0327/LeetCode/tree/main/0415-add-strings/) | Easy |
+| [1260-shift-2d-grid](https://github.com/martin0327/LeetCode/tree/main/1260-shift-2d-grid/) | Easy |
 | [1914-cyclically-rotating-a-grid](https://github.com/martin0327/LeetCode/tree/main/1914-cyclically-rotating-a-grid/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/martin0327/LeetCode/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
 | [3614-process-string-with-special-operations-ii](https://github.com/martin0327/LeetCode/tree/main/3614-process-string-with-special-operations-ii/) | Hard |
