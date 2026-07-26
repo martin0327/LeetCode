@@ -14,7 +14,7 @@ public:
         for (auto &v : b) c.push_back(v[0]);
         c = get_unique(c);
         vvi ans;
-        for (auto x : c) {
+        for (auto &x : c) {
             vi tg = {x,0};
             auto it1 = lower_bound(a.begin(), a.end(), tg);
             auto it2 = lower_bound(b.begin(), b.end(), tg);
