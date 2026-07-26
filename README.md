@@ -117,6 +117,7 @@
 | [0482-license-key-formatting](https://github.com/martin0327/LeetCode/tree/main/0482-license-key-formatting/) | Easy |
 | [0521-longest-uncommon-subsequence-i](https://github.com/martin0327/LeetCode/tree/main/0521-longest-uncommon-subsequence-i/) | Easy |
 | [0524-longest-word-in-dictionary-through-deleting](https://github.com/martin0327/LeetCode/tree/main/0524-longest-word-in-dictionary-through-deleting/) | Medium |
+| [0537-complex-number-multiplication](https://github.com/martin0327/LeetCode/tree/main/0537-complex-number-multiplication/) | Medium |
 | [0796-rotate-string](https://github.com/martin0327/LeetCode/tree/main/0796-rotate-string/) | Easy |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/martin0327/LeetCode/tree/main/1189-maximum-number-of-balloons/) | Easy |
@@ -150,6 +151,7 @@
 | [0492-construct-the-rectangle](https://github.com/martin0327/LeetCode/tree/main/0492-construct-the-rectangle/) | Easy |
 | [0507-perfect-number](https://github.com/martin0327/LeetCode/tree/main/0507-perfect-number/) | Easy |
 | [0519-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0519-random-flip-matrix/) | Medium |
+| [0537-complex-number-multiplication](https://github.com/martin0327/LeetCode/tree/main/0537-complex-number-multiplication/) | Medium |
 | [0913-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0913-random-flip-matrix/) | undefined |
 | [1840-maximum-building-height](https://github.com/martin0327/LeetCode/tree/main/1840-maximum-building-height/) | Hard |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/martin0327/LeetCode/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
@@ -313,6 +315,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0415-add-strings](https://github.com/martin0327/LeetCode/tree/main/0415-add-strings/) | Easy |
+| [0537-complex-number-multiplication](https://github.com/martin0327/LeetCode/tree/main/0537-complex-number-multiplication/) | Medium |
 | [1260-shift-2d-grid](https://github.com/martin0327/LeetCode/tree/main/1260-shift-2d-grid/) | Easy |
 | [1914-cyclically-rotating-a-grid](https://github.com/martin0327/LeetCode/tree/main/1914-cyclically-rotating-a-grid/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/martin0327/LeetCode/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
