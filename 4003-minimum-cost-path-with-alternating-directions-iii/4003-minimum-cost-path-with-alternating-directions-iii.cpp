@@ -1,15 +1,3 @@
-template<int D, typename T>
-struct Vec : public vector<Vec<D - 1, T>> {
-  static_assert(D >= 1, "Vector dimension must be greater than zero!");
-  template<typename... Args>
-  Vec(int n = 0, Args... args) : vector<Vec<D - 1, T>>(n, Vec<D - 1, T>(args...)) {}
-};
-
-template<typename T>
-struct Vec<1, T> : public vector<T> {
-  Vec(int n = 0, const T& val = T()) : vector<T>(n, val) {}
-};
-
 template<typename T>
 using min_pq = priority_queue<T, vector<T>, greater<T>>;
 template<typename T>
@@ -27,6 +15,7 @@ vi dr = {0,0,1,-1};
 vi dc = {1,-1,0,0};
 const int maxn = 1e5+1;
 vi dist[2][maxn];
+
 class Solution {
 public:
     long long minCost(int n, int m, vector<vector<int>>& pen) {
