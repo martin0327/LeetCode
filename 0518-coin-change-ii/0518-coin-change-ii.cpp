@@ -7,9 +7,11 @@ public:
         vector<ll> dp(k+1);
         dp[0] = 1;
         for (ll i=0; i<n; i++) {
-            for (ll j=0; j+c[i]<=k; j++) {
-                dp[j+c[i]] += dp[j];
-                dp[j+c[i]] = min(dp[j+c[i]], inf);
+            for (ll j=0; j<=k; j++) {
+                int nj = j + c[i];
+                if (nj > k) break;
+                dp[nj] += dp[j];
+                dp[nj] = min(dp[nj], inf);
             }
         }
         return dp[k];
