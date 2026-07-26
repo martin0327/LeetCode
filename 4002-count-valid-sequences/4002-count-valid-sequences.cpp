@@ -507,41 +507,6 @@ using is_dynamic_modint_t = std::enable_if_t<is_dynamic_modint<T>::value>;
 using namespace atcoder;
 
 using mint = static_modint<1000000007>;
-
-template<typename T>
-using min_pq = priority_queue<T, vector<T>, greater<T>>;
-template<typename T>
-using max_pq = priority_queue<T>;
-
-template<typename T1, typename T2>
-void chmax(T1 &x, T2 y) { if (x < y) x = y; }
-template<typename T1, typename T2>
-void chmin(T1 &x, T2 y) { if (x > y) x = y; }
-template<typename T>
-void asort(vector<T> &a) {sort(a.begin(), a.end());}
-template<typename T>
-void dsort(vector<T> &a) {sort(a.rbegin(), a.rend());}
-template<typename T>
-void reverse(vector<T> &a) {reverse(a.begin(), a.end());}
-
-template<typename T>
-vector<T> get_unique(vector<T> a) {
-    asort(a);
-    a.erase(unique(a.begin(), a.end()), a.end());
-    return a;
-}
-
-using ll = long long;
-using vi = vector<ll>;
-using vvi = vector<vi>;
-using pii = pair<ll,ll>;
-using vp = vector<pii>;
-using vvp = vector<vp>;
-using ti3 = tuple<ll,ll,ll>;
-using vti3 = vector<ti3>;
-using vs = vector<string>;
-
-
 vector<mint> fact;
 vector<mint> finv;
  
@@ -576,13 +541,12 @@ public:
             int sz = 1e6;
             init_fact(sz);
         }
-        mint x = ncr(n-1,k-1);
-        int r = n - k;
+        mint ans = ncr(n-1,k-1);
+        int r = n + k;
         if (r % 2 == 0) {
             r /= 2;
-            mint y = ncr(r+k-1,r);
-            x -= y;
+            ans -= ncr(r-1,k-1);
         }
-        return x.val();
+        return ans.val();
     }
 };
