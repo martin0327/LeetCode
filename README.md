@@ -27,6 +27,7 @@
 | [0518-coin-change-ii](https://github.com/martin0327/LeetCode/tree/main/0518-coin-change-ii/) | Medium |
 | [0524-longest-word-in-dictionary-through-deleting](https://github.com/martin0327/LeetCode/tree/main/0524-longest-word-in-dictionary-through-deleting/) | Medium |
 | [0526-beautiful-arrangement](https://github.com/martin0327/LeetCode/tree/main/0526-beautiful-arrangement/) | undefined |
+| [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [1260-shift-2d-grid](https://github.com/martin0327/LeetCode/tree/main/1260-shift-2d-grid/) | Easy |
 | [1306-jump-game-iii](https://github.com/martin0327/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/martin0327/LeetCode/tree/main/1331-rank-transform-of-an-array/) | Easy |
@@ -154,6 +155,7 @@
 | [0507-perfect-number](https://github.com/martin0327/LeetCode/tree/main/0507-perfect-number/) | Easy |
 | [0519-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0519-random-flip-matrix/) | Medium |
 | [0537-complex-number-multiplication](https://github.com/martin0327/LeetCode/tree/main/0537-complex-number-multiplication/) | Medium |
+| [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [0913-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0913-random-flip-matrix/) | undefined |
 | [1840-maximum-building-height](https://github.com/martin0327/LeetCode/tree/main/1840-maximum-building-height/) | Hard |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/martin0327/LeetCode/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
@@ -283,6 +285,7 @@
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/martin0327/LeetCode/tree/main/0381-insert-delete-getrandom-o1-duplicates-allowed/) | Hard |
 | [0398-random-pick-index](https://github.com/martin0327/LeetCode/tree/main/0398-random-pick-index/) | Medium |
 | [0519-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0519-random-flip-matrix/) | Medium |
+| [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [0913-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0913-random-flip-matrix/) | undefined |
 ## Depth-First Search
 | Problem Name | Difficulty |
@@ -373,6 +376,7 @@
 | [0436-find-right-interval](https://github.com/martin0327/LeetCode/tree/main/0436-find-right-interval/) | Medium |
 | [0441-arranging-coins](https://github.com/martin0327/LeetCode/tree/main/0441-arranging-coins/) | Easy |
 | [0493-reverse-pairs](https://github.com/martin0327/LeetCode/tree/main/0493-reverse-pairs/) | Hard |
+| [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [3161-block-placement-queries](https://github.com/martin0327/LeetCode/tree/main/3161-block-placement-queries/) | Hard |
 | [3312-sorted-gcd-pair-queries](https://github.com/martin0327/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/martin0327/LeetCode/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
@@ -383,6 +387,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0410-split-array-largest-sum](https://github.com/martin0327/LeetCode/tree/main/0410-split-array-largest-sum/) | undefined |
+| [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/martin0327/LeetCode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [1871-jump-game-vii](https://github.com/martin0327/LeetCode/tree/main/1871-jump-game-vii/) | Medium |
 | [2574-left-and-right-sum-differences](https://github.com/martin0327/LeetCode/tree/main/2574-left-and-right-sum-differences/) | Easy |
