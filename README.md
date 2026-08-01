@@ -22,6 +22,7 @@
 | [0457-circular-array-loop](https://github.com/martin0327/LeetCode/tree/main/0457-circular-array-loop/) | Medium |
 | [0480-sliding-window-median](https://github.com/martin0327/LeetCode/tree/main/0480-sliding-window-median/) | Hard |
 | [0485-max-consecutive-ones](https://github.com/martin0327/LeetCode/tree/main/0485-max-consecutive-ones/) | Easy |
+| [0486-predict-the-winner](https://github.com/martin0327/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
 | [0493-reverse-pairs](https://github.com/martin0327/LeetCode/tree/main/0493-reverse-pairs/) | Hard |
 | [0496-next-greater-element-i](https://github.com/martin0327/LeetCode/tree/main/0496-next-greater-element-i/) | Easy |
 | [0518-coin-change-ii](https://github.com/martin0327/LeetCode/tree/main/0518-coin-change-ii/) | Medium |
@@ -77,6 +78,7 @@
 | [0397-integer-replacement](https://github.com/martin0327/LeetCode/tree/main/0397-integer-replacement/) | Medium |
 | [0410-split-array-largest-sum](https://github.com/martin0327/LeetCode/tree/main/0410-split-array-largest-sum/) | undefined |
 | [0467-unique-substrings-in-wraparound-string](https://github.com/martin0327/LeetCode/tree/main/0467-unique-substrings-in-wraparound-string/) | Medium |
+| [0486-predict-the-winner](https://github.com/martin0327/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
 | [0518-coin-change-ii](https://github.com/martin0327/LeetCode/tree/main/0518-coin-change-ii/) | Medium |
 | [0526-beautiful-arrangement](https://github.com/martin0327/LeetCode/tree/main/0526-beautiful-arrangement/) | undefined |
 | [1340-jump-game-v](https://github.com/martin0327/LeetCode/tree/main/1340-jump-game-v/) | Hard |
@@ -153,6 +155,7 @@
 | [0447-number-of-boomerangs](https://github.com/martin0327/LeetCode/tree/main/0447-number-of-boomerangs/) | Medium |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/martin0327/LeetCode/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0479-largest-palindrome-product](https://github.com/martin0327/LeetCode/tree/main/0479-largest-palindrome-product/) | Hard |
+| [0486-predict-the-winner](https://github.com/martin0327/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
 | [0492-construct-the-rectangle](https://github.com/martin0327/LeetCode/tree/main/0492-construct-the-rectangle/) | Easy |
 | [0507-perfect-number](https://github.com/martin0327/LeetCode/tree/main/0507-perfect-number/) | Easy |
 | [0519-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0519-random-flip-matrix/) | Medium |
@@ -234,6 +237,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0326-power-of-three](https://github.com/martin0327/LeetCode/tree/main/0326-power-of-three/) | undefined |
+| [0486-predict-the-winner](https://github.com/martin0327/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -530,4 +534,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0526-beautiful-arrangement](https://github.com/martin0327/LeetCode/tree/main/0526-beautiful-arrangement/) | undefined |
+## Game Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0486-predict-the-winner](https://github.com/martin0327/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
 <!---LeetCode Topics End-->
