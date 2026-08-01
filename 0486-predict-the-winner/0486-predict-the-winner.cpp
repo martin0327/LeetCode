@@ -5,7 +5,7 @@ const ll inf = 1e18;
 
 class Solution {
 public:
-    bool PredictTheWinner(vector<int>& a) {
+    bool predictTheWinner(vector<int>& a) {
         ll n = a.size();
         vvi dp(n, vi(n,inf));
 
