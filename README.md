@@ -28,6 +28,7 @@
 | [0518-coin-change-ii](https://github.com/martin0327/LeetCode/tree/main/0518-coin-change-ii/) | Medium |
 | [0524-longest-word-in-dictionary-through-deleting](https://github.com/martin0327/LeetCode/tree/main/0524-longest-word-in-dictionary-through-deleting/) | Medium |
 | [0526-beautiful-arrangement](https://github.com/martin0327/LeetCode/tree/main/0526-beautiful-arrangement/) | undefined |
+| [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [1260-shift-2d-grid](https://github.com/martin0327/LeetCode/tree/main/1260-shift-2d-grid/) | Easy |
 | [1306-jump-game-iii](https://github.com/martin0327/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
@@ -81,6 +82,7 @@
 | [0486-predict-the-winner](https://github.com/martin0327/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
 | [0518-coin-change-ii](https://github.com/martin0327/LeetCode/tree/main/0518-coin-change-ii/) | Medium |
 | [0526-beautiful-arrangement](https://github.com/martin0327/LeetCode/tree/main/0526-beautiful-arrangement/) | undefined |
+| [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [1340-jump-game-v](https://github.com/martin0327/LeetCode/tree/main/1340-jump-game-v/) | Hard |
 | [1871-jump-game-vii](https://github.com/martin0327/LeetCode/tree/main/1871-jump-game-vii/) | Medium |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/martin0327/LeetCode/tree/main/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
@@ -160,6 +162,7 @@
 | [0507-perfect-number](https://github.com/martin0327/LeetCode/tree/main/0507-perfect-number/) | Easy |
 | [0519-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0519-random-flip-matrix/) | Medium |
 | [0537-complex-number-multiplication](https://github.com/martin0327/LeetCode/tree/main/0537-complex-number-multiplication/) | Medium |
+| [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [0913-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0913-random-flip-matrix/) | undefined |
 | [1840-maximum-building-height](https://github.com/martin0327/LeetCode/tree/main/1840-maximum-building-height/) | Hard |
@@ -538,4 +541,5 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0486-predict-the-winner](https://github.com/martin0327/LeetCode/tree/main/0486-predict-the-winner/) | Medium |
+| [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 <!---LeetCode Topics End-->
