@@ -63,6 +63,7 @@
 | [3660-jump-game-ix](https://github.com/martin0327/LeetCode/tree/main/3660-jump-game-ix/) | Medium |
 | [3689-maximum-total-subarray-value-i](https://github.com/martin0327/LeetCode/tree/main/3689-maximum-total-subarray-value-i/) | Medium |
 | [3691-maximum-total-subarray-value-ii](https://github.com/martin0327/LeetCode/tree/main/3691-maximum-total-subarray-value-ii/) | Hard |
+| [3731-find-missing-elements](https://github.com/martin0327/LeetCode/tree/main/3731-find-missing-elements/) | Easy |
 | [3742-maximum-path-score-in-a-grid](https://github.com/martin0327/LeetCode/tree/main/3742-maximum-path-score-in-a-grid/) | Medium |
 | [3838-weighted-word-mapping](https://github.com/martin0327/LeetCode/tree/main/3838-weighted-word-mapping/) | Easy |
 | [3845-maximum-subarray-xor-with-bounded-range](https://github.com/martin0327/LeetCode/tree/main/3845-maximum-subarray-xor-with-bounded-range/) | Hard |
@@ -236,6 +237,7 @@
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/martin0327/LeetCode/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/martin0327/LeetCode/tree/main/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/martin0327/LeetCode/tree/main/3635-earliest-finish-time-for-land-and-water-rides-ii/) | Medium |
+| [3731-find-missing-elements](https://github.com/martin0327/LeetCode/tree/main/3731-find-missing-elements/) | Easy |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/martin0327/LeetCode/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
 | [3886-sum-of-sortable-integers](https://github.com/martin0327/LeetCode/tree/main/3886-sum-of-sortable-integers/) | Hard |
 | [3913-sort-vowels-by-frequency](https://github.com/martin0327/LeetCode/tree/main/3913-sort-vowels-by-frequency/) | Medium |
@@ -290,6 +292,7 @@
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/martin0327/LeetCode/tree/main/3043-find-the-length-of-the-longest-common-prefix/) | Medium |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/martin0327/LeetCode/tree/main/3276-minimum-number-of-pushes-to-type-word-ii/) | undefined |
 | [3312-sorted-gcd-pair-queries](https://github.com/martin0327/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
+| [3731-find-missing-elements](https://github.com/martin0327/LeetCode/tree/main/3731-find-missing-elements/) | Easy |
 | [3859-count-subarrays-with-k-distinct-integers](https://github.com/martin0327/LeetCode/tree/main/3859-count-subarrays-with-k-distinct-integers/) | Hard |
 ## Design
 | Problem Name | Difficulty |
