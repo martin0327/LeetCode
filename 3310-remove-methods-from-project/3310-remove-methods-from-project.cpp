@@ -35,17 +35,17 @@ public:
             if (vis1[i]) src2.push_back(i);
         }
         auto vis2 = f(src2, radj);
+        vi ans;
         if (vis1 != vis2) {
-            vi ans(n);
-            for (int i=0; i<n; i++) ans[i] = i;
-            return ans;
+            ans.resize(n);
+            iota(ans.begin(), ans.end(), 0);
         }
         else {
-            vi ans;
             for (int i=0; i<n; i++) {
                 if (!vis1[i]) ans.push_back(i);
             }
             return ans;
         }
+        return ans;
     }
 };
