@@ -1,6 +1,5 @@
 using vi = vector<int>;
 using vvi = vector<vi>;
-
 class Solution {
 public:
     vector<int> validSequence(string s, string t) {
