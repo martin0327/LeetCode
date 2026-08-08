@@ -10,13 +10,12 @@ public:
             idx[s[i]-'a'].push_back(i);
         }
         vi b(m,-1);
-        for (int i=m-1, cur=n; i>=0; i--) {
-            auto &v = idx[t[i]-'a'];
+        for (int j=m-1, cur=n; j>=0; j--) {
+            auto &v = idx[t[j]-'a'];
             auto it = lower_bound(v.begin(), v.end(), cur);
             if (it == v.begin()) break;
             else {
-                auto j = *prev(it);
-                b[i] = cur = j;
+                b[j] = cur = *prev(it);
             }
         }
         vi ans;
