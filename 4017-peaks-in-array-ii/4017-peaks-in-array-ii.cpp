@@ -25,11 +25,6 @@ template <class S, S (*op)(S, S), S (*e)()> struct segtree {
         for (int i = 1; i <= log; i++) update(p >> i);
     }
 
-    S get(int p) {
-        assert(0 <= p && p < _n);
-        return d[p + size];
-    }
-
     S prod(int l, int r) {
         assert(0 <= l && l <= r && r <= _n);
         S sml = e(), smr = e();
@@ -44,8 +39,6 @@ template <class S, S (*op)(S, S), S (*e)()> struct segtree {
         }
         return op(sml, smr);
     }
-
-    S all_prod() { return d[1]; }
 
   private:
     int _n, size, log;
@@ -68,9 +61,7 @@ S op(S x, S y) {
     S ret;
     ll cnt = x.cnt + y.cnt;
     ll len = x.len + y.len;
-    if (cnt == 0) {
-        ret = {cnt,len,0,0,0};
-    }
+    if (cnt == 0) ret = {cnt,len,0,0,0};
     else if (x.cnt == 0) {
         ll tot = y.tot;
         ll left = x.len + y.left;
@@ -102,7 +93,7 @@ public:
         vi b(n);
         set<ll> s;
         for (int i=1; i+1<n; i++) {
-            if (a[i] > a[i-1] && a[i] > a[i+1]) {
+            if (a[i]>a[i-1] && a[i]>a[i+1]) {
                 b[i] = 1;
                 s.insert(i);
             }
@@ -119,9 +110,7 @@ public:
             if (t == 1) {
                 ll l = v[1], r = v[2];
                 auto res = seg.prod(l,r+1);
-                if (res.cnt == 0) {
-                    ans.push_back(0);
-                }
+                if (res.cnt == 0) ans.push_back(0);
                 else {
                     auto it1 = s.lower_bound(l);
                     auto it2 = s.upper_bound(r);
