@@ -61,10 +61,14 @@ public:
             ll rmax = -inf, cmax = -inf;
             bool ok = false;
             for (int i=len; i<=n; i++) {
+                if (ok) break;
                 for (int j=len; j<=m; j++) {
+                    if (ok) break; 
                     if (f(i,j,len) == len*len) {
-                        if (rmin+len <= i || cmin+len <= j) ok = true; 
-                        if (cmax-len >= j) ok = true;
+                        if (rmin+len <= i || cmin+len <= j || cmax-len >= j) {
+                            ok = true;
+                            break;
+                        } 
                         chmin(rmin, i);
                         chmin(cmin, j);
                         chmax(rmax, i);
