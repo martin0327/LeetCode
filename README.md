@@ -172,6 +172,7 @@
 | [0507-perfect-number](https://github.com/martin0327/LeetCode/tree/main/0507-perfect-number/) | Easy |
 | [0519-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0519-random-flip-matrix/) | Medium |
 | [0537-complex-number-multiplication](https://github.com/martin0327/LeetCode/tree/main/0537-complex-number-multiplication/) | Medium |
+| [0593-valid-square](https://github.com/martin0327/LeetCode/tree/main/0593-valid-square/) | Medium |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [0913-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0913-random-flip-matrix/) | undefined |
@@ -400,6 +401,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0391-perfect-rectangle](https://github.com/martin0327/LeetCode/tree/main/0391-perfect-rectangle/) | Hard |
+| [0593-valid-square](https://github.com/martin0327/LeetCode/tree/main/0593-valid-square/) | Medium |
 ## Sweep Line
 | Problem Name | Difficulty |
 | ------- | ------- |
