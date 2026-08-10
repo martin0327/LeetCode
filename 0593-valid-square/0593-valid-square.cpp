@@ -4,13 +4,16 @@ using vvi = vector<vi>;
 vi diff(vi &x, vi &y) {
     return {x[0]-y[0], x[1]-y[1]};
 }
+
 int norm(vi x) {
     return x[0]*x[0]+x[1]*x[1];
 }
+
 int dot(vi &x, vi &y) {
     return x[0]*y[0]+x[1]*y[1];
 }
-bool normal(vvi &a) {
+
+bool perpen(vvi &a) {
     for (int i=0; i<3; i++) {
         auto x = a[i];
         auto y = a[(i+1)%3];
@@ -29,7 +32,7 @@ bool f(vvi a) {
             if (i == j) continue;
             b.push_back(a[j]);
         }
-        if (!normal(b)) return false;
+        if (!perpen(b)) return false;
     }
     return true;
 }
