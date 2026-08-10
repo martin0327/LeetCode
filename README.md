@@ -28,6 +28,7 @@
 | [0518-coin-change-ii](https://github.com/martin0327/LeetCode/tree/main/0518-coin-change-ii/) | Medium |
 | [0524-longest-word-in-dictionary-through-deleting](https://github.com/martin0327/LeetCode/tree/main/0524-longest-word-in-dictionary-through-deleting/) | Medium |
 | [0526-beautiful-arrangement](https://github.com/martin0327/LeetCode/tree/main/0526-beautiful-arrangement/) | undefined |
+| [0599-minimum-index-sum-of-two-lists](https://github.com/martin0327/LeetCode/tree/main/0599-minimum-index-sum-of-two-lists/) | Easy |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
@@ -133,6 +134,7 @@
 | [0524-longest-word-in-dictionary-through-deleting](https://github.com/martin0327/LeetCode/tree/main/0524-longest-word-in-dictionary-through-deleting/) | Medium |
 | [0537-complex-number-multiplication](https://github.com/martin0327/LeetCode/tree/main/0537-complex-number-multiplication/) | Medium |
 | [0557-reverse-words-in-a-string-iii](https://github.com/martin0327/LeetCode/tree/main/0557-reverse-words-in-a-string-iii/) | undefined |
+| [0599-minimum-index-sum-of-two-lists](https://github.com/martin0327/LeetCode/tree/main/0599-minimum-index-sum-of-two-lists/) | Easy |
 | [0796-rotate-string](https://github.com/martin0327/LeetCode/tree/main/0796-rotate-string/) | Easy |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/martin0327/LeetCode/tree/main/1189-maximum-number-of-balloons/) | Easy |
@@ -298,6 +300,7 @@
 | [0496-next-greater-element-i](https://github.com/martin0327/LeetCode/tree/main/0496-next-greater-element-i/) | Easy |
 | [0508-most-frequent-subtree-sum](https://github.com/martin0327/LeetCode/tree/main/0508-most-frequent-subtree-sum/) | Medium |
 | [0519-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0519-random-flip-matrix/) | Medium |
+| [0599-minimum-index-sum-of-two-lists](https://github.com/martin0327/LeetCode/tree/main/0599-minimum-index-sum-of-two-lists/) | Easy |
 | [0913-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0913-random-flip-matrix/) | undefined |
 | [1189-maximum-number-of-balloons](https://github.com/martin0327/LeetCode/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1331-rank-transform-of-an-array](https://github.com/martin0327/LeetCode/tree/main/1331-rank-transform-of-an-array/) | Easy |
