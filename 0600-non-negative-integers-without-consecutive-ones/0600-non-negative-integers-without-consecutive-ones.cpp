@@ -1,5 +1,4 @@
 using vi = vector<int>;
-using vvi = vector<vi>;
 const int sz = 32;
 int dp[sz][2][2][2];
 class Solution {
@@ -10,9 +9,10 @@ public:
             a.push_back(n&1);
             n >>= 1;
         }
+        reverse(a.begin(), a.end());
+        
         memset(dp,0,sizeof(dp));
         dp[0][0][0][0] = 1;
-        reverse(a.begin(), a.end());
         n = a.size();
         for (int i=0; i<n; i++) {
             for (int j=0; j<2; j++) {
