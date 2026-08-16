@@ -17,11 +17,11 @@ public:
             auto mn = min(x,y);
             x -= mn;
             y -= mn;
-            if (max(x,y) == 0) return false;
-            if (x > 0) return z%2 == 1;
+            if (max(x,y) == 0) return ret;
+            if (x > 0) return ret = z&1; 
             else {
-                if (y <= 1) return false;
-                return ((z+2) % 2) == 0;
+                if (y <= 1) return ret;
+                return ret = (z+1)&1;
             }
             return false;
         };
