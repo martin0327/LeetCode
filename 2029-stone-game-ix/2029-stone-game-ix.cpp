@@ -6,27 +6,22 @@ public:
         for (auto x : a) c[x%3]++;
         
         auto f = [&] (int x, int y, int z) {
-            if (x == 0) return false;
+            bool ret = false;
+            if (x == 0) return ret;
             if (y == 0) {
-                if (x < 3) return false;
-                return (z+3)%2 == 0;
+                if (x < 3) return ret;
+                return ret = z&1;
             }
-            if (x == 1) {
-                return (z+1)%2 == 1;
-            }
+            if (x == 1) return ret = (z+1)&1;
             x -= 2;
             auto mn = min(x,y);
             x -= mn;
             y -= mn;
             if (max(x,y) == 0) return false;
-            // 1 1 2 1 2 1 2 1
-            // 2 2 1 2 1 2 1 2 
-            if (x > 0) {
-                return (z+1)%2 == 0;
-            }
+            if (x > 0) return z%2 == 1;
             else {
                 if (y <= 1) return false;
-                else return ((z+2) % 2) == 0;
+                return ((z+2) % 2) == 0;
             }
             return false;
         };
