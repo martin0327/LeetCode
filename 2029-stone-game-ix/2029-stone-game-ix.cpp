@@ -23,7 +23,7 @@ public:
                 if (y <= 1) return ret;
                 return ret = (z+1)&1;
             }
-            return false;
+            return ret;
         };
         if (f(c[1],c[2],c[0])) return true;
         if (f(c[2],c[1],c[0])) return true;
