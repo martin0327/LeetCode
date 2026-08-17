@@ -95,6 +95,7 @@
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
 | [1340-jump-game-v](https://github.com/martin0327/LeetCode/tree/main/1340-jump-game-v/) | Hard |
 | [1406-stone-game-iii](https://github.com/martin0327/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
+| [1510-stone-game-iv](https://github.com/martin0327/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
 | [1563-stone-game-v](https://github.com/martin0327/LeetCode/tree/main/1563-stone-game-v/) | Hard |
 | [1871-jump-game-vii](https://github.com/martin0327/LeetCode/tree/main/1871-jump-game-vii/) | Medium |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/martin0327/LeetCode/tree/main/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
@@ -188,6 +189,7 @@
 | [0913-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0913-random-flip-matrix/) | undefined |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
 | [1406-stone-game-iii](https://github.com/martin0327/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
+| [1510-stone-game-iv](https://github.com/martin0327/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
 | [1563-stone-game-v](https://github.com/martin0327/LeetCode/tree/main/1563-stone-game-v/) | Hard |
 | [1686-stone-game-vi](https://github.com/martin0327/LeetCode/tree/main/1686-stone-game-vi/) | Medium |
 | [1840-maximum-building-height](https://github.com/martin0327/LeetCode/tree/main/1840-maximum-building-height/) | Hard |
@@ -597,6 +599,7 @@
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
 | [1406-stone-game-iii](https://github.com/martin0327/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
+| [1510-stone-game-iv](https://github.com/martin0327/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
 | [1563-stone-game-v](https://github.com/martin0327/LeetCode/tree/main/1563-stone-game-v/) | Hard |
 | [1686-stone-game-vi](https://github.com/martin0327/LeetCode/tree/main/1686-stone-game-vi/) | Medium |
 | [2029-stone-game-ix](https://github.com/martin0327/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
@@ -605,6 +608,7 @@
 | ------- | ------- |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
 | [1406-stone-game-iii](https://github.com/martin0327/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
+| [1510-stone-game-iv](https://github.com/martin0327/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
 | [1686-stone-game-vi](https://github.com/martin0327/LeetCode/tree/main/1686-stone-game-vi/) | Medium |
 | [2029-stone-game-ix](https://github.com/martin0327/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
 ## Zero-Sum Game
@@ -612,10 +616,16 @@
 | ------- | ------- |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
 | [1406-stone-game-iii](https://github.com/martin0327/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
+| [1510-stone-game-iv](https://github.com/martin0327/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
 | [1686-stone-game-vi](https://github.com/martin0327/LeetCode/tree/main/1686-stone-game-vi/) | Medium |
 | [2029-stone-game-ix](https://github.com/martin0327/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
 ## Nim Game
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1510-stone-game-iv](https://github.com/martin0327/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
 | [2029-stone-game-ix](https://github.com/martin0327/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
+## Sprague–Grundy Theorem
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1510-stone-game-iv](https://github.com/martin0327/LeetCode/tree/main/1510-stone-game-iv/) | Hard |
 <!---LeetCode Topics End-->
