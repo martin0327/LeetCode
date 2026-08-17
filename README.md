@@ -41,6 +41,7 @@
 | [1563-stone-game-v](https://github.com/martin0327/LeetCode/tree/main/1563-stone-game-v/) | Hard |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/martin0327/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/martin0327/LeetCode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
+| [1686-stone-game-vi](https://github.com/martin0327/LeetCode/tree/main/1686-stone-game-vi/) | Medium |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/martin0327/LeetCode/tree/main/1752-check-if-array-is-sorted-and-rotated/) | Easy |
 | [1840-maximum-building-height](https://github.com/martin0327/LeetCode/tree/main/1840-maximum-building-height/) | Hard |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/martin0327/LeetCode/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
@@ -188,6 +189,7 @@
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
 | [1406-stone-game-iii](https://github.com/martin0327/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
 | [1563-stone-game-v](https://github.com/martin0327/LeetCode/tree/main/1563-stone-game-v/) | Hard |
+| [1686-stone-game-vi](https://github.com/martin0327/LeetCode/tree/main/1686-stone-game-vi/) | Medium |
 | [1840-maximum-building-height](https://github.com/martin0327/LeetCode/tree/main/1840-maximum-building-height/) | Hard |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/martin0327/LeetCode/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [2029-stone-game-ix](https://github.com/martin0327/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
@@ -222,6 +224,7 @@
 | [0410-split-array-largest-sum](https://github.com/martin0327/LeetCode/tree/main/0410-split-array-largest-sum/) | undefined |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/martin0327/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
+| [1686-stone-game-vi](https://github.com/martin0327/LeetCode/tree/main/1686-stone-game-vi/) | Medium |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/martin0327/LeetCode/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
 | [2029-stone-game-ix](https://github.com/martin0327/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
 | [2126-destroying-asteroids](https://github.com/martin0327/LeetCode/tree/main/2126-destroying-asteroids/) | Medium |
@@ -255,6 +258,7 @@
 | [1331-rank-transform-of-an-array](https://github.com/martin0327/LeetCode/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1340-jump-game-v](https://github.com/martin0327/LeetCode/tree/main/1340-jump-game-v/) | Hard |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/martin0327/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
+| [1686-stone-game-vi](https://github.com/martin0327/LeetCode/tree/main/1686-stone-game-vi/) | Medium |
 | [1840-maximum-building-height](https://github.com/martin0327/LeetCode/tree/main/1840-maximum-building-height/) | Hard |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/martin0327/LeetCode/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
 | [2126-destroying-asteroids](https://github.com/martin0327/LeetCode/tree/main/2126-destroying-asteroids/) | Medium |
@@ -369,6 +373,7 @@
 | ------- | ------- |
 | [0332-reconstruct-itinerary](https://github.com/martin0327/LeetCode/tree/main/0332-reconstruct-itinerary/) | undefined |
 | [0480-sliding-window-median](https://github.com/martin0327/LeetCode/tree/main/0480-sliding-window-median/) | Hard |
+| [1686-stone-game-vi](https://github.com/martin0327/LeetCode/tree/main/1686-stone-game-vi/) | Medium |
 | [3620-network-recovery-pathways](https://github.com/martin0327/LeetCode/tree/main/3620-network-recovery-pathways/) | Hard |
 | [3691-maximum-total-subarray-value-ii](https://github.com/martin0327/LeetCode/tree/main/3691-maximum-total-subarray-value-ii/) | Hard |
 ## Simulation
@@ -593,18 +598,21 @@
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
 | [1406-stone-game-iii](https://github.com/martin0327/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
 | [1563-stone-game-v](https://github.com/martin0327/LeetCode/tree/main/1563-stone-game-v/) | Hard |
+| [1686-stone-game-vi](https://github.com/martin0327/LeetCode/tree/main/1686-stone-game-vi/) | Medium |
 | [2029-stone-game-ix](https://github.com/martin0327/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
 ## Minimax
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
 | [1406-stone-game-iii](https://github.com/martin0327/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
+| [1686-stone-game-vi](https://github.com/martin0327/LeetCode/tree/main/1686-stone-game-vi/) | Medium |
 | [2029-stone-game-ix](https://github.com/martin0327/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
 ## Zero-Sum Game
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
 | [1406-stone-game-iii](https://github.com/martin0327/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
+| [1686-stone-game-vi](https://github.com/martin0327/LeetCode/tree/main/1686-stone-game-vi/) | Medium |
 | [2029-stone-game-ix](https://github.com/martin0327/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
 ## Nim Game
 | Problem Name | Difficulty |
