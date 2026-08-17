@@ -1,19 +1,23 @@
-using vi = vector<int>;
-using vvi = vector<vi>;
 void chmax(int &x, int y) { x = max(x,y); }
+using vi = vector<int>;
+const int sz = 505;
+int pre[sz];
+int dp[sz][sz];
+bool vis[sz][sz];
 class Solution {
 public:
     int stoneGameV(vector<int>& a) {
         int n = a.size();
-        vi pre(n, a[0]);
+        memset(pre,0,sizeof(pre));
+        pre[0] = a[0];
         for (int i=1; i<n; i++) pre[i] = pre[i-1] + a[i];
         auto g = [&] (int l, int r) {
             int ret = pre[r];
             if (l > 0) ret -= pre[l-1];
             return ret;
         };
-        vvi dp(n, vi(n));
-        vvi vis(n, vi(n));
+        memset(dp,0,sizeof(dp));
+        memset(vis,0,sizeof(vis));
         function<int(int,int)> f = [&] (int l, int r) {
             int ret = 0;
             if (vis[l][r]) return dp[l][r];
