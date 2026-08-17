@@ -5,7 +5,10 @@ int pre[sz];
 int dp[sz][sz];
 bool vis[sz][sz];
 
-int g(int l, int r) { return pre[r+1] - pre[l]; }
+int g(int l, int r) { 
+    return pre[r+1] - pre[l]; 
+}
+
 int f(int l, int r) {
     int ret = 0;
     if (vis[l][r]) return dp[l][r];
@@ -29,8 +32,9 @@ public:
         memset(pre,0,sizeof(pre));
         memset(dp,0,sizeof(dp));
         memset(vis,0,sizeof(vis));
-        for (int i=1; i<=n; i++) pre[i] = pre[i-1] + a[i-1];
-        auto ans = f(0,n-1);
-        return ans;
+        for (int i=1; i<=n; i++) {
+            pre[i] = pre[i-1] + a[i-1];
+        }
+        return f(0,n-1);
     }
 };
