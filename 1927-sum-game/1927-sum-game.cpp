@@ -15,17 +15,14 @@ public:
             }
         }
         if ((c1+c2)%2) return true;
-        auto f = [&] (int x, int y, int d) {
-            if (x+9*d > y) return true;
-            if (x+9*d < y) return true;
-            return false;
-        };
+
         if (c1 < c2) {
             swap(c1,c2);
             swap(x,y);
         }
-        int d = c1-c2;
-        d /= 2;
-        return f(x,y,d);
+        int d = (c1-c2)/2;
+        if (x+9*d > y) return true;
+        if (x+9*d < y) return true;
+        return false;
     }
 };
