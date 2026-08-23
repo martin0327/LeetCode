@@ -25,9 +25,7 @@ public:
             swap(x,y);
         }
         int d = c1-c2;
-        if (d == 0) return x != y;
         d /= 2;
-        if (f(x,y,d)) return true;
-        return false;
+        return f(x,y,d);
     }
 };
