@@ -1,9 +1,3 @@
-
-template<typename T>
-using min_pq = priority_queue<T, vector<T>, greater<T>>;
-template<typename T>
-using max_pq = priority_queue<T>;
-
 template<typename T1, typename T2>
 void chmax(T1 &x, T2 y) { if (x < y) x = y; }
 template<typename T1, typename T2>
@@ -22,22 +16,12 @@ vector<T> get_unique(vector<T> a) {
     return a;
 }
 
-using ll = long long;
-using vi = vector<ll>;
+using vi = vector<int>;
 using vvi = vector<vi>;
-using pii = pair<ll,ll>;
-using vp = vector<pii>;
-using vvp = vector<vp>;
-using ti3 = tuple<ll,ll,ll>;
-using vti3 = vector<ti3>;
-using vs = vector<string>;
-
-const int sz = 1e5+5;
-vi pf[sz];
-int frq[sz];
 
 vi primes;
 vi spf; 
+
 void init_spf(int n) {
     spf.resize(n+1);
     for (int i=2; i <= n; i++) {
@@ -63,6 +47,9 @@ vi get_pfactors(int x) {
     return ret;
 }
 
+const int sz = 1e5+5;
+vi pf[sz];
+int frq[sz];
 class Solution {
 public:
     int longestSubarray(vector<int>& a, int k) {
