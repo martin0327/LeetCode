@@ -13,25 +13,31 @@ public:
             }
             return t > tg.substr(i,tg.size()-i);
         };
+        
         string ans;
+        auto push = [&] (int j, int t) { 
+            while (t--) {
+                ans += 'a' + j; 
+            }
+        };
+
         auto g = [&] (int x) {
             for (int j=x+1; j<sz; j++) {
                 if (c[j] > 0) {
-                    ans += 'a' + j;
+                    push(j,1);
                     c[j]--;
                     break;
                 }
             }
             for (int j=0; j<sz; j++) {
-                int x = c[j];
-                while (x--) ans += 'a' + j;
+                push(j,c[j]);
             }
         };
         for (int i=0; i<n; i++) {
             if (!f(i)) return "";
             if (i == n-1) {
                 for (int j=0; j<sz; j++) {
-                    if (c[j]) ans += 'a' + j;
+                    if (c[j]) push(j,1);
                 }
             }
             else {
@@ -39,7 +45,7 @@ public:
                 if (c[x] > 0) {
                     c[x]--;
                     if (f(i+1)) {
-                        ans += 'a' + x;
+                        push(x,1);
                     } 
                     else {
                         c[x]++;
@@ -49,17 +55,6 @@ public:
                 }
                 else {
                     g(x);
-                    // for (int j=x+1; j<sz; j++) {
-                    //     if (c[j] > 0) {
-                    //         ans += 'a' + j;
-                    //         c[j]--;
-                    //         break;
-                    //     }
-                    // }
-                    // for (int j=0; j<sz; j++) {
-                    //     int x = c[j];
-                    //     while (x--) ans += 'a' + j;
-                    // }
                     return ans;
                 }
             }
