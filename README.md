@@ -57,6 +57,7 @@
 | [2161-partition-array-according-to-given-pivot](https://github.com/martin0327/LeetCode/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
 | [2574-left-and-right-sum-differences](https://github.com/martin0327/LeetCode/tree/main/2574-left-and-right-sum-differences/) | Easy |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/martin0327/LeetCode/tree/main/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
+| [2948-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/martin0327/LeetCode/tree/main/2948-make-lexicographically-smallest-array-by-swapping-elements/) | Medium |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/martin0327/LeetCode/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/martin0327/LeetCode/tree/main/3043-find-the-length-of-the-longest-common-prefix/) | Medium |
 | [3093-longest-common-suffix-queries](https://github.com/martin0327/LeetCode/tree/main/3093-longest-common-suffix-queries/) | Hard |
@@ -281,6 +282,7 @@
 | [1840-maximum-building-height](https://github.com/martin0327/LeetCode/tree/main/1840-maximum-building-height/) | Hard |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/martin0327/LeetCode/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
 | [2126-destroying-asteroids](https://github.com/martin0327/LeetCode/tree/main/2126-destroying-asteroids/) | Medium |
+| [2948-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/martin0327/LeetCode/tree/main/2948-make-lexicographically-smallest-array-by-swapping-elements/) | Medium |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/martin0327/LeetCode/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/martin0327/LeetCode/tree/main/3276-minimum-number-of-pushes-to-type-word-ii/) | undefined |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/martin0327/LeetCode/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
@@ -506,6 +508,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2685-count-the-number-of-complete-components](https://github.com/martin0327/LeetCode/tree/main/2685-count-the-number-of-complete-components/) | Medium |
+| [2948-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/martin0327/LeetCode/tree/main/2948-make-lexicographically-smallest-array-by-swapping-elements/) | Medium |
 | [3887-incremental-even-weighted-cycle-queries](https://github.com/martin0327/LeetCode/tree/main/3887-incremental-even-weighted-cycle-queries/) | Hard |
 ## Graph Theory
 | Problem Name | Difficulty |
