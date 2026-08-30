@@ -520,10 +520,6 @@ public:
             assert(w < sz);
             auto x = stoll(s.substr(0,w));
             auto y = stoi(s.substr(w,sz-w));
-            // cout << s << endl;
-            // cout << s.substr(0,w) << endl;
-            // cout << s.substr(w,sz-w) << endl;
-            // cout << x << " " << y << endl;
             ans += mint(x).pow(y);
         }
         return ans.val();
