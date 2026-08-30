@@ -39,23 +39,22 @@ public:
             }
         }
         int n = a.size();
-        vvi dp(n+1, vi(k+1, inf));
-        dp[0][0] = 0;
+        // vvi dp(n+1, vi(k+1, inf));
+        vi dp(k+1, inf);
+        dp[0] = 0;
         for (int i=0; i<n; i++) {
-            for (int j=0; j<=k; j++) {
-                if (dp[i][j] == inf) continue;
-                chmin(dp[i+1][j],dp[i][j]);
+            for (int j=k; j>=0; j--) {
+                if (dp[j] == inf) continue;
                 for (auto [x,w] : tr[a[i]]) {
                     int nj = j + x;
                     if (nj <= k) {
-                        chmin(dp[i+1][nj], dp[i][j] + w);
+                        chmin(dp[nj], dp[j] + w);
                     }
                 }
             }
         }
-        auto ans = dp[n][k];
+        auto ans = dp[k];
         if (ans == inf) ans = -1;
         return ans;
     }
 };
-
