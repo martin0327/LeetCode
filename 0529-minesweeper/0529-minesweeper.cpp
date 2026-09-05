@@ -3,11 +3,13 @@ using vvi = vector<vi>;
 using pii = pair<int,int>;
 using vp = vector<pii>;
 vi dr,dc;
+const int sz = 51;
+bool vis[sz][sz];
 class Solution {
 public:
     vector<vector<char>> updateBoard(vector<vector<char>>& a, vector<int>& src) {
         int n = a.size(), m = a[0].size();
-        vvi vis(n, vi(m));
+        memset(vis, 0, sizeof(vis));
         if (dr.empty()) {
             for (int r=-1; r<=1; r++) {
                 for (int c=-1; c<=1; c++) {
@@ -17,6 +19,7 @@ public:
                 }
             }
         }
+
         auto sr = src[0], sc = src[1];
         if (a[sr][sc] == 'M') {
             a[sr][sc] = 'X';
@@ -32,11 +35,12 @@ public:
         queue<pii> q;
         q.push({sr,sc});
         vis[sr][sc] = 1;
+        vp nb;
         while (q.size()) {
             auto [r,c] = q.front();
             q.pop();
             auto cnt = 0;
-            vp nb;
+            nb.clear();
             for (int i=0; i<8; i++) {
                 int nr = r + dr[i];
                 int nc = c + dc[i];
