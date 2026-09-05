@@ -28,6 +28,7 @@
 | [0518-coin-change-ii](https://github.com/martin0327/LeetCode/tree/main/0518-coin-change-ii/) | Medium |
 | [0524-longest-word-in-dictionary-through-deleting](https://github.com/martin0327/LeetCode/tree/main/0524-longest-word-in-dictionary-through-deleting/) | Medium |
 | [0526-beautiful-arrangement](https://github.com/martin0327/LeetCode/tree/main/0526-beautiful-arrangement/) | undefined |
+| [0529-minesweeper](https://github.com/martin0327/LeetCode/tree/main/0529-minesweeper/) | Medium |
 | [0598-range-addition-ii](https://github.com/martin0327/LeetCode/tree/main/0598-range-addition-ii/) | undefined |
 | [0599-minimum-index-sum-of-two-lists](https://github.com/martin0327/LeetCode/tree/main/0599-minimum-index-sum-of-two-lists/) | Easy |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
@@ -124,6 +125,7 @@
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/martin0327/LeetCode/tree/main/0048-rotate-image/) | undefined |
 | [0419-battleships-in-a-board](https://github.com/martin0327/LeetCode/tree/main/0419-battleships-in-a-board/) | Medium |
+| [0529-minesweeper](https://github.com/martin0327/LeetCode/tree/main/0529-minesweeper/) | Medium |
 | [1260-shift-2d-grid](https://github.com/martin0327/LeetCode/tree/main/1260-shift-2d-grid/) | Easy |
 | [1861-rotating-the-box](https://github.com/martin0327/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
 | [1914-cyclically-rotating-a-grid](https://github.com/martin0327/LeetCode/tree/main/1914-cyclically-rotating-a-grid/) | Medium |
@@ -225,6 +227,7 @@
 | ------- | ------- |
 | [0322-coin-change](https://github.com/martin0327/LeetCode/tree/main/0322-coin-change/) | undefined |
 | [0449-serialize-and-deserialize-bst](https://github.com/martin0327/LeetCode/tree/main/0449-serialize-and-deserialize-bst/) | Medium |
+| [0529-minesweeper](https://github.com/martin0327/LeetCode/tree/main/0529-minesweeper/) | Medium |
 | [0617-merge-two-binary-trees](https://github.com/martin0327/LeetCode/tree/main/0617-merge-two-binary-trees/) | Easy |
 | [0774-maximum-depth-of-n-ary-tree](https://github.com/martin0327/LeetCode/tree/main/0774-maximum-depth-of-n-ary-tree/) | undefined |
 | [1306-jump-game-iii](https://github.com/martin0327/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
@@ -378,6 +381,7 @@
 | [0437-path-sum-iii](https://github.com/martin0327/LeetCode/tree/main/0437-path-sum-iii/) | Medium |
 | [0449-serialize-and-deserialize-bst](https://github.com/martin0327/LeetCode/tree/main/0449-serialize-and-deserialize-bst/) | Medium |
 | [0508-most-frequent-subtree-sum](https://github.com/martin0327/LeetCode/tree/main/0508-most-frequent-subtree-sum/) | Medium |
+| [0529-minesweeper](https://github.com/martin0327/LeetCode/tree/main/0529-minesweeper/) | Medium |
 | [0617-merge-two-binary-trees](https://github.com/martin0327/LeetCode/tree/main/0617-merge-two-binary-trees/) | Easy |
 | [0774-maximum-depth-of-n-ary-tree](https://github.com/martin0327/LeetCode/tree/main/0774-maximum-depth-of-n-ary-tree/) | undefined |
 | [1306-jump-game-iii](https://github.com/martin0327/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
