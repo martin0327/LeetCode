@@ -269,6 +269,7 @@
 | [0324-wiggle-sort-ii](https://github.com/martin0327/LeetCode/tree/main/0324-wiggle-sort-ii/) | undefined |
 | [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/martin0327/LeetCode/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
 | [0493-reverse-pairs](https://github.com/martin0327/LeetCode/tree/main/0493-reverse-pairs/) | Hard |
+| [0558-logical-or-of-two-binary-grids-represented-as-quad-trees](https://github.com/martin0327/LeetCode/tree/main/0558-logical-or-of-two-binary-grids-represented-as-quad-trees/) | Medium |
 ## Quickselect
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -500,6 +501,7 @@
 | [0449-serialize-and-deserialize-bst](https://github.com/martin0327/LeetCode/tree/main/0449-serialize-and-deserialize-bst/) | Medium |
 | [0450-delete-node-in-a-bst](https://github.com/martin0327/LeetCode/tree/main/0450-delete-node-in-a-bst/) | Medium |
 | [0508-most-frequent-subtree-sum](https://github.com/martin0327/LeetCode/tree/main/0508-most-frequent-subtree-sum/) | Medium |
+| [0558-logical-or-of-two-binary-grids-represented-as-quad-trees](https://github.com/martin0327/LeetCode/tree/main/0558-logical-or-of-two-binary-grids-represented-as-quad-trees/) | Medium |
 | [0617-merge-two-binary-trees](https://github.com/martin0327/LeetCode/tree/main/0617-merge-two-binary-trees/) | Easy |
 | [0774-maximum-depth-of-n-ary-tree](https://github.com/martin0327/LeetCode/tree/main/0774-maximum-depth-of-n-ary-tree/) | undefined |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/martin0327/LeetCode/tree/main/3559-number-of-ways-to-assign-edge-weights-ii/) | Hard |
