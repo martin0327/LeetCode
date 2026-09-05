@@ -2,9 +2,9 @@ using vi = vector<int>;
 using vvi = vector<vi>;
 using pii = pair<int,int>;
 using vp = vector<pii>;
-vi dr,dc;
 const int sz = 51;
 bool vis[sz][sz];
+vi dr,dc;
 class Solution {
 public:
     vector<vector<char>> updateBoard(vector<vector<char>>& a, vector<int>& src) {
@@ -39,8 +39,8 @@ public:
         while (q.size()) {
             auto [r,c] = q.front();
             q.pop();
-            auto cnt = 0;
             nb.clear();
+            int cnt = 0;
             for (int i=0; i<8; i++) {
                 int nr = r + dr[i];
                 int nc = c + dc[i];
