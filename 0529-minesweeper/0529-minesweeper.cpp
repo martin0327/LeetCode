@@ -1,5 +1,4 @@
 using vi = vector<int>;
-using vvi = vector<vi>;
 using pii = pair<int,int>;
 using vp = vector<pii>;
 const int sz = 51;
