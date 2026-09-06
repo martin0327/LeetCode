@@ -23,7 +23,6 @@ public:
             A.push_back({pos,tp,key});
         }
         sort(A.begin(), A.end());
-        // debug(A);
         vi ans(n);
         vector<ti3> lst;
         vi st;
@@ -40,17 +39,12 @@ public:
                 }
                 else {
                     ans[key] += pos - lpos;
-                    // debug(key,st);
                     assert(key == st.back());
                     st.pop_back();
                 }
             }
             if (tp) st.push_back(key);
             lst.push_back({pos,tp,key});
-            // debug(pos,tp,key);
-            // debug(lst);
-            // debug(st);
-            // debug(ans);
         }
         return ans;
     }
