@@ -27,16 +27,17 @@ public:
             auto [pos,tp,key] = b[i];
             if (i > 0) {
                 auto [ppos,ptp,pkey] = b[i-1];
+                int d = pos - ppos;
                 if (tp) {
-                    if (ptp) ans[pkey] += pos - ppos;
+                    if (ptp) ans[pkey] += d;
                     else {
                         if (st.size()) {
-                            ans[st.back()] += pos - ppos;
+                            ans[st.back()] += d;
                         }
                     }
                 }
                 else {
-                    ans[key] += pos - ppos;
+                    ans[key] += d;
                     assert(st.size() && key == st.back());
                     st.pop_back();
                 }
