@@ -159,6 +159,7 @@
 | [0557-reverse-words-in-a-string-iii](https://github.com/martin0327/LeetCode/tree/main/0557-reverse-words-in-a-string-iii/) | undefined |
 | [0599-minimum-index-sum-of-two-lists](https://github.com/martin0327/LeetCode/tree/main/0599-minimum-index-sum-of-two-lists/) | Easy |
 | [0639-decode-ways-ii](https://github.com/martin0327/LeetCode/tree/main/0639-decode-ways-ii/) | Hard |
+| [0640-solve-the-equation](https://github.com/martin0327/LeetCode/tree/main/0640-solve-the-equation/) | Medium |
 | [0796-rotate-string](https://github.com/martin0327/LeetCode/tree/main/0796-rotate-string/) | Easy |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/martin0327/LeetCode/tree/main/1189-maximum-number-of-balloons/) | Easy |
@@ -206,6 +207,7 @@
 | [0553-optimal-division](https://github.com/martin0327/LeetCode/tree/main/0553-optimal-division/) | Medium |
 | [0593-valid-square](https://github.com/martin0327/LeetCode/tree/main/0593-valid-square/) | Medium |
 | [0598-range-addition-ii](https://github.com/martin0327/LeetCode/tree/main/0598-range-addition-ii/) | undefined |
+| [0640-solve-the-equation](https://github.com/martin0327/LeetCode/tree/main/0640-solve-the-equation/) | Medium |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [0913-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0913-random-flip-matrix/) | undefined |
@@ -418,6 +420,7 @@
 | ------- | ------- |
 | [0415-add-strings](https://github.com/martin0327/LeetCode/tree/main/0415-add-strings/) | Easy |
 | [0537-complex-number-multiplication](https://github.com/martin0327/LeetCode/tree/main/0537-complex-number-multiplication/) | Medium |
+| [0640-solve-the-equation](https://github.com/martin0327/LeetCode/tree/main/0640-solve-the-equation/) | Medium |
 | [1260-shift-2d-grid](https://github.com/martin0327/LeetCode/tree/main/1260-shift-2d-grid/) | Easy |
 | [1914-cyclically-rotating-a-grid](https://github.com/martin0327/LeetCode/tree/main/1914-cyclically-rotating-a-grid/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/martin0327/LeetCode/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
@@ -695,4 +698,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0638-shopping-offers](https://github.com/martin0327/LeetCode/tree/main/0638-shopping-offers/) | Medium |
+## Linear Algebra
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0640-solve-the-equation](https://github.com/martin0327/LeetCode/tree/main/0640-solve-the-equation/) | Medium |
 <!---LeetCode Topics End-->
