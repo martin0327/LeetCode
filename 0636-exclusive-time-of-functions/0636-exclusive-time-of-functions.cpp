@@ -8,18 +8,17 @@ vector<string> split_str(string s, const char delim = ' ') {
     return ret;
 }
 using vi = vector<int>;
-using vvi = vector<vi>;
 using ti3 = tuple<int,int,int>;
 class Solution {
 public:
     vector<int> exclusiveTime(int n, vector<string>& a) {
         vector<ti3> b;
-        for (auto s : a) {
+        for (auto &s : a) {
             auto t = split_str(s,':');
             int key = stoi(t[0]);
-            int tp = (t[1] == "start");
+            int tp = (t[1] == "start"); // start -> 1 , end -> 0
             int pos = stoi(t[2]);
-            if (tp == 0) pos++;
+            if (!tp) pos++;
             b.push_back({pos,tp,key});
         }
         sort(b.begin(), b.end());
@@ -38,7 +37,7 @@ public:
                 }
                 else {
                     ans[key] += pos - ppos;
-                    assert(key == st.back());
+                    assert(st.size() && key == st.back());
                     st.pop_back();
                 }
             }
