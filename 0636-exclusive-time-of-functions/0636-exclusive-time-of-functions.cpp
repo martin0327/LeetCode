@@ -13,20 +13,20 @@ using ti3 = tuple<int,int,int>;
 class Solution {
 public:
     vector<int> exclusiveTime(int n, vector<string>& a) {
-        vector<ti3> A;
+        vector<ti3> b;
         for (auto s : a) {
-            auto b = split_str(s,':');
-            auto key = stoi(b[0]);
-            int tp = (b[1] == "start");
-            auto pos = stoi(b[2]);
+            auto t = split_str(s,':');
+            auto key = stoi(t[0]);
+            int tp = (t[1] == "start");
+            auto pos = stoi(t[2]);
             if (tp == 0) pos++;
-            A.push_back({pos,tp,key});
+            b.push_back({pos,tp,key});
         }
-        sort(A.begin(), A.end());
+        sort(b.begin(), b.end());
         vi ans(n);
         vector<ti3> lst;
         vi st;
-        for (auto [pos,tp,key] : A) {
+        for (auto [pos,tp,key] : b) {
             if (lst.size()) {
                 auto [lpos,ltp,lkey] = lst.back();
                 if (tp) {
