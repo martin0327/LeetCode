@@ -32,6 +32,7 @@
 | [0553-optimal-division](https://github.com/martin0327/LeetCode/tree/main/0553-optimal-division/) | Medium |
 | [0598-range-addition-ii](https://github.com/martin0327/LeetCode/tree/main/0598-range-addition-ii/) | undefined |
 | [0599-minimum-index-sum-of-two-lists](https://github.com/martin0327/LeetCode/tree/main/0599-minimum-index-sum-of-two-lists/) | Easy |
+| [0636-exclusive-time-of-functions](https://github.com/martin0327/LeetCode/tree/main/0636-exclusive-time-of-functions/) | Medium |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
@@ -587,6 +588,7 @@
 | [0385-mini-parser](https://github.com/martin0327/LeetCode/tree/main/0385-mini-parser/) | Medium |
 | [0388-longest-absolute-file-path](https://github.com/martin0327/LeetCode/tree/main/0388-longest-absolute-file-path/) | Medium |
 | [0496-next-greater-element-i](https://github.com/martin0327/LeetCode/tree/main/0496-next-greater-element-i/) | Easy |
+| [0636-exclusive-time-of-functions](https://github.com/martin0327/LeetCode/tree/main/0636-exclusive-time-of-functions/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 ## Monotonic Stack
 | Problem Name | Difficulty |
