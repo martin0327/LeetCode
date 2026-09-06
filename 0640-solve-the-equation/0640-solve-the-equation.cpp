@@ -28,9 +28,8 @@ public:
         auto g = [&] (vs b) {
             vi a(2);
             for (auto s : b) {
-                bool neg = false;
-                if (s[0] == '-') neg = true;
-                int sign = neg?-1:1;
+                int sign = 1;
+                if (s[0] == '-') sign = -1;
                 if (s[0] == '-' || s[0] == '+') {
                     s.erase(s.begin());
                 }
