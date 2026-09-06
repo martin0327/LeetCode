@@ -89,6 +89,7 @@
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0115-distinct-subsequences](https://github.com/martin0327/LeetCode/tree/main/0115-distinct-subsequences/) | Hard |
 | [0322-coin-change](https://github.com/martin0327/LeetCode/tree/main/0322-coin-change/) | undefined |
 | [0397-integer-replacement](https://github.com/martin0327/LeetCode/tree/main/0397-integer-replacement/) | Medium |
 | [0410-split-array-largest-sum](https://github.com/martin0327/LeetCode/tree/main/0410-split-array-largest-sum/) | undefined |
@@ -135,6 +136,7 @@
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0115-distinct-subsequences](https://github.com/martin0327/LeetCode/tree/main/0115-distinct-subsequences/) | Hard |
 | [0332-reconstruct-itinerary](https://github.com/martin0327/LeetCode/tree/main/0332-reconstruct-itinerary/) | undefined |
 | [0385-mini-parser](https://github.com/martin0327/LeetCode/tree/main/0385-mini-parser/) | Medium |
 | [0388-longest-absolute-file-path](https://github.com/martin0327/LeetCode/tree/main/0388-longest-absolute-file-path/) | Medium |
