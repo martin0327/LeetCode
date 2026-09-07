@@ -212,6 +212,7 @@
 | [0598-range-addition-ii](https://github.com/martin0327/LeetCode/tree/main/0598-range-addition-ii/) | undefined |
 | [0640-solve-the-equation](https://github.com/martin0327/LeetCode/tree/main/0640-solve-the-equation/) | Medium |
 | [0667-beautiful-arrangement-ii](https://github.com/martin0327/LeetCode/tree/main/0667-beautiful-arrangement-ii/) | Medium |
+| [0668-kth-smallest-number-in-multiplication-table](https://github.com/martin0327/LeetCode/tree/main/0668-kth-smallest-number-in-multiplication-table/) | Hard |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [0913-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0913-random-flip-matrix/) | undefined |
@@ -486,6 +487,7 @@
 | [0436-find-right-interval](https://github.com/martin0327/LeetCode/tree/main/0436-find-right-interval/) | Medium |
 | [0441-arranging-coins](https://github.com/martin0327/LeetCode/tree/main/0441-arranging-coins/) | Easy |
 | [0493-reverse-pairs](https://github.com/martin0327/LeetCode/tree/main/0493-reverse-pairs/) | Hard |
+| [0668-kth-smallest-number-in-multiplication-table](https://github.com/martin0327/LeetCode/tree/main/0668-kth-smallest-number-in-multiplication-table/) | Hard |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [3161-block-placement-queries](https://github.com/martin0327/LeetCode/tree/main/3161-block-placement-queries/) | Hard |
 | [3312-sorted-gcd-pair-queries](https://github.com/martin0327/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
