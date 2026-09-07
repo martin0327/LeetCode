@@ -104,6 +104,7 @@
 | [0638-shopping-offers](https://github.com/martin0327/LeetCode/tree/main/0638-shopping-offers/) | Medium |
 | [0639-decode-ways-ii](https://github.com/martin0327/LeetCode/tree/main/0639-decode-ways-ii/) | Hard |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
+| [0940-distinct-subsequences-ii](https://github.com/martin0327/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
 | [1340-jump-game-v](https://github.com/martin0327/LeetCode/tree/main/1340-jump-game-v/) | Hard |
 | [1406-stone-game-iii](https://github.com/martin0327/LeetCode/tree/main/1406-stone-game-iii/) | Hard |
@@ -161,6 +162,7 @@
 | [0639-decode-ways-ii](https://github.com/martin0327/LeetCode/tree/main/0639-decode-ways-ii/) | Hard |
 | [0640-solve-the-equation](https://github.com/martin0327/LeetCode/tree/main/0640-solve-the-equation/) | Medium |
 | [0796-rotate-string](https://github.com/martin0327/LeetCode/tree/main/0796-rotate-string/) | Easy |
+| [0940-distinct-subsequences-ii](https://github.com/martin0327/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/martin0327/LeetCode/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1871-jump-game-vii](https://github.com/martin0327/LeetCode/tree/main/1871-jump-game-vii/) | Medium |
