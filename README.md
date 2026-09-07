@@ -34,6 +34,7 @@
 | [0599-minimum-index-sum-of-two-lists](https://github.com/martin0327/LeetCode/tree/main/0599-minimum-index-sum-of-two-lists/) | Easy |
 | [0636-exclusive-time-of-functions](https://github.com/martin0327/LeetCode/tree/main/0636-exclusive-time-of-functions/) | Medium |
 | [0638-shopping-offers](https://github.com/martin0327/LeetCode/tree/main/0638-shopping-offers/) | Medium |
+| [0667-beautiful-arrangement-ii](https://github.com/martin0327/LeetCode/tree/main/0667-beautiful-arrangement-ii/) | Medium |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
@@ -210,6 +211,7 @@
 | [0593-valid-square](https://github.com/martin0327/LeetCode/tree/main/0593-valid-square/) | Medium |
 | [0598-range-addition-ii](https://github.com/martin0327/LeetCode/tree/main/0598-range-addition-ii/) | undefined |
 | [0640-solve-the-equation](https://github.com/martin0327/LeetCode/tree/main/0640-solve-the-equation/) | Medium |
+| [0667-beautiful-arrangement-ii](https://github.com/martin0327/LeetCode/tree/main/0667-beautiful-arrangement-ii/) | Medium |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [0913-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0913-random-flip-matrix/) | undefined |
