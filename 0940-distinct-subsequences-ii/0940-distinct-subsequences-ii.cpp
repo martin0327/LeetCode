@@ -6,10 +6,10 @@ public:
         fill(dp,dp+sz,1);
         int ans = 0;
         for (auto &ch : s) {
-            char x = ch - 'a';
+            int x = ch - 'a';
             ans += dp[x];
             ans %= mod;
-            for (char y=0; y<sz; y++) {
+            for (int y=0; y<sz; y++) {
                 if (y == x) continue;
                 dp[y] += dp[x];
                 dp[y] %= mod;
