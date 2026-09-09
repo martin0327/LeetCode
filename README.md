@@ -215,6 +215,7 @@
 | [0640-solve-the-equation](https://github.com/martin0327/LeetCode/tree/main/0640-solve-the-equation/) | Medium |
 | [0667-beautiful-arrangement-ii](https://github.com/martin0327/LeetCode/tree/main/0667-beautiful-arrangement-ii/) | Medium |
 | [0668-kth-smallest-number-in-multiplication-table](https://github.com/martin0327/LeetCode/tree/main/0668-kth-smallest-number-in-multiplication-table/) | Hard |
+| [0672-bulb-switcher-ii](https://github.com/martin0327/LeetCode/tree/main/0672-bulb-switcher-ii/) | Medium |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [0913-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0913-random-flip-matrix/) | undefined |
@@ -246,6 +247,7 @@
 | [0449-serialize-and-deserialize-bst](https://github.com/martin0327/LeetCode/tree/main/0449-serialize-and-deserialize-bst/) | Medium |
 | [0529-minesweeper](https://github.com/martin0327/LeetCode/tree/main/0529-minesweeper/) | Medium |
 | [0617-merge-two-binary-trees](https://github.com/martin0327/LeetCode/tree/main/0617-merge-two-binary-trees/) | Easy |
+| [0672-bulb-switcher-ii](https://github.com/martin0327/LeetCode/tree/main/0672-bulb-switcher-ii/) | Medium |
 | [0675-cut-off-trees-for-golf-event](https://github.com/martin0327/LeetCode/tree/main/0675-cut-off-trees-for-golf-event/) | Hard |
 | [0774-maximum-depth-of-n-ary-tree](https://github.com/martin0327/LeetCode/tree/main/0774-maximum-depth-of-n-ary-tree/) | undefined |
 | [1306-jump-game-iii](https://github.com/martin0327/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
@@ -403,6 +405,7 @@
 | [0529-minesweeper](https://github.com/martin0327/LeetCode/tree/main/0529-minesweeper/) | Medium |
 | [0617-merge-two-binary-trees](https://github.com/martin0327/LeetCode/tree/main/0617-merge-two-binary-trees/) | Easy |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/martin0327/LeetCode/tree/main/0671-second-minimum-node-in-a-binary-tree/) | Easy |
+| [0672-bulb-switcher-ii](https://github.com/martin0327/LeetCode/tree/main/0672-bulb-switcher-ii/) | Medium |
 | [0774-maximum-depth-of-n-ary-tree](https://github.com/martin0327/LeetCode/tree/main/0774-maximum-depth-of-n-ary-tree/) | undefined |
 | [1306-jump-game-iii](https://github.com/martin0327/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
 | [2685-count-the-number-of-complete-components](https://github.com/martin0327/LeetCode/tree/main/2685-count-the-number-of-complete-components/) | Medium |
@@ -452,6 +455,7 @@
 | [0461-hamming-distance](https://github.com/martin0327/LeetCode/tree/main/0461-hamming-distance/) | Easy |
 | [0526-beautiful-arrangement](https://github.com/martin0327/LeetCode/tree/main/0526-beautiful-arrangement/) | undefined |
 | [0638-shopping-offers](https://github.com/martin0327/LeetCode/tree/main/0638-shopping-offers/) | Medium |
+| [0672-bulb-switcher-ii](https://github.com/martin0327/LeetCode/tree/main/0672-bulb-switcher-ii/) | Medium |
 | [1386-cinema-seat-allocation](https://github.com/martin0327/LeetCode/tree/main/1386-cinema-seat-allocation/) | Medium |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/martin0327/LeetCode/tree/main/3514-number-of-unique-xor-triplets-ii/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/martin0327/LeetCode/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
