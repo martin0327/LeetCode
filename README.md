@@ -38,6 +38,7 @@
 | [0674-longest-continuous-increasing-subsequence](https://github.com/martin0327/LeetCode/tree/main/0674-longest-continuous-increasing-subsequence/) | Easy |
 | [0675-cut-off-trees-for-golf-event](https://github.com/martin0327/LeetCode/tree/main/0675-cut-off-trees-for-golf-event/) | Hard |
 | [0690-employee-importance](https://github.com/martin0327/LeetCode/tree/main/0690-employee-importance/) | Medium |
+| [0697-degree-of-an-array](https://github.com/martin0327/LeetCode/tree/main/0697-degree-of-an-array/) | Easy |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
@@ -366,6 +367,7 @@
 | [0519-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0519-random-flip-matrix/) | Medium |
 | [0599-minimum-index-sum-of-two-lists](https://github.com/martin0327/LeetCode/tree/main/0599-minimum-index-sum-of-two-lists/) | Easy |
 | [0690-employee-importance](https://github.com/martin0327/LeetCode/tree/main/0690-employee-importance/) | Medium |
+| [0697-degree-of-an-array](https://github.com/martin0327/LeetCode/tree/main/0697-degree-of-an-array/) | Easy |
 | [0913-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0913-random-flip-matrix/) | undefined |
 | [1189-maximum-number-of-balloons](https://github.com/martin0327/LeetCode/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1331-rank-transform-of-an-array](https://github.com/martin0327/LeetCode/tree/main/1331-rank-transform-of-an-array/) | Easy |
