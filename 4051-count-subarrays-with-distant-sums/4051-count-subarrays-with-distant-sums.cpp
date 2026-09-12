@@ -51,11 +51,10 @@ public:
             return ans;
         }
         vi a(aa.begin(), aa.end());
-        vi pre(n+1);
+        vi pre(n+1), cx;
         for (int i=0; i<n; i++) {
             pre[i+1] = pre[i] + a[i];
         }
-        vi cx;
         for (int i=0; i<=n; i++) {
             cx.push_back(pre[i]);
             cx.push_back(pre[i]-tg-k);
