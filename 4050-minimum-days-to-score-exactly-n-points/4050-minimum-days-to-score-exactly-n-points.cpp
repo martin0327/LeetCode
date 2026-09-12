@@ -3,8 +3,10 @@ void chmax(T1 &x, T2 y) { if (x < y) x = y; }
 template<typename T1, typename T2>
 void chmin(T1 &x, T2 y) { if (x > y) x = y; }
 using vi = vector<int>;
-const int sz = 1e5+5, inf = 2e9;
-vi b, dp;
+const int sz = 1e5+1;
+const int inf = 0x3f3f3f3f;
+vi b;
+int dp[sz];
 class Solution {
 public:
     int minDays(int n) {
@@ -14,11 +16,12 @@ public:
                 b.push_back(b.back() + i);
                 if (b.back() > sz) break;
             }
-            dp = vi(sz,inf);
             int m = b.size();
+            memset(dp,0x3f,sizeof(dp));
             for (int i=0; i<m; i++) {
-                if (b[i] >= sz) break;
-                dp[b[i]] = i+1;
+                auto &x = b[i];
+                if (x >= sz) break;
+                dp[x] = i+1;
             }
             for (int i=0; i<m; i++) {
                 int x = b[i], cost = i+2;
