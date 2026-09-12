@@ -45,7 +45,11 @@ using vi = vector<ll>;
 class Solution {
 public:
     long long distantSubarrays(vector<int>& aa, int tg, int k) {
-        int n = aa.size();
+        ll n = aa.size();
+        if (k == 0) {
+            auto ans = n*(n+1)/2;
+            return ans;
+        }
         vi a(aa.begin(), aa.end());
         vi pre(n+1);
         for (int i=0; i<n; i++) {
@@ -67,16 +71,12 @@ public:
 
         ll ans = 0;
         for (int i=0; i<=n; i++) {
-            if (k > 0) {
-                auto lo = g(pre[i] - tg - k);
-                auto hi = g(pre[i] - tg + k);
-                ans += fen.sum(0,lo+1);
-                ans += fen.sum(hi,sz);
-            }
-            else ans += fen.sum(0,sz);
+            auto lo = g(pre[i]-tg-k);
+            auto hi = g(pre[i]-tg+k);
+            ans += fen.sum(0,lo+1);
+            ans += fen.sum(hi,sz);
             fen.add(g(pre[i]),1);
         }
         return ans;
-        
     }
 };
