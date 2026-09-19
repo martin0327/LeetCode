@@ -11,16 +11,15 @@ public:
             mxd = max(mxd, d);
         };
         f(root,0);
-        int n = mxd + 1;
-        int m = (1<<n) - 1;
+        int n = mxd + 1, m = (1<<n) - 1;
         vvs ans(n, vs(m));
-        cout << n << " " << m << endl;
         function<void(TreeNode*,int,int)> g = [&] (TreeNode*v, int r, int c) {
             if (!v) return;
             ans[r][c] = to_string(v->val);
-            if (n-r-2 >= 0) {
-                g(v->left, r+1, c-(1<<(n-r-2)));
-                g(v->right, r+1, c+(1<<(n-r-2)));
+            int t = n-r-2;
+            if (t >= 0) {
+                g(v->left, r+1, c-(1<<t));
+                g(v->right, r+1, c+(1<<t));
             }
         };
         g(root,0,(m-1)/2);
