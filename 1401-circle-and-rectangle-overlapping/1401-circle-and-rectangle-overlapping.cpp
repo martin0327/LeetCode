@@ -24,8 +24,8 @@ public:
         for (auto x : xs) {
             for (auto y : ys) {
                 pii xy = {x,y};
-                pts.push_back(xy);
                 if (check(xy)) return true;
+                pts.push_back(xy);
             }
         }
         for (int i=0; i<4; i++) {
