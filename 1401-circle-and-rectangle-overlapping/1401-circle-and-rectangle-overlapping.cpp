@@ -1,26 +1,15 @@
-
-using ll = long long;
-using vi = vector<ll>;
-using vvi = vector<vi>;
-using pii = pair<ll,ll>;
+using vi = vector<int>;
+using pii = pair<int,int>;
 using vp = vector<pii>;
-using vvp = vector<vp>;
-using ti3 = tuple<ll,ll,ll>;
-using vti3 = vector<ti3>;
-using vs = vector<string>;
-
 bool in(int x, int l, int r) {
     return l <= x && x <= r;
 }
-int sq(int x) {
-    return x*x;
-}
+int sq(int x) { return x*x; }
 int dsq (pii p1, pii p2) {
     auto [x1,y1] = p1;
     auto [x2,y2] = p2;
     return sq(x1-x2) + sq(y1-y2);
 }
-
 
 class Solution {
 public:
@@ -29,11 +18,14 @@ public:
         vi xs = {x1,x2}, ys = {y1,y2};
         pii ct = {xc, yc};
         vp pts;
+        auto check = [&] (pii xy) {
+            return dsq(ct,xy) <= sq(R);
+        };
         for (auto x : xs) {
             for (auto y : ys) {
                 pii xy = {x,y};
                 pts.push_back(xy);
-                if (dsq(ct,xy) <= sq(R)) return true;
+                if (check(xy)) return true;
             }
         }
         for (int i=0; i<4; i++) {
@@ -43,14 +35,13 @@ public:
                 if (x1 == x2) {
                     if (in(yc,y1,y2)) {
                         pii xy = {x1,yc};
-                        // debug (dsq(ct,xy) , sq(R)); //return true;
-                        if (dsq(ct,xy) <= sq(R)) return true;
+                        if (check(xy)) return true;
                     }
                 }
                 else {
                     if (in(xc,x1,x2)) {
                         pii xy = {xc,y1};
-                        if (dsq(ct,xy) <= sq(R)) return true;
+                        if (check(xy)) return true;
                     }
                 }
             }
