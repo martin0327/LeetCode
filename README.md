@@ -254,6 +254,7 @@
 | [0449-serialize-and-deserialize-bst](https://github.com/martin0327/LeetCode/tree/main/0449-serialize-and-deserialize-bst/) | Medium |
 | [0529-minesweeper](https://github.com/martin0327/LeetCode/tree/main/0529-minesweeper/) | Medium |
 | [0617-merge-two-binary-trees](https://github.com/martin0327/LeetCode/tree/main/0617-merge-two-binary-trees/) | Easy |
+| [0655-print-binary-tree](https://github.com/martin0327/LeetCode/tree/main/0655-print-binary-tree/) | Medium |
 | [0672-bulb-switcher-ii](https://github.com/martin0327/LeetCode/tree/main/0672-bulb-switcher-ii/) | Medium |
 | [0675-cut-off-trees-for-golf-event](https://github.com/martin0327/LeetCode/tree/main/0675-cut-off-trees-for-golf-event/) | Hard |
 | [0690-employee-importance](https://github.com/martin0327/LeetCode/tree/main/0690-employee-importance/) | Medium |
@@ -415,6 +416,7 @@
 | [0508-most-frequent-subtree-sum](https://github.com/martin0327/LeetCode/tree/main/0508-most-frequent-subtree-sum/) | Medium |
 | [0529-minesweeper](https://github.com/martin0327/LeetCode/tree/main/0529-minesweeper/) | Medium |
 | [0617-merge-two-binary-trees](https://github.com/martin0327/LeetCode/tree/main/0617-merge-two-binary-trees/) | Easy |
+| [0655-print-binary-tree](https://github.com/martin0327/LeetCode/tree/main/0655-print-binary-tree/) | Medium |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/martin0327/LeetCode/tree/main/0671-second-minimum-node-in-a-binary-tree/) | Easy |
 | [0672-bulb-switcher-ii](https://github.com/martin0327/LeetCode/tree/main/0672-bulb-switcher-ii/) | Medium |
 | [0687-longest-univalue-path](https://github.com/martin0327/LeetCode/tree/main/0687-longest-univalue-path/) | Medium |
@@ -544,6 +546,7 @@
 | [0508-most-frequent-subtree-sum](https://github.com/martin0327/LeetCode/tree/main/0508-most-frequent-subtree-sum/) | Medium |
 | [0558-logical-or-of-two-binary-grids-represented-as-quad-trees](https://github.com/martin0327/LeetCode/tree/main/0558-logical-or-of-two-binary-grids-represented-as-quad-trees/) | Medium |
 | [0617-merge-two-binary-trees](https://github.com/martin0327/LeetCode/tree/main/0617-merge-two-binary-trees/) | Easy |
+| [0655-print-binary-tree](https://github.com/martin0327/LeetCode/tree/main/0655-print-binary-tree/) | Medium |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/martin0327/LeetCode/tree/main/0671-second-minimum-node-in-a-binary-tree/) | Easy |
 | [0687-longest-univalue-path](https://github.com/martin0327/LeetCode/tree/main/0687-longest-univalue-path/) | Medium |
 | [0690-employee-importance](https://github.com/martin0327/LeetCode/tree/main/0690-employee-importance/) | Medium |
@@ -557,6 +560,7 @@
 | [0450-delete-node-in-a-bst](https://github.com/martin0327/LeetCode/tree/main/0450-delete-node-in-a-bst/) | Medium |
 | [0508-most-frequent-subtree-sum](https://github.com/martin0327/LeetCode/tree/main/0508-most-frequent-subtree-sum/) | Medium |
 | [0617-merge-two-binary-trees](https://github.com/martin0327/LeetCode/tree/main/0617-merge-two-binary-trees/) | Easy |
+| [0655-print-binary-tree](https://github.com/martin0327/LeetCode/tree/main/0655-print-binary-tree/) | Medium |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/martin0327/LeetCode/tree/main/0671-second-minimum-node-in-a-binary-tree/) | Easy |
 | [0687-longest-univalue-path](https://github.com/martin0327/LeetCode/tree/main/0687-longest-univalue-path/) | Medium |
 ## Union-Find
