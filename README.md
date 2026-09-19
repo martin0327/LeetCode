@@ -169,6 +169,7 @@
 | [0599-minimum-index-sum-of-two-lists](https://github.com/martin0327/LeetCode/tree/main/0599-minimum-index-sum-of-two-lists/) | Easy |
 | [0639-decode-ways-ii](https://github.com/martin0327/LeetCode/tree/main/0639-decode-ways-ii/) | Hard |
 | [0640-solve-the-equation](https://github.com/martin0327/LeetCode/tree/main/0640-solve-the-equation/) | Medium |
+| [0676-implement-magic-dictionary](https://github.com/martin0327/LeetCode/tree/main/0676-implement-magic-dictionary/) | Medium |
 | [0796-rotate-string](https://github.com/martin0327/LeetCode/tree/main/0796-rotate-string/) | Easy |
 | [0940-distinct-subsequences-ii](https://github.com/martin0327/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
@@ -372,6 +373,7 @@
 | [0508-most-frequent-subtree-sum](https://github.com/martin0327/LeetCode/tree/main/0508-most-frequent-subtree-sum/) | Medium |
 | [0519-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0519-random-flip-matrix/) | Medium |
 | [0599-minimum-index-sum-of-two-lists](https://github.com/martin0327/LeetCode/tree/main/0599-minimum-index-sum-of-two-lists/) | Easy |
+| [0676-implement-magic-dictionary](https://github.com/martin0327/LeetCode/tree/main/0676-implement-magic-dictionary/) | Medium |
 | [0690-employee-importance](https://github.com/martin0327/LeetCode/tree/main/0690-employee-importance/) | Medium |
 | [0697-degree-of-an-array](https://github.com/martin0327/LeetCode/tree/main/0697-degree-of-an-array/) | Easy |
 | [0913-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0913-random-flip-matrix/) | undefined |
@@ -395,6 +397,7 @@
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/martin0327/LeetCode/tree/main/0381-insert-delete-getrandom-o1-duplicates-allowed/) | Hard |
 | [0432-all-oone-data-structure](https://github.com/martin0327/LeetCode/tree/main/0432-all-oone-data-structure/) | undefined |
 | [0449-serialize-and-deserialize-bst](https://github.com/martin0327/LeetCode/tree/main/0449-serialize-and-deserialize-bst/) | Medium |
+| [0676-implement-magic-dictionary](https://github.com/martin0327/LeetCode/tree/main/0676-implement-magic-dictionary/) | Medium |
 ## Randomized
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -419,6 +422,7 @@
 | [0655-print-binary-tree](https://github.com/martin0327/LeetCode/tree/main/0655-print-binary-tree/) | Medium |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/martin0327/LeetCode/tree/main/0671-second-minimum-node-in-a-binary-tree/) | Easy |
 | [0672-bulb-switcher-ii](https://github.com/martin0327/LeetCode/tree/main/0672-bulb-switcher-ii/) | Medium |
+| [0676-implement-magic-dictionary](https://github.com/martin0327/LeetCode/tree/main/0676-implement-magic-dictionary/) | Medium |
 | [0687-longest-univalue-path](https://github.com/martin0327/LeetCode/tree/main/0687-longest-univalue-path/) | Medium |
 | [0690-employee-importance](https://github.com/martin0327/LeetCode/tree/main/0690-employee-importance/) | Medium |
 | [0774-maximum-depth-of-n-ary-tree](https://github.com/martin0327/LeetCode/tree/main/0774-maximum-depth-of-n-ary-tree/) | undefined |
@@ -602,6 +606,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0440-k-th-smallest-in-lexicographical-order](https://github.com/martin0327/LeetCode/tree/main/0440-k-th-smallest-in-lexicographical-order/) | Hard |
+| [0676-implement-magic-dictionary](https://github.com/martin0327/LeetCode/tree/main/0676-implement-magic-dictionary/) | Medium |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/martin0327/LeetCode/tree/main/3043-find-the-length-of-the-longest-common-prefix/) | Medium |
 | [3093-longest-common-suffix-queries](https://github.com/martin0327/LeetCode/tree/main/3093-longest-common-suffix-queries/) | Hard |
 | [3845-maximum-subarray-xor-with-bounded-range](https://github.com/martin0327/LeetCode/tree/main/3845-maximum-subarray-xor-with-bounded-range/) | Hard |
