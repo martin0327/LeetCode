@@ -5,6 +5,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/martin0327/LeetCode/tree/main/0048-rotate-image/) | undefined |
+| [0053-maximum-subarray](https://github.com/martin0327/LeetCode/tree/main/0053-maximum-subarray/) | Medium |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/martin0327/LeetCode/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/martin0327/LeetCode/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [0322-coin-change](https://github.com/martin0327/LeetCode/tree/main/0322-coin-change/) | undefined |
@@ -97,6 +98,7 @@
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0053-maximum-subarray](https://github.com/martin0327/LeetCode/tree/main/0053-maximum-subarray/) | Medium |
 | [0115-distinct-subsequences](https://github.com/martin0327/LeetCode/tree/main/0115-distinct-subsequences/) | Hard |
 | [0322-coin-change](https://github.com/martin0327/LeetCode/tree/main/0322-coin-change/) | undefined |
 | [0397-integer-replacement](https://github.com/martin0327/LeetCode/tree/main/0397-integer-replacement/) | Medium |
@@ -294,6 +296,7 @@
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0053-maximum-subarray](https://github.com/martin0327/LeetCode/tree/main/0053-maximum-subarray/) | Medium |
 | [0324-wiggle-sort-ii](https://github.com/martin0327/LeetCode/tree/main/0324-wiggle-sort-ii/) | undefined |
 | [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/martin0327/LeetCode/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
 | [0493-reverse-pairs](https://github.com/martin0327/LeetCode/tree/main/0493-reverse-pairs/) | Hard |
