@@ -172,6 +172,7 @@
 | [0639-decode-ways-ii](https://github.com/martin0327/LeetCode/tree/main/0639-decode-ways-ii/) | Hard |
 | [0640-solve-the-equation](https://github.com/martin0327/LeetCode/tree/main/0640-solve-the-equation/) | Medium |
 | [0676-implement-magic-dictionary](https://github.com/martin0327/LeetCode/tree/main/0676-implement-magic-dictionary/) | Medium |
+| [0686-repeated-string-match](https://github.com/martin0327/LeetCode/tree/main/0686-repeated-string-match/) | Medium |
 | [0796-rotate-string](https://github.com/martin0327/LeetCode/tree/main/0796-rotate-string/) | Easy |
 | [0940-distinct-subsequences-ii](https://github.com/martin0327/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
@@ -196,6 +197,7 @@
 ## String Matching
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0686-repeated-string-match](https://github.com/martin0327/LeetCode/tree/main/0686-repeated-string-match/) | Medium |
 | [0796-rotate-string](https://github.com/martin0327/LeetCode/tree/main/0796-rotate-string/) | Easy |
 ## Math
 | Problem Name | Difficulty |
@@ -756,4 +758,16 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0687-longest-univalue-path](https://github.com/martin0327/LeetCode/tree/main/0687-longest-univalue-path/) | Medium |
+## Z Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0686-repeated-string-match](https://github.com/martin0327/LeetCode/tree/main/0686-repeated-string-match/) | Medium |
+## Knuth–Morris–Pratt Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0686-repeated-string-match](https://github.com/martin0327/LeetCode/tree/main/0686-repeated-string-match/) | Medium |
+## Boyer–Moore String-Search Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0686-repeated-string-match](https://github.com/martin0327/LeetCode/tree/main/0686-repeated-string-match/) | Medium |
 <!---LeetCode Topics End-->
