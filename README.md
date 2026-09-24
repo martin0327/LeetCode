@@ -175,6 +175,7 @@
 | [0640-solve-the-equation](https://github.com/martin0327/LeetCode/tree/main/0640-solve-the-equation/) | Medium |
 | [0676-implement-magic-dictionary](https://github.com/martin0327/LeetCode/tree/main/0676-implement-magic-dictionary/) | Medium |
 | [0686-repeated-string-match](https://github.com/martin0327/LeetCode/tree/main/0686-repeated-string-match/) | Medium |
+| [0709-to-lower-case](https://github.com/martin0327/LeetCode/tree/main/0709-to-lower-case/) | Easy |
 | [0796-rotate-string](https://github.com/martin0327/LeetCode/tree/main/0796-rotate-string/) | Easy |
 | [0940-distinct-subsequences-ii](https://github.com/martin0327/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
