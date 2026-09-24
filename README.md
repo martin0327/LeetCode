@@ -266,6 +266,7 @@
 | [0655-print-binary-tree](https://github.com/martin0327/LeetCode/tree/main/0655-print-binary-tree/) | Medium |
 | [0672-bulb-switcher-ii](https://github.com/martin0327/LeetCode/tree/main/0672-bulb-switcher-ii/) | Medium |
 | [0675-cut-off-trees-for-golf-event](https://github.com/martin0327/LeetCode/tree/main/0675-cut-off-trees-for-golf-event/) | Hard |
+| [0685-redundant-connection-ii](https://github.com/martin0327/LeetCode/tree/main/0685-redundant-connection-ii/) | Hard |
 | [0690-employee-importance](https://github.com/martin0327/LeetCode/tree/main/0690-employee-importance/) | Medium |
 | [0774-maximum-depth-of-n-ary-tree](https://github.com/martin0327/LeetCode/tree/main/0774-maximum-depth-of-n-ary-tree/) | undefined |
 | [1306-jump-game-iii](https://github.com/martin0327/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
@@ -432,6 +433,7 @@
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/martin0327/LeetCode/tree/main/0671-second-minimum-node-in-a-binary-tree/) | Easy |
 | [0672-bulb-switcher-ii](https://github.com/martin0327/LeetCode/tree/main/0672-bulb-switcher-ii/) | Medium |
 | [0676-implement-magic-dictionary](https://github.com/martin0327/LeetCode/tree/main/0676-implement-magic-dictionary/) | Medium |
+| [0685-redundant-connection-ii](https://github.com/martin0327/LeetCode/tree/main/0685-redundant-connection-ii/) | Hard |
 | [0687-longest-univalue-path](https://github.com/martin0327/LeetCode/tree/main/0687-longest-univalue-path/) | Medium |
 | [0690-employee-importance](https://github.com/martin0327/LeetCode/tree/main/0690-employee-importance/) | Medium |
 | [0774-maximum-depth-of-n-ary-tree](https://github.com/martin0327/LeetCode/tree/main/0774-maximum-depth-of-n-ary-tree/) | undefined |
@@ -582,12 +584,14 @@
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0685-redundant-connection-ii](https://github.com/martin0327/LeetCode/tree/main/0685-redundant-connection-ii/) | Hard |
 | [2685-count-the-number-of-complete-components](https://github.com/martin0327/LeetCode/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 | [2948-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/martin0327/LeetCode/tree/main/2948-make-lexicographically-smallest-array-by-swapping-elements/) | Medium |
 | [3887-incremental-even-weighted-cycle-queries](https://github.com/martin0327/LeetCode/tree/main/3887-incremental-even-weighted-cycle-queries/) | Hard |
 ## Graph Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0685-redundant-connection-ii](https://github.com/martin0327/LeetCode/tree/main/0685-redundant-connection-ii/) | Hard |
 | [2685-count-the-number-of-complete-components](https://github.com/martin0327/LeetCode/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 | [3310-remove-methods-from-project](https://github.com/martin0327/LeetCode/tree/main/3310-remove-methods-from-project/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/martin0327/LeetCode/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
