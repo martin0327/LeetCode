@@ -40,6 +40,7 @@
 | [0675-cut-off-trees-for-golf-event](https://github.com/martin0327/LeetCode/tree/main/0675-cut-off-trees-for-golf-event/) | Hard |
 | [0690-employee-importance](https://github.com/martin0327/LeetCode/tree/main/0690-employee-importance/) | Medium |
 | [0697-degree-of-an-array](https://github.com/martin0327/LeetCode/tree/main/0697-degree-of-an-array/) | Easy |
+| [0698-partition-to-k-equal-sum-subsets](https://github.com/martin0327/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
@@ -111,6 +112,7 @@
 | [0600-non-negative-integers-without-consecutive-ones](https://github.com/martin0327/LeetCode/tree/main/0600-non-negative-integers-without-consecutive-ones/) | Hard |
 | [0638-shopping-offers](https://github.com/martin0327/LeetCode/tree/main/0638-shopping-offers/) | Medium |
 | [0639-decode-ways-ii](https://github.com/martin0327/LeetCode/tree/main/0639-decode-ways-ii/) | Hard |
+| [0698-partition-to-k-equal-sum-subsets](https://github.com/martin0327/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0940-distinct-subsequences-ii](https://github.com/martin0327/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
@@ -482,6 +484,7 @@
 | [0526-beautiful-arrangement](https://github.com/martin0327/LeetCode/tree/main/0526-beautiful-arrangement/) | undefined |
 | [0638-shopping-offers](https://github.com/martin0327/LeetCode/tree/main/0638-shopping-offers/) | Medium |
 | [0672-bulb-switcher-ii](https://github.com/martin0327/LeetCode/tree/main/0672-bulb-switcher-ii/) | Medium |
+| [0698-partition-to-k-equal-sum-subsets](https://github.com/martin0327/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [1386-cinema-seat-allocation](https://github.com/martin0327/LeetCode/tree/main/1386-cinema-seat-allocation/) | Medium |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/martin0327/LeetCode/tree/main/3514-number-of-unique-xor-triplets-ii/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/martin0327/LeetCode/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
@@ -492,6 +495,7 @@
 | ------- | ------- |
 | [0397-integer-replacement](https://github.com/martin0327/LeetCode/tree/main/0397-integer-replacement/) | Medium |
 | [0638-shopping-offers](https://github.com/martin0327/LeetCode/tree/main/0638-shopping-offers/) | Medium |
+| [0698-partition-to-k-equal-sum-subsets](https://github.com/martin0327/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -691,11 +695,13 @@
 | ------- | ------- |
 | [0526-beautiful-arrangement](https://github.com/martin0327/LeetCode/tree/main/0526-beautiful-arrangement/) | undefined |
 | [0638-shopping-offers](https://github.com/martin0327/LeetCode/tree/main/0638-shopping-offers/) | Medium |
+| [0698-partition-to-k-equal-sum-subsets](https://github.com/martin0327/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 ## Bitmask
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0526-beautiful-arrangement](https://github.com/martin0327/LeetCode/tree/main/0526-beautiful-arrangement/) | undefined |
 | [0638-shopping-offers](https://github.com/martin0327/LeetCode/tree/main/0638-shopping-offers/) | Medium |
+| [0698-partition-to-k-equal-sum-subsets](https://github.com/martin0327/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 ## Game Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
