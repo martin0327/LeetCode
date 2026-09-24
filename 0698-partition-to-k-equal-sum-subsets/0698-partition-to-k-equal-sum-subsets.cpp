@@ -1,21 +1,10 @@
 bool dp[17][1<<17];
 int s[1<<17];
-using vi = vector<int>;
-using vvi = vector<vi>;
-void debug(vi a) {
-    for (auto x : a) { 
-        cout << x << " ";
-    }   cout << endl;
-}
-void debug(vvi a) {
-    for (auto &v : a) {
-        debug(v);
-    }
-}
 class Solution {
 public:
     bool canPartitionKSubsets(vector<int>& a, int k) {
         int n = a.size(), sz = 1<<n;
+        memset(dp,0,sizeof(dp));
         memset(s,0,sizeof(s));
         for (int mask=0; mask<sz; mask++) {
             for (int i=0; i<n; i++) {
@@ -26,8 +15,6 @@ public:
         if (tot % k != 0) return false;
 
         tot /= k;
-        // memset(dp,0,sizeof(dp));
-        vvi dp(n, vi(1<<n));
         for (int i=0; i<n; i++) {
             if (a[i] > tot) return false;
             dp[i][1<<i] = 1;
@@ -45,7 +32,6 @@ public:
                 }
             }
         }
-        // debug(dp);
         return false;
     }
 };
