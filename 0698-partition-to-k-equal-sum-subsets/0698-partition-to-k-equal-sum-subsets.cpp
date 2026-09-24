@@ -28,7 +28,9 @@ public:
                     int nmask = mask | (1<<j);
                     int q1 = s[mask] / tot;
                     int q2 = s[nmask] / tot;
-                    if (q1 == q2 || (s[mask] % tot == 0) || (s[nmask] % tot == 0)) dp[j][nmask] = 1;
+                    if (q1 == q2 || (s[mask] % tot == 0) || (s[nmask] % tot == 0)) {
+                        dp[j][nmask] = 1;
+                    }
                 }
             }
         }
