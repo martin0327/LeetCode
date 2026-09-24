@@ -42,6 +42,7 @@
 | [0691-stickers-to-spell-word](https://github.com/martin0327/LeetCode/tree/main/0691-stickers-to-spell-word/) | Hard |
 | [0697-degree-of-an-array](https://github.com/martin0327/LeetCode/tree/main/0697-degree-of-an-array/) | Easy |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/martin0327/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
+| [0699-falling-squares](https://github.com/martin0327/LeetCode/tree/main/0699-falling-squares/) | Hard |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
@@ -649,6 +650,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0493-reverse-pairs](https://github.com/martin0327/LeetCode/tree/main/0493-reverse-pairs/) | Hard |
+| [0699-falling-squares](https://github.com/martin0327/LeetCode/tree/main/0699-falling-squares/) | Hard |
 | [3161-block-placement-queries](https://github.com/martin0327/LeetCode/tree/main/3161-block-placement-queries/) | Hard |
 | [3691-maximum-total-subarray-value-ii](https://github.com/martin0327/LeetCode/tree/main/3691-maximum-total-subarray-value-ii/) | Hard |
 ## Doubly-Linked List
@@ -690,6 +692,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0493-reverse-pairs](https://github.com/martin0327/LeetCode/tree/main/0493-reverse-pairs/) | Hard |
+| [0699-falling-squares](https://github.com/martin0327/LeetCode/tree/main/0699-falling-squares/) | Hard |
 ## Number Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
