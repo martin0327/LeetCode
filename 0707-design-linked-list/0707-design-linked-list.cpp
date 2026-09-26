@@ -29,7 +29,6 @@ public:
         if (!head) {
             head = new LL(val);
             sz++;
-            // cout << head->val << endl;
             return;
         }
         auto nh = new LL(val);
@@ -84,9 +83,6 @@ public:
             if (idx == 0) {
                 auto it = head;
                 if (head->nxt) {
-                    // cout << head->val << endl;
-                    // cout << (bool) (head->nxt) << endl;
-                    // cout << head->nxt->val << endl;
                     head = it->nxt;
                     head->prv = nullptr;
                     delete it;
