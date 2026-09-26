@@ -38,6 +38,7 @@
 | [0667-beautiful-arrangement-ii](https://github.com/martin0327/LeetCode/tree/main/0667-beautiful-arrangement-ii/) | Medium |
 | [0674-longest-continuous-increasing-subsequence](https://github.com/martin0327/LeetCode/tree/main/0674-longest-continuous-increasing-subsequence/) | Easy |
 | [0675-cut-off-trees-for-golf-event](https://github.com/martin0327/LeetCode/tree/main/0675-cut-off-trees-for-golf-event/) | Hard |
+| [0682-baseball-game](https://github.com/martin0327/LeetCode/tree/main/0682-baseball-game/) | Easy |
 | [0690-employee-importance](https://github.com/martin0327/LeetCode/tree/main/0690-employee-importance/) | Medium |
 | [0691-stickers-to-spell-word](https://github.com/martin0327/LeetCode/tree/main/0691-stickers-to-spell-word/) | Hard |
 | [0697-degree-of-an-array](https://github.com/martin0327/LeetCode/tree/main/0697-degree-of-an-array/) | Easy |
@@ -472,6 +473,7 @@
 | [0415-add-strings](https://github.com/martin0327/LeetCode/tree/main/0415-add-strings/) | Easy |
 | [0537-complex-number-multiplication](https://github.com/martin0327/LeetCode/tree/main/0537-complex-number-multiplication/) | Medium |
 | [0640-solve-the-equation](https://github.com/martin0327/LeetCode/tree/main/0640-solve-the-equation/) | Medium |
+| [0682-baseball-game](https://github.com/martin0327/LeetCode/tree/main/0682-baseball-game/) | Easy |
 | [1260-shift-2d-grid](https://github.com/martin0327/LeetCode/tree/main/1260-shift-2d-grid/) | Easy |
 | [1914-cyclically-rotating-a-grid](https://github.com/martin0327/LeetCode/tree/main/1914-cyclically-rotating-a-grid/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/martin0327/LeetCode/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
@@ -668,6 +670,7 @@
 | [0388-longest-absolute-file-path](https://github.com/martin0327/LeetCode/tree/main/0388-longest-absolute-file-path/) | Medium |
 | [0496-next-greater-element-i](https://github.com/martin0327/LeetCode/tree/main/0496-next-greater-element-i/) | Easy |
 | [0636-exclusive-time-of-functions](https://github.com/martin0327/LeetCode/tree/main/0636-exclusive-time-of-functions/) | Medium |
+| [0682-baseball-game](https://github.com/martin0327/LeetCode/tree/main/0682-baseball-game/) | Easy |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 ## Monotonic Stack
 | Problem Name | Difficulty |
