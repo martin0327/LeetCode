@@ -2,9 +2,8 @@ class Solution {
 public:
     string evaluate(string s, vector<vector<string>>& b) {
         map<string,string> mp;
-        for (auto &v : b) {
-            mp[v[0]] = v[1];
-        }
+        for (auto &v : b) mp[v[0]] = v[1];
+        
         vector<string> a = {""};
         for (auto ch : s) {
             if (ch == '(') {
@@ -15,9 +14,7 @@ public:
                 a.back() += ch;
                 a.push_back("");
             }
-            else {
-                a.back() += ch;
-            }
+            else a.back() += ch;
         }
         string ans;
         for (auto t : a) {
