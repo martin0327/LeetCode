@@ -24,10 +24,8 @@ class Solution {
 public:
     long long maxEarnings(vector<vector<int>>& a) {
         vi cx;
-        vti3 lrw;
         for (auto &v : a) {
             auto l = v[0], r = v[1], w = v[2];
-            lrw.push_back({l,r,w});
             cx.push_back(l);
             cx.push_back(r);
         }
@@ -39,7 +37,8 @@ public:
         int sz = cx.size();
         vvp b(sz);
         vi dp(sz,-inf);
-        for (auto &[l,r,w] : lrw) {
+        for (auto &v : a) {
+            auto l = v[0], r = v[1], w = v[2];
             l = g(l);
             r = g(r);
             b[r].push_back({l,w});
