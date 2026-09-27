@@ -12,7 +12,7 @@ public:
         for (int i=0; i<n; i++) {
             idx[a[i]].push_back(i);
         }
-        vi b(n,n-1);
+        vi b(n,n);
         for (int i=0; i<n; i++) {
             for (int x=1; x<sz; x++) {
                 auto &vx = idx[x];
@@ -22,7 +22,7 @@ public:
                         if (x == y) {
                             auto it2 = next(it1);
                             if (it2 != vx.end()) {
-                                chmin(b[i], *it2-1);
+                                chmin(b[i], *it2);
                             }
                         }
                         else if (1 <= y && y < sz) {
@@ -30,7 +30,7 @@ public:
                             auto it2 = upper_bound(vy.begin(), vy.end(), i);
                             if (it2 != vy.end()) {
                                 auto mx = max(*it1, *it2);
-                                chmin(b[i], mx-1);
+                                chmin(b[i], mx);
                             }
                         }
                     };
@@ -45,7 +45,7 @@ public:
             for (int j=b[i]-1; j>i; j--) {
                 chmin(tg, b[j]);
             }
-            chmax(ans, tg-i+1);
+            chmax(ans, tg-i);
         }
         return ans;
     }
