@@ -186,6 +186,7 @@
 | [0940-distinct-subsequences-ii](https://github.com/martin0327/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/martin0327/LeetCode/tree/main/1189-maximum-number-of-balloons/) | Easy |
+| [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 | [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/martin0327/LeetCode/tree/main/1807-evaluate-the-bracket-pairs-of-a-string/) | Medium |
 | [1871-jump-game-vii](https://github.com/martin0327/LeetCode/tree/main/1871-jump-game-vii/) | Medium |
 | [1927-sum-game](https://github.com/martin0327/LeetCode/tree/main/1927-sum-game/) | Medium |
@@ -674,6 +675,7 @@
 | [0636-exclusive-time-of-functions](https://github.com/martin0327/LeetCode/tree/main/0636-exclusive-time-of-functions/) | Medium |
 | [0682-baseball-game](https://github.com/martin0327/LeetCode/tree/main/0682-baseball-game/) | Easy |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
+| [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 ## Monotonic Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -800,4 +802,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0686-repeated-string-match](https://github.com/martin0327/LeetCode/tree/main/0686-repeated-string-match/) | Medium |
+## Bracket Sequences
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 <!---LeetCode Topics End-->
