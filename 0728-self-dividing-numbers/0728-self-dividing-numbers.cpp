@@ -5,8 +5,7 @@ public:
             auto s = to_string(x);
             for (auto &ch : s) {
                 int y = ch - '0';
-                if (y == 0) return false;
-                if (x % y != 0) return false;
+                if (y == 0 || x % y != 0) return false;
             }
             return true;
         };
