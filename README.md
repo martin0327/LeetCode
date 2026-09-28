@@ -246,6 +246,7 @@
 | [0672-bulb-switcher-ii](https://github.com/martin0327/LeetCode/tree/main/0672-bulb-switcher-ii/) | Medium |
 | [0710-random-pick-with-blacklist](https://github.com/martin0327/LeetCode/tree/main/0710-random-pick-with-blacklist/) | Hard |
 | [0728-self-dividing-numbers](https://github.com/martin0327/LeetCode/tree/main/0728-self-dividing-numbers/) | Easy |
+| [0738-monotone-increasing-digits](https://github.com/martin0327/LeetCode/tree/main/0738-monotone-increasing-digits/) | Medium |
 | [0836-rectangle-overlap](https://github.com/martin0327/LeetCode/tree/main/0836-rectangle-overlap/) | Easy |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
@@ -298,6 +299,7 @@
 | [0397-integer-replacement](https://github.com/martin0327/LeetCode/tree/main/0397-integer-replacement/) | Medium |
 | [0409-longest-palindrome](https://github.com/martin0327/LeetCode/tree/main/0409-longest-palindrome/) | undefined |
 | [0410-split-array-largest-sum](https://github.com/martin0327/LeetCode/tree/main/0410-split-array-largest-sum/) | undefined |
+| [0738-monotone-increasing-digits](https://github.com/martin0327/LeetCode/tree/main/0738-monotone-increasing-digits/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1386-cinema-seat-allocation](https://github.com/martin0327/LeetCode/tree/main/1386-cinema-seat-allocation/) | Medium |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/martin0327/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
