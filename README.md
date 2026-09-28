@@ -45,6 +45,7 @@
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/martin0327/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [0699-falling-squares](https://github.com/martin0327/LeetCode/tree/main/0699-falling-squares/) | Hard |
 | [0720-longest-word-in-dictionary](https://github.com/martin0327/LeetCode/tree/main/0720-longest-word-in-dictionary/) | Medium |
+| [0724-find-pivot-index](https://github.com/martin0327/LeetCode/tree/main/0724-find-pivot-index/) | Easy |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
@@ -563,6 +564,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0410-split-array-largest-sum](https://github.com/martin0327/LeetCode/tree/main/0410-split-array-largest-sum/) | undefined |
+| [0724-find-pivot-index](https://github.com/martin0327/LeetCode/tree/main/0724-find-pivot-index/) | Easy |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/martin0327/LeetCode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
