@@ -1,20 +1,18 @@
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
-
 int cnt(vector<int> &a, int x) {
     return upper_bound(a.begin(), a.end(), x) - a.begin();
 }
 
+vector<int> a;
+
 class Solution {
 public:
     int n,sz;
-    vector<int> a;
     Solution(int n, vector<int>& b) {
         this->n = n;
         a = b;
         sort(a.begin(), a.end());
         this->sz = a.size();
-        // cout << sz << endl;
-        // cout << n - sz << endl;
     }
     
     int pick() {
@@ -23,7 +21,6 @@ public:
         while (lo <= hi) {
             int mid = (lo+hi)/2;
             int y = mid;
-            // cout << x << " " << cnt(a,y) << " " << y << endl;
             if (x + cnt(a,y) <= y) {
                 ans = mid;
                 hi = mid - 1;
