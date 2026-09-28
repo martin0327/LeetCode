@@ -44,6 +44,7 @@
 | [0697-degree-of-an-array](https://github.com/martin0327/LeetCode/tree/main/0697-degree-of-an-array/) | Easy |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/martin0327/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [0699-falling-squares](https://github.com/martin0327/LeetCode/tree/main/0699-falling-squares/) | Hard |
+| [0710-random-pick-with-blacklist](https://github.com/martin0327/LeetCode/tree/main/0710-random-pick-with-blacklist/) | Hard |
 | [0720-longest-word-in-dictionary](https://github.com/martin0327/LeetCode/tree/main/0720-longest-word-in-dictionary/) | Medium |
 | [0724-find-pivot-index](https://github.com/martin0327/LeetCode/tree/main/0724-find-pivot-index/) | Easy |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
@@ -241,6 +242,7 @@
 | [0667-beautiful-arrangement-ii](https://github.com/martin0327/LeetCode/tree/main/0667-beautiful-arrangement-ii/) | Medium |
 | [0668-kth-smallest-number-in-multiplication-table](https://github.com/martin0327/LeetCode/tree/main/0668-kth-smallest-number-in-multiplication-table/) | Hard |
 | [0672-bulb-switcher-ii](https://github.com/martin0327/LeetCode/tree/main/0672-bulb-switcher-ii/) | Medium |
+| [0710-random-pick-with-blacklist](https://github.com/martin0327/LeetCode/tree/main/0710-random-pick-with-blacklist/) | Hard |
 | [0728-self-dividing-numbers](https://github.com/martin0327/LeetCode/tree/main/0728-self-dividing-numbers/) | Easy |
 | [0836-rectangle-overlap](https://github.com/martin0327/LeetCode/tree/main/0836-rectangle-overlap/) | Easy |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
@@ -331,6 +333,7 @@
 | [0414-third-maximum-number](https://github.com/martin0327/LeetCode/tree/main/0414-third-maximum-number/) | Easy |
 | [0436-find-right-interval](https://github.com/martin0327/LeetCode/tree/main/0436-find-right-interval/) | Medium |
 | [0524-longest-word-in-dictionary-through-deleting](https://github.com/martin0327/LeetCode/tree/main/0524-longest-word-in-dictionary-through-deleting/) | Medium |
+| [0710-random-pick-with-blacklist](https://github.com/martin0327/LeetCode/tree/main/0710-random-pick-with-blacklist/) | Hard |
 | [0720-longest-word-in-dictionary](https://github.com/martin0327/LeetCode/tree/main/0720-longest-word-in-dictionary/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/martin0327/LeetCode/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1340-jump-game-v](https://github.com/martin0327/LeetCode/tree/main/1340-jump-game-v/) | Hard |
@@ -401,6 +404,7 @@
 | [0690-employee-importance](https://github.com/martin0327/LeetCode/tree/main/0690-employee-importance/) | Medium |
 | [0691-stickers-to-spell-word](https://github.com/martin0327/LeetCode/tree/main/0691-stickers-to-spell-word/) | Hard |
 | [0697-degree-of-an-array](https://github.com/martin0327/LeetCode/tree/main/0697-degree-of-an-array/) | Easy |
+| [0710-random-pick-with-blacklist](https://github.com/martin0327/LeetCode/tree/main/0710-random-pick-with-blacklist/) | Hard |
 | [0720-longest-word-in-dictionary](https://github.com/martin0327/LeetCode/tree/main/0720-longest-word-in-dictionary/) | Medium |
 | [0913-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0913-random-flip-matrix/) | undefined |
 | [1189-maximum-number-of-balloons](https://github.com/martin0327/LeetCode/tree/main/1189-maximum-number-of-balloons/) | Easy |
@@ -432,6 +436,7 @@
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/martin0327/LeetCode/tree/main/0381-insert-delete-getrandom-o1-duplicates-allowed/) | Hard |
 | [0398-random-pick-index](https://github.com/martin0327/LeetCode/tree/main/0398-random-pick-index/) | Medium |
 | [0519-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0519-random-flip-matrix/) | Medium |
+| [0710-random-pick-with-blacklist](https://github.com/martin0327/LeetCode/tree/main/0710-random-pick-with-blacklist/) | Hard |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [0913-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0913-random-flip-matrix/) | undefined |
 ## Depth-First Search
@@ -553,6 +558,7 @@
 | [0441-arranging-coins](https://github.com/martin0327/LeetCode/tree/main/0441-arranging-coins/) | Easy |
 | [0493-reverse-pairs](https://github.com/martin0327/LeetCode/tree/main/0493-reverse-pairs/) | Hard |
 | [0668-kth-smallest-number-in-multiplication-table](https://github.com/martin0327/LeetCode/tree/main/0668-kth-smallest-number-in-multiplication-table/) | Hard |
+| [0710-random-pick-with-blacklist](https://github.com/martin0327/LeetCode/tree/main/0710-random-pick-with-blacklist/) | Hard |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [3161-block-placement-queries](https://github.com/martin0327/LeetCode/tree/main/3161-block-placement-queries/) | Hard |
 | [3312-sorted-gcd-pair-queries](https://github.com/martin0327/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
