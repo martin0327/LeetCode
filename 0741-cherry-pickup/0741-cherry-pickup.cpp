@@ -3,8 +3,6 @@ void chmax(T1 &x, T2 y) { if (x < y) x = y; }
 template<typename T1, typename T2>
 void chmin(T1 &x, T2 y) { if (x > y) x = y; }
 using vi = vector<int>;
-using vvi = vector<vi>;
-using pii = pair<int,int>;
 using ti4 = tuple<int,int,int,int>;
 const int sz = 51;
 int dp[sz][sz][sz][sz];
@@ -16,7 +14,7 @@ public:
         memset(dp,0,sizeof(dp));
         memset(vis,0,sizeof(vis));
         int n = a.size();
-        vi ds = {0,1};
+        vi dd = {0,1};
         auto check = [&] (int r, int c) {
             if (r >= n || c >= n) return false;
             return a[r][c] != -1;
@@ -28,13 +26,13 @@ public:
         while (q.size()) {
             auto [r1,c1,r2,c2] = q.front();
             q.pop();
-            for (auto d1 : ds) {
-                int nr1 = r1 + dr[d1];
-                int nc1 = c1 + dc[d1];
+            for (auto d : dd) {
+                int nr1 = r1 + dr[d];
+                int nc1 = c1 + dc[d];
                 if (!check(nr1,nc1)) continue;
-                for (auto d2 : ds) {
-                    int nr2 = r2 + dr[d2];
-                    int nc2 = c2 + dc[d2];
+                for (auto d : dd) {
+                    int nr2 = r2 + dr[d];
+                    int nc2 = c2 + dc[d];
                     if (!check(nr2,nc2)) continue;
                     auto &nv = vis[nr1][nc1][nr2][nc2];
                     auto &nd = dp[nr1][nc1][nr2][nc2];
