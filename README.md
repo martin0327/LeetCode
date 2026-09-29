@@ -249,6 +249,7 @@
 | [0710-random-pick-with-blacklist](https://github.com/martin0327/LeetCode/tree/main/0710-random-pick-with-blacklist/) | Hard |
 | [0728-self-dividing-numbers](https://github.com/martin0327/LeetCode/tree/main/0728-self-dividing-numbers/) | Easy |
 | [0738-monotone-increasing-digits](https://github.com/martin0327/LeetCode/tree/main/0738-monotone-increasing-digits/) | Medium |
+| [0754-reach-a-number](https://github.com/martin0327/LeetCode/tree/main/0754-reach-a-number/) | Medium |
 | [0836-rectangle-overlap](https://github.com/martin0327/LeetCode/tree/main/0836-rectangle-overlap/) | Easy |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
@@ -568,6 +569,7 @@
 | [0493-reverse-pairs](https://github.com/martin0327/LeetCode/tree/main/0493-reverse-pairs/) | Hard |
 | [0668-kth-smallest-number-in-multiplication-table](https://github.com/martin0327/LeetCode/tree/main/0668-kth-smallest-number-in-multiplication-table/) | Hard |
 | [0710-random-pick-with-blacklist](https://github.com/martin0327/LeetCode/tree/main/0710-random-pick-with-blacklist/) | Hard |
+| [0754-reach-a-number](https://github.com/martin0327/LeetCode/tree/main/0754-reach-a-number/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [3161-block-placement-queries](https://github.com/martin0327/LeetCode/tree/main/3161-block-placement-queries/) | Hard |
 | [3312-sorted-gcd-pair-queries](https://github.com/martin0327/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
