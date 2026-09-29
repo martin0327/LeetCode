@@ -1,26 +1,7 @@
-template<typename T>
-using min_pq = priority_queue<T, vector<T>, greater<T>>;
-template<typename T>
-using max_pq = priority_queue<T>;
-
 template<typename T1, typename T2>
 void chmax(T1 &x, T2 y) { if (x < y) x = y; }
 template<typename T1, typename T2>
 void chmin(T1 &x, T2 y) { if (x > y) x = y; }
-template<typename T>
-void asort(vector<T> &a) {sort(a.begin(), a.end());}
-template<typename T>
-void dsort(vector<T> &a) {sort(a.rbegin(), a.rend());}
-template<typename T>
-void reverse(vector<T> &a) {reverse(a.begin(), a.end());}
-
-template<typename T>
-vector<T> get_unique(vector<T> a) {
-    sort(a.begin(), a.end());
-    a.erase(unique(a.begin(), a.end()), a.end());
-    return a;
-}
-
 using vi = vector<int>;
 using vvi = vector<vi>;
 using pii = pair<int,int>;
@@ -40,25 +21,7 @@ public:
             if (r >= n || c >= n) return false;
             return a[r][c] != -1;
         };
-        auto conn = [&] () {
-            queue<pii> q;
-            vvi vis(n, vi(n));
-            vis[0][0] = 1;
-            for (int i=0; i<n; i++) {
-                for (int j=0; j<n; j++) {
-                    if (!vis[i][j]) continue;
-                    for (auto d : ds) {
-                        int r = i + dr[d];
-                        int c = j + dc[d];
-                        if (!check(r,c)) continue;
-                        vis[r][c] = 1;
-                    }
-                }
-            }
-            return vis.back().back();
-        };
-        if (!conn()) return 0;
-        
+
         dp[0][0][0][0] = a[0][0];
         queue<ti4> q;
         q.emplace(0,0,0,0);
