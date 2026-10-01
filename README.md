@@ -51,6 +51,7 @@
 | [0741-cherry-pickup](https://github.com/martin0327/LeetCode/tree/main/0741-cherry-pickup/) | Hard |
 | [0748-shortest-completing-word](https://github.com/martin0327/LeetCode/tree/main/0748-shortest-completing-word/) | Easy |
 | [0764-largest-plus-sign](https://github.com/martin0327/LeetCode/tree/main/0764-largest-plus-sign/) | Medium |
+| [0775-global-and-local-inversions](https://github.com/martin0327/LeetCode/tree/main/0775-global-and-local-inversions/) | Medium |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
@@ -255,6 +256,7 @@
 | [0728-self-dividing-numbers](https://github.com/martin0327/LeetCode/tree/main/0728-self-dividing-numbers/) | Easy |
 | [0738-monotone-increasing-digits](https://github.com/martin0327/LeetCode/tree/main/0738-monotone-increasing-digits/) | Medium |
 | [0754-reach-a-number](https://github.com/martin0327/LeetCode/tree/main/0754-reach-a-number/) | Medium |
+| [0775-global-and-local-inversions](https://github.com/martin0327/LeetCode/tree/main/0775-global-and-local-inversions/) | Medium |
 | [0836-rectangle-overlap](https://github.com/martin0327/LeetCode/tree/main/0836-rectangle-overlap/) | Easy |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
