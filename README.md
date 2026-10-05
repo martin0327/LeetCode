@@ -127,6 +127,7 @@
 | [0639-decode-ways-ii](https://github.com/martin0327/LeetCode/tree/main/0639-decode-ways-ii/) | Hard |
 | [0691-stickers-to-spell-word](https://github.com/martin0327/LeetCode/tree/main/0691-stickers-to-spell-word/) | Hard |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/martin0327/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
+| [0730-count-different-palindromic-subsequences](https://github.com/martin0327/LeetCode/tree/main/0730-count-different-palindromic-subsequences/) | Hard |
 | [0741-cherry-pickup](https://github.com/martin0327/LeetCode/tree/main/0741-cherry-pickup/) | Hard |
 | [0764-largest-plus-sign](https://github.com/martin0327/LeetCode/tree/main/0764-largest-plus-sign/) | Medium |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
@@ -197,6 +198,7 @@
 | [0709-to-lower-case](https://github.com/martin0327/LeetCode/tree/main/0709-to-lower-case/) | Easy |
 | [0720-longest-word-in-dictionary](https://github.com/martin0327/LeetCode/tree/main/0720-longest-word-in-dictionary/) | Medium |
 | [0722-remove-comments](https://github.com/martin0327/LeetCode/tree/main/0722-remove-comments/) | Medium |
+| [0730-count-different-palindromic-subsequences](https://github.com/martin0327/LeetCode/tree/main/0730-count-different-palindromic-subsequences/) | Hard |
 | [0748-shortest-completing-word](https://github.com/martin0327/LeetCode/tree/main/0748-shortest-completing-word/) | Easy |
 | [0796-rotate-string](https://github.com/martin0327/LeetCode/tree/main/0796-rotate-string/) | Easy |
 | [0856-score-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
