@@ -6,10 +6,6 @@ public:
     }
     
     void addRange(int l, int r) {
-        if (mp.empty()) {
-            mp[l] = r;
-            return;
-        }
         auto it = mp.upper_bound(l);
         if (it != mp.begin()) {
             auto [l1,r1] = *prev(it);
@@ -58,7 +54,6 @@ public:
     }
     
     void removeRange(int l, int r) {
-        if (mp.empty()) return;
         auto it = mp.lower_bound(l);
         if (it != mp.begin()) {
             auto [l1,r1] = *prev(it);
