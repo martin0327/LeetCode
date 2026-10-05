@@ -447,6 +447,7 @@
 | [0449-serialize-and-deserialize-bst](https://github.com/martin0327/LeetCode/tree/main/0449-serialize-and-deserialize-bst/) | Medium |
 | [0676-implement-magic-dictionary](https://github.com/martin0327/LeetCode/tree/main/0676-implement-magic-dictionary/) | Medium |
 | [0707-design-linked-list](https://github.com/martin0327/LeetCode/tree/main/0707-design-linked-list/) | Medium |
+| [0715-range-module](https://github.com/martin0327/LeetCode/tree/main/0715-range-module/) | Hard |
 ## Randomized
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -692,6 +693,7 @@
 | ------- | ------- |
 | [0493-reverse-pairs](https://github.com/martin0327/LeetCode/tree/main/0493-reverse-pairs/) | Hard |
 | [0699-falling-squares](https://github.com/martin0327/LeetCode/tree/main/0699-falling-squares/) | Hard |
+| [0715-range-module](https://github.com/martin0327/LeetCode/tree/main/0715-range-module/) | Hard |
 | [3161-block-placement-queries](https://github.com/martin0327/LeetCode/tree/main/3161-block-placement-queries/) | Hard |
 | [3691-maximum-total-subarray-value-ii](https://github.com/martin0327/LeetCode/tree/main/3691-maximum-total-subarray-value-ii/) | Hard |
 ## Doubly-Linked List
@@ -737,6 +739,7 @@
 | ------- | ------- |
 | [0493-reverse-pairs](https://github.com/martin0327/LeetCode/tree/main/0493-reverse-pairs/) | Hard |
 | [0699-falling-squares](https://github.com/martin0327/LeetCode/tree/main/0699-falling-squares/) | Hard |
+| [0715-range-module](https://github.com/martin0327/LeetCode/tree/main/0715-range-module/) | Hard |
 ## Number Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
