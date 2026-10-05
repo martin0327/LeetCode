@@ -197,6 +197,7 @@
 | [0720-longest-word-in-dictionary](https://github.com/martin0327/LeetCode/tree/main/0720-longest-word-in-dictionary/) | Medium |
 | [0748-shortest-completing-word](https://github.com/martin0327/LeetCode/tree/main/0748-shortest-completing-word/) | Easy |
 | [0796-rotate-string](https://github.com/martin0327/LeetCode/tree/main/0796-rotate-string/) | Easy |
+| [0856-score-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
 | [0940-distinct-subsequences-ii](https://github.com/martin0327/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/martin0327/LeetCode/tree/main/1189-maximum-number-of-balloons/) | Easy |
@@ -706,6 +707,7 @@
 | [0496-next-greater-element-i](https://github.com/martin0327/LeetCode/tree/main/0496-next-greater-element-i/) | Easy |
 | [0636-exclusive-time-of-functions](https://github.com/martin0327/LeetCode/tree/main/0636-exclusive-time-of-functions/) | Medium |
 | [0682-baseball-game](https://github.com/martin0327/LeetCode/tree/main/0682-baseball-game/) | Easy |
+| [0856-score-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 ## Monotonic Stack
@@ -837,5 +839,6 @@
 ## Bracket Sequences
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0856-score-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 <!---LeetCode Topics End-->
