@@ -200,6 +200,7 @@
 | [0722-remove-comments](https://github.com/martin0327/LeetCode/tree/main/0722-remove-comments/) | Medium |
 | [0730-count-different-palindromic-subsequences](https://github.com/martin0327/LeetCode/tree/main/0730-count-different-palindromic-subsequences/) | Hard |
 | [0748-shortest-completing-word](https://github.com/martin0327/LeetCode/tree/main/0748-shortest-completing-word/) | Easy |
+| [0777-swap-adjacent-in-lr-string](https://github.com/martin0327/LeetCode/tree/main/0777-swap-adjacent-in-lr-string/) | Medium |
 | [0796-rotate-string](https://github.com/martin0327/LeetCode/tree/main/0796-rotate-string/) | Easy |
 | [0856-score-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
 | [0940-distinct-subsequences-ii](https://github.com/martin0327/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
@@ -393,6 +394,7 @@
 | [0481-magical-string](https://github.com/martin0327/LeetCode/tree/main/0481-magical-string/) | Medium |
 | [0524-longest-word-in-dictionary-through-deleting](https://github.com/martin0327/LeetCode/tree/main/0524-longest-word-in-dictionary-through-deleting/) | Medium |
 | [0557-reverse-words-in-a-string-iii](https://github.com/martin0327/LeetCode/tree/main/0557-reverse-words-in-a-string-iii/) | undefined |
+| [0777-swap-adjacent-in-lr-string](https://github.com/martin0327/LeetCode/tree/main/0777-swap-adjacent-in-lr-string/) | Medium |
 | [1861-rotating-the-box](https://github.com/martin0327/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/martin0327/LeetCode/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/martin0327/LeetCode/tree/main/3302-find-the-lexicographically-smallest-valid-sequence/) | Medium |
