@@ -21,20 +21,18 @@ public:
         for (int i=1; i<m; i++) {
             a[i] += a[i-1];
         }
-        max_pq<int> pq;
         vvi b(m);
         for (auto &v : av) {
             int l = v[0], r = v[1];
             l = 2*l, r = 2*r+1;
             if (l < m) b[l].push_back(r);
         }
-        int lim = -1, ans = 0;
+        int mx = -1, lim = -1, ans = 0;
         for (int i=0; i<m; i++) {
-            for (auto r : b[i]) pq.push(r);
+            for (auto r : b[i]) mx = max(mx, r);
             if (a[i] > 0 && lim <= i) {
-                if (pq.size() && pq.top() > i) {
-                    lim = pq.top();
-                    pq.pop();
+                if (mx > i) {
+                    lim = mx;
                     ans++;
                 }
                 else return -1;
