@@ -1,38 +1,12 @@
-
-
-template<typename T>
-using min_pq = priority_queue<T, vector<T>, greater<T>>;
-template<typename T>
-using max_pq = priority_queue<T>;
-
-template<typename T1, typename T2>
-void chmax(T1 &x, T2 y) { if (x < y) x = y; }
-template<typename T1, typename T2>
-void chmin(T1 &x, T2 y) { if (x > y) x = y; }
 template<typename T>
 void asort(vector<T> &a) {sort(a.begin(), a.end());}
 template<typename T>
 void dsort(vector<T> &a) {sort(a.rbegin(), a.rend());}
-template<typename T>
-void reverse(vector<T> &a) {reverse(a.begin(), a.end());}
-
-template<typename T>
-vector<T> get_unique(vector<T> a) {
-    sort(a.begin(), a.end());
-    a.erase(unique(a.begin(), a.end()), a.end());
-    return a;
-}
-
-using ll = long long;
-using vi = vector<ll>;
+using vi = vector<int>;
 using vvi = vector<vi>;
-using pii = pair<ll,ll>;
+using pii = pair<int,int>;
 using vp = vector<pii>;
-using vvp = vector<vp>;
-using ti3 = tuple<ll,ll,ll>;
-using vti3 = vector<ti3>;
 using vs = vector<string>;
-using vvs = vector<vs>;
 
 class Solution {
 public:
@@ -84,12 +58,8 @@ public:
                 vs cur(n, string(n, ' '));
                 vp rc;
                 for (int i=0,j=0; i<sz1 || j<sz2;) {
-                    if (i==j) {
-                        rc.push_back(a1[i++]);
-                    }
-                    else {
-                        rc.push_back(a2[j++]);
-                    }
+                    if (i==j) rc.push_back(a1[i++]);
+                    else rc.push_back(a2[j++]);
                 }
                 rc.pop_back();
                 bool ok = true;
@@ -97,12 +67,9 @@ public:
                     cur[r][c] = b[r][c];
                     if (f(cur)) ok = false;   
                 }
-                // if (ok) {
-                //     for (auto [r,c] : rc) {
-                //         cout << r << " " << c << endl;
-                //     }
-                // }
-                if (ok) ans = true;
+                if (ok) {
+                    return true;
+                }
             } while(next_permutation(a2.begin(), a2.end()));
         } while(next_permutation(a1.begin(), a1.end()));
         return ans;
