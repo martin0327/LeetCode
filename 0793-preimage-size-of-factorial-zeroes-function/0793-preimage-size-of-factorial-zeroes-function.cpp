@@ -1,10 +1,6 @@
 using ll = long long;
 using vi = vector<ll>;
 vi b;
-void debug(vi a) {
-    for (auto x : a) cout << x << " ";
-    cout << endl;
-}
 class Solution {
 public:
     int preimageSizeFZF(int k) {
@@ -22,8 +18,6 @@ public:
                 for (auto z : b) {
                     cnt += 5*mid / z;
                 }
-                vi t = {x,mid,cnt};
-                // debug(t);
                 if (cnt <= x) {
                     ans = mid;
                     lo = mid + 1;
@@ -32,17 +26,7 @@ public:
             }
             return ans;
         };
-        // for (int i=0; i<10; i++) {
-        //     // f(i);
-        //     cout << i << " " << 5*f(i) << endl;
-        // }
         auto ans = 5*(f(k) - f(k-1));
         return ans;
     }
 };
-
-/*
-0   5   10  15  20  25  30
-0   1   2   3   4   6   7
-
-*/
