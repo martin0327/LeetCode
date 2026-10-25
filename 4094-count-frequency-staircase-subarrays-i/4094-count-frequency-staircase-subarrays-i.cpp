@@ -27,13 +27,38 @@ using vvi = vector<vi>;
 using pii = pair<int,int>;
 using vp = vector<pii>;
 
-const int mx_sz = 1e5+1;
-const int mx_n = 1e5+1;
-const int mx_m = 500;
+const int mx_sz = 1e5+5;
+const int mx_n = 1e5+5;
+const int mx_m = 450;
 vi idx[mx_sz];
-set<pii> sp;
-vi b[mx_n];
-vi c[mx_n];
+int b[mx_n][mx_m];
+int c[mx_n][mx_m];
+int inv[mx_n];
+int pts[mx_sz];
+int cnt[mx_m];
+bool vis[mx_sz];
+
+int L[mx_n], R[mx_n]; 
+int last[mx_sz];
+
+vi pre;
+
+int head;
+
+void pop(int u) {
+    if (L[u] != -1) R[L[u]] = R[u];
+    if (R[u] != -1) L[R[u]] = L[u];
+    if (head == u) head = R[u];
+}
+
+void push(int u) {
+    R[u] = head;
+    L[u] = -1;
+    if (head != -1) L[head] = u;
+    head = u;
+}
+
+
 class Solution {
 public:
     int countStaircase(vector<int>& a) {
@@ -46,97 +71,81 @@ public:
             idx[a[i]].push_back(i);
         }
         int m = sqrt(2*n+10);
-        vi pre = {1};
-        for (int i=2; pre.size()<=m; i++) {
-            pre.push_back(pre.back()+i);
+        if (pre.empty()) {
+            pre = {1};
+            for (int i=2; pre.size()<mx_m; i++) {
+                pre.push_back(pre.back()+i);
+            }
+            for (int i=0; i+1<mx_n; i++) {
+                auto x = i+1;
+                auto it = lower_bound(pre.begin(), pre.end(), x);
+                inv[x] = it - pre.begin();
+            }
         }
-        vi inv(n+1,-1);
-        for (int i=0; i<n; i++) {
-            auto x = i+1;
-            auto it = lower_bound(pre.begin(), pre.end(), x);
-            inv[x] = it - pre.begin();
-        }
-        // debug(inv);
 
-        vi vis(sz);
-        sp.clear();
-        for (int i=0; i<n; i++) {
-            auto x = a[i];
-            if (vis[x]) continue;
-            sp.insert({i,x});
-            vis[x] = 1;
-        }
-        ll ans = 0;
-        // vvi b(n, vi(m,-1));
-        for (int i=0; i<n; i++) {
-            b[i] = vi(m,-1);
-        }
-        for (int i=0; i<n; i++) {
-            auto it = sp.begin();
-            for (int j=0; j<m; j++) {
-                if (it == sp.end()) break;
-                auto [w,x] = *it;
-                b[i][j] = x;
-                it++;
-            }
-            it = sp.begin();
-            auto [w,x] = *it;
-            sp.erase(it);
-            auto &v = idx[x];
-            auto it2 = upper_bound(v.begin(), v.end(), w);
-            if (it2 != v.end()) {
-                auto w = *it2;
-                sp.insert({w,x});
-            }
-        }
-        // b[i][j] : for a subarray that starts at i, the (j+1)-th distinct elm is b[i][j]
-        // vvi c(n, vi(m+1,n));
-        for (int i=0; i<n; i++) {
-            c[i] = vi(m+1,n);
-        }
-        for (int i=0; i<n; i++) {
-            auto x = a[i];
-            auto &v = idx[x];
-            auto it = lower_bound(v.begin(), v.end(),i);
-            for (int j=0; j<=m; j++) {
-                if (it == v.end()) break;
-                c[i][j] = *it;
-                it++;
-            }
-        }
-        // c[i][j] : for x = a[i], starting from i, the (j+1)-th appearance of x hapens at index c[i][j]
+        for (auto x : a) last[x] = -1;
+        head = -1;
 
-        vi cnt(m);
-        for (int i=0; i<n; i++) {
-            int lim = n;
-            cnt.assign(m,0);
-            for (int j=0; j<m; j++) {
-                auto x = b[i][j];
-                if (x == -1) break;
-                auto &v = idx[x];
-                auto it = lower_bound(v.begin(), v.end(), i);
-                assert(it != v.end());
-                auto i2 = *it;
-                chmin(lim, c[i2][j+1]);
-                auto r = c[i2][j];
-                int d = r - i + 1;
-                // debug(i,j,x,d,inv[d]);
-                if (0 <= d && d <= n && 0 <= inv[d] && inv[d] < m) {
-                    cnt[inv[d]]++;
+        for (int i = n - 1; i >= 0; i--) {
+            int x = a[i];
+            
+            if (last[x] != -1) {
+                pop(last[x]);
+            }
+            
+            push(i);
+            last[x] = i;
+
+            int curr = head;
+            for (int j = 0; j < m; j++) {
+                if (curr != -1) {
+                    b[i][j] = a[curr];
+                    curr = R[curr];
+                } else {
+                    b[i][j] = -1; 
                 }
             }
-            for (int j=1; j<m; j++) {
-                cnt[j] += cnt[j-1];
-            }
-            // debug(cnt);
+        }
+
+        // b[i][j] : for a subarray that starts at i, the (j+1)-th distinct elm is b[i][j]
+
+        for (auto x : a) pts[x] = 0;
+
+        memset(cnt,0,sizeof(cnt));
+        int ans = 0;
+        for (int i=0; i<n; i++) {
+            int lim = n;
             int cum = 0;
             for (int j=0; j<m; j++) {
                 cum += j+1;
                 if (i + cum - 1 >= lim) break;
+                auto x = b[i][j];
+                if (x == -1) break;
+                auto &v = idx[x];
+                auto &pt = pts[x];
+                while (pt < v.size()) {
+                    if (v[pt] < i) pt++;
+                    else break;
+                }
+                assert(pt < v.size());
+                int r = (pt + j < v.size()) ? v[pt+j] : n;
+                int nr = (pt+j+1 < v.size()) ? v[pt+j+1] : n;
+                chmin(lim, nr);
+                int d = r - i + 1;
+                if (0 <= d && d <= n && 0 <= inv[d] && inv[d] < m) {
+                    cnt[inv[d]]++;
+                }
+            }
+            cum = 0;
+            for (int j=0; j<m; j++) {
+                cum += j+1;
+                if (i + cum - 1 >= lim) break;
+                if (j > 0) cnt[j] += cnt[j-1];
                 if (cnt[j] == j+1) {
                     ans++;
                 }
             }
+            for (int j=0; j<m; j++) cnt[j] = 0;
         }
         return ans;
     }
