@@ -32,10 +32,11 @@ public:
                 }
             }
         }
-        int ans = sz;
         for (int l=0; l<sz; l++) {
-            if (vis[n-1][m-1][l]) ans = min(ans, l);
+            if (vis[n-1][m-1][l]) {
+                return l;
+            }
         }
-        return ans;
+        return -1;
     }
 };
