@@ -19,9 +19,8 @@ public:
             adj[u].push_back({v,w});
             adj[v].push_back({u,w});
         }
-        vi par(n,-1), wt(n);
+        vi wt(n);
         function<void(int,int)> f = [&] (int u, int p) {
-            par[u] = p;
             a[u] = __builtin_popcount(a[u])&1;
             for (auto [v,w] : adj[u]) {
                 if (v == p) continue;
