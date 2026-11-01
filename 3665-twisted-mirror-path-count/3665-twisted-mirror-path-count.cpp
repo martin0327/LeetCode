@@ -12,22 +12,13 @@ public:
         for (int i=0; i<n; i++) {
             for (int j=0; j<m; j++) {
                 for (int l=0; l<2; l++) {
-                    if (a[i][j]) {
-                        int nl = l ^ a[i][j];
+                    for (int nl=0; nl<2; nl++) {
+                        if (a[i][j] && l == nl) continue;
                         int r = i + dr[nl];
                         int c = j + dc[nl];
                         if (r >= n || c >= m) continue;
                         dp[r][c][nl] += dp[i][j][l];
                         dp[r][c][nl] %= mod;
-                    }
-                    else {
-                        for (int nl=0; nl<2; nl++) {
-                            int r = i + dr[nl];
-                            int c = j + dc[nl];
-                            if (r >= n || c >= m) continue;
-                            dp[r][c][nl] += dp[i][j][l];
-                            dp[r][c][nl] %= mod;
-                        }
                     }
                 }
             }
