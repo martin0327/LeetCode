@@ -1,10 +1,8 @@
 using ll = long long;
 using vi = vector<ll>;
-
 const int sz = 501, mod = 1e9+7;
 ll dp[sz][sz][2];
 vi dr = {0,1}, dc = {1,0};
-
 class Solution {
 public:
     int uniquePaths(vector<vector<int>>& a) {
@@ -34,7 +32,7 @@ public:
                 }
             }
         }
-        auto ans = dp[n-1][m-1][0] + dp[n-1][m-1][1];
-        return ans % mod;
+        auto &t = dp[n-1][m-1];
+        return (t[0]+t[1]) % mod;
     }
 };
