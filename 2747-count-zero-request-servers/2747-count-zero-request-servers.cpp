@@ -23,19 +23,16 @@ public:
             cx.push_back(t);
         }
         cx = get_unique(cx);
-        int sz = cx.size(), cur = 0;
+        int cur = 0;
         vi cnt(n+1), ans(q);
-        for (int i=0; i<sz; i++) {
-            auto t = cx[i];
-            for (auto id : t2i[t]) {
-                cnt[id]++;
-                if (cnt[id] == 1) cur++;
+        for (auto t : cx) {
+            for (auto i : t2i[t]) {
+                if (++cnt[i] == 1) cur++;
             }
             auto p = t-len-1;
             if (t2i.count(p)) {
-                for (auto id : t2i[p]) {
-                    cnt[id]--;
-                    if (cnt[id] == 0) cur--;
+                for (auto i : t2i[p]) {
+                    if (--cnt[i] == 0) cur--;
                 }
             }
             for (auto idx : off[t]) {
