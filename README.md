@@ -304,6 +304,7 @@
 | [3658-gcd-of-odd-and-even-sums](https://github.com/martin0327/LeetCode/tree/main/3658-gcd-of-odd-and-even-sums/) | Easy |
 | [3700-number-of-zigzag-arrays-ii](https://github.com/martin0327/LeetCode/tree/main/3700-number-of-zigzag-arrays-ii/) | Hard |
 | [3753-total-waviness-of-numbers-in-range-ii](https://github.com/martin0327/LeetCode/tree/main/3753-total-waviness-of-numbers-in-range-ii/) | Hard |
+| [3789-minimum-cost-to-acquire-required-items](https://github.com/martin0327/LeetCode/tree/main/3789-minimum-cost-to-acquire-required-items/) | Medium |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/martin0327/LeetCode/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
 | [3886-sum-of-sortable-integers](https://github.com/martin0327/LeetCode/tree/main/3886-sum-of-sortable-integers/) | Hard |
 | [4128-total-waviness-of-numbers-in-range-ii](https://github.com/martin0327/LeetCode/tree/main/4128-total-waviness-of-numbers-in-range-ii/) | undefined |
@@ -352,6 +353,7 @@
 | [3689-maximum-total-subarray-value-i](https://github.com/martin0327/LeetCode/tree/main/3689-maximum-total-subarray-value-i/) | Medium |
 | [3691-maximum-total-subarray-value-ii](https://github.com/martin0327/LeetCode/tree/main/3691-maximum-total-subarray-value-ii/) | Hard |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/martin0327/LeetCode/tree/main/3720-lexicographically-smallest-permutation-greater-than-target/) | Medium |
+| [3789-minimum-cost-to-acquire-required-items](https://github.com/martin0327/LeetCode/tree/main/3789-minimum-cost-to-acquire-required-items/) | Medium |
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
