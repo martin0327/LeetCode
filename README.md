@@ -56,6 +56,7 @@
 | [0794-valid-tic-tac-toe-state](https://github.com/martin0327/LeetCode/tree/main/0794-valid-tic-tac-toe-state/) | Medium |
 | [0795-number-of-subarrays-with-bounded-maximum](https://github.com/martin0327/LeetCode/tree/main/0795-number-of-subarrays-with-bounded-maximum/) | Medium |
 | [0809-expressive-words](https://github.com/martin0327/LeetCode/tree/main/0809-expressive-words/) | Medium |
+| [0811-subdomain-visit-count](https://github.com/martin0327/LeetCode/tree/main/0811-subdomain-visit-count/) | Medium |
 | [0821-shortest-distance-to-a-character](https://github.com/martin0327/LeetCode/tree/main/0821-shortest-distance-to-a-character/) | Easy |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
@@ -221,6 +222,7 @@
 | [0777-swap-adjacent-in-lr-string](https://github.com/martin0327/LeetCode/tree/main/0777-swap-adjacent-in-lr-string/) | Medium |
 | [0796-rotate-string](https://github.com/martin0327/LeetCode/tree/main/0796-rotate-string/) | Easy |
 | [0809-expressive-words](https://github.com/martin0327/LeetCode/tree/main/0809-expressive-words/) | Medium |
+| [0811-subdomain-visit-count](https://github.com/martin0327/LeetCode/tree/main/0811-subdomain-visit-count/) | Medium |
 | [0821-shortest-distance-to-a-character](https://github.com/martin0327/LeetCode/tree/main/0821-shortest-distance-to-a-character/) | Easy |
 | [0856-score-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
 | [0940-distinct-subsequences-ii](https://github.com/martin0327/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
@@ -457,6 +459,7 @@
 | [0710-random-pick-with-blacklist](https://github.com/martin0327/LeetCode/tree/main/0710-random-pick-with-blacklist/) | Hard |
 | [0720-longest-word-in-dictionary](https://github.com/martin0327/LeetCode/tree/main/0720-longest-word-in-dictionary/) | Medium |
 | [0748-shortest-completing-word](https://github.com/martin0327/LeetCode/tree/main/0748-shortest-completing-word/) | Easy |
+| [0811-subdomain-visit-count](https://github.com/martin0327/LeetCode/tree/main/0811-subdomain-visit-count/) | Medium |
 | [0913-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0913-random-flip-matrix/) | undefined |
 | [1189-maximum-number-of-balloons](https://github.com/martin0327/LeetCode/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1331-rank-transform-of-an-array](https://github.com/martin0327/LeetCode/tree/main/1331-rank-transform-of-an-array/) | Easy |
@@ -704,6 +707,7 @@
 ## Counting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0811-subdomain-visit-count](https://github.com/martin0327/LeetCode/tree/main/0811-subdomain-visit-count/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/martin0327/LeetCode/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [2029-stone-game-ix](https://github.com/martin0327/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/martin0327/LeetCode/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
