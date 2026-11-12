@@ -7,22 +7,7 @@ vector<string> split_str(string s, const char delim = ' ') {
     }
     return ret;
 }
-
-using ll = long long;
-using vi = vector<ll>;
-using vvi = vector<vi>;
-using pii = pair<ll,ll>;
-using vp = vector<pii>;
-using ti3 = tuple<ll,ll,ll>;
-using vti3 = vector<ti3>;
 using vs = vector<string>;
-using vvs = vector<vs>;
-
-using S = ll;
-S op(S x, S y) { return x + y; }
-S e() { return 0ll; }
-const ll inf = 2e18;
-
 class Solution {
 public:
     vector<string> subdomainVisits(vector<string>& a) {
