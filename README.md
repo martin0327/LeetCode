@@ -55,6 +55,7 @@
 | [0775-global-and-local-inversions](https://github.com/martin0327/LeetCode/tree/main/0775-global-and-local-inversions/) | Medium |
 | [0794-valid-tic-tac-toe-state](https://github.com/martin0327/LeetCode/tree/main/0794-valid-tic-tac-toe-state/) | Medium |
 | [0795-number-of-subarrays-with-bounded-maximum](https://github.com/martin0327/LeetCode/tree/main/0795-number-of-subarrays-with-bounded-maximum/) | Medium |
+| [0821-shortest-distance-to-a-character](https://github.com/martin0327/LeetCode/tree/main/0821-shortest-distance-to-a-character/) | Easy |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
@@ -218,6 +219,7 @@
 | [0748-shortest-completing-word](https://github.com/martin0327/LeetCode/tree/main/0748-shortest-completing-word/) | Easy |
 | [0777-swap-adjacent-in-lr-string](https://github.com/martin0327/LeetCode/tree/main/0777-swap-adjacent-in-lr-string/) | Medium |
 | [0796-rotate-string](https://github.com/martin0327/LeetCode/tree/main/0796-rotate-string/) | Easy |
+| [0821-shortest-distance-to-a-character](https://github.com/martin0327/LeetCode/tree/main/0821-shortest-distance-to-a-character/) | Easy |
 | [0856-score-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
 | [0940-distinct-subsequences-ii](https://github.com/martin0327/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
@@ -417,6 +419,7 @@
 | [0557-reverse-words-in-a-string-iii](https://github.com/martin0327/LeetCode/tree/main/0557-reverse-words-in-a-string-iii/) | undefined |
 | [0777-swap-adjacent-in-lr-string](https://github.com/martin0327/LeetCode/tree/main/0777-swap-adjacent-in-lr-string/) | Medium |
 | [0795-number-of-subarrays-with-bounded-maximum](https://github.com/martin0327/LeetCode/tree/main/0795-number-of-subarrays-with-bounded-maximum/) | Medium |
+| [0821-shortest-distance-to-a-character](https://github.com/martin0327/LeetCode/tree/main/0821-shortest-distance-to-a-character/) | Easy |
 | [1861-rotating-the-box](https://github.com/martin0327/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/martin0327/LeetCode/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/martin0327/LeetCode/tree/main/3302-find-the-lexicographically-smallest-valid-sequence/) | Medium |
