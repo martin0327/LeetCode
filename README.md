@@ -146,6 +146,7 @@
 | [0741-cherry-pickup](https://github.com/martin0327/LeetCode/tree/main/0741-cherry-pickup/) | Hard |
 | [0764-largest-plus-sign](https://github.com/martin0327/LeetCode/tree/main/0764-largest-plus-sign/) | Medium |
 | [0813-largest-sum-of-averages](https://github.com/martin0327/LeetCode/tree/main/0813-largest-sum-of-averages/) | Medium |
+| [0818-race-car](https://github.com/martin0327/LeetCode/tree/main/0818-race-car/) | Hard |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0940-distinct-subsequences-ii](https://github.com/martin0327/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
@@ -906,4 +907,12 @@
 | ------- | ------- |
 | [0856-score-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
+## Heuristic Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0818-race-car](https://github.com/martin0327/LeetCode/tree/main/0818-race-car/) | Hard |
+## A* Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0818-race-car](https://github.com/martin0327/LeetCode/tree/main/0818-race-car/) | Hard |
 <!---LeetCode Topics End-->
