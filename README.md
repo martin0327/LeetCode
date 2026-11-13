@@ -57,6 +57,7 @@
 | [0795-number-of-subarrays-with-bounded-maximum](https://github.com/martin0327/LeetCode/tree/main/0795-number-of-subarrays-with-bounded-maximum/) | Medium |
 | [0809-expressive-words](https://github.com/martin0327/LeetCode/tree/main/0809-expressive-words/) | Medium |
 | [0811-subdomain-visit-count](https://github.com/martin0327/LeetCode/tree/main/0811-subdomain-visit-count/) | Medium |
+| [0813-largest-sum-of-averages](https://github.com/martin0327/LeetCode/tree/main/0813-largest-sum-of-averages/) | Medium |
 | [0821-shortest-distance-to-a-character](https://github.com/martin0327/LeetCode/tree/main/0821-shortest-distance-to-a-character/) | Easy |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
@@ -143,6 +144,7 @@
 | [0730-count-different-palindromic-subsequences](https://github.com/martin0327/LeetCode/tree/main/0730-count-different-palindromic-subsequences/) | Hard |
 | [0741-cherry-pickup](https://github.com/martin0327/LeetCode/tree/main/0741-cherry-pickup/) | Hard |
 | [0764-largest-plus-sign](https://github.com/martin0327/LeetCode/tree/main/0764-largest-plus-sign/) | Medium |
+| [0813-largest-sum-of-averages](https://github.com/martin0327/LeetCode/tree/main/0813-largest-sum-of-averages/) | Medium |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0940-distinct-subsequences-ii](https://github.com/martin0327/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
@@ -641,6 +643,7 @@
 | ------- | ------- |
 | [0410-split-array-largest-sum](https://github.com/martin0327/LeetCode/tree/main/0410-split-array-largest-sum/) | undefined |
 | [0724-find-pivot-index](https://github.com/martin0327/LeetCode/tree/main/0724-find-pivot-index/) | Easy |
+| [0813-largest-sum-of-averages](https://github.com/martin0327/LeetCode/tree/main/0813-largest-sum-of-averages/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [1140-stone-game-ii](https://github.com/martin0327/LeetCode/tree/main/1140-stone-game-ii/) | Medium |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/martin0327/LeetCode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
