@@ -85,9 +85,6 @@ public:
             auto t = tu[0], u = tu[1];
             auto b1 = f(t);
             auto b2 = f(u);
-            // debug(t,u);
-            // debug(b1);
-            // debug(b2);
             for (auto t : b1) {
                 for (auto u : b2) {
                     string s = "(";
