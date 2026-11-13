@@ -1,8 +1,3 @@
-void debug(vector<int> a) {
-    for (auto x : a) {
-        cout << x << " ";
-    }   cout << endl;
-}
 class Solution {
 public:
     int numComponents(ListNode* head, vector<int> &a) {
