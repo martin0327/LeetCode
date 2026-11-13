@@ -1,4 +1,3 @@
-
 vector<string> split_str(string s, const char delim = ' ') {
     vector<string> ret;
     stringstream ss(s);
@@ -8,7 +7,6 @@ vector<string> split_str(string s, const char delim = ' ') {
     }
     return ret;
 }
-
 class Solution {
 public:
     string toGoatLatin(string s) {
