@@ -237,6 +237,7 @@
 | [0819-most-common-word](https://github.com/martin0327/LeetCode/tree/main/0819-most-common-word/) | Easy |
 | [0821-shortest-distance-to-a-character](https://github.com/martin0327/LeetCode/tree/main/0821-shortest-distance-to-a-character/) | Easy |
 | [0824-goat-latin](https://github.com/martin0327/LeetCode/tree/main/0824-goat-latin/) | Easy |
+| [0834-ambiguous-coordinates](https://github.com/martin0327/LeetCode/tree/main/0834-ambiguous-coordinates/) | undefined |
 | [0856-score-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
 | [0940-distinct-subsequences-ii](https://github.com/martin0327/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
@@ -721,6 +722,7 @@
 | ------- | ------- |
 | [0479-largest-palindrome-product](https://github.com/martin0327/LeetCode/tree/main/0479-largest-palindrome-product/) | Hard |
 | [0816-ambiguous-coordinates](https://github.com/martin0327/LeetCode/tree/main/0816-ambiguous-coordinates/) | Medium |
+| [0834-ambiguous-coordinates](https://github.com/martin0327/LeetCode/tree/main/0834-ambiguous-coordinates/) | undefined |
 | [1291-sequential-digits](https://github.com/martin0327/LeetCode/tree/main/1291-sequential-digits/) | Medium |
 | [2778-sum-of-squares-of-special-elements](https://github.com/martin0327/LeetCode/tree/main/2778-sum-of-squares-of-special-elements/) | Easy |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/martin0327/LeetCode/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
@@ -837,6 +839,7 @@
 | [0691-stickers-to-spell-word](https://github.com/martin0327/LeetCode/tree/main/0691-stickers-to-spell-word/) | Hard |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/martin0327/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [0816-ambiguous-coordinates](https://github.com/martin0327/LeetCode/tree/main/0816-ambiguous-coordinates/) | Medium |
+| [0834-ambiguous-coordinates](https://github.com/martin0327/LeetCode/tree/main/0834-ambiguous-coordinates/) | undefined |
 ## Bitmask
 | Problem Name | Difficulty |
 | ------- | ------- |
