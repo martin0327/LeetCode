@@ -111,6 +111,7 @@
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/martin0327/LeetCode/tree/main/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/martin0327/LeetCode/tree/main/3635-earliest-finish-time-for-land-and-water-rides-ii/) | Medium |
 | [3644-maximum-k-to-sort-a-permutation](https://github.com/martin0327/LeetCode/tree/main/3644-maximum-k-to-sort-a-permutation/) | Medium |
+| [3644-minimum-positive-sum-subarray](https://github.com/martin0327/LeetCode/tree/main/3644-minimum-positive-sum-subarray/) | undefined |
 | [3660-jump-game-ix](https://github.com/martin0327/LeetCode/tree/main/3660-jump-game-ix/) | Medium |
 | [3665-twisted-mirror-path-count](https://github.com/martin0327/LeetCode/tree/main/3665-twisted-mirror-path-count/) | Medium |
 | [3689-maximum-total-subarray-value-i](https://github.com/martin0327/LeetCode/tree/main/3689-maximum-total-subarray-value-i/) | Medium |
@@ -615,6 +616,7 @@
 | [3090-maximum-length-substring-with-two-occurrences](https://github.com/martin0327/LeetCode/tree/main/3090-maximum-length-substring-with-two-occurrences/) | Easy |
 | [3364-minimum-positive-sum-subarray](https://github.com/martin0327/LeetCode/tree/main/3364-minimum-positive-sum-subarray/) | Easy |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/martin0327/LeetCode/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
+| [3644-minimum-positive-sum-subarray](https://github.com/martin0327/LeetCode/tree/main/3644-minimum-positive-sum-subarray/) | undefined |
 | [3845-maximum-subarray-xor-with-bounded-range](https://github.com/martin0327/LeetCode/tree/main/3845-maximum-subarray-xor-with-bounded-range/) | Hard |
 | [3859-count-subarrays-with-k-distinct-integers](https://github.com/martin0327/LeetCode/tree/main/3859-count-subarrays-with-k-distinct-integers/) | Hard |
 ## Geometry
@@ -665,6 +667,7 @@
 | [2574-left-and-right-sum-differences](https://github.com/martin0327/LeetCode/tree/main/2574-left-and-right-sum-differences/) | Easy |
 | [3312-sorted-gcd-pair-queries](https://github.com/martin0327/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3364-minimum-positive-sum-subarray](https://github.com/martin0327/LeetCode/tree/main/3364-minimum-positive-sum-subarray/) | Easy |
+| [3644-minimum-positive-sum-subarray](https://github.com/martin0327/LeetCode/tree/main/3644-minimum-positive-sum-subarray/) | undefined |
 | [3699-number-of-zigzag-arrays-i](https://github.com/martin0327/LeetCode/tree/main/3699-number-of-zigzag-arrays-i/) | Hard |
 | [3845-maximum-subarray-xor-with-bounded-range](https://github.com/martin0327/LeetCode/tree/main/3845-maximum-subarray-xor-with-bounded-range/) | Hard |
 | [3883-count-non-decreasing-arrays-with-given-digit-sums](https://github.com/martin0327/LeetCode/tree/main/3883-count-non-decreasing-arrays-with-given-digit-sums/) | Hard |
