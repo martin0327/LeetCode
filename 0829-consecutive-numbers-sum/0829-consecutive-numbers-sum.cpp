@@ -8,9 +8,11 @@ public:
                 auto y = m / x;
                 if (x < y) {
                     if ((x+y) % 2) {
-                        auto r = (x+y-1) / 2;
-                        auto l = (y-x+1) / 2;
-                        if (l <= r) ans++;
+                        ans++;
+                        // auto r = (x+y-1) / 2;
+                        // auto l = (y-x+1) / 2;
+                        // if (l <= r) ans++;
+                        // but l <= r always holds as x >= 1
                     }
                 }
             }
@@ -20,11 +22,11 @@ public:
 };
 
 // l + ... + r = (r-l+1) * (r+l) / 2 = n
-
-// (r-l+1) * (r+l) = 2 *
-
+// where l <= r
+// (r-l+1) * (r+l) = 2 * n
 // let m = 2*n = x * y
+// let x = r-l+1, y = r+l
+// then, 
 // x < y
 // x + y = 2*r + 1
 // y - x = 2*l - 1
-// l <= r
