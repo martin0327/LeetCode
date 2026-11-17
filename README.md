@@ -164,6 +164,7 @@
 | [1872-stone-game-viii](https://github.com/martin0327/LeetCode/tree/main/1872-stone-game-viii/) | Hard |
 | [2002-stone-game-viii](https://github.com/martin0327/LeetCode/tree/main/2002-stone-game-viii/) | undefined |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/martin0327/LeetCode/tree/main/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
+| [2911-minimum-changes-to-make-k-semi-palindromes](https://github.com/martin0327/LeetCode/tree/main/2911-minimum-changes-to-make-k-semi-palindromes/) | Hard |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/martin0327/LeetCode/tree/main/3302-find-the-lexicographically-smallest-valid-sequence/) | Medium |
 | [3414-maximum-score-of-non-overlapping-intervals](https://github.com/martin0327/LeetCode/tree/main/3414-maximum-score-of-non-overlapping-intervals/) | Hard |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/martin0327/LeetCode/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
@@ -247,6 +248,7 @@
 | [1871-jump-game-vii](https://github.com/martin0327/LeetCode/tree/main/1871-jump-game-vii/) | Medium |
 | [1927-sum-game](https://github.com/martin0327/LeetCode/tree/main/1927-sum-game/) | Medium |
 | [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/martin0327/LeetCode/tree/main/2904-shortest-and-lexicographically-smallest-beautiful-string/) | Medium |
+| [2911-minimum-changes-to-make-k-semi-palindromes](https://github.com/martin0327/LeetCode/tree/main/2911-minimum-changes-to-make-k-semi-palindromes/) | Hard |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/martin0327/LeetCode/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/martin0327/LeetCode/tree/main/3043-find-the-length-of-the-longest-common-prefix/) | Medium |
 | [3090-maximum-length-substring-with-two-occurrences](https://github.com/martin0327/LeetCode/tree/main/3090-maximum-length-substring-with-two-occurrences/) | Easy |
@@ -443,6 +445,7 @@
 | [0821-shortest-distance-to-a-character](https://github.com/martin0327/LeetCode/tree/main/0821-shortest-distance-to-a-character/) | Easy |
 | [1861-rotating-the-box](https://github.com/martin0327/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/martin0327/LeetCode/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
+| [2911-minimum-changes-to-make-k-semi-palindromes](https://github.com/martin0327/LeetCode/tree/main/2911-minimum-changes-to-make-k-semi-palindromes/) | Hard |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/martin0327/LeetCode/tree/main/3302-find-the-lexicographically-smallest-valid-sequence/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/martin0327/LeetCode/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 | [3584-find-the-lexicographically-smallest-valid-sequence](https://github.com/martin0327/LeetCode/tree/main/3584-find-the-lexicographically-smallest-valid-sequence/) | undefined |
