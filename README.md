@@ -62,6 +62,7 @@
 | [0819-most-common-word](https://github.com/martin0327/LeetCode/tree/main/0819-most-common-word/) | Easy |
 | [0821-shortest-distance-to-a-character](https://github.com/martin0327/LeetCode/tree/main/0821-shortest-distance-to-a-character/) | Easy |
 | [0822-card-flipping-game](https://github.com/martin0327/LeetCode/tree/main/0822-card-flipping-game/) | Medium |
+| [0825-friends-of-appropriate-ages](https://github.com/martin0327/LeetCode/tree/main/0825-friends-of-appropriate-ages/) | Medium |
 | [0831-largest-sum-of-averages](https://github.com/martin0327/LeetCode/tree/main/0831-largest-sum-of-averages/) | undefined |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
@@ -400,6 +401,7 @@
 | [0524-longest-word-in-dictionary-through-deleting](https://github.com/martin0327/LeetCode/tree/main/0524-longest-word-in-dictionary-through-deleting/) | Medium |
 | [0710-random-pick-with-blacklist](https://github.com/martin0327/LeetCode/tree/main/0710-random-pick-with-blacklist/) | Hard |
 | [0720-longest-word-in-dictionary](https://github.com/martin0327/LeetCode/tree/main/0720-longest-word-in-dictionary/) | Medium |
+| [0825-friends-of-appropriate-ages](https://github.com/martin0327/LeetCode/tree/main/0825-friends-of-appropriate-ages/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/martin0327/LeetCode/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1340-jump-game-v](https://github.com/martin0327/LeetCode/tree/main/1340-jump-game-v/) | Hard |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/martin0327/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
@@ -444,6 +446,7 @@
 | [0795-number-of-subarrays-with-bounded-maximum](https://github.com/martin0327/LeetCode/tree/main/0795-number-of-subarrays-with-bounded-maximum/) | Medium |
 | [0809-expressive-words](https://github.com/martin0327/LeetCode/tree/main/0809-expressive-words/) | Medium |
 | [0821-shortest-distance-to-a-character](https://github.com/martin0327/LeetCode/tree/main/0821-shortest-distance-to-a-character/) | Easy |
+| [0825-friends-of-appropriate-ages](https://github.com/martin0327/LeetCode/tree/main/0825-friends-of-appropriate-ages/) | Medium |
 | [1861-rotating-the-box](https://github.com/martin0327/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/martin0327/LeetCode/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
 | [2911-minimum-changes-to-make-k-semi-palindromes](https://github.com/martin0327/LeetCode/tree/main/2911-minimum-changes-to-make-k-semi-palindromes/) | Hard |
@@ -652,6 +655,7 @@
 | [0710-random-pick-with-blacklist](https://github.com/martin0327/LeetCode/tree/main/0710-random-pick-with-blacklist/) | Hard |
 | [0754-reach-a-number](https://github.com/martin0327/LeetCode/tree/main/0754-reach-a-number/) | Medium |
 | [0793-preimage-size-of-factorial-zeroes-function](https://github.com/martin0327/LeetCode/tree/main/0793-preimage-size-of-factorial-zeroes-function/) | Hard |
+| [0825-friends-of-appropriate-ages](https://github.com/martin0327/LeetCode/tree/main/0825-friends-of-appropriate-ages/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [3161-block-placement-queries](https://github.com/martin0327/LeetCode/tree/main/3161-block-placement-queries/) | Hard |
 | [3312-sorted-gcd-pair-queries](https://github.com/martin0327/LeetCode/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
