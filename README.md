@@ -239,6 +239,7 @@
 | [0819-most-common-word](https://github.com/martin0327/LeetCode/tree/main/0819-most-common-word/) | Easy |
 | [0821-shortest-distance-to-a-character](https://github.com/martin0327/LeetCode/tree/main/0821-shortest-distance-to-a-character/) | Easy |
 | [0824-goat-latin](https://github.com/martin0327/LeetCode/tree/main/0824-goat-latin/) | Easy |
+| [0830-positions-of-large-groups](https://github.com/martin0327/LeetCode/tree/main/0830-positions-of-large-groups/) | Easy |
 | [0834-ambiguous-coordinates](https://github.com/martin0327/LeetCode/tree/main/0834-ambiguous-coordinates/) | undefined |
 | [0856-score-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
 | [0940-distinct-subsequences-ii](https://github.com/martin0327/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
