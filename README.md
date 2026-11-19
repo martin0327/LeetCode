@@ -91,6 +91,7 @@
 | [2029-stone-game-ix](https://github.com/martin0327/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
 | [2126-destroying-asteroids](https://github.com/martin0327/LeetCode/tree/main/2126-destroying-asteroids/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/martin0327/LeetCode/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
+| [2567-minimum-score-by-changing-two-elements](https://github.com/martin0327/LeetCode/tree/main/2567-minimum-score-by-changing-two-elements/) | Medium |
 | [2574-left-and-right-sum-differences](https://github.com/martin0327/LeetCode/tree/main/2574-left-and-right-sum-differences/) | Easy |
 | [2747-count-zero-request-servers](https://github.com/martin0327/LeetCode/tree/main/2747-count-zero-request-servers/) | Medium |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/martin0327/LeetCode/tree/main/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
@@ -369,6 +370,7 @@
 | [1927-sum-game](https://github.com/martin0327/LeetCode/tree/main/1927-sum-game/) | Medium |
 | [2029-stone-game-ix](https://github.com/martin0327/LeetCode/tree/main/2029-stone-game-ix/) | Medium |
 | [2126-destroying-asteroids](https://github.com/martin0327/LeetCode/tree/main/2126-destroying-asteroids/) | Medium |
+| [2567-minimum-score-by-changing-two-elements](https://github.com/martin0327/LeetCode/tree/main/2567-minimum-score-by-changing-two-elements/) | Medium |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/martin0327/LeetCode/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/martin0327/LeetCode/tree/main/3276-minimum-number-of-pushes-to-type-word-ii/) | undefined |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/martin0327/LeetCode/tree/main/3302-find-the-lexicographically-smallest-valid-sequence/) | Medium |
@@ -410,6 +412,7 @@
 | [1840-maximum-building-height](https://github.com/martin0327/LeetCode/tree/main/1840-maximum-building-height/) | Hard |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/martin0327/LeetCode/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
 | [2126-destroying-asteroids](https://github.com/martin0327/LeetCode/tree/main/2126-destroying-asteroids/) | Medium |
+| [2567-minimum-score-by-changing-two-elements](https://github.com/martin0327/LeetCode/tree/main/2567-minimum-score-by-changing-two-elements/) | Medium |
 | [2747-count-zero-request-servers](https://github.com/martin0327/LeetCode/tree/main/2747-count-zero-request-servers/) | Medium |
 | [2948-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/martin0327/LeetCode/tree/main/2948-make-lexicographically-smallest-array-by-swapping-elements/) | Medium |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/martin0327/LeetCode/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
