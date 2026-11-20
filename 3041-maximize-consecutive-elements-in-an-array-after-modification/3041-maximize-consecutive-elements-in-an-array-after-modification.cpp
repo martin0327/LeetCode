@@ -47,60 +47,6 @@ template <class S, S (*op)(S, S), S (*e)()> struct segtree {
 
     S all_prod() { return d[1]; }
 
-    template <bool (*f)(S)> int max_right(int l) {
-        return max_right(l, [](S x) { return f(x); });
-    }
-    template <class F> int max_right(int l, F f) {
-        assert(0 <= l && l <= _n);
-        assert(f(e()));
-        if (l == _n) return _n;
-        l += size;
-        S sm = e();
-        do {
-            while (l % 2 == 0) l >>= 1;
-            if (!f(op(sm, d[l]))) {
-                while (l < size) {
-                    l = (2 * l);
-                    if (f(op(sm, d[l]))) {
-                        sm = op(sm, d[l]);
-                        l++;
-                    }
-                }
-                return l - size;
-            }
-            sm = op(sm, d[l]);
-            l++;
-        } while ((l & -l) != l);
-        return _n;
-    }
-
-    template <bool (*f)(S)> int min_left(int r) {
-        return min_left(r, [](S x) { return f(x); });
-    }
-    template <class F> int min_left(int r, F f) {
-        assert(0 <= r && r <= _n);
-        assert(f(e()));
-        if (r == 0) return 0;
-        r += size;
-        S sm = e();
-        do {
-            r--;
-            while (r > 1 && (r % 2)) r >>= 1;
-            if (!f(op(d[r], sm))) {
-                while (r < size) {
-                    r = (2 * r + 1);
-                    if (f(op(d[r], sm))) {
-                        sm = op(d[r], sm);
-                        r--;
-                    }
-                }
-                return r + 1 - size;
-            }
-            sm = op(d[r], sm);
-        } while ((r & -r) != r);
-        return 0;
-    }
-
   private:
     int _n, size, log;
     std::vector<S> d;
