@@ -1,65 +1,15 @@
-using ll = long long;
-using ld = long double;
-using vi = vector<ll>;
-using vvi = vector<vi>;
-// using vm = vector<mint>;
-// using vvm = vector<vm>;
-using pii = pair<ll,ll>;
-using vp = vector<pii>;
-using vvp = vector<vp>;
-using vs = vector<string>;
-using vvs = vector<vs>;
-using ti3 = tuple<ll,ll,ll>;
-using vti3 = vector<ti3>;
-
-template<typename T>
-using min_pq = priority_queue<T, vector<T>, greater<T>>;
-template<typename T>
-using max_pq = priority_queue<T>;
-
-
-#include <algorithm>
-#include <cassert>
-#include <vector>
-
-
-#ifdef _MSC_VER
-#include <intrin.h>
-#endif
-
-namespace atcoder {
-
-namespace internal {
-
 int ceil_pow2(int n) {
     int x = 0;
     while ((1U << x) < (unsigned int)(n)) x++;
     return x;
 }
 
-int bsf(unsigned int n) {
-#ifdef _MSC_VER
-    unsigned long index;
-    _BitScanForward(&index, n);
-    return index;
-#else
-    return __builtin_ctz(n);
-#endif
-}
-
-}  // namespace internal
-
-}  // namespace atcoder
-
-
-namespace atcoder {
-
 template <class S, S (*op)(S, S), S (*e)()> struct segtree {
   public:
     segtree() : segtree(0) {}
     segtree(int n) : segtree(std::vector<S>(n, e())) {}
     segtree(const std::vector<S>& v) : _n(int(v.size())) {
-        log = internal::ceil_pow2(_n);
+        log = ceil_pow2(_n);
         size = 1 << log;
         d = std::vector<S>(2 * size, e());
         for (int i = 0; i < _n; i++) d[size + i] = v[i];
@@ -158,17 +108,9 @@ template <class S, S (*op)(S, S), S (*e)()> struct segtree {
     void update(int k) { d[k] = op(d[2 * k], d[2 * k + 1]); }
 };
 
-}  // namespace atcoder
-
-using namespace atcoder;
-
-
-
-
 using S = int;
 S op (S x, S y) { return max(x,y); }
 S e() { S ret = 0; return ret; }
-
 
 class Solution {
 public:
@@ -210,23 +152,6 @@ public:
             
         }
         int ans = max(dp0.all_prod(), dp1.all_prod());
-        // {
-        //     vi b,c;
-        //     for (int i=0; i<n; i++) {
-        //         b.push_back(dp0.get(i));
-        //     }
-        //     for (int i=0; i<n; i++) {
-        //         c.push_back(dp1.get(i));
-        //     }
-        //     debug(b);
-        //     debug(c);
-        // }
-        // for (int i=0; i<n; i++) {
-        //     for (int j=0; j<2; j++) {
-        //         ans = max(ans, dp[i][j]);
-        //     }
-        // }
         return ans;
-        
     }
 };
