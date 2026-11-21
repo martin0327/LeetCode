@@ -1,8 +1,8 @@
-string s;
 using vi = vector<int>;
 const int maxn = 1e5+1;
 vi adj[maxn], st[26];
 int anc[maxn], sub[maxn];
+string s;
 void f(int u) {
     auto x = s[u] - 'a';
     if (st[x].size()) {
