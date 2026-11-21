@@ -4,11 +4,10 @@ class Solution {
 public:
     vector<int> findSubtreeSizes(vector<int>& par, string s) {
         int n = par.size(), sz = 26;
-        vvi adj(n);
+        vvi adj(n), st(sz);
         for (int i=1; i<n; i++) {
             adj[par[i]].push_back(i);
         }
-        vvi st(sz);
         vi anc(n,-1), sub(n,1);
         function<void(int)> f = [&] (int u) {
             auto x = s[u] - 'a';
