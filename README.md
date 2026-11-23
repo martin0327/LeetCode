@@ -255,6 +255,7 @@
 | [0831-masking-personal-information](https://github.com/martin0327/LeetCode/tree/main/0831-masking-personal-information/) | Medium |
 | [0833-find-and-replace-in-string](https://github.com/martin0327/LeetCode/tree/main/0833-find-and-replace-in-string/) | Medium |
 | [0834-ambiguous-coordinates](https://github.com/martin0327/LeetCode/tree/main/0834-ambiguous-coordinates/) | undefined |
+| [0842-split-array-into-fibonacci-sequence](https://github.com/martin0327/LeetCode/tree/main/0842-split-array-into-fibonacci-sequence/) | Medium |
 | [0856-score-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
 | [0857-positions-of-large-groups](https://github.com/martin0327/LeetCode/tree/main/0857-positions-of-large-groups/) | undefined |
 | [0940-distinct-subsequences-ii](https://github.com/martin0327/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
@@ -889,6 +890,7 @@
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/martin0327/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [0816-ambiguous-coordinates](https://github.com/martin0327/LeetCode/tree/main/0816-ambiguous-coordinates/) | Medium |
 | [0834-ambiguous-coordinates](https://github.com/martin0327/LeetCode/tree/main/0834-ambiguous-coordinates/) | undefined |
+| [0842-split-array-into-fibonacci-sequence](https://github.com/martin0327/LeetCode/tree/main/0842-split-array-into-fibonacci-sequence/) | Medium |
 ## Bitmask
 | Problem Name | Difficulty |
 | ------- | ------- |
