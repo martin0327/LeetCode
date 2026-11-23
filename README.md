@@ -325,6 +325,7 @@
 | [0793-preimage-size-of-factorial-zeroes-function](https://github.com/martin0327/LeetCode/tree/main/0793-preimage-size-of-factorial-zeroes-function/) | Hard |
 | [0829-consecutive-numbers-sum](https://github.com/martin0327/LeetCode/tree/main/0829-consecutive-numbers-sum/) | Hard |
 | [0836-rectangle-overlap](https://github.com/martin0327/LeetCode/tree/main/0836-rectangle-overlap/) | Easy |
+| [0856-consecutive-numbers-sum](https://github.com/martin0327/LeetCode/tree/main/0856-consecutive-numbers-sum/) | undefined |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
 | [0913-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0913-random-flip-matrix/) | undefined |
@@ -770,6 +771,7 @@
 | [0816-ambiguous-coordinates](https://github.com/martin0327/LeetCode/tree/main/0816-ambiguous-coordinates/) | Medium |
 | [0829-consecutive-numbers-sum](https://github.com/martin0327/LeetCode/tree/main/0829-consecutive-numbers-sum/) | Hard |
 | [0834-ambiguous-coordinates](https://github.com/martin0327/LeetCode/tree/main/0834-ambiguous-coordinates/) | undefined |
+| [0856-consecutive-numbers-sum](https://github.com/martin0327/LeetCode/tree/main/0856-consecutive-numbers-sum/) | undefined |
 | [1291-sequential-digits](https://github.com/martin0327/LeetCode/tree/main/1291-sequential-digits/) | Medium |
 | [2778-sum-of-squares-of-special-elements](https://github.com/martin0327/LeetCode/tree/main/2778-sum-of-squares-of-special-elements/) | Easy |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/martin0327/LeetCode/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
