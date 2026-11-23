@@ -64,6 +64,7 @@
 | [0822-card-flipping-game](https://github.com/martin0327/LeetCode/tree/main/0822-card-flipping-game/) | Medium |
 | [0825-friends-of-appropriate-ages](https://github.com/martin0327/LeetCode/tree/main/0825-friends-of-appropriate-ages/) | Medium |
 | [0831-largest-sum-of-averages](https://github.com/martin0327/LeetCode/tree/main/0831-largest-sum-of-averages/) | undefined |
+| [0832-flipping-an-image](https://github.com/martin0327/LeetCode/tree/main/0832-flipping-an-image/) | Easy |
 | [0861-flipping-an-image](https://github.com/martin0327/LeetCode/tree/main/0861-flipping-an-image/) | undefined |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
@@ -199,6 +200,7 @@
 | [0733-flood-fill](https://github.com/martin0327/LeetCode/tree/main/0733-flood-fill/) | Easy |
 | [0741-cherry-pickup](https://github.com/martin0327/LeetCode/tree/main/0741-cherry-pickup/) | Hard |
 | [0794-valid-tic-tac-toe-state](https://github.com/martin0327/LeetCode/tree/main/0794-valid-tic-tac-toe-state/) | Medium |
+| [0832-flipping-an-image](https://github.com/martin0327/LeetCode/tree/main/0832-flipping-an-image/) | Easy |
 | [0861-flipping-an-image](https://github.com/martin0327/LeetCode/tree/main/0861-flipping-an-image/) | undefined |
 | [1260-shift-2d-grid](https://github.com/martin0327/LeetCode/tree/main/1260-shift-2d-grid/) | Easy |
 | [1861-rotating-the-box](https://github.com/martin0327/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
@@ -463,6 +465,7 @@
 | [0809-expressive-words](https://github.com/martin0327/LeetCode/tree/main/0809-expressive-words/) | Medium |
 | [0821-shortest-distance-to-a-character](https://github.com/martin0327/LeetCode/tree/main/0821-shortest-distance-to-a-character/) | Easy |
 | [0825-friends-of-appropriate-ages](https://github.com/martin0327/LeetCode/tree/main/0825-friends-of-appropriate-ages/) | Medium |
+| [0832-flipping-an-image](https://github.com/martin0327/LeetCode/tree/main/0832-flipping-an-image/) | Easy |
 | [0861-flipping-an-image](https://github.com/martin0327/LeetCode/tree/main/0861-flipping-an-image/) | undefined |
 | [1861-rotating-the-box](https://github.com/martin0327/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/martin0327/LeetCode/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
@@ -596,6 +599,7 @@
 | [0537-complex-number-multiplication](https://github.com/martin0327/LeetCode/tree/main/0537-complex-number-multiplication/) | Medium |
 | [0640-solve-the-equation](https://github.com/martin0327/LeetCode/tree/main/0640-solve-the-equation/) | Medium |
 | [0682-baseball-game](https://github.com/martin0327/LeetCode/tree/main/0682-baseball-game/) | Easy |
+| [0832-flipping-an-image](https://github.com/martin0327/LeetCode/tree/main/0832-flipping-an-image/) | Easy |
 | [0861-flipping-an-image](https://github.com/martin0327/LeetCode/tree/main/0861-flipping-an-image/) | undefined |
 | [1260-shift-2d-grid](https://github.com/martin0327/LeetCode/tree/main/1260-shift-2d-grid/) | Easy |
 | [1606-find-servers-that-handled-most-number-of-requests](https://github.com/martin0327/LeetCode/tree/main/1606-find-servers-that-handled-most-number-of-requests/) | Hard |
@@ -623,6 +627,7 @@
 | [0672-bulb-switcher-ii](https://github.com/martin0327/LeetCode/tree/main/0672-bulb-switcher-ii/) | Medium |
 | [0691-stickers-to-spell-word](https://github.com/martin0327/LeetCode/tree/main/0691-stickers-to-spell-word/) | Hard |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/martin0327/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
+| [0832-flipping-an-image](https://github.com/martin0327/LeetCode/tree/main/0832-flipping-an-image/) | Easy |
 | [0861-flipping-an-image](https://github.com/martin0327/LeetCode/tree/main/0861-flipping-an-image/) | undefined |
 | [1386-cinema-seat-allocation](https://github.com/martin0327/LeetCode/tree/main/1386-cinema-seat-allocation/) | Medium |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/martin0327/LeetCode/tree/main/3514-number-of-unique-xor-triplets-ii/) | Medium |
