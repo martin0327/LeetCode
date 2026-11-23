@@ -247,6 +247,7 @@
 | [0821-shortest-distance-to-a-character](https://github.com/martin0327/LeetCode/tree/main/0821-shortest-distance-to-a-character/) | Easy |
 | [0824-goat-latin](https://github.com/martin0327/LeetCode/tree/main/0824-goat-latin/) | Easy |
 | [0830-positions-of-large-groups](https://github.com/martin0327/LeetCode/tree/main/0830-positions-of-large-groups/) | Easy |
+| [0831-masking-personal-information](https://github.com/martin0327/LeetCode/tree/main/0831-masking-personal-information/) | Medium |
 | [0834-ambiguous-coordinates](https://github.com/martin0327/LeetCode/tree/main/0834-ambiguous-coordinates/) | undefined |
 | [0856-score-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
 | [0857-positions-of-large-groups](https://github.com/martin0327/LeetCode/tree/main/0857-positions-of-large-groups/) | undefined |
