@@ -160,6 +160,7 @@
 | [0764-largest-plus-sign](https://github.com/martin0327/LeetCode/tree/main/0764-largest-plus-sign/) | Medium |
 | [0813-largest-sum-of-averages](https://github.com/martin0327/LeetCode/tree/main/0813-largest-sum-of-averages/) | Medium |
 | [0818-race-car](https://github.com/martin0327/LeetCode/tree/main/0818-race-car/) | Hard |
+| [0828-count-unique-characters-of-all-substrings-of-a-given-string](https://github.com/martin0327/LeetCode/tree/main/0828-count-unique-characters-of-all-substrings-of-a-given-string/) | Hard |
 | [0831-largest-sum-of-averages](https://github.com/martin0327/LeetCode/tree/main/0831-largest-sum-of-averages/) | undefined |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0940-distinct-subsequences-ii](https://github.com/martin0327/LeetCode/tree/main/0940-distinct-subsequences-ii/) | Hard |
@@ -249,6 +250,7 @@
 | [0819-most-common-word](https://github.com/martin0327/LeetCode/tree/main/0819-most-common-word/) | Easy |
 | [0821-shortest-distance-to-a-character](https://github.com/martin0327/LeetCode/tree/main/0821-shortest-distance-to-a-character/) | Easy |
 | [0824-goat-latin](https://github.com/martin0327/LeetCode/tree/main/0824-goat-latin/) | Easy |
+| [0828-count-unique-characters-of-all-substrings-of-a-given-string](https://github.com/martin0327/LeetCode/tree/main/0828-count-unique-characters-of-all-substrings-of-a-given-string/) | Hard |
 | [0830-positions-of-large-groups](https://github.com/martin0327/LeetCode/tree/main/0830-positions-of-large-groups/) | Easy |
 | [0831-masking-personal-information](https://github.com/martin0327/LeetCode/tree/main/0831-masking-personal-information/) | Medium |
 | [0833-find-and-replace-in-string](https://github.com/martin0327/LeetCode/tree/main/0833-find-and-replace-in-string/) | Medium |
@@ -509,6 +511,7 @@
 | [0817-linked-list-components](https://github.com/martin0327/LeetCode/tree/main/0817-linked-list-components/) | Medium |
 | [0819-most-common-word](https://github.com/martin0327/LeetCode/tree/main/0819-most-common-word/) | Easy |
 | [0822-card-flipping-game](https://github.com/martin0327/LeetCode/tree/main/0822-card-flipping-game/) | Medium |
+| [0828-count-unique-characters-of-all-substrings-of-a-given-string](https://github.com/martin0327/LeetCode/tree/main/0828-count-unique-characters-of-all-substrings-of-a-given-string/) | Hard |
 | [0833-find-and-replace-in-string](https://github.com/martin0327/LeetCode/tree/main/0833-find-and-replace-in-string/) | Medium |
 | [0913-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0913-random-flip-matrix/) | undefined |
 | [1189-maximum-number-of-balloons](https://github.com/martin0327/LeetCode/tree/main/1189-maximum-number-of-balloons/) | Easy |
