@@ -65,6 +65,7 @@
 | [0825-friends-of-appropriate-ages](https://github.com/martin0327/LeetCode/tree/main/0825-friends-of-appropriate-ages/) | Medium |
 | [0831-largest-sum-of-averages](https://github.com/martin0327/LeetCode/tree/main/0831-largest-sum-of-averages/) | undefined |
 | [0832-flipping-an-image](https://github.com/martin0327/LeetCode/tree/main/0832-flipping-an-image/) | Easy |
+| [0833-find-and-replace-in-string](https://github.com/martin0327/LeetCode/tree/main/0833-find-and-replace-in-string/) | Medium |
 | [0861-flipping-an-image](https://github.com/martin0327/LeetCode/tree/main/0861-flipping-an-image/) | undefined |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
@@ -250,6 +251,7 @@
 | [0824-goat-latin](https://github.com/martin0327/LeetCode/tree/main/0824-goat-latin/) | Easy |
 | [0830-positions-of-large-groups](https://github.com/martin0327/LeetCode/tree/main/0830-positions-of-large-groups/) | Easy |
 | [0831-masking-personal-information](https://github.com/martin0327/LeetCode/tree/main/0831-masking-personal-information/) | Medium |
+| [0833-find-and-replace-in-string](https://github.com/martin0327/LeetCode/tree/main/0833-find-and-replace-in-string/) | Medium |
 | [0834-ambiguous-coordinates](https://github.com/martin0327/LeetCode/tree/main/0834-ambiguous-coordinates/) | undefined |
 | [0856-score-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
 | [0857-positions-of-large-groups](https://github.com/martin0327/LeetCode/tree/main/0857-positions-of-large-groups/) | undefined |
@@ -418,6 +420,7 @@
 | [0710-random-pick-with-blacklist](https://github.com/martin0327/LeetCode/tree/main/0710-random-pick-with-blacklist/) | Hard |
 | [0720-longest-word-in-dictionary](https://github.com/martin0327/LeetCode/tree/main/0720-longest-word-in-dictionary/) | Medium |
 | [0825-friends-of-appropriate-ages](https://github.com/martin0327/LeetCode/tree/main/0825-friends-of-appropriate-ages/) | Medium |
+| [0833-find-and-replace-in-string](https://github.com/martin0327/LeetCode/tree/main/0833-find-and-replace-in-string/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/martin0327/LeetCode/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1340-jump-game-v](https://github.com/martin0327/LeetCode/tree/main/1340-jump-game-v/) | Hard |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/martin0327/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
@@ -506,6 +509,7 @@
 | [0817-linked-list-components](https://github.com/martin0327/LeetCode/tree/main/0817-linked-list-components/) | Medium |
 | [0819-most-common-word](https://github.com/martin0327/LeetCode/tree/main/0819-most-common-word/) | Easy |
 | [0822-card-flipping-game](https://github.com/martin0327/LeetCode/tree/main/0822-card-flipping-game/) | Medium |
+| [0833-find-and-replace-in-string](https://github.com/martin0327/LeetCode/tree/main/0833-find-and-replace-in-string/) | Medium |
 | [0913-random-flip-matrix](https://github.com/martin0327/LeetCode/tree/main/0913-random-flip-matrix/) | undefined |
 | [1189-maximum-number-of-balloons](https://github.com/martin0327/LeetCode/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1331-rank-transform-of-an-array](https://github.com/martin0327/LeetCode/tree/main/1331-rank-transform-of-an-array/) | Easy |
