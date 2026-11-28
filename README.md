@@ -66,6 +66,7 @@
 | [0831-largest-sum-of-averages](https://github.com/martin0327/LeetCode/tree/main/0831-largest-sum-of-averages/) | undefined |
 | [0832-flipping-an-image](https://github.com/martin0327/LeetCode/tree/main/0832-flipping-an-image/) | Easy |
 | [0833-find-and-replace-in-string](https://github.com/martin0327/LeetCode/tree/main/0833-find-and-replace-in-string/) | Medium |
+| [0851-loud-and-rich](https://github.com/martin0327/LeetCode/tree/main/0851-loud-and-rich/) | Medium |
 | [0861-flipping-an-image](https://github.com/martin0327/LeetCode/tree/main/0861-flipping-an-image/) | undefined |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
@@ -577,6 +578,7 @@
 | [0690-employee-importance](https://github.com/martin0327/LeetCode/tree/main/0690-employee-importance/) | Medium |
 | [0733-flood-fill](https://github.com/martin0327/LeetCode/tree/main/0733-flood-fill/) | Easy |
 | [0774-maximum-depth-of-n-ary-tree](https://github.com/martin0327/LeetCode/tree/main/0774-maximum-depth-of-n-ary-tree/) | undefined |
+| [0851-loud-and-rich](https://github.com/martin0327/LeetCode/tree/main/0851-loud-and-rich/) | Medium |
 | [1306-jump-game-iii](https://github.com/martin0327/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
 | [2685-count-the-number-of-complete-components](https://github.com/martin0327/LeetCode/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 | [3310-remove-methods-from-project](https://github.com/martin0327/LeetCode/tree/main/3310-remove-methods-from-project/) | Medium |
@@ -762,6 +764,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0685-redundant-connection-ii](https://github.com/martin0327/LeetCode/tree/main/0685-redundant-connection-ii/) | Hard |
+| [0851-loud-and-rich](https://github.com/martin0327/LeetCode/tree/main/0851-loud-and-rich/) | Medium |
 | [2685-count-the-number-of-complete-components](https://github.com/martin0327/LeetCode/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 | [3310-remove-methods-from-project](https://github.com/martin0327/LeetCode/tree/main/3310-remove-methods-from-project/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/martin0327/LeetCode/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
@@ -856,6 +859,7 @@
 ## Topological Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0851-loud-and-rich](https://github.com/martin0327/LeetCode/tree/main/0851-loud-and-rich/) | Medium |
 | [3620-network-recovery-pathways](https://github.com/martin0327/LeetCode/tree/main/3620-network-recovery-pathways/) | Hard |
 ## Shortest Path
 | Problem Name | Difficulty |
@@ -987,4 +991,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0818-race-car](https://github.com/martin0327/LeetCode/tree/main/0818-race-car/) | Hard |
+## Directed Acyclic Graph
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0851-loud-and-rich](https://github.com/martin0327/LeetCode/tree/main/0851-loud-and-rich/) | Medium |
 <!---LeetCode Topics End-->
