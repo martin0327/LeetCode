@@ -67,6 +67,7 @@
 | [0832-flipping-an-image](https://github.com/martin0327/LeetCode/tree/main/0832-flipping-an-image/) | Easy |
 | [0833-find-and-replace-in-string](https://github.com/martin0327/LeetCode/tree/main/0833-find-and-replace-in-string/) | Medium |
 | [0851-loud-and-rich](https://github.com/martin0327/LeetCode/tree/main/0851-loud-and-rich/) | Medium |
+| [0853-car-fleet](https://github.com/martin0327/LeetCode/tree/main/0853-car-fleet/) | Medium |
 | [0861-flipping-an-image](https://github.com/martin0327/LeetCode/tree/main/0861-flipping-an-image/) | undefined |
 | [0877-stone-game](https://github.com/martin0327/LeetCode/tree/main/0877-stone-game/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/martin0327/LeetCode/tree/main/0912-random-pick-with-weight/) | undefined |
@@ -427,6 +428,7 @@
 | [0720-longest-word-in-dictionary](https://github.com/martin0327/LeetCode/tree/main/0720-longest-word-in-dictionary/) | Medium |
 | [0825-friends-of-appropriate-ages](https://github.com/martin0327/LeetCode/tree/main/0825-friends-of-appropriate-ages/) | Medium |
 | [0833-find-and-replace-in-string](https://github.com/martin0327/LeetCode/tree/main/0833-find-and-replace-in-string/) | Medium |
+| [0853-car-fleet](https://github.com/martin0327/LeetCode/tree/main/0853-car-fleet/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/martin0327/LeetCode/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1340-jump-game-v](https://github.com/martin0327/LeetCode/tree/main/1340-jump-game-v/) | Hard |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/martin0327/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
@@ -843,6 +845,7 @@
 | [0496-next-greater-element-i](https://github.com/martin0327/LeetCode/tree/main/0496-next-greater-element-i/) | Easy |
 | [0636-exclusive-time-of-functions](https://github.com/martin0327/LeetCode/tree/main/0636-exclusive-time-of-functions/) | Medium |
 | [0682-baseball-game](https://github.com/martin0327/LeetCode/tree/main/0682-baseball-game/) | Easy |
+| [0853-car-fleet](https://github.com/martin0327/LeetCode/tree/main/0853-car-fleet/) | Medium |
 | [0856-score-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/0856-score-of-parentheses/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/martin0327/LeetCode/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
@@ -850,6 +853,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0496-next-greater-element-i](https://github.com/martin0327/LeetCode/tree/main/0496-next-greater-element-i/) | Easy |
+| [0853-car-fleet](https://github.com/martin0327/LeetCode/tree/main/0853-car-fleet/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/martin0327/LeetCode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 ## Binary Search Tree
 | Problem Name | Difficulty |
