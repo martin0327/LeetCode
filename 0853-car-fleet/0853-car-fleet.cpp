@@ -15,14 +15,9 @@ public:
         for (auto [p,s] : a) {
             auto d = tg - p;
             auto [ld,ls] = last;
-            auto update = [&] () {
-                last = {d,s};
-            };
-            // if d/s <= ld/ls : catch
-            // else : not carch
             if (d*ls > ld*s) {
                 ans++;
-                update();
+                last = {d,s};
             }
         }
         return ans;
